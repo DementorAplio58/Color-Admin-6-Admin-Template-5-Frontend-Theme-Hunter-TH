@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Admetro | Dashboard</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<header id="header" class="app-header">
+
+<button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+admetro
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+<a href="#" data-toggle="search-bar" class="nav-link">
+<i class="fa fa-search nav-icon"></i>
+</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="far fa-bell nav-icon"></i>
+<span class="nav-label">3</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 pb-0">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-apple bg-primary"></i></div>
+<div class="info">
+<h4 class="title">App Store <span class="time">Just now</span></h4>
+<p class="desc">Your iOS application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-android bg-success"></i></div>
+<div class="info">
+<h4 class="title">Google Play <span class="time">5 min ago</span></h4>
+<p class="desc">Your android application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-github bg-muted"></i></div>
+<div class="info">
+<h4 class="title">Github <span class="time">12 min ago</span></h4>
+<p class="desc">Error with notifications from Private Repos</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
+<div class="info">
+<h4 class="title">Gmail <span class="time">12:50pm</span></h4>
+<p class="desc">You have 2 unread email</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
+<div class="info">
+<h4 class="title">Corey <span class="time">10:20am</span></h4>
+<p class="desc">There's so much room for activities!</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
+<div class="info">
+<h4 class="title">Twitter <span class="time">12:50pm</span></h4>
+<p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="fa fa-cog nav-icon"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-md pt-0 pb-0">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-envelope text-muted"></i></div>
+<div class="info">Email</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-desktop text-muted"></i></div>
+<div class="info">Desktop & Mobile</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
+<div class="info">Text message</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
+<div class="info">Public friends list</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
+<div class="info">Public profile page</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<span class="nav-img online">
+<img src="assets/img/user.jpg" alt="" />
+</span>
+<span class="d-none d-md-block">John Smith <b class="caret"></b></span>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#">Edit Profile</a>
+<a class="dropdown-item" href="#">Inbox</a>
+<a class="dropdown-item" href="#">Calendar</a>
+<a class="dropdown-item" href="#">Setting</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Log Out</a>
+</div>
+</li>
+</ul>
+
+
+<div class="navbar-search">
+<form action="#" method="POST" name="navbar_search_form">
+<div class="form-group">
+<div class="icon"><i class="fa fa-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
+<div class="icon">
+<a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
+</div>
+</div>
+</form>
+</div>
+
+</header>
+
+
+<sidebar id="sidebar" class="app-sidebar">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="profile-img">
+<img src="assets/img/user.jpg" />
+</div>
+<div class="profile-info">
+<h4>John Smith</h4>
+<p>Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li class="active">
+<a href="index.html">
+<span class="nav-icon"><i class="fa fa-th-large"></i></span>
+<span class="nav-text">Home</span>
+</a>
+</li>
+<li>
+<a href="analytics.html">
+<span class="nav-icon"><i class="fa fa-chart-pie"></i></span>
+<span class="nav-text">Analytics</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-envelope"></i> </span>
+<span class="nav-text">Email <span class="nav-label">20+</span></span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li>
+<a href="widgets.html">
+<span class="nav-icon"><i class="fa fa-qrcode bg-gradient-red text-white"></i></span>
+<span class="nav-text">Widgets</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-heart bg-gradient-orange text-white"></i></span>
+<span class="nav-text">UI Kits</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="ui_bootstrap.html"><span class="nav-text">Bootstrap</span></a></li>
+<li><a href="ui_buttons.html"><span class="nav-text">Buttons</span></a></li>
+<li><a href="ui_typography.html"><span class="nav-text">Typography</span></a></li>
+<li><a href="ui_tabs_accordions.html"><span class="nav-text">Tabs & Accordions</span></a></li>
+<li><a href="ui_modal_notification.html"><span class="nav-text">Modal & Notification</span></a></li>
+<li><a href="ui_card.html"><span class="nav-text">Card</span></a></li>
+<li><a href="ui_icons.html"><span class="nav-text">Icons</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-file-alt bg-gradient-orange text-white"></i></span>
+<span class="nav-text">Forms</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="form_elements.html"><span class="nav-text">Form Elements</span></a></li>
+<li><a href="form_plugins.html"><span class="nav-text">Form Plugins</span></a></li>
+<li><a href="form_wizards.html"><span class="nav-text">Wizards</span></a></li>
+<li><a href="form_jquery_file_upload.html"><span class="nav-text">File Upload</span></a></li>
+<li><a href="form_summernote.html"><span class="nav-text">Summernote</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-table bg-gradient-green text-white"></i></span>
+<span class="nav-text">Tables</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="table_basic.html"><span class="nav-text">Basic Tables</span></a></li>
+<li><a href="table_data.html"><span class="nav-text">DataTables</span></a></li>
+</ul>
+</li>
+<li>
+<a href="chart.html">
+<span class="nav-icon"><i class="fa fa-chart-bar bg-gradient-purple text-white"></i></span>
+<span class="nav-text">Chart</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-map-marker-alt bg-gradient-blue text-white"></i></span>
+<span class="nav-text">Map</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="map_vector.html"><span class="nav-text">Vector Map</span></a></li>
+<li><a href="map_google.html"><span class="nav-text">Google Map</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-code-branch"></i></span>
+<span class="nav-text">Layout</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="layout_starter.html"><span class="nav-text">Starter Page</span></a></li>
+<li><a href="layout_fixed_footer.html"><span class="nav-text">Fixed Footer</span></a></li>
+<li><a href="layout_full_width.html"><span class="nav-text">Full Width</span></a></li>
+<li><a href="layout_boxed_layout.html"><span class="nav-text">Boxed Layout</span></a></li>
+<li><a href="layout_full_height.html"><span class="nav-text">Full Height</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-globe"></i></span>
+<span class="nav-text">Pages</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="page_gallery.html"><span class="nav-text">Gallery</span></a></li>
+<li><a href="page_coming_soon.html"><span class="nav-text">Coming Soon Page</span></a></li>
+<li><a href="page_search_results.html"><span class="nav-text">Search Results</span></a></li>
+<li><a href="page_404_error.html"><span class="nav-text">404 Error Page</span></a></li>
+<li><a href="page_login.html"><span class="nav-text">Login</span></a></li>
+<li><a href="page_register.html"><span class="nav-text">Register</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li>
+<a href="profile.html">
+<span class="nav-icon"><i class="fa fa-user-circle"></i></span>
+<span class="nav-text">Profile</span>
+</a>
+</li>
+<li>
+<a href="calendar.html">
+<span class="nav-icon"><i class="fa fa-calendar"></i></span>
+<span class="nav-text">Calendar</span>
+</a>
+</li>
+<li>
+<a href="settings.html">
+<span class="nav-icon"><i class="fa fa-cog"></i></span>
+<span class="nav-text">Settings</span>
+</a>
+</li>
+<li>
+<a href="helper.html">
+<span class="nav-icon"><i class="fa fa-question-circle"></i></span>
+<span class="nav-text">Helper</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-list-ul"></i> </span>
+<span class="nav-text">Menu Level</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 1.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 2.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="#"><span class="nav-text">Menu 3.1</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 3.2</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 2.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 2.3</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 1.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 1.3</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-mobile-alt"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">70%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-headphones"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">40%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fab fa-github"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">50%</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2019 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+</sidebar>
+
+
+<div id="content" class="app-content">
+
+<h1 class="page-header">
+Dashboard <small>overview, analytics & report</small>
+</h1>
+
+
+<div class="row">
+
+<div class="col-xl-8 col-sm-12">
+
+<div class="widget-card widget-card-inverse">
+<div class="widget-card-col col-12 col-lg-6">
+
+<div class="widget-card-cover" style="background-image: url(assets/img/dashboard-cover.jpg)">
+<div class="cover-bg"></div>
+</div>
+
+<div class="widget-card-content widget-hero bottom">
+<h1>Welcome back, Admin!</h1>
+<p class="m-b-0">I am glad to see you back online. Today is a great day!</p>
+</div>
+</div>
+<div class="widget-card-col col-12 col-lg-6">
+<a href="#" class="widget-title-link bg-primary text-white">Dismiss</a>
+<h4 class="widget-title widget-title-inverse">GETTING STARTED</h4>
+<p class="widget-desc widget-desc-inverse m-b-25">We've assembled some links to get you started:</p>
+
+<div class="widget-list widget-list-inverse  widget-list-full-width">
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<i class="fa fa-plus bg-gradient-blue text-white icon"></i>
+</div>
+<div class="widget-list-content">
+<h4>Create New Post</h4>
+<p>Wordpress</p>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<i class="fa fa-store-alt bg-gradient-indigo text-white icon"></i>
+</div>
+<div class="widget-list-content">
+<h4>Manage Store</h4>
+<p>Product</p>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<i class="fa fa-credit-card bg-gradient-green text-white icon"></i>
+</div>
+<div class="widget-list-content">
+<h4>Manage Transaction</h4>
+<p>Report</p>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<i class="fa fa-qrcode bg-gradient-orange icon"></i>
+</div>
+<div class="widget-list-content">
+<h4>Manage API Key</h4>
+ <p>Library</p>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<i class="fa fa-comments bg-gradient-red icon"></i>
+</div>
+<div class="widget-list-content">
+<h4>Manage Inbox</h4>
+<p>Email</p>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<i class="fa fa-cog icon"></i>
+</div>
+<div class="widget-list-content">
+<h4>Settings</h4>
+<p>System</p>
+</div>
+</a>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="col-xl-4 col-lg-12">
+
+<div class="row">
+
+<div class="col-xl-12 col-sm-6 col-12">
+
+<div class="widget-card widget-card-inverse" style="height: 12.45rem;">
+
+<div class="widget-card-cover" style="background-image: url(assets/img/dashboard-cover-1.jpg)">
+<div class="cover-bg"></div>
+</div>
+
+
+<div class="widget-card-content">
+<div class="dropdown dropdown-icon pull-right">
+<a href="#" class="text-white" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="#" class="dropdown-item">View</a>
+<a href="#" class="dropdown-item">Analytics</a>
+<a href="#" class="dropdown-item">Report</a>
+</div>
+</div>
+<h4 class="widget-title">POPULAR VIDEOS</h4>
+</div>
+
+
+<div class="widget-card-content bottom">
+<div class="widget-list widget-list-inverse widget-list-full-width">
+<a href="#" class="widget-list-item">
+<div class="widget-list-media"><i class="fa fa-play icon bg-gradient-blue"></i></div>
+<div class="widget-list-content">
+<h4>In the Heart of the Sea</h4>
+<p><i class="far fa-eye"></i> 1.2m views <i class="far fa-clock m-l-10"></i> 2h 2m</p>
+</div>
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-12 col-sm-6 col-12">
+
+<div class="widget-card widget-card-inverse" style="height: 12.45rem;">
+
+<div class="widget-card-cover" style="background-image: url(assets/img/dashboard-cover-2.jpg)">
+<div class="cover-bg"></div>
+</div>
+
+
+<div class="widget-card-content">
+<div class="dropdown dropdown-icon pull-right">
+<a href="#" class="text-white" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<a href="#" class="dropdown-item">View</a>
+<a href="#" class="dropdown-item">Analytics</a>
+<a href="#" class="dropdown-item">Report</a>
+</div>
+</div>
+<h4 class="widget-title">WEEKLY TRENDING MUSIC</h4>
+</div>
+
+
+<div class="widget-card-content bottom">
+<div class="widget-list widget-list-inverse widget-list-full-width">
+<a href="#" class="widget-list-item">
+<div class="widget-list-media"><i class="fa fa-headphones-alt icon bg-gradient-orange"></i></div>
+<div class="widget-list-content">
+<h4>Fireworks - Violing Cover</h4>
+<p><i class="far fa-eye"></i> 951.9m views <i class="far fa-clock m-l-10"></i> 3m 53s</p>
+</div>
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-xl-4 col-sm-6">
+
+<div class="card mb-3">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">
+POPULAR PRODUCTS
+</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="widget-list">
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<div class="img" style="background-image: url(assets/img/dashboard-product-8.jpg"></div>
+</div>
+<div class="widget-list-content">
+<p>DJI</p>
+<h4>Inspire 2 Combo Price</h4>
+<ul class="widget-rating">
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li class="text">(128)</li>
+</ul>
+</div>
+<div class="widget-list-action">
+<div class="widget-price">$999.00</div>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<div class="img" style="background-image: url(assets/img/dashboard-product-10.jpg"></div>
+</div>
+<div class="widget-list-content">
+<p>SONY</p>
+<h4>PlayStation 4 VR Headset</h4>
+<ul class="widget-rating">
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li class="text">(93)</li>
+</ul>
+</div>
+<div class="widget-list-action">
+<div class="widget-price">$599.00</div>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<div class="img" style="background-image: url(assets/img/dashboard-product-11.jpg"></div>
+</div>
+<div class="widget-list-content">
+<p>LUMIX</p>
+<h4>Camera Lens 0.2mm</h4>
+<ul class="widget-rating">
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li class="text">(41)</li>
+</ul>
+</div>
+<div class="widget-list-action">
+<div class="widget-price">$399.00</div>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<div class="img" style="background-image: url(assets/img/dashboard-product-12.jpg"></div>
+</div>
+<div class="widget-list-content">
+<p>DJI</p>
+<h4>Phantom 4 Controller</h4>
+<ul class="widget-rating">
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li class="text">(41)</li>
+</ul>
+</div>
+<div class="widget-list-action">
+<div class="widget-price">$199.00</div>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<div class="img" style="background-image: url(assets/img/dashboard-product-13.jpg"></div>
+</div>
+<div class="widget-list-content">
+<p>CANON</p>
+<h4>Black Canon DSLR camera</h4>
+<ul class="widget-rating">
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li class="active"><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li class="text">(25)</li>
+</ul>
+</div>
+<div class="widget-list-action">
+<div class="widget-price">$899.00</div>
+</div>
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-4 col-sm-6">
+
+<div class="card mb-3">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">
+TOP AUTHORS
+</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="widget-card widget-card-inverse full dynamic text-center">
+<div class="widget-card-cover" style="background-image: url(assets/img/dashboard-cover-5.jpg)">
+<div class="cover-bg"></div>
+</div>
+<div class="widget-card-content">
+<div class="mb-2 mt-2"><img src="assets/img/user-5.jpg" width="85" class="img-circle" alt="" /></div>
+<h4 class="widget-title">Maurice Patterson</h4>
+<p class="widget-desc widget-desc-inverse">Never give up</p>
+<hr class="hr-inverse-transparent" />
+<div class="row m-b-2">
+<div class="col-4"><div class="widget-title f-s-16">415</div><div class="widget-desc widget-desc-inverse">posts</div></div>
+<div class="col-4"><div class="widget-title f-s-16">140k</div><div class="widget-desc widget-desc-inverse">followers</div></div>
+<div class="col-4"><div class="widget-title f-s-16">697</div><div class="widget-desc widget-desc-inverse">following</div></div>
+</div>
+</div>
+</div>
+
+
+<div class="widget-list">
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<div class="img" style="background-image: url(assets/img/dashboard-product-9.jpg"></div>
+</div>
+<div class="widget-list-content">
+<h4>DJI Mavic Pro Review</h4>
+<p>921k view</p>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media">
+<div class="img" style="background-image: url(assets/img/dashboard-product-8.jpg"></div>
+</div>
+<div class="widget-list-content">
+<h4>Phantom 4 Pro Technology</h4>
+<p>723k view</p>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-4 col-sm-6">
+
+<div class="card mb-3">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">
+UPCOMING EVENTS
+</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="widget-reminder">
+<div class="widget-reminder-header">TODAY, NOV 4</div>
+<div class="widget-reminder-item">
+<div class="widget-reminder-time">09:00<br>12:00</div>
+<div class="widget-reminder-divider bg-success"></div>
+<div class="widget-reminder-content">
+<h4 class="widget-title">Meeting with HR</h4>
+<div class="widget-desc"><i class="ti-pin"></i> Conference Room</div>
+</div>
+</div>
+<div class="widget-reminder-item">
+<div class="widget-reminder-time">20:00<br>23:00</div>
+<div class="widget-reminder-divider bg-primary"></div>
+<div class="widget-reminder-content">
+<h4 class="widget-title">Dinner with Richard</h4>
+<div class="widget-desc"><i class="ti-pin"></i> Tom's Too Restaurant</div>
+<div class="m-t-10 p-t-3">
+<a href="#" class="pull-right">Contact</a>
+<img src="assets/img/user-3.jpg" width="16" class="img-circle pull-left m-r-5" alt="" /> Richard Leong
+</div>
+</div>
+</div>
+<div class="widget-reminder-header">TOMORROW, NOV 5</div>
+<div class="widget-reminder-item">
+<div class="widget-reminder-time">All day</div>
+<div class="widget-reminder-divider bg-success"></div>
+<div class="widget-reminder-content">
+<h4 class="widget-title"><i class="ti-gift text-success"></i> Terry Birthday</h4>
+</div>
+</div>
+<div class="widget-reminder-item">
+<div class="widget-reminder-time">08:00</div>
+<div class="widget-reminder-divider bg-warning"></div>
+<div class="widget-reminder-content">
+<h4 class="widget-title"><i class="ti-gift text-warning"></i> Meeting</h4>
+</div>
+</div>
+<div class="widget-reminder-item">
+<div class="widget-reminder-time">00:00<br>00:30</div>
+<div class="widget-reminder-divider bg-danger"></div>
+<div class="widget-reminder-content">
+<h4 class="widget-title">Server Maintenance</h4>
+<div class="widget-desc"><i class="ti-pin"></i> Data Centre</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-4 col-sm-6">
+
+<div class="card mb-3">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">
+GROUP DISCUSSION
+</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="widget-list bg-yellow">
+<a href="#" class="widget-list-item">
+<div class="widget-list-content">
+<h4>App Development</h4>
+<p>32 message</p>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+</div>
+
+
+<div data-scrollbar="true" data-height="17rem">
+
+<div class="widget-chat">
+<div class="widget-chat-item">
+<div class="widget-chat-media"><img src="assets/img/user-2.jpg" alt="" /></div>
+<div class="widget-chat-content">
+<div class="widget-chat-name">Roberto Lambert</div>
+<div class="widget-chat-message last">
+Hey, I'm testing out group messaging.
+</div>
+</div>
+</div>
+<div class="widget-chat-item reply">
+<div class="widget-chat-content">
+<div class="widget-chat-message last">
+Cool
+</div>
+<div class="widget-chat-status"><b>Read</b> 16:26</div>
+</div>
+</div>
+<div class="widget-chat-item widget-chat-date">Today 14:21</div>
+<div class="widget-chat-item">
+<div class="widget-chat-media"><img src="assets/img/user-3.jpg" alt="" /></div>
+<div class="widget-chat-content">
+<div class="widget-chat-name">Rick Powell</div>
+<div class="widget-chat-message last">
+Awesome! What's new?
+</div>
+</div>
+</div>
+<div class="widget-chat-item">
+<div class="widget-chat-media"><img src="assets/img/user-2.jpg" alt="" /></div>
+<div class="widget-chat-content">
+<div class="widget-chat-name">Roberto Lambert</div>
+<div class="widget-chat-message">
+Not much, It's got a new look, contact pics show up in group messaging, some other small stuff.
+</div>
+<div class="widget-chat-message last">
+How's crusty old iOS 6 treating you?
+</div>
+</div>
+</div>
+<div class="widget-chat-item reply">
+<div class="widget-chat-content">
+<div class="widget-chat-message last">
+Sucks
+</div>
+<div class="widget-chat-status"><b>Read</b> 16:30</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="card-footer">
+<div class="input-group input-group-sm">
+<input type="text" class="form-control" placeholder="Search for...">
+<span class="input-group-append">
+<button class="btn btn-primary" type="button">Send <i class="ti-arrow-right"></i></button>
+</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-4 col-sm-6">
+
+<div class="card mb-3">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">
+APP MANAGEMENT
+</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<div class="widget-list widget-list-full-width">
+<a href="#" class="widget-list-item">
+<div class="widget-list-media widget-list-media-lg">
+<i class="fa fa-play icon bg-gradient-blue text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4>The Chainsmokers</h4>
+<p class="mb-1">Youtube</p>
+<div class="text-muted f-s-12">103,294 downloads</div>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media widget-list-media-lg">
+<i class="fas fa-comment-dots icon bg-gradient-green text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4>Whatsapp Chat</h4>
+<p class="mb-1">Apps Store</p>
+<div class="text-muted f-s-12">94,122 downloads</div>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media widget-list-media-lg">
+<i class="fa fa-music icon bg-gradient-red text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4>Movie Player</h4>
+<p class="mb-1">Apps Store</p>
+<div class="text-muted f-s-12">80,897 downloads</div>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media widget-list-media-lg">
+<i class="fa fa-camera icon bg-gradient-orange text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4>Shooting Apps</h4>
+<p class="mb-1">PlayStore</p>
+<div class="text-muted f-s-12">77,421 downloads</div>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media widget-list-media-lg">
+<i class="fa fa-headphones icon bg-gradient-purple text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4>Music Player</h4>
+<p class="mb-1">Apple</p>
+<div class="text-muted f-s-12">60,112 downloads</div>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-4 col-sm-6">
+
+<div class="card mb-3">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">
+LATEST UPLOADED IMAGE
+</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="widget-list">
+<a href="#" class="widget-list-item">
+<div class="widget-list-content">
+<h4>Library (20)</h4>
+<p>3,192 Image Found</p>
+</div>
+<div class="widget-list-action">
+<i class="fa fa-angle-right fa-lg opacity-2"></i>
+</div>
+</a>
+</div>
+
+
+<div class="widget-img-list">
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-1.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-2.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-3.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-4.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-5.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-21.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-22.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-23.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-24.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-25.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-26.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-27.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-28.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-29.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-30.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-31.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-32.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-33.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-34.jpg)" alt="" class="img"></span></a></div>
+<div class="widget-img-list-item"><a href="#" style="padding-top: 79px"><span class="img" style="background-image: url(assets/img/gallery/gallery-35.jpg)" alt="" class="img"></span></a></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="#" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content">
+<div class="widget-list mb-0">
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Color Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item active"><a href="#" class="bg-silver" data-theme="" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-red" data-theme="app-theme-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-pink" data-theme="app-theme-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-orange" data-theme="app-theme-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-yellow" data-theme="app-theme-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-green" data-theme="app-theme-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-cyan" data-theme="app-theme-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-blue" data-theme="app-theme-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-purple" data-theme="app-theme-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-indigo" data-theme="app-theme-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-black" data-theme="app-theme-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Gradient Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item"><a href="#" class="bg-gradient-silver" data-theme="app-theme-gradient-silver" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Gradient Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-red" data-theme="app-theme-gradient-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-pink" data-theme="app-theme-gradient-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-orange" data-theme="app-theme-gradient-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-yellow" data-theme="app-theme-gradient-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-green" data-theme="app-theme-gradient-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-cyan" data-theme="app-theme-gradient-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-blue" data-theme="app-theme-gradient-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-purple" data-theme="app-theme-gradient-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-indigo" data-theme="app-theme-gradient-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-black" data-theme="app-theme-gradient-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<a href="#" class="btn btn-silver btn-block btn-rounded btn-sm" data-click="reset-theme-setting">Reset Setting</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="assets/js/app.min.js" type="87c8e92e94c8dbcc1d8c08da-text/javascript"></script>
+
+
+<script src="assets/js/demo/dashboard.demo.js" type="87c8e92e94c8dbcc1d8c08da-text/javascript"></script>
+
+<script type="87c8e92e94c8dbcc1d8c08da-text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53034621-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="87c8e92e94c8dbcc1d8c08da-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b231e57dd3016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

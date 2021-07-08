@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Color Admin | Profile Page</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+<link href="../assets/css/apple/app.min.css" rel="stylesheet" />
+<link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" />
+
+
+<link href="../assets/plugins/superbox/superbox.min.css" rel="stylesheet" />
+<link href="../assets/plugins/lity/dist/lity.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="loader" class="app-loader">
+<span class="spinner"></span>
+</div>
+
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<div id="header" class="app-header">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand"><span class="navbar-logo"><i class="ion-ios-cloud"></i></span> <b class="me-1">Color</b> Admin</a>
+<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-nav">
+<div class="navbar-item navbar-form">
+<form action="" method="POST" name="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Enter keyword" />
+<button type="submit" class="btn btn-search"><i class="ion-ios-search"></i></button>
+</div>
+</form>
+</div>
+<div class="navbar-item dropdown">
+<a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+<i class="ion-ios-notifications"></i>
+<span class="badge">5</span>
+</a>
+<div class="dropdown-menu media-list dropdown-menu-end">
+<div class="dropdown-header">NOTIFICATIONS (5)</div>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-bug media-object bg-gray-400"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Server Error Reports <i class="fa fa-exclamation-circle text-danger"></i></h6>
+<div class="text-muted fs-10px">3 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-1.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">John Smith</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-10px">25 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-2.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Olivia</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-10px">35 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-plus media-object bg-gray-400"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New User Registered</h6>
+<div class="text-muted fs-10px">1 hour ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-envelope media-object bg-gray-400"></i>
+<i class="fab fa-google text-warning media-object-icon fs-14px"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New Email From John</h6>
+<div class="text-muted fs-10px">2 hour ago</div>
+</div>
+</a>
+<div class="dropdown-footer text-center">
+<a href="javascript:;" class="text-decoration-none">View more</a>
+</div>
+</div>
+</div>
+<div class="navbar-item navbar-user dropdown">
+<a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+<span>
+<span class="d-none d-md-inline">Adam Schwartz</span>
+<b class="caret"></b>
+</span>
+</a>
+<div class="dropdown-menu dropdown-menu-end me-1">
+<a href="javascript:;" class="dropdown-item">Edit Profile</a>
+<a href="javascript:;" class="dropdown-item"><span class="badge bg-danger float-end rounded-pill">2</span> Inbox</a>
+<a href="javascript:;" class="dropdown-item">Calendar</a>
+<a href="javascript:;" class="dropdown-item">Setting</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Log Out</a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="app-sidebar">
+
+<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+
+<div class="menu">
+<div class="menu-profile">
+<a href="javascript:;" class="menu-profile-link" data-toggle="app-sidebar-profile" data-target="#appSidebarProfileMenu">
+<div class="menu-profile-cover with-shadow"></div>
+<div class="menu-profile-image">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+</div>
+<div class="menu-profile-info">
+<div class="d-flex align-items-center">
+<div class="flex-grow-1">
+Sean Ngu
+</div>
+<div class="menu-caret ms-auto"></div>
+</div>
+<small>Front end developer</small>
+</div>
+</a>
+</div>
+<div id="appSidebarProfileMenu" class="collapse">
+<div class="menu-item pt-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-cog"></i></div>
+<div class="menu-text">Settings</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-pencil-alt"></i></div>
+<div class="menu-text"> Send Feedback</div>
+</a>
+</div>
+<div class="menu-item pb-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-question-circle"></i></div>
+<div class="menu-text"> Helps</div>
+</a>
+</div>
+<div class="menu-divider m-0"></div>
+</div>
+<div class="menu-header">Navigation</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-pulse"></i>
+</div>
+<div class="menu-text">Dashboard</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="index.html" class="menu-link"><div class="menu-text">Dashboard v1</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v2.html" class="menu-link"><div class="menu-text">Dashboard v2</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-mail"></i>
+</div>
+<div class="menu-text">Email</div>
+<div class="menu-badge">10</div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_inbox.html" class="menu-link">
+<div class="menu-text">Inbox</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_compose.html" class="menu-link">
+<div class="menu-text">Compose</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_detail.html" class="menu-link">
+<div class="menu-text">Detail</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="widget.html" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-nutrition bg-blue"></i>
+</div>
+<div class="menu-text">Widgets <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-color-filter bg-indigo"></i>
+</div>
+<div class="menu-text">UI Elements <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="ui_general.html" class="menu-link">
+<div class="menu-text">General <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_typography.html" class="menu-link">
+<div class="menu-text">Typography</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tabs_accordions.html" class="menu-link">
+<div class="menu-text">Tabs & Accordions</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_unlimited_tabs.html" class="menu-link">
+<div class="menu-text">Unlimited Nav Tabs</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_modal_notification.html" class="menu-link">
+<div class="menu-text">Modal & Notification <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_widget_boxes.html" class="menu-link">
+<div class="menu-text">Widget Boxes</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_media_object.html" class="menu-link">
+<div class="menu-text">Media Object</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_buttons.html" class="menu-link">
+<div class="menu-text">Buttons <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_icons.html" class="menu-link">
+<div class="menu-text">Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_simple_line_icons.html" class="menu-link">
+<div class="menu-text">Simple Line Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_ionicons.html" class="menu-link">
+<div class="menu-text">Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tree.html" class="menu-link">
+<div class="menu-text">Tree View</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_language_bar_icon.html" class="menu-link">
+<div class="menu-text">Language Bar & Icon</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_social_buttons.html" class="menu-link">
+<div class="menu-text">Social Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tour.html" class="menu-link">
+<div class="menu-text">Intro JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_offcanvas_toasts.html" class="menu-link">
+<div class="menu-text">Offcanvas & Toasts <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item ">
+<a href="bootstrap_5.html" class="menu-link">
+<div class="menu-icon-img">
+<img src="../assets/img/logo/logo-bs5.png" alt="" />
+</div>
+<div class="menu-text">Bootstrap 5 <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-briefcase bg-gradient-purple-indigo"></i>
+</div>
+<div class="menu-text">Form Stuff <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="form_elements.html" class="menu-link">
+<div class="menu-text">Form Elements <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_plugins.html" class="menu-link">
+<div class="menu-text">Form Plugins <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_slider_switcher.html" class="menu-link">
+<div class="menu-text">Form Slider + Switcher</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_validation.html" class="menu-link">
+<div class="menu-text">Form Validation</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wizards.html" class="menu-link">
+<div class="menu-text">Wizards <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wysiwyg.html" class="menu-link">
+<div class="menu-text">WYSIWYG</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_editable.html" class="menu-link">
+<div class="menu-text">X-Editable</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_multiple_upload.html" class="menu-link">
+<div class="menu-text">Multiple File Upload</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_summernote.html" class="menu-link">
+<div class="menu-text">Summernote</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_dropzone.html" class="menu-link">
+<div class="menu-text">Dropzone</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-grid bg-green"></i>
+</div>
+<div class="menu-text">Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_basic.html" class="menu-link">
+<div class="menu-text">Basic Tables</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Managed Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_manage.html" class="menu-link">
+<div class="menu-text">Default</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_buttons.html" class="menu-link">
+<div class="menu-text">Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_colreorder.html" class="menu-link">
+<div class="menu-text">ColReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_columns.html" class="menu-link">
+<div class="menu-text">Fixed Column</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_header.html" class="menu-link">
+<div class="menu-text">Fixed Header</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_keytable.html" class="menu-link">
+<div class="menu-text">KeyTable</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_responsive.html" class="menu-link">
+<div class="menu-text">Responsive</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_rowreorder.html" class="menu-link">
+<div class="menu-text">RowReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_scroller.html" class="menu-link">
+<div class="menu-text">Scroller</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_select.html" class="menu-link">
+<div class="menu-text">Select</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_combine.html" class="menu-link">
+<div class="menu-text">Extension Combination</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-appstore bg-lime text-inverse"></i>
+</div>
+<div class="menu-text">POS System <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="pos_customer_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Customer Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_kitchen_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Kitchen Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_counter_checkout.html" target="_blank" class="menu-link">
+<div class="menu-text">Counter Checkout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_table_booking.html" target="_blank" class="menu-link">
+<div class="menu-text">Table Booking</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_menu_stock.html" target="_blank" class="menu-link">
+<div class="menu-text">Menu Stock</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-infinite bg-gradient-cyan-blue"></i>
+</div>
+<div class="menu-text">Front End <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="menu-link">
+<div class="menu-text">One Page Parallax</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Blog</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Forum</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="menu-link">
+<div class="menu-text">E-Commerce</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Corporate <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-archive bg-gradient-cyan-indigo"></i>
+</div>
+<div class="menu-text">Email Template</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_system.html" class="menu-link">
+<div class="menu-text">System Template</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_newsletter.html" class="menu-link">
+<div class="menu-text">Newsletter Template</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-podium bg-gradient-yellow-red"></i>
+</div>
+<div class="menu-text">Chart</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="chart-flot.html" class="menu-link">
+<div class="menu-text">Flot Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-js.html" class="menu-link">
+<div class="menu-text">Chart JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-d3.html" class="menu-link">
+<div class="menu-text">d3 Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-apex.html" class="menu-link">
+<div class="menu-text">Apex Chart</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="calendar.html" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-calendar bg-pink"></i>
+</div>
+<div class="menu-text">Calendar</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-map bg-pink"></i>
+</div>
+<div class="menu-text">Map</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="map_vector.html" class="menu-link">
+<div class="menu-text">Vector Map</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="map_google.html" class="menu-link">
+<div class="menu-text">Google Map</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-images"></i>
+</div>
+<div class="menu-text">Gallery</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="gallery.html" class="menu-link">
+<div class="menu-text">Gallery v1</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="gallery_v2.html" class="menu-link">
+<div class="menu-text">Gallery v2</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-cog"></i>
+</div>
+<div class="menu-text">Page Options <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="page_blank.html" class="menu-link">
+<div class="menu-text">Blank Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_footer.html" class="menu-link">
+<div class="menu-text">Page with Footer</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_fixed_footer.html" class="menu-link">
+<div class="menu-text">Page with Fixed Footer <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_without_sidebar.html" class="menu-link">
+<div class="menu-text">Page without Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_right_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Right Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_minified_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Minified Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_two_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Two Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_line_icons.html" class="menu-link">
+<div class="menu-text">Page with Line Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_ionicons.html" class="menu-link">
+<div class="menu-text">Page with Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_full_height.html" class="menu-link">
+<div class="menu-text">Full Height Content</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_wide_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Wide Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_light_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Light Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mega_menu.html" class="menu-link">
+<div class="menu-text">Page with Mega Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_top_menu.html" class="menu-link">
+<div class="menu-text">Page with Top Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_boxed_layout.html" class="menu-link">
+<div class="menu-text">Page with Boxed Layout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Page with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_boxed_layout_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Boxed Layout with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_transparent_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Transparent Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_search_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Search Sidebar <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub active">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-heart"></i>
+</div>
+<div class="menu-text">Extra <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="extra_timeline.html" class="menu-link">
+<div class="menu-text">Timeline</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_coming_soon.html" class="menu-link">
+<div class="menu-text">Coming Soon Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_search_results.html" class="menu-link">
+<div class="menu-text">Search Results</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_invoice.html" class="menu-link">
+<div class="menu-text">Invoice</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_404_error.html" class="menu-link">
+<div class="menu-text">404 Error Page</div>
+</a>
+</div>
+<div class="menu-item active">
+<a href="extra_profile.html" class="menu-link">
+<div class="menu-text">Profile Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_scrum_board.html" class="menu-link">
+<div class="menu-text">Scrum Board <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_cookie_acceptance_banner.html" class="menu-link">
+<div class="menu-text">Cookie Acceptance Banner <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-lock"></i>
+</div>
+<div class="menu-text">Login & Register</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="login.html" class="menu-link">
+<div class="menu-text">Login</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v2.html" class="menu-link">
+<div class="menu-text">Login v2</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v3.html" class="menu-link">
+<div class="menu-text">Login v3</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="register_v3.html" class="menu-link">
+<div class="menu-text">Register v3</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-flower"></i>
+</div>
+<div class="menu-text">Version <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../html/index_v3.html" class="menu-link">
+<div class="menu-text">HTML</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../ajax/" class="menu-link">
+<div class="menu-text">AJAX</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs/" class="menu-link">
+<div class="menu-text">ANGULAR JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs11/" class="menu-link">
+<div class="menu-text">ANGULAR JS 11</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">LARAVEL</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../vuejs/" class="menu-link">
+<div class="menu-text">VUE JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../reactjs/" class="menu-link">
+<div class="menu-text">REACT JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">ASP.NET <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../material/index_v3.html" class="menu-link">
+<div class="menu-text">MATERIAL DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../apple/index_v3.html" class="menu-link">
+<div class="menu-text">APPLE DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../transparent/index_v3.html" class="menu-link">
+<div class="menu-text">TRANSPARENT DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../facebook/index_v3.html" class="menu-link">
+<div class="menu-text">FACEBOOK DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../google/index_v3.html" class="menu-link">
+<div class="menu-text">GOOGLE DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-medkit"></i>
+</div>
+<div class="menu-text">Helper</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="helper_css.html" class="menu-link">
+<div class="menu-text">Predefined CSS Classes</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="ion-ios-list"></i>
+</div>
+<div class="menu-text">Menu Level</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 1.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 2.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.1</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.2</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.3</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.3</div></a></div>
+</div>
+</div>
+
+<div class="menu-item d-flex">
+<a href="javascript:;" class="app-sidebar-minify-btn ms-auto" data-toggle="app-sidebar-minify"><i class="ion-ios-arrow-back"></i> <div class="menu-text">Collapse</div></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="app-sidebar-bg"></div>
+<div class="app-sidebar-mobile-backdrop"><a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"></a></div>
+
+
+<div id="content" class="app-content p-0">
+
+<div class="profile">
+<div class="profile-header">
+
+<div class="profile-header-cover"></div>
+
+
+<div class="profile-header-content">
+
+<div class="profile-header-img">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+</div>
+
+
+<div class="profile-header-info">
+<h4 class="mt-0 mb-1">Sean Ngu</h4>
+<p class="mb-2">UXUI + Frontend Developer</p>
+<a href="#" class="btn btn-xs btn-yellow">Edit Profile</a>
+</div>
+
+</div>
+
+
+<ul class="profile-header-tab nav nav-tabs">
+<li class="nav-item"><a href="#profile-post" class="nav-link active" data-bs-toggle="tab">POSTS</a></li>
+<li class="nav-item"><a href="#profile-about" class="nav-link" data-bs-toggle="tab">ABOUT</a></li>
+<li class="nav-item"><a href="#profile-photos" class="nav-link" data-bs-toggle="tab">PHOTOS</a></li>
+<li class="nav-item"><a href="#profile-videos" class="nav-link" data-bs-toggle="tab">VIDEOS</a></li>
+<li class="nav-item"><a href="#profile-friends" class="nav-link" data-bs-toggle="tab">FRIENDS</a></li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="profile-content">
+
+<div class="tab-content p-0">
+
+<div class="tab-pane fade show active" id="profile-post">
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-time">
+<span class="date">today</span>
+<span class="time">04:20</span>
+</div>
+
+
+<div class="timeline-icon">
+<a href="javascript:;">&nbsp;</a>
+</div>
+
+
+<div class="timeline-content">
+
+<div class="timeline-header">
+<div class="userimage"><img src="../assets/img/user/user-1.jpg" alt="" /></div>
+<div class="username">
+<a href="javascript:;">John Smith <i class="fa fa-check-circle text-blue ms-1"></i></a>
+<div class="text-muted fs-12px">8 mins <i class="fa fa-globe-americas opacity-5 ms-1"></i></div>
+</div>
+<div>
+<a href="#" class="btn btn-lg btn-white border-0 rounded-pill w-40px h-40px p-0 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
+<i class="fa fa-ellipsis-h text-gray-600"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="#" class="dropdown-item d-flex align-items-center">
+<i class="fa fa-fw fa-bookmark fa-lg"></i>
+<div class="flex-1 ps-1">
+<div>Save Post</div>
+<div class="mt-n1 text-gray-500"><small>Add this to your saved items</small></div>
+</div>
+</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-edit fa-lg me-1"></i> Edit post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-user fa-lg me-1"></i> Edit audience</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-bell fa-lg me-1"></i> Turn off notifications for this post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-language fa-lg me-1"></i> Turn off translations</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-calendar-alt fa-lg me-1"></i> Turn date</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-archive fa-lg me-1"></i> Move to archive</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-trash-alt fa-lg me-1"></i> Move to Recycle bin</a>
+</div>
+</div>
+</div>
+
+
+<div class="timeline-body">
+
+<div class="mb-3">
+<div class="mb-2">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus turpis quis tincidunt luctus.
+Nam sagittis dui in nunc consequat, in imperdiet nunc sagittis.
+</div>
+<div class="row gx-1">
+<div class="col-6">
+<div class="ratio ratio-4x3">
+<img src="../assets/img/gallery/gallery-14.jpg" class="d-block mw-100" />
+</div>
+</div>
+<div class="col-3">
+<div class="ratio ratio-4x3 mb-3px">
+<img src="../assets/img/gallery/gallery-12.jpg" class="d-block mw-100" />
+</div>
+<div class="ratio ratio-4x3">
+<img src="../assets/img/gallery/gallery-16.jpg" class="d-block mw-100" />
+</div>
+</div>
+<div class="col-3">
+<div class="ratio ratio-4x3 mb-3px">
+<img src="../assets/img/gallery/gallery-15.jpg" class="d-block mw-100" />
+</div>
+<div class="ratio ratio-4x3">
+<img src="../assets/img/gallery/gallery-11.jpg" class="d-block mw-100" />
+</div>
+</div>
+</div>
+</div>
+
+<div class="d-flex align-items-center text-gray-600 mb-2">
+<div class="d-flex align-items-center">
+<span class="fa-stack fs-10px">
+<i class="fa fa-circle fa-stack-2x text-danger"></i>
+<i class="fa fa-heart fa-stack-1x fa-inverse fs-11px"></i>
+</span>
+<span class="fa-stack fs-10px">
+<i class="fa fa-circle fa-stack-2x text-blue"></i>
+<i class="fa fa-thumbs-up fa-stack-1x fa-inverse fs-11px bottom-0 mb-1px"></i>
+</span>
+<span class="ms-1">4.3k</span>
+</div>
+<div class="d-flex align-items-center ms-auto">
+<div>259 Shares</div>
+<div class="ms-3">21 Comments</div>
+</div>
+</div>
+
+<hr class="my-10px" />
+<div class="d-flex align-items-center fw-bold">
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-thumbs-up fa-fw me-3px"></i> Like
+</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-comments fa-fw me-3px"></i> Comment</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-share fa-fw me-3px"></i> Share
+</a>
+</div>
+<hr class="mt-10px mb-3" />
+
+<form action="" class="d-flex align-items-center">
+<div><img src="../assets/img/user/user-13.jpg" height="35" class="rounded-pill" /></div>
+<div class="ps-2 flex-1">
+<div class="position-relative">
+<input type="text" class="form-control rounded-pill ps-3 py-2 fs-13px  bg-gray-200" placeholder="Write a comment..." />
+<div class="position-absolute end-0 top-0 bottom-0 d-flex align-items-center px-2">
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-smile fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-camera fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-film fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-sticky-note fa-fw fa-lg d-block"></i></a>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-time">
+<span class="date">yesterday</span>
+<span class="time">20:17</span>
+</div>
+
+
+<div class="timeline-icon">
+<a href="javascript:;">&nbsp;</a>
+</div>
+
+
+<div class="timeline-content">
+
+<div class="timeline-header">
+<div class="userimage"><img src="../assets/img/user/user-2.jpg" alt="" /></div>
+<div class="username">
+<a href="javascript:;">Darren Parrase</a>
+<div class="text-muted fs-12px">24 mins <i class="fa fa-globe-americas opacity-5 ms-1"></i></div>
+</div>
+<div>
+<a href="#" class="btn btn-lg btn-white border-0 rounded-pill w-40px h-40px p-0 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
+<i class="fa fa-ellipsis-h text-gray-600"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="#" class="dropdown-item d-flex align-items-center">
+<i class="fa fa-fw fa-bookmark fa-lg"></i>
+<div class="flex-1 ps-1">
+<div>Save Post</div>
+<div class="mt-n1 text-gray-500"><small>Add this to your saved items</small></div>
+</div>
+</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-edit fa-lg me-1"></i> Edit post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-user fa-lg me-1"></i> Edit audience</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-bell fa-lg me-1"></i> Turn off notifications for this post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-language fa-lg me-1"></i> Turn off translations</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-calendar-alt fa-lg me-1"></i> Turn date</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-archive fa-lg me-1"></i> Move to archive</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-trash-alt fa-lg me-1"></i> Move to Recycle bin</a>
+</div>
+</div>
+</div>
+
+
+<div class="timeline-body">
+
+<div class="mb-3">
+<div class="mb-2">Location: United States</div>
+<div id="google-map" class="h-250px"></div>
+</div>
+
+<div class="d-flex align-items-center text-gray-600 mb-2">
+<div class="d-flex align-items-center">
+<span class="fa-stack fs-10px">
+<i class="fa fa-circle fa-stack-2x text-danger"></i>
+<i class="fa fa-heart fa-stack-1x fa-inverse fs-11px"></i>
+</span>
+<span class="fa-stack fs-10px">
+<i class="fa fa-circle fa-stack-2x text-blue"></i>
+<i class="fa fa-thumbs-up fa-stack-1x fa-inverse fs-11px bottom-0 mb-1px"></i>
+</span>
+<span class="ms-1">269</span>
+</div>
+<div class="d-flex align-items-center ms-auto">
+<div>2 Shares</div>
+<div class="ms-3">9 Comments</div>
+</div>
+</div>
+
+<hr class="my-10px" />
+<div class="d-flex align-items-center fw-bold">
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-thumbs-up fa-fw me-3px"></i> Like
+</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-comments fa-fw me-3px"></i> Comment</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-share fa-fw me-3px"></i> Share
+</a>
+</div>
+<hr class="mt-10px mb-3" />
+
+<form action="" class="d-flex align-items-center">
+<div><img src="../assets/img/user/user-13.jpg" height="35" class="rounded-pill" /></div>
+<div class="ps-2 flex-1">
+<div class="position-relative">
+<input type="text" class="form-control rounded-pill ps-3 py-2 fs-13px  bg-gray-200" placeholder="Write a comment..." />
+<div class="position-absolute end-0 top-0 bottom-0 d-flex align-items-center px-2">
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-smile fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-camera fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-film fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-sticky-note fa-fw fa-lg d-block"></i></a>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-time">
+<span class="date">24 February 2021</span>
+<span class="time">08:17</span>
+</div>
+
+
+<div class="timeline-icon">
+<a href="javascript:;">&nbsp;</a>
+</div>
+
+
+<div class="timeline-content">
+
+<div class="timeline-header">
+<div class="userimage"><img src="../assets/img/user/user-3.jpg" alt="" /></div>
+<div class="username">
+<a href="javascript:;">Richard Leong <i class="fa fa-check-circle text-blue ms-1"></i></a>
+<div class="text-muted fs-12px">12 hours <i class="fa fa-globe-americas opacity-5 ms-1"></i></div>
+</div>
+<div>
+<a href="#" class="btn btn-lg btn-white border-0 rounded-pill w-40px h-40px p-0 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
+<i class="fa fa-ellipsis-h text-gray-600"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="#" class="dropdown-item d-flex align-items-center">
+<i class="fa fa-fw fa-bookmark fa-lg"></i>
+<div class="flex-1 ps-1">
+<div>Save Post</div>
+<div class="mt-n1 text-gray-500"><small>Add this to your saved items</small></div>
+</div>
+</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-edit fa-lg me-1"></i> Edit post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-user fa-lg me-1"></i> Edit audience</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-bell fa-lg me-1"></i> Turn off notifications for this post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-language fa-lg me-1"></i> Turn off translations</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-calendar-alt fa-lg me-1"></i> Turn date</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-archive fa-lg me-1"></i> Move to archive</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-trash-alt fa-lg me-1"></i> Move to Recycle bin</a>
+</div>
+</div>
+</div>
+
+
+<div class="timeline-body">
+
+<div class="lead mb-3">
+<i class="fa fa-quote-left fa-fw float-start opacity-5 me-3 mb-3 mt-3 fa-lg"></i>
+Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet nibh molestie placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis condimentum magna. Suspendisse mollis in sem vel mollis.
+<i class="fa fa-quote-right fa-fw float-end opacity-5 ms-3 mt-n3 fa-lg"></i>
+</div>
+
+<div class="d-flex align-items-center text-gray-600 mb-2">
+<div class="d-flex align-items-center">
+<span class="fa-stack fs-10px">
+<i class="fa fa-circle fa-stack-2x text-danger"></i>
+<i class="fa fa-heart fa-stack-1x fa-inverse fs-11px"></i>
+</span>
+<span class="fa-stack fs-10px">
+<i class="fa fa-circle fa-stack-2x text-blue"></i>
+<i class="fa fa-thumbs-up fa-stack-1x fa-inverse fs-11px bottom-0 mb-1px"></i>
+</span>
+<span class="ms-1">550</span>
+</div>
+<div class="d-flex align-items-center ms-auto">
+<div>121 Shares</div>
+<div class="ms-3">40 Comments</div>
+</div>
+</div>
+
+<hr class="my-10px" />
+<div class="d-flex align-items-center fw-bold">
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-thumbs-up fa-fw me-3px"></i> Like
+</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-comments fa-fw me-3px"></i> Comment</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-share fa-fw me-3px"></i> Share
+</a>
+</div>
+<hr class="mt-10px mb-3" />
+
+<form action="" class="d-flex align-items-center">
+<div><img src="../assets/img/user/user-13.jpg" height="35" class="rounded-pill" /></div>
+<div class="ps-2 flex-1">
+<div class="position-relative">
+<input type="text" class="form-control rounded-pill ps-3 py-2 fs-13px  bg-gray-200" placeholder="Write a comment..." />
+<div class="position-absolute end-0 top-0 bottom-0 d-flex align-items-center px-2">
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-smile fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-camera fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-film fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-sticky-note fa-fw fa-lg d-block"></i></a>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-time">
+<span class="date">10 January 2021</span>
+<span class="time">20:43</span>
+</div>
+
+
+<div class="timeline-icon">
+<a href="javascript:;">&nbsp;</a>
+</div>
+
+
+<div class="timeline-content">
+
+<div class="timeline-header">
+<div class="userimage"><img src="../assets/img/user/user-4.jpg" alt="" /></div>
+<div class="username">
+<a href="javascript:;">Lelouch Wong <i class="fa fa-check-circle text-blue ms-1"></i></a>
+<div class="text-muted fs-12px">1 days ago <i class="fa fa-globe-americas opacity-5 ms-1"></i></div>
+</div>
+<div>
+<a href="#" class="btn btn-lg btn-white border-0 rounded-pill w-40px h-40px p-0 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown">
+<i class="fa fa-ellipsis-h text-gray-600"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="#" class="dropdown-item d-flex align-items-center">
+<i class="fa fa-fw fa-bookmark fa-lg"></i>
+<div class="flex-1 ps-1">
+<div>Save Post</div>
+<div class="mt-n1 text-gray-500"><small>Add this to your saved items</small></div>
+</div>
+</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-edit fa-lg me-1"></i> Edit post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-user fa-lg me-1"></i> Edit audience</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-bell fa-lg me-1"></i> Turn off notifications for this post</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-language fa-lg me-1"></i> Turn off translations</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-calendar-alt fa-lg me-1"></i> Turn date</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-archive fa-lg me-1"></i> Move to archive</a>
+<a href="#" class="dropdown-item"><i class="fa fa-fw fa-trash-alt fa-lg me-1"></i> Move to Recycle bin</a>
+</div>
+</div>
+</div>
+
+
+<div class="timeline-body">
+
+<div class="mb-3">
+<h4 class="mb-1">
+795 Folsom Ave, Suite 600 San Francisco, CA 94107
+</h4>
+<div class="mb-2">In hac habitasse platea dictumst. Pellentesque bibendum id sem nec faucibus. Maecenas molestie, augue vel accumsan rutrum, massa mi rutrum odio, id luctus mauris nibh ut leo.</div>
+<div class="row gx-1">
+<div class="col-6">
+<img src="../assets/img/gallery/gallery-4.jpg" alt="" class="mw-100 d-block" />
+</div>
+<div class="col-6">
+<img src="../assets/img/gallery/gallery-5.jpg" alt="" class="mw-100 d-block" />
+</div>
+</div>
+</div>
+
+<hr class="my-10px" />
+<div class="d-flex align-items-center fw-bold">
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-thumbs-up fa-fw me-3px"></i> Like
+</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-comments fa-fw me-3px"></i> Comment</a>
+<a href="javascript:;" class="flex-fill text-decoration-none text-center text-gray-600">
+<i class="fa fa-share fa-fw me-3px"></i> Share
+</a>
+</div>
+<hr class="mt-10px mb-3" />
+
+<form action="" class="d-flex align-items-center">
+<div><img src="../assets/img/user/user-13.jpg" height="35" class="rounded-pill" /></div>
+<div class="ps-2 flex-1">
+<div class="position-relative">
+<input type="text" class="form-control rounded-pill ps-3 py-2 fs-13px  bg-gray-200" placeholder="Write a comment..." />
+<div class="position-absolute end-0 top-0 bottom-0 d-flex align-items-center px-2">
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-smile fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-camera fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="fa fa-film fa-fw fa-lg d-block"></i></a>
+<a href="#" class="btn bg-none text-gray-600 shadow-none px-1"><i class="far fa-sticky-note fa-fw fa-lg d-block"></i></a>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+<a href="javascript:;">&nbsp;</a>
+</div>
+
+
+<div class="timeline-content">
+
+<div class="timeline-body">
+<div class="d-flex align-items-center">
+<div class="spinner-border spinner-border-sm me-3" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>
+Loading...
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="profile-about">
+
+<div class="table-responsive form-inline">
+<table class="table table-profile align-middle">
+<thead>
+<tr>
+<th></th>
+<th>
+<h4>Sean Ngu <small>UXUI + Frontend Developer</small></h4>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="highlight">
+<td class="field">Mood</td>
+<td><a href="javascript:;" class="text-decoration-none fw-bold"><i class="fa fa-plus fa-fw"></i> Add Mood Message</a></td>
+</tr>
+<tr class="divider">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="field">Mobile</td>
+<td><i class="fa fa-mobile fa-lg me-5px"></i> +1-(847)- 367-8924 <a href="javascript:;" class="ms-5px text-decoration-none fw-bold"><i class="fa fa-plus fa-fw"></i> Edit</a></td>
+</tr>
+<tr>
+<td class="field">Home</td>
+<td><a href="javascript:;" class="text-decoration-none fw-bold"><i class="fa fa-plus fa-fw"></i> Add Number</a></td>
+</tr>
+<tr>
+<td class="field">Office</td>
+<td><a href="javascript:;" class="text-decoration-none fw-bold"><i class="fa fa-plus fa-fw"></i> Add Number</a></td>
+</tr>
+<tr class="divider">
+<td colspan="2"></td>
+</tr>
+<tr class="highlight">
+<td class="field">About Me</td>
+<td><a href="javascript:;" class="text-decoration-none fw-bold"><i class="fa fa-plus fa-fw"></i> Add Description</a></td>
+</tr>
+<tr class="divider">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="field">Country/Region</td>
+<td>
+<select class="form-select w-200px" name="region">
+<option value="US" selected>United State</option>
+<option value="AF">Afghanistan</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua and Barbuda</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="field">City</td>
+<td>Los Angeles</td>
+</tr>
+<tr>
+<td class="field">State</td>
+<td><a href="javascript:;" class="text-decoration-none fw-bold"><i class="fa fa-plus fa-fw"></i> Add State</a></td>
+</tr>
+<tr>
+<td class="field">Website</td>
+<td><a href="javascript:;" class="text-decoration-none fw-bold"><i class="fa fa-plus fa-fw"></i> Add Webpage</a></td>
+</tr>
+<tr>
+<td class="field">Gender</td>
+<td>
+<select class="form-select w-200px" name="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="field">Birthdate</td>
+<td>
+<div class="d-flex align-items-center">
+<select class="form-select w-80px" name="day">
+<option value="04" selected>04</option>
+</select>
+<span class="mx-2">-</span>
+<select class="form-select w-80px" name="month">
+<option value="11" selected>11</option>
+</select>
+<span class="mx-2">-</span>
+<select class="form-select w-100px" name="year">
+<option value="1989" selected>1989</option>
+</select>
+</div>
+</td>
+</tr>
+<tr>
+<td class="field">Language</td>
+<td class="with-form-control">
+<select class="form-select w-200px" name="language">
+<option value="" selected>English</option>
+</select>
+</td>
+</tr>
+<tr class="divider">
+<td colspan="2"></td>
+</tr>
+<tr class="highlight">
+<td class="field">&nbsp;</td>
+<td class="">
+<button type="submit" class="btn btn-primary w-150px">Update</button>
+<button type="submit" class="btn btn-white border-0 w-150px ms-5px">Cancel</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="profile-photos">
+<h4 class="mb-3">Photos (70)</h4>
+
+<div class="superbox " data-offset="50">
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-1.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-1-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-2.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-2-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-3.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-3-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-4.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-4-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-5.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-5-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-6.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-6-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-7.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-7-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-8.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-8-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-9.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-9-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-10.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-10-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-11.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-11-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-12.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-12-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-13.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-13-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-14.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-14-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-15.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-15-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-16.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-16-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-17.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-17-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-18.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-18-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-19.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-19-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-20.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-20-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-21.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-21-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-22.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-22-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-23.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-23-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-24.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-24-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-25.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-25-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-26.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-26-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-27.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-27-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-28.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-28-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-29.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-29-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-30.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-30-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-31.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-31-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-32.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-32-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-33.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-33-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-34.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-34-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-35.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-35-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-36.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-36-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-37.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-37-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-38.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-38-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-39.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-39-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-40.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-40-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-41.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-41-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-42.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-42-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-43.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-43-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-44.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-44-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-45.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-45-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-46.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-46-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-47.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-47-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-48.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-48-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-49.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-49-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-50.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-50-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-51.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-51-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-52.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-52-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-53.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-53-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-54.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-54-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-55.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-55-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-56.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-56-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-57.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-57-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-58.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-58-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-59.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-59-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-60.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-60-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-61.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-61-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-62.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-62-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-63.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-63-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-64.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-64-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-65.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-65-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-66.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-66-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-67.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-67-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-68.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-68-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-69.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-69-thumb.jpg);"></span>
+</a>
+</div>
+<div class="superbox-list">
+<a href="javascript:;" class="superbox-img">
+<img data-img="../assets/img/gallery/gallery-70.jpg" />
+<span style="background: url(../assets/img/gallery/gallery-70-thumb.jpg);"></span>
+</a>
+</div>
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="profile-videos">
+<h4 class="mb-3">Videos (16)</h4>
+
+<div class="row gx-1">
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=RQ5ljyGg-ig" data-lity>
+<img src="https://img.youtube.com/vi/RQ5ljyGg-ig/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=5lWkZ-JaEOc" data-lity>
+<img src="https://img.youtube.com/vi/5lWkZ-JaEOc/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=9ZfN87gSjvI" data-lity>
+<img src="https://img.youtube.com/vi/9ZfN87gSjvI/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=w2H07DRv2_M" data-lity>
+<img src="https://img.youtube.com/vi/w2H07DRv2_M/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=PntG8KEVjR8" data-lity>
+<img src="https://img.youtube.com/vi/PntG8KEVjR8/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=q8kxKvSQ7MI" data-lity>
+<img src="https://img.youtube.com/vi/q8kxKvSQ7MI/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=cutu3Bw4ep4" data-lity>
+<img src="https://img.youtube.com/vi/cutu3Bw4ep4/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=gCspUXGrraM" data-lity>
+<img src="https://img.youtube.com/vi/gCspUXGrraM/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=COtpTM1MpAA" data-lity>
+<img src="https://img.youtube.com/vi/COtpTM1MpAA/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=8NVkGHVOazc" data-lity>
+<img src="https://img.youtube.com/vi/8NVkGHVOazc/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=QgQ7MWLsw1w" data-lity>
+<img src="https://img.youtube.com/vi/QgQ7MWLsw1w/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=Dmw0ucCv8aQ" data-lity>
+<img src="https://img.youtube.com/vi/Dmw0ucCv8aQ/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=r1d7ST2TG2U" data-lity>
+<img src="https://img.youtube.com/vi/r1d7ST2TG2U/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=WUR-XWBcHvs" data-lity>
+<img src="https://img.youtube.com/vi/WUR-XWBcHvs/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=A7sQ8RWj0Cw" data-lity>
+<img src="https://img.youtube.com/vi/A7sQ8RWj0Cw/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+
+<div class="col-md-3 col-sm-4 mb-1">
+<a href="https://www.youtube.com/watch?v=IMN2VfiXls4" data-lity>
+<img src="https://img.youtube.com/vi/IMN2VfiXls4/mqdefault.jpg" class="d-block w-100" />
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="profile-friends">
+<h4 class="mb-3">Friend List (14)</h4>
+
+<div class="row gx-1">
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-1.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">James Pittman</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-2.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Mitchell Ashcroft</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-3.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Ella Cabena</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-4.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Declan Dyson</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-5.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">George Seyler</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-6.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Patrick Musgrove</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-7.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Taj Connal</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-8.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Laura Pollock</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-9.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Dakota Mannix</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-10.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Timothy Woolley</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-11.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Benjamin Congreve</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-12.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Mariam Maddock</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-13.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Blake Gerrald</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-4 col-lg-6 mb-1">
+<div class="p-2 d-flex align-items-center bg-white rounded">
+<a href="javascript:;">
+<img src="../assets/img/user/user-14.jpg" alt="" class="rounded" width="64" />
+</a>
+<div class="flex-1 ps-3">
+<b class="text-inverse">Gabrielle Bunton</b>
+</div>
+<div>
+<a href="javascript:;" class="btn btn-white border-0 w-40px h-40px text-gray-500 rounded-pill d-flex align-items-center justify-content-center" data-bs-toggle="dropdown"><i class="fa fa-ellipsis-h fa-lg"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="javascript:;" class="dropdown-item">Action 1</a>
+<a href="javascript:;" class="dropdown-item">Action 2</a>
+<a href="javascript:;" class="dropdown-item">Action 3</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Action 4</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content" data-scrollbar="true" data-height="100%">
+<h5>App Settings</h5>
+
+<div class="theme-list">
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-red" data-theme="red" data-theme-file="../assets/css/apple/theme/red.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-pink" data-theme="pink" data-theme-file="../assets/css/apple/theme/pink.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-orange" data-theme="orange" data-theme-file="../assets/css/apple/theme/orange.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-yellow" data-theme="yellow" data-theme-file="../assets/css/apple/theme/yellow.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-lime" data-theme="lime" data-theme-file="../assets/css/apple/theme/lime.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-green" data-theme="green" data-theme-file="../assets/css/apple/theme/green.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-teal" data-theme="teal" data-theme-file="../assets/css/apple/theme/teal.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Teal">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-cyan" data-theme="cyan" data-theme-file="../assets/css/apple/theme/cyan.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+<div class="theme-list-item active"><a href="javascript:;" class="theme-list-link bg-blue" data-theme="default" data-theme-file="" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-purple" data-theme="purple" data-theme-file="../assets/css/apple/theme/purple.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-indigo" data-theme="indigo" data-theme-file="../assets/css/apple/theme/indigo.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-black" data-theme="black" data-theme-file="../assets/css/apple/theme/black.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Black">&nbsp;</a></div>
+</div>
+
+<div class="theme-panel-divider"></div>
+
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Header Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-fixed" id="appHeaderFixed" value="1" checked />
+<label class="form-check-label" for="appHeaderFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Header Inverse</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-inverse" id="appHeaderInverse" value="1" />
+<label class="form-check-label" for="appHeaderInverse">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Sidebar Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-sidebar-fixed" id="appSidebarFixed" value="1" checked />
+<label class="form-check-label" for="appSidebarFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Sidebar Grid</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-sidebar-grid" id="appSidebarGrid" value="1" />
+<label class="form-check-label" for="appSidebarGrid">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-md-8 control-label text-inverse fw-bold">Gradient Enabled</div>
+<div class="col-md-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-gradient-enabled" id="appGradientEnabled" value="1" />
+<label class="form-check-label" for="appGradientEnabled">&nbsp;</label>
+</div>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Admin Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/default.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../transparent/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/transparent.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../apple/index_v2.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/theme/apple.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../material/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/material.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../facebook/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/facebook.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../google/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/google.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Language Version (7)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/version/html.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../ajax/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/ajax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular1x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs11/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular10x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/laravel.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../vuejs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/vuejs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../reactjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/reactjs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/dotnet.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Frontend Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/one-page-parallax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/e-commerce.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/blog.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/forum.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/corporate.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<a href="https://seantheme.com/color-admin/documentation/" class="btn btn-inverse d-block w-100 rounded-pill mb-10px" target="_blank"><b>Documentation</b></a>
+<a href="javascript:;" class="btn btn-default d-block w-100 rounded-pill" data-toggle="reset-local-storage"><b>Reset Local Storage</b></a>
+</div>
+</div>
+
+
+<a href="javascript:;" class="btn btn-icon btn-circle btn-primary btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+</div>
+
+
+<script src="../assets/js/vendor.min.js" type="ca9f0ea2bd87da3bb4b78f47-text/javascript"></script>
+<script src="../assets/js/app.min.js" type="ca9f0ea2bd87da3bb4b78f47-text/javascript"></script>
+<script src="../assets/js/theme/apple.min.js" type="ca9f0ea2bd87da3bb4b78f47-text/javascript"></script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false" type="ca9f0ea2bd87da3bb4b78f47-text/javascript"></script>
+<script src="../assets/plugins/superbox/jquery.superbox.min.js" type="ca9f0ea2bd87da3bb4b78f47-text/javascript"></script>
+<script src="../assets/plugins/lity/dist/lity.min.js" type="ca9f0ea2bd87da3bb4b78f47-text/javascript"></script>
+<script src="../assets/js/demo/profile.demo.js" type="ca9f0ea2bd87da3bb4b78f47-text/javascript"></script>
+
+<script type="ca9f0ea2bd87da3bb4b78f47-text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53034621-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ca9f0ea2bd87da3bb4b78f47-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b228dbcf45370a","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

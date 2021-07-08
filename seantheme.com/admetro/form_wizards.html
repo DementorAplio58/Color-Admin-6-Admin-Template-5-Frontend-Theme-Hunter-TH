@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Admetro | Form Wizards</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<header id="header" class="app-header">
+
+<button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+admetro
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+<a href="#" data-toggle="search-bar" class="nav-link">
+<i class="fa fa-search nav-icon"></i>
+</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="far fa-bell nav-icon"></i>
+<span class="nav-label">3</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 pb-0">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-apple bg-primary"></i></div>
+<div class="info">
+<h4 class="title">App Store <span class="time">Just now</span></h4>
+<p class="desc">Your iOS application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-android bg-success"></i></div>
+<div class="info">
+<h4 class="title">Google Play <span class="time">5 min ago</span></h4>
+<p class="desc">Your android application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-github bg-muted"></i></div>
+<div class="info">
+<h4 class="title">Github <span class="time">12 min ago</span></h4>
+<p class="desc">Error with notifications from Private Repos</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
+<div class="info">
+<h4 class="title">Gmail <span class="time">12:50pm</span></h4>
+<p class="desc">You have 2 unread email</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
+<div class="info">
+<h4 class="title">Corey <span class="time">10:20am</span></h4>
+<p class="desc">There's so much room for activities!</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
+<div class="info">
+<h4 class="title">Twitter <span class="time">12:50pm</span></h4>
+<p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="fa fa-cog nav-icon"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-md pt-0 pb-0">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-envelope text-muted"></i></div>
+<div class="info">Email</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-desktop text-muted"></i></div>
+<div class="info">Desktop & Mobile</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
+<div class="info">Text message</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
+<div class="info">Public friends list</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
+<div class="info">Public profile page</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<span class="nav-img online">
+<img src="assets/img/user.jpg" alt="" />
+</span>
+<span class="d-none d-md-block">John Smith <b class="caret"></b></span>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#">Edit Profile</a>
+<a class="dropdown-item" href="#">Inbox</a>
+<a class="dropdown-item" href="#">Calendar</a>
+<a class="dropdown-item" href="#">Setting</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Log Out</a>
+</div>
+</li>
+</ul>
+
+
+<div class="navbar-search">
+<form action="#" method="POST" name="navbar_search_form">
+<div class="form-group">
+<div class="icon"><i class="fa fa-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
+<div class="icon">
+<a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
+</div>
+</div>
+</form>
+</div>
+
+</header>
+
+
+<sidebar id="sidebar" class="app-sidebar">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="profile-img">
+<img src="assets/img/user.jpg" />
+</div>
+<div class="profile-info">
+<h4>John Smith</h4>
+<p>Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li>
+<a href="index.html">
+<span class="nav-icon"><i class="fa fa-th-large"></i></span>
+<span class="nav-text">Home</span>
+</a>
+</li>
+<li>
+<a href="analytics.html">
+<span class="nav-icon"><i class="fa fa-chart-pie"></i></span>
+<span class="nav-text">Analytics</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-envelope"></i> </span>
+<span class="nav-text">Email <span class="nav-label">20+</span></span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li>
+<a href="widgets.html">
+<span class="nav-icon"><i class="fa fa-qrcode bg-gradient-red text-white"></i></span>
+<span class="nav-text">Widgets</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-heart bg-gradient-orange text-white"></i></span>
+<span class="nav-text">UI Kits</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="ui_bootstrap.html"><span class="nav-text">Bootstrap</span></a></li>
+<li><a href="ui_buttons.html"><span class="nav-text">Buttons</span></a></li>
+<li><a href="ui_typography.html"><span class="nav-text">Typography</span></a></li>
+<li><a href="ui_tabs_accordions.html"><span class="nav-text">Tabs & Accordions</span></a></li>
+<li><a href="ui_modal_notification.html"><span class="nav-text">Modal & Notification</span></a></li>
+<li><a href="ui_card.html"><span class="nav-text">Card</span></a></li>
+<li><a href="ui_icons.html"><span class="nav-text">Icons</span></a></li>
+</ul>
+</li>
+<li class="has-sub active">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-file-alt bg-gradient-orange text-white"></i></span>
+<span class="nav-text">Forms</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="form_elements.html"><span class="nav-text">Form Elements</span></a></li>
+<li><a href="form_plugins.html"><span class="nav-text">Form Plugins</span></a></li>
+<li class="active"><a href="form_wizards.html"><span class="nav-text">Wizards</span></a></li>
+<li><a href="form_jquery_file_upload.html"><span class="nav-text">File Upload</span></a></li>
+<li><a href="form_summernote.html"><span class="nav-text">Summernote</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-table bg-gradient-green text-white"></i></span>
+<span class="nav-text">Tables</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="table_basic.html"><span class="nav-text">Basic Tables</span></a></li>
+<li><a href="table_data.html"><span class="nav-text">DataTables</span></a></li>
+</ul>
+</li>
+<li>
+<a href="chart.html">
+<span class="nav-icon"><i class="fa fa-chart-bar bg-gradient-purple text-white"></i></span>
+<span class="nav-text">Chart</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-map-marker-alt bg-gradient-blue text-white"></i></span>
+<span class="nav-text">Map</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="map_vector.html"><span class="nav-text">Vector Map</span></a></li>
+<li><a href="map_google.html"><span class="nav-text">Google Map</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-code-branch"></i></span>
+<span class="nav-text">Layout</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="layout_starter.html"><span class="nav-text">Starter Page</span></a></li>
+<li><a href="layout_fixed_footer.html"><span class="nav-text">Fixed Footer</span></a></li>
+<li><a href="layout_full_width.html"><span class="nav-text">Full Width</span></a></li>
+<li><a href="layout_boxed_layout.html"><span class="nav-text">Boxed Layout</span></a></li>
+<li><a href="layout_full_height.html"><span class="nav-text">Full Height</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-globe"></i></span>
+<span class="nav-text">Pages</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="page_gallery.html"><span class="nav-text">Gallery</span></a></li>
+<li><a href="page_coming_soon.html"><span class="nav-text">Coming Soon Page</span></a></li>
+<li><a href="page_search_results.html"><span class="nav-text">Search Results</span></a></li>
+<li><a href="page_404_error.html"><span class="nav-text">404 Error Page</span></a></li>
+<li><a href="page_login.html"><span class="nav-text">Login</span></a></li>
+<li><a href="page_register.html"><span class="nav-text">Register</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li>
+<a href="profile.html">
+<span class="nav-icon"><i class="fa fa-user-circle"></i></span>
+<span class="nav-text">Profile</span>
+</a>
+</li>
+<li>
+<a href="calendar.html">
+<span class="nav-icon"><i class="fa fa-calendar"></i></span>
+<span class="nav-text">Calendar</span>
+</a>
+</li>
+<li>
+<a href="settings.html">
+<span class="nav-icon"><i class="fa fa-cog"></i></span>
+<span class="nav-text">Settings</span>
+</a>
+</li>
+<li>
+<a href="helper.html">
+<span class="nav-icon"><i class="fa fa-question-circle"></i></span>
+<span class="nav-text">Helper</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-list-ul"></i> </span>
+<span class="nav-text">Menu Level</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 1.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 2.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="#"><span class="nav-text">Menu 3.1</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 3.2</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 2.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 2.3</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 1.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 1.3</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-mobile-alt"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">70%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-headphones"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">40%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fab fa-github"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">50%</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2019 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+</sidebar>
+
+
+<div id="content" class="app-content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">FORMS</a></li>
+<li class="breadcrumb-item active">FORM WIZARS</li>
+</ul>
+
+
+<h1 class="page-header">
+Form Wizards <small>page header description goes here...</small>
+</h1>
+
+
+<div id="rootwizard" class="wizard wizard-full-width">
+
+<div class="wizard-header">
+<ul class="nav nav-pills">
+<li class="nav-item"><a href="#tab1" data-toggle="tab" class="nav-link active">1. ACCOUNT INFORMATION</a></li>
+<li class="nav-item"><a href="#tab2" data-toggle="tab" class="nav-link">2. SETUP SECURITY QUESTIONS</a></li>
+<li class="nav-item"><a href="#tab3" data-toggle="tab" class="nav-link">3. NEWSLETTER & POLICY</a></li>
+<li class="nav-item"><a href="#tab4" data-toggle="tab" class="nav-link">4. COMPLETE REGISTRATION</a></li>
+</ul>
+</div>
+
+
+<form action="#" method="POST" name="wizard_form">
+
+<div class="wizard-content tab-content">
+
+<div class="tab-pane fade show active" id="tab1">
+<p class="f-s-12 text-muted m-b-20">Make sure to use a valid email address, you'll need to verify it before you can login to your account.</p>
+
+<div class="row row-space-30">
+
+<div class="col-xl-6 ">
+<div class="form-group">
+<label>Timezone <span class="text-danger">*</span></label>
+<select class="form-control">
+<option value="-12">(GMT-12:00) International Date Line West</option>
+<option value="-11">(GMT-11:00) Midway Island, Samoa</option>
+<option value="-10">(GMT-10:00) Hawaii</option>
+<option value="-9">(GMT-09:00) Alaska</option>
+<option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+<option value="-8">(GMT-08:00) Tijuana, Baja California</option>
+<option value="-7">(GMT-07:00) Arizona</option>
+<option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+<option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+<option value="-6">(GMT-06:00) Central America</option>
+<option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+<option value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+<option value="-6">(GMT-06:00) Saskatchewan</option>
+<option value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+<option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+<option value="-5">(GMT-05:00) Indiana (East)</option>
+<option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+<option value="-4">(GMT-04:00) Caracas, La Paz</option>
+<option value="-4">(GMT-04:00) Manaus</option>
+<option value="-4">(GMT-04:00) Santiago</option>
+<option value="-3.5">(GMT-03:30) Newfoundland</option>
+<option value="-3">(GMT-03:00) Brasilia</option>
+<option value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
+<option value="-3">(GMT-03:00) Greenland</option>
+<option value="-3">(GMT-03:00) Montevideo</option>
+<option value="-2">(GMT-02:00) Mid-Atlantic</option>
+<option value="-1">(GMT-01:00) Cape Verde Is.</option>
+<option value="-1">(GMT-01:00) Azores</option>
+<option value="0">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+<option value="0">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+<option value="1">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+<option value="1">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+<option value="1">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+<option value="1">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+<option value="1">(GMT+01:00) West Central Africa</option>
+<option value="2">(GMT+02:00) Amman</option>
+<option value="2">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+<option value="2">(GMT+02:00) Beirut</option>
+<option value="2">(GMT+02:00) Cairo</option>
+<option value="2">(GMT+02:00) Harare, Pretoria</option>
+<option value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+<option value="2">(GMT+02:00) Jerusalem</option>
+<option value="2">(GMT+02:00) Minsk</option>
+<option value="2">(GMT+02:00) Windhoek</option>
+<option value="3">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+<option value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+<option value="3">(GMT+03:00) Nairobi</option>
+<option value="3">(GMT+03:00) Tbilisi</option>
+<option value="3.5">(GMT+03:30) Tehran</option>
+<option value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
+<option value="4">(GMT+04:00) Baku</option>
+<option value="4">(GMT+04:00) Yerevan</option>
+<option value="4.5">(GMT+04:30) Kabul</option>
+<option value="5">(GMT+05:00) Yekaterinburg</option>
+<option value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+<option value="5.5">(GMT+05:30) Sri Jayawardenapura</option>
+<option value="5.5">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+<option value="5.75">(GMT+05:45) Kathmandu</option>
+<option value="6">(GMT+06:00) Almaty, Novosibirsk</option>
+<option value="6">(GMT+06:00) Astana, Dhaka</option>
+<option value="6.5">(GMT+06:30) Yangon (Rangoon)</option>
+<option value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+<option value="7">(GMT+07:00) Krasnoyarsk</option>
+<option value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+<option value="8">(GMT+08:00) Kuala Lumpur, Singapore</option>
+<option value="8">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+<option value="8">(GMT+08:00) Perth</option>
+<option value="8">(GMT+08:00) Taipei</option>
+<option value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+<option value="9">(GMT+09:00) Seoul</option>
+<option value="9">(GMT+09:00) Yakutsk</option>
+<option value="9.5">(GMT+09:30) Adelaide</option>
+<option value="9.5">(GMT+09:30) Darwin</option>
+<option value="10">(GMT+10:00) Brisbane</option>
+<option value="10">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+<option value="10">(GMT+10:00) Hobart</option>
+<option value="10">(GMT+10:00) Guam, Port Moresby</option>
+<option value="10">(GMT+10:00) Vladivostok</option>
+<option value="11">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+<option value="12">(GMT+12:00) Auckland, Wellington</option>
+<option value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+<option value="13">(GMT+13:00) Nuku'alofa</option>
+</select>
+</div>
+<div class="form-group">
+<label>Email <span class="text-danger">*</span></label>
+<input type="text" class="form-control" placeholder="name@example.com" />
+</div>
+<div class="form-group">
+<label>Password <span class="text-danger">*</span></label>
+<input type="password" class="form-control m-b-5" placeholder="password" />
+<input type="password" class="form-control" placeholder="confirm password" />
+</div>
+</div>
+
+
+<div class="col-xl-6">
+<div class="form-group m-b-10">
+<label>Name <span class="text-danger">*</span></label>
+<div class="row row-space-6">
+<div class="col-md-6">
+<input type="text" class="form-control m-b-5" placeholder="first name" />
+</div>
+<div class="col-md-6">
+<input type="text" class="form-control m-b-5" placeholder="last name" />
+</div>
+</div>
+</div>
+<div class="form-group">
+<label>Gender <span class="text-danger">*</span></label>
+<div>
+<div class="radio-inline">
+<input type="radio" name="inline_radio" id="inline_radio_1" value="1" checked="">
+<label for="inline_radio_1">
+Male
+</label>
+</div>
+<div class="radio-inline">
+<input type="radio" name="inline_radio" id="inline_radio_2" value="2">
+<label for="inline_radio_2">
+Female
+</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Date of Birth <span class="text-danger">*</span></label>
+<input type="text" class="form-control m-b-5" placeholder="dd/mm/yyyy" />
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="tab2">
+<p class="text-muted f-s-12 m-b-20">These questions will be used to verify your identity and recover your password should you ever forget it.</p>
+
+<div class="row row-space-30">
+
+<div class="col-xl-6">
+<div class="form-group">
+<label>Question 1. <span class="text-danger">*</span></label>
+<select class="form-control m-b-5">
+<option value="">Security Question 1</option>
+<option value="130">What was the name of your best friend as a teenager?</option>
+<option value="131">What was the name of your first pet?</option>
+<option value="132">What was the first dish you learned to cook?</option>
+<option value="133">What was the first film you saw in the cinema?</option>
+<option value="134">Where did you go the first time you flew on an airplane?</option>
+<option value="135">What is the name of your favourite elementary or primary school teacher?</option>
+</select>
+<input type="text" class="form-control" placeholder="answer" />
+</div>
+<div class="form-group">
+<label>Question 2. <span class="text-danger">*</span></label>
+<select class="form-control m-b-5">
+<option value="">Security Question 2</option>
+<option value="130">What was the name of your best friend as a teenager?</option>
+<option value="131">What was the name of your first pet?</option>
+<option value="132">What was the first dish you learned to cook?</option>
+<option value="133">What was the first film you saw in the cinema?</option>
+<option value="134">Where did you go the first time you flew on an airplane?</option>
+<option value="135">What is the name of your favourite elementary or primary school teacher?</option>
+</select>
+<input type="text" class="form-control" placeholder="answer" />
+</div>
+</div>
+
+
+<div class="col-xl-6">
+<div class="form-group">
+<label>Question 3. <span class="text-danger">*</span></label>
+<select class="form-control m-b-5">
+<option value="">Security Question 3</option>
+<option value="130">What was the name of your best friend as a teenager?</option>
+<option value="131">What was the name of your first pet?</option>
+<option value="132">What was the first dish you learned to cook?</option>
+<option value="133">What was the first film you saw in the cinema?</option>
+<option value="134">Where did you go the first time you flew on an airplane?</option>
+<option value="135">What is the name of your favourite elementary or primary school teacher?</option>
+</select>
+<input type="text" class="form-control" placeholder="answer" />
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="tab3">
+
+<div class="row">
+
+<div class="col-xl-6 offset-xl-3">
+<div class="form-group">
+<label>Terms of use:</label>
+<textarea class="form-control" rows="15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tincidunt quam. Sed sollicitudin sit amet magna eget viverra. Fusce interdum rhoncus lectus euismod imperdiet. Fusce quis lectus sagittis, dapibus felis sit amet, auctor metus. Pellentesque consectetur, turpis id blandit mattis, elit orci pellentesque nisl, vel gravida elit mi nec dui. Fusce finibus ipsum et lacus elementum venenatis. Quisque mattis mollis justo, nec ultricies magna imperdiet nec.
+
+Maecenas at magna vitae ex congue vehicula. Sed lobortis tincidunt ipsum et feugiat. Duis ullamcorper quam sed justo consequat, sit amet rhoncus elit luctus. Mauris eget ligula sit amet enim efficitur auctor nec quis metus. Sed condimentum nisi eget eros pellentesque, quis vestibulum augue efficitur. Nullam finibus eleifend lorem a semper. Pellentesque ut arcu sit amet mi varius fermentum ultrices non mauris. Aliquam erat volutpat. Sed a viverra augue.
+
+Suspendisse sollicitudin non nunc vel facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vitae cursus dolor. Integer at turpis tincidunt, hendrerit nisl quis, fringilla lectus. Aliquam erat volutpat. Cras sit amet nunc eget augue scelerisque eleifend a a elit. Nunc purus purus, volutpat a porta nec, ultricies non nulla. Donec placerat, dolor ac pellentesque condimentum, neque velit cursus erat, id pulvinar leo tortor in augue. Proin suscipit turpis a ultrices accumsan. Integer quis feugiat nisl.
+
+Suspendisse quis nulla malesuada, consectetur mauris molestie, rutrum justo. Integer sed turpis arcu. Morbi laoreet bibendum justo venenatis dapibus. Integer ut lorem eu velit dictum lacinia. Donec vel venenatis odio, posuere aliquet ex. In et sollicitudin nulla. Cras cursus egestas lobortis. Donec posuere odio nec ante blandit lobortis. Quisque pharetra odio sit amet neque varius, vitae auctor magna sollicitudin.
+										</textarea>
+<div class="checkbox">
+<input type="checkbox" id="checkbox-agree" checked="" value="1">
+<label for="checkbox-agree">
+I agree to the terms of use.
+</label>
+</div>
+</div>
+<hr />
+<div class="checkbox m-b-15">
+<input type="checkbox" id="checkbox-1" checked="" value="1">
+<label for="checkbox-1">
+<b>Announcements</b><br />
+<span class="text-muted">GGet announcements, recommendations and updates about our products, services, software updates and more.</span>
+</label>
+</div>
+<div class="checkbox m-b-15">
+<input type="checkbox" id="checkbox-2" checked="" value="2">
+<label for="checkbox-2">
+<b>New Apps, News and more</b><br />
+<span class="text-muted">GGet recommendations, the latest releases, special offers and exclusive content for latest news, apps and more.</span>
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" id="checkbox-3" checked="" value="2">
+<label for="checkbox-3">
+<b>News Updates</b><br />
+<span class="text-muted">Get the best stories and recommendations from our news delivered directly to your inbox.</span>
+</label>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane fade text-center" id="tab4">
+<i class="fab fa-jsfiddle text-primary" style="font-size: 256px;"></i>
+<h2 class="m-t-0">Congratulations!</h2>
+<p>Your registration has been successfully completed. <br /> Thank you for register with us.</p>
+</div>
+
+
+<div class="wizard-footer">
+<a href="#" class="btn btn-white wizard-prev-btn btn-rounded mr-auto">Previous</a>
+<a href="#" class="btn btn-primary wizard-next-btn btn-rounded ml-auto">Next</a>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="#" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content">
+<div class="widget-list mb-0">
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Color Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item active"><a href="#" class="bg-silver" data-theme="" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-red" data-theme="app-theme-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-pink" data-theme="app-theme-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-orange" data-theme="app-theme-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-yellow" data-theme="app-theme-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-green" data-theme="app-theme-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-cyan" data-theme="app-theme-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-blue" data-theme="app-theme-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-purple" data-theme="app-theme-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-indigo" data-theme="app-theme-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-black" data-theme="app-theme-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Gradient Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item"><a href="#" class="bg-gradient-silver" data-theme="app-theme-gradient-silver" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Gradient Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-red" data-theme="app-theme-gradient-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-pink" data-theme="app-theme-gradient-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-orange" data-theme="app-theme-gradient-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-yellow" data-theme="app-theme-gradient-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-green" data-theme="app-theme-gradient-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-cyan" data-theme="app-theme-gradient-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-blue" data-theme="app-theme-gradient-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-purple" data-theme="app-theme-gradient-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-indigo" data-theme="app-theme-gradient-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-black" data-theme="app-theme-gradient-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<a href="#" class="btn btn-silver btn-block btn-rounded btn-sm" data-click="reset-theme-setting">Reset Setting</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="assets/js/app.min.js" type="f64a5fe0856e1c4cce3ea0cf-text/javascript"></script>
+
+
+<script src="assets/plugins/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js" type="f64a5fe0856e1c4cce3ea0cf-text/javascript"></script>
+<script src="assets/js/demo/form-wizards.demo.js" type="f64a5fe0856e1c4cce3ea0cf-text/javascript"></script>
+
+<script type="f64a5fe0856e1c4cce3ea0cf-text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53034621-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="f64a5fe0856e1c4cce3ea0cf-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b232092da3016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

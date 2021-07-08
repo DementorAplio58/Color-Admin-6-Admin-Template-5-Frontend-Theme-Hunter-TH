@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Infinite Admin | Modal & Notification</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+<link href="../assets/plugins/bootstrap/bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/plugins/icon/themify-icons/themify-icons.css" rel="stylesheet" />
+<link href="../assets/css/animate.min.css" rel="stylesheet" />
+<link href="../assets/css/style.min.css" rel="stylesheet" />
+<link href="../assets/css/theme/default.css" rel="stylesheet" id="theme" />
+
+
+<script src="../assets/plugins/loader/pace/pace.min.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+
+</head>
+<body>
+
+<div id="page-container" class="page-header-fixed page-sidebar-fixed fade">
+
+<div id="header" class="header navbar navbar-default navbar-fixed-top">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+<i class="ti-infinite navbar-logo text-gradient bg-gradient-blue-purple"></i>
+<b>Infinite</b> Admin
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-xs-justified">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="javascript:;" data-toggle="search-bar" class="navbar-icon">
+<i class="ti-search"></i>
+</a>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle navbar-icon with-label">
+<i class="ti-bell"></i>
+</a>
+<ul class="dropdown-menu dropdown-lg no-padding">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-primary">
+<i class="ti-apple"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">App Store <span class="notification-time">Just now</span></h4>
+<p class="notification-desc">
+Your iOS application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-success">
+<i class="ti-android"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Google Play <span class="notification-time">5 min ago</span></h4>
+<p class="notification-desc">
+Your android application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-muted">
+<i class="ti-github"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Github <span class="notification-time">12 min ago</span></h4>
+<p class="notification-desc">
+Error with notifications from Private Repos
+</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-purple">
+<i class="ti-email"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Gmail <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+You have 2 unread email
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon">
+<img src="../assets/img/user-2.jpg" alt="" />
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Corey <span class="notification-time">10:20am</span></h4>
+<p class="notification-desc">
+There's so much room for activities!
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-gradient-aqua">
+<i class="ti-twitter"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Twitter <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+@sergiolucas: Most rain in the last two days: 85mm Gabo Island (Mar
+</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="navbar-icon">
+<i class="ti-settings"></i>
+</a>
+<ul class="dropdown-menu dropdown-md no-padding" data-dropdown-close="false">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-email"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+Email
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-desktop"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+Desktop and Mobile
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-mobile"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+Text message
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-user"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+Public friends list
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-search"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+Public profile page
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown">
+<span class="navbar-user-img online pull-left">
+<img src="../assets/img/user.jpg" alt="" />
+</span>
+<span class="hidden-xs ">Sean Ngu <b class="caret"></b></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="javascript:;">Edit Profile</a></li>
+<li><a href="javascript:;">Inbox</a></li>
+<li><a href="javascript:;">Calendar</a></li>
+<li><a href="javascript:;">Setting</a></li>
+<li class="divider"></li>
+<li><a href="javascript:;">Log Out</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="header-search-bar">
+<form action="#" method="POST" name="search_bar_form">
+<div class="form-group">
+<div class="left-icon"><i class="ti-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search infinite admin..." />
+<a href="javascript:;" data-dismiss="search-bar" class="right-icon"><i class="ti-close"></i></a>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="sidebar sidebar-inverse">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="image">
+<img src="../assets/img/user.jpg" />
+</div>
+<div class="info">
+<h4>Sean Ngu</h4>
+<p>UXUI Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li><a href="index.html"><i class="ti-home"></i><span>Home</span></a></li>
+<li><a href="analytics.html"><i class="ti-pie-chart"></i><span>Analytics</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<span class="caret caret-right pull-right"></span>
+<i class="ti-email"></i>
+<span>Email <span class="notification">20+</span></span>
+</a>
+<ul class="sub-menu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li><a href="widgets.html"><i class="ti-shortcode"></i><span>Widgets</span></a></li>
+<li class="has-sub active">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-heart"></i>
+<span>UI Kits</span>
+</a>
+<ul class="sub-menu">
+<li><a href="ui_bootstrap.html">Bootstrap</a></li>
+<li><a href="ui_buttons.html">Buttons</a></li>
+<li><a href="ui_typography.html">Typography</a></li>
+<li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
+<li class="active"><a href="ui_modal_notification.html">Modal & Notification</a></li>
+<li><a href="ui_panels.html">Panels</a></li>
+<li><a href="ui_icons.html">Icons</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-notepad"></i>
+<span>Forms</span>
+</a>
+<ul class="sub-menu">
+<li><a href="form_elements.html">Form Elements</a></li>
+<li><a href="form_plugins.html">Form Plugins</a></li>
+<li><a href="form_wizards.html">Wizards</a></li>
+<li><a href="form_jquery_file_upload.html">File Upload</a></li>
+<li><a href="form_summernote.html">Summernote</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-grid2"></i>
+<span>Tables</span>
+</a>
+<ul class="sub-menu">
+<li><a href="table_basic.html">Basic Tables</a></li>
+<li><a href="table_data.html">DataTables</a></li>
+</ul>
+</li>
+<li><a href="chart.html"><i class="ti-bar-chart"></i><span>Chart</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-map-alt"></i>
+<span>Map</span>
+</a>
+<ul class="sub-menu">
+<li><a href="map_vector.html">Vector Map</a></li>
+<li><a href="map_google.html">Google Map</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-sidebar-left"></i>
+<span>Layout</span>
+</a>
+<ul class="sub-menu">
+<li><a href="layout_starter.html">Starter Page</a></li>
+<li><a href="layout_fixed_footer.html">Fixed Footer</a></li>
+<li><a href="layout_full_width.html">Full Width</a></li>
+<li><a href="layout_boxed_layout.html">Boxed Layout</a></li>
+<li><a href="layout_full_height.html">Full Height</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-gift"></i>
+<span>Pages</span>
+</a>
+<ul class="sub-menu">
+<li><a href="page_gallery.html">Gallery</a></li>
+<li><a href="page_coming_soon.html">Coming Soon Page</a></li>
+<li><a href="page_search_results.html">Search Results</a></li>
+<li><a href="page_404_error.html">404 Error Page</a></li>
+<li><a href="page_login.html">Login</a></li>
+<li><a href="page_register.html">Register</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li><a href="profile.html"><i class="ti-user"></i><span>Profile</span></a></li>
+<li><a href="calendar.html"><i class="ti-calendar"></i> <span>Calendar</span></a></li>
+<li><a href="settings.html"><i class="ti-settings"></i><span>Settings</span></a></li>
+<li><a href="helper.html"><i class="ti-help-alt"></i><span>Helper</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-align-left"></i>
+<span>Menu Level</span>
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 1.1
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 2.1
+</a>
+<ul class="sub-menu">
+<li><a href="javascript:;">Menu 3.1</a></li>
+<li><a href="javascript:;">Menu 3.2</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 2.2</a></li>
+<li><a href="javascript:;">Menu 2.3</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 1.2</a></li>
+<li><a href="javascript:;">Menu 1.3</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-mobile"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">70%</span>
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-headphone"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">40%</span>
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-github"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">50%</span>
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2017 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+
+<a href="#" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="ti-arrow-left"></i></a>
+
+</div>
+
+
+<div id="content" class="content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">UI KITS</a></li>
+<li class="breadcrumb-item active">MODAL & NOTIFICATION</li>
+</ul>
+
+
+<h1 class="page-header">
+Modal & Notification <small>page header description goes here...</small>
+</h1>
+
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">APP NOTIFICATION</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Infinite Admin build in app notification comes with default (white) or inverse (black) styling.
+</p>
+
+<div class="row">
+
+<div class="col-md-8">
+<div class="page-notification">
+<div class="notification-media">
+<i class="ti-alarm-clock bg-grey"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Reminder</h4>
+<p class="notification-desc">
+Meeting with Terry
+</p>
+</div>
+<div class="notification-btn">
+<a href="#">Details</a>
+<a href="#">Close</a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="m-b-5 f-s-10"><b class="text-muted">EXAMPLE:</b></div>
+<pre class="f-s-12">&lt;a href="#" class="btn btn-primary btn-sm" data-toggle="notification" 
+    data-title="Reminder" 
+    data-content="Meeting with Terry"
+    data-icon="ti-alarm-clock" 
+    data-icon-class="bg-grey"
+    data-btn="true"
+    data-btn-text="Details"
+    data-btn-attr="data-click='trigger-details'"&gt;Demo&lt;/a&gt;
+</pre>
+
+<table style="width:100%">
+<tbody>
+<tr>
+<td class="p-b-5">1. Default Notification</td>
+<td style="width:1%" class="p-r-5 p-b-5">
+<a href="#" class="btn btn-primary btn-sm" data-toggle="notification" data-title="Reminder" data-content="Meeting with Terry" data-icon="ti-alarm-clock" data-icon-class="bg-grey" data-btn="true" data-btn-text="Details" data-btn-attr="data-click='trigger-details'">Demo</a>
+</td>
+<td class="p-l-5 p-b-5">4. Inverse Style Notification</td>
+<td class="p-b-5">
+<a href="#" class="btn btn-inverse btn-sm" data-toggle="notification" data-inverse-mode="true" data-title="Mobile App Branch" data-content="New commit found from development branches." data-icon="ti-github" data-icon-class="bg-white" data-btn="true" data-btn-text="Pull" data-btn-attr="data-click='trigger-pull'">Demo</a>
+</td>
+</tr>
+<tr>
+<td class="p-b-5">2. Notification with Image</td>
+<td class="p-b-5 p-r-5">
+<a href="#" class="btn btn-default btn-sm" data-toggle="notification" data-title="Corey" data-content="There's so much room for activities!" data-img="../assets/img/user.jpg" data-btn="true" data-btn-text="View" data-btn-url="gallery.html">Demo</a>
+</td>
+<td class="p-b-5 p-l-5">5. Without Icon</td>
+<td class="p-b-5">
+<a href="#" class="btn btn-default btn-sm" data-toggle="notification" data-title="Calendar" data-content="Tom's Birthday" data-btn="true" data-btn-text="View" data-btn-url="calendar.html">Demo</a>
+</td>
+</tr>
+<tr>
+<td class="p-b-5">3. Custom Button url</td>
+<td class="p-b-5 p-r-5">
+<a href="#" class="btn btn-default btn-sm" data-toggle="notification" data-icon="ti-google" data-icon-class="bg-gradient-red" data-title="New Update" data-btn="true" data-btn-text="Go" data-btn-url="http://www.google.com" data-content="Gmail has launched a new app">Demo</a>
+</td>
+<td class="p-b-5 p-l-5">6. Single Button</td>
+<td class="p-b-5">
+<a href="#" class="btn btn-default btn-sm" data-toggle="notification" data-icon="ti-email" data-icon-class="bg-gradient-blue-purple" data-title="New Email" data-content="You have sold an items!">Demo</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<table class="table table-condensed table-striped">
+<thead>
+<tr>
+<th colspan="4">Available Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width:1%"><span class="label label-default">1</span></td>
+<td>data-title="Calendar"</td>
+<td style="width:1%"><span class="label label-default">8</span></td>
+<td>data-content="Tom's Birthday"</td>
+</tr>
+<tr>
+<td style="width:1%"><span class="label label-default">2</span></td>
+<td>data-icon="ti-alarm-clock"</td>
+<td style="width:1%"><span class="label label-default">9</span></td>
+<td>data-icon-class="bg-grey"</td>
+</tr>
+<tr>
+<td style="width:1%"><span class="label label-default">3</span></td>
+<td>data-img="../assets/img/user.jpg"</td>
+<td style="width:1%"><span class="label label-default">10</span></td>
+<td>data-img-class="bg-inverse"</td>
+</tr>
+<tr>
+<td style="width:1%"><span class="label label-default">4</span></td>
+<td>data-btn="true"</td>
+<td style="width:1%"><span class="label label-default">11</span></td>
+<td>data-btn-text="Details"</td>
+</tr>
+<tr>
+<td style="width:1%"><span class="label label-default">5</span></td>
+<td>data-btn-url="http://www.google.com"</td>
+<td style="width:1%"><span class="label label-default">12</span></td>
+<td>data-btn-url="data-click='trigger-button'"</td>
+</tr>
+<tr>
+<td style="width:1%"><span class="label label-default">6</span></td>
+<td>data-close-btn="disabled"</td>
+<td style="width:1%"><span class="label label-default">13</span></td>
+<td>data-close-text="Close"</td>
+</tr>
+<tr>
+<td style="width:1%"><span class="label label-default">7</span></td>
+<td>data-autoclose="true"</td>
+<td style="width:1%"><span class="label label-default">14</span></td>
+<td>data-autoclose-time="5000"</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">BOOTSTRAP MODAL</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
+</p>
+
+<table class="table m-b-0">
+<tbody>
+<tr>
+<td>
+<div class="f-w-600 m-t-10">Default Modal</div>
+<p class="desc">Normal modal component like modal header, body and footer.</p>
+</td>
+<td style="width:1%" class="valign-middle"><a href="#default-modal" data-toggle="modal" class="btn btn-sm btn-primary">Demo</a></td>
+</tr>
+<tr>
+<td>
+<div class="f-w-600 m-t-10">Inverse Modal</div>
+<p class="desc">Place a <code>.modal-inverse</code> css class on <code>.modal</code> for inverse modal.</p>
+</td>
+<td style="width:1%" class="valign-middle"><a href="#inverse-modal" data-toggle="modal" class="btn btn-sm btn-inverse">Demo</a></td>
+</tr>
+<tr>
+<td>
+<div class="f-w-600 m-t-10">Full Cover Modal</div>
+<p class="desc">Place a <code>.modal-cover</code> css class on <code>.modal</code> for full cover modal.</p>
+</td>
+<td style="width:1%" class="valign-middle"><a href="#full-cover-modal" data-toggle="modal" class="btn btn-sm btn-default">Demo</a></td>
+</tr>
+<tr>
+<td>
+<div class="f-w-600 m-t-10">Inverse Full Cover Modal</div>
+<p class="desc">Place an additional <code>.modal-inverse</code> css class on <code>.modal</code> for inverse full cover modal.</p>
+</td>
+<td style="width:1%" class="valign-middle"><a href="#full-cover-inverse-modal" data-toggle="modal" class="btn btn-sm btn-default">Demo</a></td>
+</tr>
+<tr>
+<td>
+<div class="f-w-600 m-t-10">Full Width Modal</div>
+<p class="desc">Place a <code>.modal-full</code> css class on <code>.modal-dialog</code> for full width modal.</p>
+</td>
+<td style="width:1%" class="valign-middle"><a href="#full-width-modal" data-toggle="modal" class="btn btn-sm btn-default">Demo</a></td>
+</tr>
+<tr>
+<td>
+<div class="f-w-600 m-t-10">Large Modal</div>
+<p class="desc">Place a <code>.modal-lg</code> css class on <code>.modal-dialog</code> for large modal.</p>
+</td>
+<td style="width:1%" class="valign-middle"><a href="#large-modal" data-toggle="modal" class="btn btn-sm btn-default">Demo</a></td>
+</tr>
+<tr>
+<td>
+<div class="f-w-600 m-t-10">Small Modal</div>
+<p class="desc">Place a <code>.modal-sm</code> css class on <code>.modal-dialog</code> for small modal.</p>
+</td>
+<td style="width:1%" class="valign-middle"><a href="#small-modal" data-toggle="modal" class="btn btn-sm btn-default">Demo</a></td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="modal fade" id="default-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Modal title</h4>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<p>One fine body&hellip;</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="full-width-modal">
+<div class="modal-dialog modal-full">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Full Width Modal title</h4>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<p>One fine body&hellip;</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal modal-cover fade" id="full-cover-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header p-b-xs">
+<h3 class="modal-title text-purple">Sign Up!</h3>
+<button class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<p class="m-b-lg">
+25% Off On Your First Purchase* Enter code WELCOME at checkout<br />
+Discover new apps, things to do & more great news added daily!
+</p>
+<div class="row">
+<div class="col-md-9 ">
+<input type="text" placeholder="Your email address here" class="form-control form-control-lg" name="icon-filter">
+</div>
+<div class="col-md-3">
+<button type="button" class="btn btn-purple btn-lg btn-block">Continue</button>
+</div>
+</div>
+<div class="text-right p-t-10">
+<a href="#" class="text-muted">What is it? Terms and conditions</a>
+</div>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal modal-cover modal-inverse fade" id="full-cover-inverse-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header p-b-xs">
+<h3 class="modal-title text-success">Sign Up!</h3>
+<button class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<p class="m-b-lg">
+25% Off On Your First Purchase* Enter code WELCOME at checkout<br />
+Discover new apps, things to do & more great news added daily!
+</p>
+<div class="row">
+<div class="col-md-9 ">
+<input type="text" placeholder="Your email address here" class="form-control form-control-lg no-border" name="icon-filter">
+</div>
+<div class="col-md-3">
+<button type="button" class="btn btn-success btn-lg btn-block">Continue</button>
+</div>
+</div>
+<div class="text-right p-t-10">
+<a href="#" class="text-muted">What is it? Terms and conditions</a>
+</div>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="large-modal">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Large Modal title</h4>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<p>One fine body&hellip;</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="small-modal">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Small Modal title</h4>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<p>One fine body&hellip;</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal modal-inverse fade" id="inverse-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Inverse Modal Title</h4>
+<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+</div>
+<div class="modal-body">
+<p>One fine body&hellip;</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-grey" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-success">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="ti-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="ti-settings"></i></a>
+<div class="theme-panel-content">
+<div class="form-group">
+<label class="control-label">Color Theme</label>
+<ul class="theme-list clearfix">
+<li class="active"><a href="javascript:;" class="bg-gradient-blue-purple" data-theme="default" data-theme-file="../assets/css/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default"></a></li>
+<li><a href="javascript:;" class="bg-gradient-red" data-theme="red" data-theme-file="../assets/css/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></li>
+<li><a href="javascript:;" class="bg-gradient-orange" data-theme="orange" data-theme-file="../assets/css/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></li>
+<li><a href="javascript:;" class="bg-gradient-yellow" data-theme="yellow" data-theme-file="../assets/css/theme/yellow.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></li>
+<li><a href="javascript:;" class="bg-gradient-green" data-theme="green" data-theme-file="../assets/css/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></li>
+<li><a href="javascript:;" class="bg-gradient-aqua" data-theme="aqua" data-theme-file="../assets/css/theme/aqua.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></li>
+<li><a href="javascript:;" class="bg-gradient-blue" data-theme="blue" data-theme-file="../assets/css/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></li>
+<li><a href="javascript:;" class="bg-gradient-purple" data-theme="purple" data-theme-file="../assets/css/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></li>
+<li><a href="javascript:;" class="bg-gradient-black" data-theme="black" data-theme-file="../assets/css/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></li>
+</ul>
+</div>
+<ul class="widget widget-list">
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" class="widget-list-container">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</a>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="row m-t-10">
+<div class="col-md-12">
+<a href="javascript:;" class="btn btn-inverse btn-block btn-rounded btn-sm" data-click="reset-theme-setting"><b>Reset Setting</b></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="../assets/plugins/jquery/jquery-3.2.1.min.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+<script src="../assets/plugins/cookie/js/js.cookie.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+<script src="../assets/plugins/tooltip/popper/popper.min.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+<script src="../assets/plugins/bootstrap/bootstrap4/js/bootstrap.min.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+<script src="../assets/plugins/scrollbar/slimscroll/jquery.slimscroll.min.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+
+
+<script src="../assets/js/apps.min.js" type="59b744aa4a5da5e303c6135e-text/javascript"></script>
+
+<script type="59b744aa4a5da5e303c6135e-text/javascript">
+		$(document).ready(function() {
+			App.init();
+		});
+	</script>
+<script type="59b744aa4a5da5e303c6135e-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53034621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="59b744aa4a5da5e303c6135e-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b233e69870016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

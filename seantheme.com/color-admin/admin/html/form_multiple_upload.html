@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Color Admin | Multiple File Upload</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+<link href="../assets/css/default/app.min.css" rel="stylesheet" />
+
+
+<link href="../assets/plugins/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" />
+<link href="../assets/plugins/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet" />
+<link href="../assets/plugins/blueimp-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="loader" class="app-loader">
+<span class="spinner"></span>
+</div>
+
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<div id="header" class="app-header">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span> <b>Color</b> Admin</a>
+<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-nav">
+<div class="navbar-item navbar-form">
+<form action="" method="POST" name="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Enter keyword" />
+<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+<div class="navbar-item dropdown">
+<a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+<i class="fa fa-bell"></i>
+<span class="badge">5</span>
+</a>
+<div class="dropdown-menu media-list dropdown-menu-end">
+<div class="dropdown-header">NOTIFICATIONS (5)</div>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-bug media-object bg-gray-500"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Server Error Reports <i class="fa fa-exclamation-circle text-danger"></i></h6>
+<div class="text-muted fs-10px">3 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-1.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">John Smith</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-10px">25 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-2.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Olivia</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-10px">35 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-plus media-object bg-gray-500"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New User Registered</h6>
+<div class="text-muted fs-10px">1 hour ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-envelope media-object bg-gray-500"></i>
+<i class="fab fa-google text-warning media-object-icon fs-14px"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New Email From John</h6>
+<div class="text-muted fs-10px">2 hour ago</div>
+</div>
+</a>
+<div class="dropdown-footer text-center">
+<a href="javascript:;" class="text-decoration-none">View more</a>
+</div>
+</div>
+</div>
+<div class="navbar-item navbar-user dropdown">
+<a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+<span>
+<span class="d-none d-md-inline">Adam Schwartz</span>
+<b class="caret"></b>
+</span>
+</a>
+<div class="dropdown-menu dropdown-menu-end me-1">
+<a href="javascript:;" class="dropdown-item">Edit Profile</a>
+<a href="javascript:;" class="dropdown-item"><span class="badge bg-danger float-end rounded-pill">2</span> Inbox</a>
+<a href="javascript:;" class="dropdown-item">Calendar</a>
+<a href="javascript:;" class="dropdown-item">Setting</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Log Out</a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="app-sidebar">
+
+<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+
+<div class="menu">
+<div class="menu-profile">
+<a href="javascript:;" class="menu-profile-link" data-toggle="app-sidebar-profile" data-target="#appSidebarProfileMenu">
+<div class="menu-profile-cover with-shadow"></div>
+<div class="menu-profile-image">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+</div>
+<div class="menu-profile-info">
+<div class="d-flex align-items-center">
+<div class="flex-grow-1">
+Sean Ngu
+</div>
+<div class="menu-caret ms-auto"></div>
+</div>
+<small>Front end developer</small>
+</div>
+</a>
+</div>
+<div id="appSidebarProfileMenu" class="collapse">
+<div class="menu-item pt-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-cog"></i></div>
+<div class="menu-text">Settings</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-pencil-alt"></i></div>
+<div class="menu-text"> Send Feedback</div>
+</a>
+</div>
+<div class="menu-item pb-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-question-circle"></i></div>
+<div class="menu-text"> Helps</div>
+</a>
+</div>
+<div class="menu-divider m-0"></div>
+</div>
+<div class="menu-header">Navigation</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-th-large"></i>
+</div>
+<div class="menu-text">Dashboard</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="index.html" class="menu-link"><div class="menu-text">Dashboard v1</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v2.html" class="menu-link"><div class="menu-text">Dashboard v2</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-hdd"></i>
+</div>
+<div class="menu-text">Email</div>
+<div class="menu-badge">10</div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_inbox.html" class="menu-link">
+<div class="menu-text">Inbox</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_compose.html" class="menu-link">
+<div class="menu-text">Compose</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_detail.html" class="menu-link">
+<div class="menu-text">Detail</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="widget.html" class="menu-link">
+<div class="menu-icon">
+<i class="fab fa-simplybuilt"></i>
+</div>
+<div class="menu-text">Widgets <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-gem"></i>
+</div>
+<div class="menu-text">UI Elements <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="ui_general.html" class="menu-link">
+<div class="menu-text">General <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_typography.html" class="menu-link">
+<div class="menu-text">Typography</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tabs_accordions.html" class="menu-link">
+<div class="menu-text">Tabs & Accordions</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_unlimited_tabs.html" class="menu-link">
+<div class="menu-text">Unlimited Nav Tabs</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_modal_notification.html" class="menu-link">
+<div class="menu-text">Modal & Notification <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_widget_boxes.html" class="menu-link">
+<div class="menu-text">Widget Boxes</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_media_object.html" class="menu-link">
+<div class="menu-text">Media Object</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_buttons.html" class="menu-link">
+<div class="menu-text">Buttons <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_icons.html" class="menu-link">
+<div class="menu-text">Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_simple_line_icons.html" class="menu-link">
+<div class="menu-text">Simple Line Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_ionicons.html" class="menu-link">
+<div class="menu-text">Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tree.html" class="menu-link">
+<div class="menu-text">Tree View</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_language_bar_icon.html" class="menu-link">
+<div class="menu-text">Language Bar & Icon</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_social_buttons.html" class="menu-link">
+<div class="menu-text">Social Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tour.html" class="menu-link">
+<div class="menu-text">Intro JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_offcanvas_toasts.html" class="menu-link">
+<div class="menu-text">Offcanvas & Toasts <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item ">
+<a href="bootstrap_5.html" class="menu-link">
+<div class="menu-icon-img">
+<img src="../assets/img/logo/logo-bs5.png" alt="" />
+</div>
+<div class="menu-text">Bootstrap 5 <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub active">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-list-ol"></i>
+</div>
+<div class="menu-text">Form Stuff <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="form_elements.html" class="menu-link">
+<div class="menu-text">Form Elements <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_plugins.html" class="menu-link">
+<div class="menu-text">Form Plugins <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_slider_switcher.html" class="menu-link">
+<div class="menu-text">Form Slider + Switcher</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_validation.html" class="menu-link">
+<div class="menu-text">Form Validation</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wizards.html" class="menu-link">
+<div class="menu-text">Wizards <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wysiwyg.html" class="menu-link">
+<div class="menu-text">WYSIWYG</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_editable.html" class="menu-link">
+<div class="menu-text">X-Editable</div>
+</a>
+</div>
+<div class="menu-item active">
+<a href="form_multiple_upload.html" class="menu-link">
+<div class="menu-text">Multiple File Upload</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_summernote.html" class="menu-link">
+<div class="menu-text">Summernote</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_dropzone.html" class="menu-link">
+<div class="menu-text">Dropzone</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-table"></i>
+</div>
+<div class="menu-text">Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_basic.html" class="menu-link">
+<div class="menu-text">Basic Tables</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Managed Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_manage.html" class="menu-link">
+<div class="menu-text">Default</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_buttons.html" class="menu-link">
+<div class="menu-text">Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_colreorder.html" class="menu-link">
+<div class="menu-text">ColReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_columns.html" class="menu-link">
+<div class="menu-text">Fixed Column</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_header.html" class="menu-link">
+<div class="menu-text">Fixed Header</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_keytable.html" class="menu-link">
+<div class="menu-text">KeyTable</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_responsive.html" class="menu-link">
+<div class="menu-text">Responsive</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_rowreorder.html" class="menu-link">
+<div class="menu-text">RowReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_scroller.html" class="menu-link">
+<div class="menu-text">Scroller</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_select.html" class="menu-link">
+<div class="menu-text">Select</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_combine.html" class="menu-link">
+<div class="menu-text">Extension Combination</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-cash-register"></i>
+</div>
+<div class="menu-text">POS System <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="pos_customer_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Customer Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_kitchen_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Kitchen Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_counter_checkout.html" target="_blank" class="menu-link">
+<div class="menu-text">Counter Checkout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_table_booking.html" target="_blank" class="menu-link">
+<div class="menu-text">Table Booking</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_menu_stock.html" target="_blank" class="menu-link">
+<div class="menu-text">Menu Stock</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-star"></i>
+</div>
+<div class="menu-text">Front End <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="menu-link">
+<div class="menu-text">One Page Parallax</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Blog</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Forum</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="menu-link">
+<div class="menu-text">E-Commerce</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Corporate <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-envelope"></i>
+</div>
+<div class="menu-text">Email Template</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_system.html" class="menu-link">
+<div class="menu-text">System Template</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_newsletter.html" class="menu-link">
+<div class="menu-text">Newsletter Template</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-chart-pie"></i>
+</div>
+<div class="menu-text">Chart</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="chart-flot.html" class="menu-link">
+<div class="menu-text">Flot Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-js.html" class="menu-link">
+<div class="menu-text">Chart JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-d3.html" class="menu-link">
+<div class="menu-text">d3 Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-apex.html" class="menu-link">
+<div class="menu-text">Apex Chart</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="calendar.html" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-calendar"></i>
+</div>
+<div class="menu-text">Calendar</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-map"></i>
+</div>
+<div class="menu-text">Map</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="map_vector.html" class="menu-link">
+<div class="menu-text">Vector Map</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="map_google.html" class="menu-link">
+<div class="menu-text">Google Map</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-image"></i>
+</div>
+<div class="menu-text">Gallery</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="gallery.html" class="menu-link">
+<div class="menu-text">Gallery v1</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="gallery_v2.html" class="menu-link">
+<div class="menu-text">Gallery v2</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-cogs"></i>
+</div>
+<div class="menu-text">Page Options <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="page_blank.html" class="menu-link">
+<div class="menu-text">Blank Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_footer.html" class="menu-link">
+<div class="menu-text">Page with Footer</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_fixed_footer.html" class="menu-link">
+<div class="menu-text">Page with Fixed Footer <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_without_sidebar.html" class="menu-link">
+<div class="menu-text">Page without Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_right_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Right Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_minified_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Minified Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_two_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Two Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_line_icons.html" class="menu-link">
+<div class="menu-text">Page with Line Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_ionicons.html" class="menu-link">
+<div class="menu-text">Page with Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_full_height.html" class="menu-link">
+<div class="menu-text">Full Height Content</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_wide_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Wide Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_light_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Light Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mega_menu.html" class="menu-link">
+<div class="menu-text">Page with Mega Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_top_menu.html" class="menu-link">
+<div class="menu-text">Page with Top Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_boxed_layout.html" class="menu-link">
+<div class="menu-text">Page with Boxed Layout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Page with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_boxed_layout_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Boxed Layout with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_transparent_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Transparent Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_search_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Search Sidebar <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-gift"></i>
+</div>
+<div class="menu-text">Extra <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="extra_timeline.html" class="menu-link">
+<div class="menu-text">Timeline</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_coming_soon.html" class="menu-link">
+<div class="menu-text">Coming Soon Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_search_results.html" class="menu-link">
+<div class="menu-text">Search Results</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_invoice.html" class="menu-link">
+<div class="menu-text">Invoice</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_404_error.html" class="menu-link">
+<div class="menu-text">404 Error Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_profile.html" class="menu-link">
+<div class="menu-text">Profile Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_scrum_board.html" class="menu-link">
+<div class="menu-text">Scrum Board <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_cookie_acceptance_banner.html" class="menu-link">
+<div class="menu-text">Cookie Acceptance Banner <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-key"></i>
+</div>
+<div class="menu-text">Login & Register</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="login.html" class="menu-link">
+<div class="menu-text">Login</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v2.html" class="menu-link">
+<div class="menu-text">Login v2</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v3.html" class="menu-link">
+<div class="menu-text">Login v3</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="register_v3.html" class="menu-link">
+<div class="menu-text">Register v3</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-cubes"></i>
+</div>
+<div class="menu-text">Version <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../html/index_v3.html" class="menu-link">
+<div class="menu-text">HTML</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../ajax/" class="menu-link">
+<div class="menu-text">AJAX</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs/" class="menu-link">
+<div class="menu-text">ANGULAR JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs11/" class="menu-link">
+<div class="menu-text">ANGULAR JS 11</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">LARAVEL</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../vuejs/" class="menu-link">
+<div class="menu-text">VUE JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../reactjs/" class="menu-link">
+<div class="menu-text">REACT JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">ASP.NET <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../material/index_v3.html" class="menu-link">
+<div class="menu-text">MATERIAL DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../apple/index_v3.html" class="menu-link">
+<div class="menu-text">APPLE DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../transparent/index_v3.html" class="menu-link">
+<div class="menu-text">TRANSPARENT DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../facebook/index_v3.html" class="menu-link">
+<div class="menu-text">FACEBOOK DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../google/index_v3.html" class="menu-link">
+<div class="menu-text">GOOGLE DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-medkit"></i>
+</div>
+<div class="menu-text">Helper</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="helper_css.html" class="menu-link">
+<div class="menu-text">Predefined CSS Classes</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-align-left"></i>
+</div>
+<div class="menu-text">Menu Level</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 1.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 2.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.1</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.2</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.3</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.3</div></a></div>
+</div>
+</div>
+
+<div class="menu-item d-flex">
+<a href="javascript:;" class="app-sidebar-minify-btn ms-auto" data-toggle="app-sidebar-minify"><i class="fa fa-angle-double-left"></i></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="app-sidebar-bg"></div>
+<div class="app-sidebar-mobile-backdrop"><a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"></a></div>
+
+
+<div id="content" class="app-content">
+
+<ol class="breadcrumb float-xl-end">
+<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+<li class="breadcrumb-item"><a href="javascript:;">Form Stuff</a></li>
+<li class="breadcrumb-item active">Multiple File Upload</li>
+</ol>
+
+
+<h1 class="page-header">Multiple File Upload <small>header small text goes here...</small></h1>
+
+
+<form id="fileupload" action="../assets/global/plugins/jquery-file-upload/server/php/" method="POST" enctype="multipart/form-data">
+
+<div class="panel panel-inverse">
+
+<div class="panel-heading">
+<h4 class="panel-title">
+jQuery File Upload
+<b class="badge d-inline-flex align-items-center p-0 ms-1">
+<i class="fa fa-circle fa-fw fs-6px text-blue me-1"></i>
+<i class="fa fa-circle fa-fw fs-6px text-cyan me-1"></i>
+<i class="fa fa-circle fa-fw fs-6px text-teal"></i>
+</b>
+</h4>
+<div class="panel-heading-btn">
+<a href="javascript:;" class="btn btn-xs btn-icon btn-default" data-toggle="panel-expand"><i class="fa fa-expand"></i></a>
+<a href="javascript:;" class="btn btn-xs btn-icon btn-success" data-toggle="panel-reload"><i class="fa fa-redo"></i></a>
+<a href="javascript:;" class="btn btn-xs btn-icon btn-warning" data-toggle="panel-collapse"><i class="fa fa-minus"></i></a>
+<a href="javascript:;" class="btn btn-xs btn-icon btn-danger" data-toggle="panel-remove"><i class="fa fa-times"></i></a>
+</div>
+</div>
+
+<div class="alert alert-primary rounded-0 d-flex align-items-center mb-0 text-black">
+<div class="fs-24px w-80px text-center">
+<i class="fa fa-lightbulb fa-2x"></i>
+</div>
+<div class="flex-1 ms-3">
+<h4>Demo Notes</h4>
+<ul class="ps-3">
+<li>The maximum file size for uploads in this demo is <strong>5 MB</strong> (default file size is unlimited).</li>
+<li>Only image files (<strong>JPG, GIF, PNG</strong>) are allowed in this demo (by default there is no file type restriction).</li>
+<li>Uploaded files will be deleted automatically after <strong>5 minutes</strong> (demo setting).</li>
+</ul>
+</div>
+</div>
+
+<div class="panel-body">
+<div class="row fileupload-buttonbar">
+<div class="col-xl-7">
+<span class="btn btn-primary fileinput-button me-1">
+<i class="fa fa-fw fa-plus"></i>
+<span>Add files...</span>
+<input type="file" name="files[]" multiple>
+</span>
+<button type="submit" class="btn btn-primary start me-1">
+<i class="fa fa-fw fa-upload"></i>
+<span>Start upload</span>
+</button>
+<button type="reset" class="btn btn-default cancel me-1">
+<i class="fa fa-fw fa-ban"></i>
+<span>Cancel upload</span>
+</button>
+<button type="button" class="btn btn-default delete me-1">
+<i class="fa fa-fw fa-trash"></i>
+<span>Delete</span>
+</button>
+
+<span class="fileupload-process"></span>
+</div>
+
+<div class="col-xl-5 fileupload-progress fade d-none d-xl-block">
+
+<div class="progress progress-striped active">
+<div class="progress-bar progress-bar-success" style="width:0%;"></div>
+</div>
+
+<div class="progress-extended">&nbsp;</div>
+</div>
+</div>
+</div>
+
+
+<div class="table-responsive">
+<table class="table table-panel text-nowrap mb-0">
+<thead>
+<tr>
+<th width="10%">PREVIEW</th>
+<th>FILE INFO</th>
+<th>UPLOAD PROGRESS</th>
+<th width="1%"></th>
+</tr>
+</thead>
+<tbody class="files">
+<tr data-id="empty">
+<td colspan="4" class="text-center text-gray-500 py-30px">
+<div class="mb-10px"><i class="fa fa-file fa-3x"></i></div>
+<div class="fw-bold">No file selected</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="hljs-wrapper">
+<pre><code class="html">&lt;!-- required files --&gt;
+&lt;link href="../assets/plugins/blueimp-gallery/css/blueimp-gallery.min.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/plugins/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/plugins/blueimp-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" /&gt;
+
+&lt;script src="../assets/plugins/blueimp-file-upload/js/vendor/jquery.ui.widget.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-tmpl/js/tmpl.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-load-image/js/load-image.all.min.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-canvas-to-blob/js/canvas-to-blob.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-gallery/js/jquery.blueimp-gallery.min.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.iframe-transport.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-process.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-image.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-audio.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-video.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-validate.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-ui.js"&gt;&lt;/script&gt;
+&lt;script src="../assets/js/demo/form-multiple-upload.demo.js"&gt;&lt;/script&gt;
+
+&lt;!-- html --&gt;
+&lt;form id="fileupload" action="../assets/global/plugins/jquery-file-upload/server/php/" method="POST" enctype="multipart/form-data"&gt;
+  &lt;div class="row fileupload-buttonbar"&gt;
+    &lt;div class="col-xl-7"&gt;
+      &lt;span class="btn btn-primary fileinput-button me-1"&gt;
+        &lt;i class="fa fa-fw fa-plus"&gt;&lt;/i&gt;
+        &lt;span&gt;Add files...&lt;/span&gt;
+        &lt;input type="file" name="files[]" multiple&gt;
+      &lt;/span&gt;
+      &lt;button type="submit" class="btn btn-primary start me-1"&gt;
+        &lt;i class="fa fa-fw fa-upload"&gt;&lt;/i&gt;
+        &lt;span&gt;Start upload&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button type="reset" class="btn btn-default cancel me-1"&gt;
+        &lt;i class="fa fa-fw fa-ban"&gt;&lt;/i&gt;
+        &lt;span&gt;Cancel upload&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button type="button" class="btn btn-default delete me-1"&gt;
+        &lt;i class="fa fa-fw fa-trash"&gt;&lt;/i&gt;
+        &lt;span&gt;Delete&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;!-- The global file processing state --&gt;
+      &lt;span class="fileupload-process"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- The global progress state --&gt;
+    &lt;div class="col-xl-5 fileupload-progress fade d-none d-xl-block"&gt;
+      &lt;!-- The global progress bar --&gt;
+      &lt;div class="progress progress-striped active"&gt;
+        &lt;div class="progress-bar progress-bar-success" style="width:0%;"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- The extended global progress state --&gt;
+      &lt;div class="progress-extended"&gt;&nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+&lt;!-- The template to display files available for upload --&gt;
+&lt;script id="template-upload" type="text/x-tmpl"&gt;
+  {% for (var i=0, file; file=o.files[i]; i++) { %}
+    ...
+  {% } %}
+&lt;/script&gt;
+
+&lt;!-- The template to display files available for download --&gt;
+&lt;script id="template-download" type="text/x-tmpl"&gt;
+  {% for (var i=0, file; file=o.files[i]; i++) { %}
+    ...
+  {% } %}
+&lt;/script&gt;
+
+&lt;!-- script --&gt;
+&lt;script&gt;
+  $('#fileupload').fileupload({
+    autoUpload: false,
+    disableImageResize: /Android(?!.*Chrome)|Opera/.test(window.navigator.userAgent),
+    maxFileSize: 5000000,
+    acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i     
+  });
+  
+  $('#fileupload').bind('fileuploadadd', function(e, data) {
+  });
+
+  $('#fileupload').bind('fileuploadfail', function(e, data) {
+  });
+&lt;/script&gt;</code></pre>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+<div class="slides"></div>
+<h3 class="title"></h3>
+<a class="prev">‹</a>
+<a class="next">›</a>
+<a class="close">×</a>
+<a class="play-pause"></a>
+<ol class="indicator"></ol>
+</div>
+
+<div class="theme-panel">
+<a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content" data-scrollbar="true" data-height="100%">
+<h5>App Settings</h5>
+
+<div class="theme-list">
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-red" data-theme="red" data-theme-file="../assets/css/default/theme/red.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-pink" data-theme="pink" data-theme-file="../assets/css/default/theme/pink.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-orange" data-theme="orange" data-theme-file="../assets/css/default/theme/orange.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-yellow" data-theme="yellow" data-theme-file="../assets/css/default/theme/yellow.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-lime" data-theme="lime" data-theme-file="../assets/css/default/theme/lime.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-green" data-theme="green" data-theme-file="../assets/css/default/theme/green.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+<div class="theme-list-item active"><a href="javascript:;" class="theme-list-link bg-teal" data-theme="default" data-theme-file="" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-cyan" data-theme="cyan" data-theme-file="../assets/css/default/theme/cyan.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-blue" data-theme="blue" data-theme-file="../assets/css/default/theme/blue.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-purple" data-theme="purple" data-theme-file="../assets/css/default/theme/purple.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-indigo" data-theme="indigo" data-theme-file="../assets/css/default/theme/indigo.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-black" data-theme="black" data-theme-file="../assets/css/default/theme/black.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Black">&nbsp;</a></div>
+</div>
+
+<div class="theme-panel-divider"></div>
+
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Header Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-fixed" id="appHeaderFixed" value="1" checked />
+<label class="form-check-label" for="appHeaderFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Header Inverse</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-inverse" id="appHeaderInverse" value="1" />
+<label class="form-check-label" for="appHeaderInverse">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Sidebar Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-sidebar-fixed" id="appSidebarFixed" value="1" checked />
+<label class="form-check-label" for="appSidebarFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Sidebar Grid</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-sidebar-grid" id="appSidebarGrid" value="1" />
+<label class="form-check-label" for="appSidebarGrid">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-md-8 control-label text-inverse fw-bold">Gradient Enabled</div>
+<div class="col-md-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-gradient-enabled" id="appGradientEnabled" value="1" />
+<label class="form-check-label" for="appGradientEnabled">&nbsp;</label>
+</div>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Admin Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index_v2.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/theme/default.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../transparent/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/transparent.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../apple/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/apple.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../material/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/material.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../facebook/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/facebook.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../google/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/google.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Language Version (7)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/version/html.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../ajax/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/ajax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular1x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs11/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular10x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/laravel.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../vuejs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/vuejs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../reactjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/reactjs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/dotnet.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Frontend Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/one-page-parallax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/e-commerce.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/blog.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/forum.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/corporate.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<a href="https://seantheme.com/color-admin/documentation/" class="btn btn-inverse d-block w-100 rounded-pill mb-10px" target="_blank"><b>Documentation</b></a>
+<a href="javascript:;" class="btn btn-default d-block w-100 rounded-pill" data-toggle="reset-local-storage"><b>Reset Local Storage</b></a>
+</div>
+</div>
+
+
+<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+</div>
+
+
+<script id="template-upload" type="text/x-tmpl">
+		{% for (var i=0, file; file=o.files[i]; i++) { %}
+		<tr class="template-upload fade show">
+			<td>
+				<span class="preview"></span>
+			</td>
+			<td>
+				<div class="bg-light rounded p-3 mb-2">
+					<dl class="mb-0">
+						<dt class="text-inverse">File Name:</dt>
+						<dd class="name">{%=file.name%}</dd>
+						<hr />
+						<dt class="text-inverse mt-10px">File Size:</dt>
+						<dd class="size mb-0">Processing...</dd>
+					</dl>
+				</div>
+				<strong class="error text-danger h-auto d-block text-left"></strong>
+			</td>
+			<td>
+				<dl>
+					<dt class="text-inverse mt-3px">Progress:</dt>
+					<dd class="mt-5px">
+						<div class="progress progress-sm progress-striped active rounded-pill"><div class="progress-bar progress-bar-primary" style="width:0%; min-width: 40px;">0%</div></div>
+					</dd>
+				</dl>
+			</td>
+			<td nowrap>
+				{% if (!i && !o.options.autoUpload) { %}
+					<button class="btn btn-primary start w-100px pe-20px mb-2 d-block" disabled>
+						<i class="fa fa-upload fa-fw text-inverse"></i>
+						<span>Start</span>
+					</button>
+				{% } %}
+				{% if (!i) { %}
+					<button class="btn btn-default cancel w-100px pe-20px d-block">
+						<i class="fa fa-trash fa-fw text-muted"></i>
+						<span>Cancel</span>
+					</button>
+				{% } %}
+			</td>
+		</tr>
+		{% } %}
+	</script>
+
+<script id="template-download" type="text/x-tmpl">
+		{% for (var i=0, file; file=o.files[i]; i++) { %}
+			<tr class="template-download fade show">
+				<td width="1%">
+					<span class="preview">
+						{% if (file.thumbnailUrl) { %}
+							<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}" class="rounded"></a>
+						{% } else { %}
+							<div class="bg-light text-center fs-20px" style="width: 80px; height: 80px; line-height: 80px; border-radius: 6px;">
+								<i class="fa fa-file-image fa-lg text-gray-500"></i>
+							</div>
+						{% } %}
+					</span>
+				</td>
+				<td>
+					<div class="bg-light p-3 mb-2">
+						<dl class="mb-0">
+							<dt class="text-inverse">File Name:</dt>
+							<dd class="name">
+								{% if (file.url) { %}
+									<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+								{% } else { %}
+									<span>{%=file.name%}</span>
+								{% } %}
+							</dd>
+							<hr />
+							<dt class="text-inverse mt-10px">File Size:</dt>
+							<dd class="size mb-0">{%=o.formatFileSize(file.size)%}</dd>
+						</dl>
+						{% if (file.error) { %}
+							<hr />
+							<div><span class="badge bg-danger me-1">ERROR</span> {%=file.error%}</div>
+						{% } %}
+					</div>
+				</td>
+				<td></td>
+				<td>
+					{% if (file.deleteUrl) { %}
+						<button class="btn btn-danger delete w-100px mb-2 pe-20px" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+							<i class="fa fa-trash float-start fa-fw text-inverse mt-2px"></i>
+							<span>Delete</span>
+						</button>
+						<input type="checkbox" name="delete" value="1" class="toggle">
+					{% } else { %}
+						<button class="btn btn-default cancel w-100px me-3px pe-20px">
+							<i class="fa fa-trash float-start fa-fw text-muted mt-2px"></i>
+							<span>Cancel</span>
+						</button>
+					{% } %}
+				</td>
+			</tr>
+		{% } %}
+	</script>
+
+<script src="../assets/js/vendor.min.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/js/app.min.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/js/theme/default.min.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+
+
+<script src="../assets/plugins/blueimp-file-upload/js/vendor/jquery.ui.widget.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-tmpl/js/tmpl.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-load-image/js/load-image.all.min.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-canvas-to-blob/js/canvas-to-blob.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-gallery/js/jquery.blueimp-gallery.min.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.iframe-transport.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-process.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-image.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-audio.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-video.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-validate.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/blueimp-file-upload/js/jquery.fileupload-ui.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/js/demo/form-multiple-upload.demo.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/plugins/@highlightjs/cdn-assets/highlight.min.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+<script src="../assets/js/demo/render.highlight.js" type="4b7760322a08f9b757d1aaa6-text/javascript"></script>
+
+<script type="4b7760322a08f9b757d1aaa6-text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53034621-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4b7760322a08f9b757d1aaa6-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b21f4a4bc0370a","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

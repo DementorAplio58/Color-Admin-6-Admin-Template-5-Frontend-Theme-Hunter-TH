@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="colorAdminApp">
+<head>
+<meta charset="utf-8" />
+<title data-ng-bind="'AngularJS | ' + $state.current.data.pageTitle">AngularJS</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+<link href="../assets/css/default/app.min.css" rel="stylesheet" />
+
+
+<script src="../assets/plugins/angular/angular.min.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="../assets/plugins/angular-ui-router/release/angular-ui-router.min.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="../assets/plugins/angular-ui-router/release/stateEvents.min.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="../assets/plugins/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="../assets/plugins/oclazyload/dist/ocLazyLoad.min.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+
+</head>
+<body ng-controller="appController" ng-class="{'pace-top': setting.layout.paceTop, 'boxed-layout': setting.layout.appBoxedLayout, 'bg-white': setting.layout.pageBgWhite }">
+
+<div id="loader" class="app-loader">
+<span class="spinner"></span>
+</div>
+
+
+<div id="app" class="app app-sidebar-fixed" ng-class="{
+			'app-sidebar-minified': setting.layout.appSidebarMinified,
+			'app-content-full-height': setting.layout.appContentFullHeight,
+			'app-footer-fixed': setting.layout.appFooterFixed,
+			'app-with-end-sidebar': setting.layout.appSidebarEnd,
+			'app-with-two-sidebar app-sidebar-end-toggled': setting.layout.appSidebarTwo,
+			'app-with-top-menu': setting.layout.appTopMenu,
+			'app-without-sidebar': setting.layout.appSidebarNone,
+			'app-with-wide-sidebar': setting.layout.appSidebarWide,
+			'app-with-light-sidebar': setting.layout.appSidebarLight,
+			'app-without-header': setting.layout.appHeaderNone,
+			'app-header-fixed': !setting.layout.appHeaderNone
+		}" ui-view>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="../assets/js/vendor.min.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="../assets/js/app.min.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="../assets/js/theme/default.min.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+
+
+<script src="angular-app.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="angular-setting.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="angular-controller.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+<script src="angular-directive.js" type="70f434d95f1905b406c18733-text/javascript"></script>
+
+<script type="70f434d95f1905b406c18733-text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53034621-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="70f434d95f1905b406c18733-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b2201fcbbf370a","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

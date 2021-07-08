@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Admetro | Bootstrap</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<header id="header" class="app-header">
+
+<button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+admetro
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+<a href="#" data-toggle="search-bar" class="nav-link">
+<i class="fa fa-search nav-icon"></i>
+</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="far fa-bell nav-icon"></i>
+<span class="nav-label">3</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 pb-0">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-apple bg-primary"></i></div>
+<div class="info">
+<h4 class="title">App Store <span class="time">Just now</span></h4>
+<p class="desc">Your iOS application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-android bg-success"></i></div>
+<div class="info">
+<h4 class="title">Google Play <span class="time">5 min ago</span></h4>
+<p class="desc">Your android application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-github bg-muted"></i></div>
+<div class="info">
+<h4 class="title">Github <span class="time">12 min ago</span></h4>
+<p class="desc">Error with notifications from Private Repos</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
+<div class="info">
+<h4 class="title">Gmail <span class="time">12:50pm</span></h4>
+<p class="desc">You have 2 unread email</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
+<div class="info">
+<h4 class="title">Corey <span class="time">10:20am</span></h4>
+<p class="desc">There's so much room for activities!</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
+<div class="info">
+<h4 class="title">Twitter <span class="time">12:50pm</span></h4>
+<p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="fa fa-cog nav-icon"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-md pt-0 pb-0">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-envelope text-muted"></i></div>
+<div class="info">Email</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-desktop text-muted"></i></div>
+<div class="info">Desktop & Mobile</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
+<div class="info">Text message</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
+<div class="info">Public friends list</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
+<div class="info">Public profile page</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<span class="nav-img online">
+<img src="assets/img/user.jpg" alt="" />
+</span>
+<span class="d-none d-md-block">John Smith <b class="caret"></b></span>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#">Edit Profile</a>
+<a class="dropdown-item" href="#">Inbox</a>
+<a class="dropdown-item" href="#">Calendar</a>
+<a class="dropdown-item" href="#">Setting</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Log Out</a>
+</div>
+</li>
+</ul>
+
+
+<div class="navbar-search">
+<form action="#" method="POST" name="navbar_search_form">
+<div class="form-group">
+<div class="icon"><i class="fa fa-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
+<div class="icon">
+<a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
+</div>
+</div>
+</form>
+</div>
+
+</header>
+
+
+<sidebar id="sidebar" class="app-sidebar">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+ <div class="profile-img">
+<img src="assets/img/user.jpg" />
+</div>
+<div class="profile-info">
+<h4>John Smith</h4>
+<p>Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li>
+<a href="index.html">
+<span class="nav-icon"><i class="fa fa-th-large"></i></span>
+<span class="nav-text">Home</span>
+</a>
+</li>
+<li>
+<a href="analytics.html">
+<span class="nav-icon"><i class="fa fa-chart-pie"></i></span>
+<span class="nav-text">Analytics</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-envelope"></i> </span>
+<span class="nav-text">Email <span class="nav-label">20+</span></span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li>
+<a href="widgets.html">
+<span class="nav-icon"><i class="fa fa-qrcode bg-gradient-red text-white"></i></span>
+<span class="nav-text">Widgets</span>
+</a>
+</li>
+<li class="has-sub active">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-heart bg-gradient-orange text-white"></i></span>
+<span class="nav-text">UI Kits</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="active"><a href="ui_bootstrap.html"><span class="nav-text">Bootstrap</span></a></li>
+<li><a href="ui_buttons.html"><span class="nav-text">Buttons</span></a></li>
+<li><a href="ui_typography.html"><span class="nav-text">Typography</span></a></li>
+<li><a href="ui_tabs_accordions.html"><span class="nav-text">Tabs & Accordions</span></a></li>
+<li><a href="ui_modal_notification.html"><span class="nav-text">Modal & Notification</span></a></li>
+<li><a href="ui_card.html"><span class="nav-text">Card</span></a></li>
+<li><a href="ui_icons.html"><span class="nav-text">Icons</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-file-alt bg-gradient-orange text-white"></i></span>
+<span class="nav-text">Forms</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="form_elements.html"><span class="nav-text">Form Elements</span></a></li>
+<li><a href="form_plugins.html"><span class="nav-text">Form Plugins</span></a></li>
+<li><a href="form_wizards.html"><span class="nav-text">Wizards</span></a></li>
+<li><a href="form_jquery_file_upload.html"><span class="nav-text">File Upload</span></a></li>
+<li><a href="form_summernote.html"><span class="nav-text">Summernote</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-table bg-gradient-green text-white"></i></span>
+<span class="nav-text">Tables</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="table_basic.html"><span class="nav-text">Basic Tables</span></a></li>
+<li><a href="table_data.html"><span class="nav-text">DataTables</span></a></li>
+</ul>
+</li>
+<li>
+<a href="chart.html">
+<span class="nav-icon"><i class="fa fa-chart-bar bg-gradient-purple text-white"></i></span>
+<span class="nav-text">Chart</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-map-marker-alt bg-gradient-blue text-white"></i></span>
+<span class="nav-text">Map</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="map_vector.html"><span class="nav-text">Vector Map</span></a></li>
+<li><a href="map_google.html"><span class="nav-text">Google Map</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-code-branch"></i></span>
+<span class="nav-text">Layout</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="layout_starter.html"><span class="nav-text">Starter Page</span></a></li>
+<li><a href="layout_fixed_footer.html"><span class="nav-text">Fixed Footer</span></a></li>
+<li><a href="layout_full_width.html"><span class="nav-text">Full Width</span></a></li>
+<li><a href="layout_boxed_layout.html"><span class="nav-text">Boxed Layout</span></a></li>
+<li><a href="layout_full_height.html"><span class="nav-text">Full Height</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-globe"></i></span>
+<span class="nav-text">Pages</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="page_gallery.html"><span class="nav-text">Gallery</span></a></li>
+<li><a href="page_coming_soon.html"><span class="nav-text">Coming Soon Page</span></a></li>
+<li><a href="page_search_results.html"><span class="nav-text">Search Results</span></a></li>
+<li><a href="page_404_error.html"><span class="nav-text">404 Error Page</span></a></li>
+<li><a href="page_login.html"><span class="nav-text">Login</span></a></li>
+<li><a href="page_register.html"><span class="nav-text">Register</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li>
+<a href="profile.html">
+<span class="nav-icon"><i class="fa fa-user-circle"></i></span>
+<span class="nav-text">Profile</span>
+</a>
+</li>
+<li>
+<a href="calendar.html">
+<span class="nav-icon"><i class="fa fa-calendar"></i></span>
+<span class="nav-text">Calendar</span>
+</a>
+</li>
+<li>
+<a href="settings.html">
+<span class="nav-icon"><i class="fa fa-cog"></i></span>
+<span class="nav-text">Settings</span>
+</a>
+</li>
+<li>
+<a href="helper.html">
+<span class="nav-icon"><i class="fa fa-question-circle"></i></span>
+<span class="nav-text">Helper</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-list-ul"></i> </span>
+<span class="nav-text">Menu Level</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 1.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 2.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="#"><span class="nav-text">Menu 3.1</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 3.2</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 2.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 2.3</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 1.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 1.3</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-mobile-alt"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">70%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-headphones"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">40%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fab fa-github"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">50%</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2019 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+</sidebar>
+
+
+<div id="content" class="app-content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">UI KITS</a></li>
+<li class="breadcrumb-item active">BOOTSTRAP</li>
+</ul>
+
+
+<h1 class="page-header">
+Bootstrap <small>page header description goes here...</small>
+</h1>
+
+
+<div class="row">
+
+<div class="col-xl-6">
+
+<div class="card m-b-15">
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Alerts</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+<div class="card-body">
+<p class="f-s-12 text-muted">
+Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes for basic alert messages.
+</p>
+<div class="alert alert-success m-b-10">
+<strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info m-b-10">
+<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning m-b-10">
+<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-danger m-b-10">
+<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+<div class="alert alert-muted m-b-10">
+<strong>Muted Alert!</strong> This alert is not important, but it's beautiful.
+</div>
+</div>
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Paginations & Sizes</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.
+</p>
+<ul class="pagination pagination-lg m-b-10 m-t-0">
+<li class="page-item disabled">
+<a href="#" class="page-link">
+<span>&laquo;</span>
+</a>
+</li>
+<li class="page-item active"><a href="#" class="page-link">1</a></li>
+<li class="page-item"><a href="#" class="page-link">2</a></li>
+<li class="page-item"><a href="#" class="page-link">3</a></li>
+<li class="page-item"><a href="#" class="page-link">4</a></li>
+<li class="page-item"><a href="#" class="page-link">5</a></li>
+<li class="page-item">
+<a href="#" class="page-link">
+<span>&raquo;</span>
+</a>
+</li>
+</ul>
+<ul class="pagination m-b-10 m-t-0">
+<li class="page-item disabled">
+<a href="#" class="page-link">
+<span>&laquo;</span>
+</a>
+</li>
+<li class="page-item active"><a href="#" class="page-link">1</a></li>
+<li class="page-item"><a href="#" class="page-link">2</a></li>
+<li class="page-item"><a href="#" class="page-link">3</a></li>
+<li class="page-item"><a href="#" class="page-link">4</a></li>
+<li class="page-item"><a href="#" class="page-link">5</a></li>
+<li class="page-item">
+<a href="#" class="page-link">
+<span>&raquo;</span>
+</a>
+</li>
+</ul>
+<ul class="pagination pagination-sm m-b-0 m-t-0">
+<li class="disabled page-item">
+<a href="#" class="page-link">
+<span>&laquo;</span>
+</a>
+</li>
+<li class="active page-item"><a href="#" class="page-link">1</a></li>
+<li class="page-item"><a href="#" class="page-link">2</a></li>
+<li class="page-item"><a href="#" class="page-link">3</a></li>
+<li class="page-item"><a href="#" class="page-link">4</a></li>
+<li class="page-item"><a href="#" class="page-link">5</a></li>
+<li class="page-item">
+<a href="#" class="page-link">
+<span>&raquo;</span>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Pager</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+You can align each link to the sides by adding <code>.previous</code> or <code>.next</code>.
+</p>
+<ul class="pager m-t-0 m-b-10">
+<li class="disabled"><a href="#">Previous</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+<ul class="pager m-t-0 m-b-0">
+<li class="previous disabled"><a href="#">Previous</a></li>
+<li class="next"><a href="#">Next</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-6">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Labels</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Add any of the below mentioned modifier classes to change the appearance of a label.</p>
+<div class="f-s-14 m-b-5">
+<span class="label label-default">Default</span>
+<span class="label label-black">Black</span>
+<span class="label label-info">Info</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-purple">Purple</span>
+<span class="label label-indigo">Indigo</span>
+</div>
+<div class="f-s-14 m-b-5">
+<span class="label label-success">Success</span>
+<span class="label label-teal">Teal</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-yellow text-black">Yellow</span>
+<span class="label label-danger">Danger</span>
+<span class="label label-pink">Pink</span>
+</div>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Badges</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Easily highlight new or unread items by adding <code>.badge</code></p>
+<p class="m-b-0">
+<a href="#" class="mr-2">Inbox <span class="badge badge-default">42</span></a>
+<button class="btn btn-primary" type="button">
+Messages <span class="badge badge-light">4</span>
+</button>
+</p>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Badges in Nav Pills</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Built-in styles are included for placing badges in active states in pill navigations.</p>
+<div class="m-b-0">
+<ul class="nav nav-pills">
+<li class="nav-item"><a href="#" class="nav-link active">Home <span class="badge badge-light">42</span></a></li>
+<li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Messages <span class="badge badge-light">3</span></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">List Group</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.
+</p>
+<div class="list-group m-b-0">
+<a href="#" class="list-group-item active">Active Link Item</a>
+<a href="#" class="list-group-item">Normal Link Item</a>
+<a href="#" class="list-group-item d-flex justify-content-between align-items-center">Item with Badge <span class="badge badge-primary p-t-5 p-b-5">14</span></a>
+<div class="list-group-item">Without link</div>
+<a href="#" class="list-group-item disabled">Disabled Link Item</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-xl-6">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Jumbotron</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+<div class="jumbotron bg-gradient-cyan-blue text-white m-b-0">
+<h1 class="display-4"><i class="fa fa-theater-masks"></i> Hello, world!</h1>
+<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<hr class="hr-transparent my-4">
+<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+<a class="btn btn-light btn-lg" href="#" role="button">Learn more</a>
+</div>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Media Object</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+The default media displays a media object (images, video, audio) to the left or right of a content block.
+</p>
+<hr />
+<div class="media">
+<a href="#">
+<img src="assets/img/media-object-6.jpg" alt="" style="width: 128px;" />
+</a>
+<div class="media-body ml-3">
+<h4 class="mt-0">Media heading</h4>
+<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+<p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</div>
+</div>
+<hr />
+<div class="media">
+<div class="media-body mr-3">
+<h4 class="mt-0">Media heading</h4>
+<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+<p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</div>
+<a href="#">
+<img class="media-object" src="assets/img/media-object-5.jpg" alt="" style="width: 128px;" />
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="col-xl-6">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Progress Bar</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+Provide up-to-date feedback on the progress of a workflow or action
+</p>
+<div class="progress m-b-10">
+<div class="progress-bar" style="width: 60%;">60%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar bg-indigo" style="width: 40%">40%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar bg-purple" style="width: 20%">20%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar bg-info" style="width: 60%">60%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar bg-success" style="width: 48%">48%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar bg-warning" style="width: 35%">35%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar bg-danger" style="width: 25%">25%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar bg-yellow text-black" style="width: 15%">15%</div>
+</div>
+<div class="progress m-b-0">
+<div class="progress-bar bg-black" style="width: 0%; min-width: 2em;">0%</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Progress Bar Sizing</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+Add <code>.progress-sm</code> or <code>.progress-xs</code> to change the progress bar size.
+</p>
+<div class="progress m-b-10">
+<div class="progress-bar" style="width: 20%;"></div>
+</div>
+<div class="progress progress-sm m-b-10">
+<div class="progress-bar progress-bar-striped" style="width: 50%"></div>
+</div>
+<div class="progress progress-xs m-b-10">
+<div class="progress-bar progress-bar-striped" style="width: 70%"></div>
+</div>
+</div>
+
+</div>
+
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Responsive Embed</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+Use <code>.embed-responsive-16by9</code> or <code>.embed-responsive-4by3</code> to adjust the ratio size.
+Rules are directly applied to <code>&lt;iframe&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;video&gt;</code>, and <code>&lt;object&gt;</code> elements.
+</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eZMDquAUDDg"></iframe>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="#" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content">
+<div class="widget-list mb-0">
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Color Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item active"><a href="#" class="bg-silver" data-theme="" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-red" data-theme="app-theme-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-pink" data-theme="app-theme-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-orange" data-theme="app-theme-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-yellow" data-theme="app-theme-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-green" data-theme="app-theme-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-cyan" data-theme="app-theme-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-blue" data-theme="app-theme-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-purple" data-theme="app-theme-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-indigo" data-theme="app-theme-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-black" data-theme="app-theme-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Gradient Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item"><a href="#" class="bg-gradient-silver" data-theme="app-theme-gradient-silver" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Gradient Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-red" data-theme="app-theme-gradient-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-pink" data-theme="app-theme-gradient-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-orange" data-theme="app-theme-gradient-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-yellow" data-theme="app-theme-gradient-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-green" data-theme="app-theme-gradient-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-cyan" data-theme="app-theme-gradient-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-blue" data-theme="app-theme-gradient-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-purple" data-theme="app-theme-gradient-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-indigo" data-theme="app-theme-gradient-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-black" data-theme="app-theme-gradient-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<a href="#" class="btn btn-silver btn-block btn-rounded btn-sm" data-click="reset-theme-setting">Reset Setting</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="assets/js/app.min.js" type="7adf79a3dbd5eeb1c5e53d4f-text/javascript"></script>
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7adf79a3dbd5eeb1c5e53d4f-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b231f57f15016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

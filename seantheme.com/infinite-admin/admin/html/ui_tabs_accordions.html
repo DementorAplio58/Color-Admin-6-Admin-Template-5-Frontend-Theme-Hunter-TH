@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Infinite Admin | Tabs & Accordions</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+<link href="../assets/plugins/bootstrap/bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/plugins/icon/themify-icons/themify-icons.css" rel="stylesheet" />
+<link href="../assets/css/animate.min.css" rel="stylesheet" />
+<link href="../assets/css/style.min.css" rel="stylesheet" />
+<link href="../assets/css/theme/default.css" rel="stylesheet" id="theme" />
+
+
+<script src="../assets/plugins/loader/pace/pace.min.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+
+</head>
+<body>
+
+<div id="page-container" class="page-header-fixed page-sidebar-fixed fade">
+
+<div id="header" class="header navbar navbar-default navbar-fixed-top">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+<i class="ti-infinite navbar-logo text-gradient bg-gradient-blue-purple"></i>
+<b>Infinite</b> Admin
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-xs-justified">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="javascript:;" data-toggle="search-bar" class="navbar-icon">
+<i class="ti-search"></i>
+</a>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle navbar-icon with-label">
+<i class="ti-bell"></i>
+</a>
+<ul class="dropdown-menu dropdown-lg no-padding">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-primary">
+<i class="ti-apple"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">App Store <span class="notification-time">Just now</span></h4>
+<p class="notification-desc">
+Your iOS application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-success">
+<i class="ti-android"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Google Play <span class="notification-time">5 min ago</span></h4>
+<p class="notification-desc">
+Your android application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-muted">
+<i class="ti-github"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Github <span class="notification-time">12 min ago</span></h4>
+<p class="notification-desc">
+Error with notifications from Private Repos
+</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-purple">
+<i class="ti-email"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Gmail <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+You have 2 unread email
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon">
+<img src="../assets/img/user-2.jpg" alt="" />
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Corey <span class="notification-time">10:20am</span></h4>
+<p class="notification-desc">
+There's so much room for activities!
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-gradient-aqua">
+<i class="ti-twitter"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Twitter <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+@sergiolucas: Most rain in the last two days: 85mm Gabo Island (Mar
+</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="navbar-icon">
+<i class="ti-settings"></i>
+</a>
+<ul class="dropdown-menu dropdown-md no-padding" data-dropdown-close="false">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-email"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+Email
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-desktop"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+Desktop and Mobile
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-mobile"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+Text message
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-user"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+Public friends list
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-search"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+Public profile page
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown">
+<span class="navbar-user-img online pull-left">
+<img src="../assets/img/user.jpg" alt="" />
+</span>
+<span class="hidden-xs ">Sean Ngu <b class="caret"></b></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="javascript:;">Edit Profile</a></li>
+<li><a href="javascript:;">Inbox</a></li>
+<li><a href="javascript:;">Calendar</a></li>
+<li><a href="javascript:;">Setting</a></li>
+<li class="divider"></li>
+<li><a href="javascript:;">Log Out</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="header-search-bar">
+<form action="#" method="POST" name="search_bar_form">
+<div class="form-group">
+<div class="left-icon"><i class="ti-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search infinite admin..." />
+<a href="javascript:;" data-dismiss="search-bar" class="right-icon"><i class="ti-close"></i></a>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="sidebar sidebar-inverse">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="image">
+<img src="../assets/img/user.jpg" />
+</div>
+<div class="info">
+<h4>Sean Ngu</h4>
+<p>UXUI Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li><a href="index.html"><i class="ti-home"></i><span>Home</span></a></li>
+<li><a href="analytics.html"><i class="ti-pie-chart"></i><span>Analytics</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<span class="caret caret-right pull-right"></span>
+<i class="ti-email"></i>
+<span>Email <span class="notification">20+</span></span>
+</a>
+<ul class="sub-menu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li><a href="widgets.html"><i class="ti-shortcode"></i><span>Widgets</span></a></li>
+<li class="has-sub active">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-heart"></i>
+<span>UI Kits</span>
+</a>
+<ul class="sub-menu">
+<li><a href="ui_bootstrap.html">Bootstrap</a></li>
+<li><a href="ui_buttons.html">Buttons</a></li>
+<li><a href="ui_typography.html">Typography</a></li>
+<li class="active"><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
+<li><a href="ui_modal_notification.html">Modal & Notification</a></li>
+<li><a href="ui_panels.html">Panels</a></li>
+<li><a href="ui_icons.html">Icons</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-notepad"></i>
+<span>Forms</span>
+</a>
+<ul class="sub-menu">
+<li><a href="form_elements.html">Form Elements</a></li>
+<li><a href="form_plugins.html">Form Plugins</a></li>
+<li><a href="form_wizards.html">Wizards</a></li>
+<li><a href="form_jquery_file_upload.html">File Upload</a></li>
+<li><a href="form_summernote.html">Summernote</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-grid2"></i>
+<span>Tables</span>
+</a>
+<ul class="sub-menu">
+<li><a href="table_basic.html">Basic Tables</a></li>
+<li><a href="table_data.html">DataTables</a></li>
+</ul>
+</li>
+<li><a href="chart.html"><i class="ti-bar-chart"></i><span>Chart</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-map-alt"></i>
+<span>Map</span>
+</a>
+<ul class="sub-menu">
+<li><a href="map_vector.html">Vector Map</a></li>
+<li><a href="map_google.html">Google Map</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-sidebar-left"></i>
+<span>Layout</span>
+</a>
+<ul class="sub-menu">
+<li><a href="layout_starter.html">Starter Page</a></li>
+<li><a href="layout_fixed_footer.html">Fixed Footer</a></li>
+<li><a href="layout_full_width.html">Full Width</a></li>
+<li><a href="layout_boxed_layout.html">Boxed Layout</a></li>
+<li><a href="layout_full_height.html">Full Height</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-gift"></i>
+<span>Pages</span>
+</a>
+<ul class="sub-menu">
+<li><a href="page_gallery.html">Gallery</a></li>
+<li><a href="page_coming_soon.html">Coming Soon Page</a></li>
+<li><a href="page_search_results.html">Search Results</a></li>
+<li><a href="page_404_error.html">404 Error Page</a></li>
+<li><a href="page_login.html">Login</a></li>
+<li><a href="page_register.html">Register</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li><a href="profile.html"><i class="ti-user"></i><span>Profile</span></a></li>
+<li><a href="calendar.html"><i class="ti-calendar"></i> <span>Calendar</span></a></li>
+<li><a href="settings.html"><i class="ti-settings"></i><span>Settings</span></a></li>
+<li><a href="helper.html"><i class="ti-help-alt"></i><span>Helper</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-align-left"></i>
+<span>Menu Level</span>
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 1.1
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 2.1
+</a>
+<ul class="sub-menu">
+<li><a href="javascript:;">Menu 3.1</a></li>
+<li><a href="javascript:;">Menu 3.2</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 2.2</a></li>
+<li><a href="javascript:;">Menu 2.3</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 1.2</a></li>
+<li><a href="javascript:;">Menu 1.3</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-mobile"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">70%</span>
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-headphone"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">40%</span>
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-github"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">50%</span>
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2017 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+
+<a href="#" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="ti-arrow-left"></i></a>
+
+</div>
+
+
+<div id="content" class="content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">UI KITS</a></li>
+<li class="breadcrumb-item active">TABS & ACCORDIONS</li>
+</ul>
+
+
+<h1 class="page-header">
+Tabs & Accordions <small>page header description goes here...</small>
+</h1>
+
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">NAV TABS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.
+</p>
+
+<ul class="nav nav-tabs" id="nav-tabs">
+<li class="nav-item"><a href="#home" class="nav-link active" data-toggle="tab">Home</a></li>
+<li class="nav-item"><a href="#profile" class="nav-link" data-toggle="tab">Profile</a></li>
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+Dropdown <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
+<li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+</ul>
+</li>
+</ul>
+
+
+<div class="tab-content tab-content-bordered">
+
+<div class="tab-pane fade active in" id="home">
+<p>
+Raw denim you probably haven't heard of them jean shorts Austin.
+Nesciunt tofu stumptown aliqua, retro synth master cleanse.
+Mustache cliche tempor, williamsburg carles vegan helvetica.
+Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+butcher voluptate nisi qui.
+</p>
+</div>
+
+
+<div class="tab-pane fade" id="profile">
+<p>
+Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan
+four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft
+beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda
+labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit
+sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+</p>
+</div>
+
+
+<div class="tab-pane fade" id="dropdown1">
+<p>
+Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic
+lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed
+craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth
+PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever
+gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you
+probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu
+synth chambray yr.
+</p>
+</div>
+
+
+<div class="tab-pane fade" id="dropdown2">
+<p>
+Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out
+master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR,
+banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
+mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
+keffiyeh echo park vegan.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">NAV TABS POSITION</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Wrap with the <code>.nav-tabs-left</code>, <code>.nav-tabs-right</code> or <code>.nav-tabs-bottom</code> to adjust the tabs navigation position.
+</p>
+
+<div class="nav-tabs-left">
+
+<ul class="nav nav-tabs" id="nav-tabs-left">
+<li class="nav-item"><a href="#tab-left-home" class="nav-link active" data-toggle="tab">Home</a></li>
+<li class="nav-item"><a href="#tab-left-profile" class="nav-link" data-toggle="tab">Profile</a></li>
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+Dropdown <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="#tab-left-dropdown1" data-toggle="tab">@fat</a></li>
+<li><a href="#tab-left-dropdown2" data-toggle="tab">@mdo</a></li>
+</ul>
+</li>
+</ul>
+
+
+<div class="tab-content tab-content-bordered">
+
+<div class="tab-pane fade active in" id="tab-left-home">
+<p>
+Raw denim you probably haven't heard of them jean shorts Austin.
+Nesciunt tofu stumptown aliqua, retro synth master cleanse.
+Mustache cliche tempor, williamsburg carles vegan helvetica.
+Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+butcher voluptate nisi qui.
+</p>
+</div>
+
+
+<div class="tab-pane fade" id="tab-left-profile">
+<p>
+Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan
+four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft
+beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda
+labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit
+sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown,
+tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+</p>
+</div>
+
+
+<div class="tab-pane fade" id="tab-left-dropdown1">
+<p>
+Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic
+lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed
+craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth
+PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever
+gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you
+probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu
+synth chambray yr.
+</p>
+</div>
+
+
+<div class="tab-pane fade" id="tab-left-dropdown2">
+<p>
+Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out
+master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR,
+banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
+mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
+keffiyeh echo park vegan.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">ACCORDIONS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Use the default collapse behavior to create an accordion with the panel component. It's also possible to swap out <code>.panel-body</code>s with <code>.list-groups</code>.
+</p>
+
+<div class="panel-group" id="accordion">
+
+<div class="panel panel-default panel-bordered">
+
+<div class="panel-heading" id="headingOne">
+<h4 class="panel-title">
+<a href="#collapseOne" class="accordion-link" data-toggle="collapse" data-parent="#accordion">
+Collapsible Group Item #1
+</a>
+</h4>
+</div>
+
+
+<div id="collapseOne" class="panel-collapse collapse in">
+<div class="panel-body">
+Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default panel-bordered">
+
+<div class="panel-heading" id="headingTwo">
+<h4 class="panel-title">
+<a href="#collapseTwo" class="accordion-link collapsed" data-toggle="collapse" data-parent="#accordion">
+Collapsible Group Item #2
+</a>
+</h4>
+</div>
+
+
+<div id="collapseTwo" class="panel-collapse collapse">
+<ul class="list-group">
+<li class="list-group-item">Bootply</li>
+<li class="list-group-item">One itmus ac facilin</li>
+<li class="list-group-item">Second eros</li>
+</ul>
+<div class="panel-footer">Footer</div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default panel-bordered">
+
+<div class="panel-heading" id="headingThree">
+<h4 class="panel-title">
+<a href="#collapseThree" class="accordion-link collapsed" data-toggle="collapse" data-parent="#accordion">
+Collapsible Group Item #3
+</a>
+</h4>
+</div>
+
+
+<div id="collapseThree" class="panel-collapse collapse">
+<div class="panel-body">
+Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="ti-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="ti-settings"></i></a>
+<div class="theme-panel-content">
+<div class="form-group">
+<label class="control-label">Color Theme</label>
+<ul class="theme-list clearfix">
+<li class="active"><a href="javascript:;" class="bg-gradient-blue-purple" data-theme="default" data-theme-file="../assets/css/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default"></a></li>
+<li><a href="javascript:;" class="bg-gradient-red" data-theme="red" data-theme-file="../assets/css/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></li>
+<li><a href="javascript:;" class="bg-gradient-orange" data-theme="orange" data-theme-file="../assets/css/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></li>
+<li><a href="javascript:;" class="bg-gradient-yellow" data-theme="yellow" data-theme-file="../assets/css/theme/yellow.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></li>
+<li><a href="javascript:;" class="bg-gradient-green" data-theme="green" data-theme-file="../assets/css/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></li>
+<li><a href="javascript:;" class="bg-gradient-aqua" data-theme="aqua" data-theme-file="../assets/css/theme/aqua.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></li>
+<li><a href="javascript:;" class="bg-gradient-blue" data-theme="blue" data-theme-file="../assets/css/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></li>
+<li><a href="javascript:;" class="bg-gradient-purple" data-theme="purple" data-theme-file="../assets/css/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></li>
+<li><a href="javascript:;" class="bg-gradient-black" data-theme="black" data-theme-file="../assets/css/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></li>
+</ul>
+</div>
+<ul class="widget widget-list">
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" class="widget-list-container">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</a>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="row m-t-10">
+<div class="col-md-12">
+<a href="javascript:;" class="btn btn-inverse btn-block btn-rounded btn-sm" data-click="reset-theme-setting"><b>Reset Setting</b></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="../assets/plugins/jquery/jquery-3.2.1.min.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+<script src="../assets/plugins/cookie/js/js.cookie.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+<script src="../assets/plugins/tooltip/popper/popper.min.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+<script src="../assets/plugins/bootstrap/bootstrap4/js/bootstrap.min.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+<script src="../assets/plugins/scrollbar/slimscroll/jquery.slimscroll.min.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+
+
+<script src="../assets/js/apps.min.js" type="d06400fec0c232504d7a8a82-text/javascript"></script>
+
+<script type="d06400fec0c232504d7a8a82-text/javascript">
+		$(document).ready(function() {
+			App.init();
+		});
+	</script>
+<script type="d06400fec0c232504d7a8a82-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53034621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d06400fec0c232504d7a8a82-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b233e53e1a016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>
