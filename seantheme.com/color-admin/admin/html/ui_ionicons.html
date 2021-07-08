@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Color Admin | Ionicons</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+<link href="../assets/css/default/app.min.css" rel="stylesheet" />
+
+
+<link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="loader" class="app-loader">
+<span class="spinner"></span>
+</div>
+
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<div id="header" class="app-header">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span> <b>Color</b> Admin</a>
+<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-nav">
+<div class="navbar-item navbar-form">
+<form action="" method="POST" name="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Enter keyword" />
+<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+<div class="navbar-item dropdown">
+<a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+<i class="fa fa-bell"></i>
+<span class="badge">5</span>
+</a>
+<div class="dropdown-menu media-list dropdown-menu-end">
+<div class="dropdown-header">NOTIFICATIONS (5)</div>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-bug media-object bg-gray-500"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Server Error Reports <i class="fa fa-exclamation-circle text-danger"></i></h6>
+<div class="text-muted fs-10px">3 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-1.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">John Smith</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-10px">25 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-2.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Olivia</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-10px">35 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-plus media-object bg-gray-500"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New User Registered</h6>
+<div class="text-muted fs-10px">1 hour ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-envelope media-object bg-gray-500"></i>
+<i class="fab fa-google text-warning media-object-icon fs-14px"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New Email From John</h6>
+<div class="text-muted fs-10px">2 hour ago</div>
+</div>
+</a>
+<div class="dropdown-footer text-center">
+<a href="javascript:;" class="text-decoration-none">View more</a>
+</div>
+</div>
+</div>
+<div class="navbar-item navbar-user dropdown">
+<a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+<span>
+<span class="d-none d-md-inline">Adam Schwartz</span>
+<b class="caret"></b>
+</span>
+</a>
+<div class="dropdown-menu dropdown-menu-end me-1">
+<a href="javascript:;" class="dropdown-item">Edit Profile</a>
+<a href="javascript:;" class="dropdown-item"><span class="badge bg-danger float-end rounded-pill">2</span> Inbox</a>
+<a href="javascript:;" class="dropdown-item">Calendar</a>
+<a href="javascript:;" class="dropdown-item">Setting</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Log Out</a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="app-sidebar">
+
+<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+
+<div class="menu">
+<div class="menu-profile">
+<a href="javascript:;" class="menu-profile-link" data-toggle="app-sidebar-profile" data-target="#appSidebarProfileMenu">
+<div class="menu-profile-cover with-shadow"></div>
+<div class="menu-profile-image">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+</div>
+<div class="menu-profile-info">
+<div class="d-flex align-items-center">
+<div class="flex-grow-1">
+Sean Ngu
+</div>
+<div class="menu-caret ms-auto"></div>
+</div>
+<small>Front end developer</small>
+</div>
+</a>
+</div>
+<div id="appSidebarProfileMenu" class="collapse">
+<div class="menu-item pt-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-cog"></i></div>
+<div class="menu-text">Settings</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-pencil-alt"></i></div>
+<div class="menu-text"> Send Feedback</div>
+</a>
+</div>
+<div class="menu-item pb-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-question-circle"></i></div>
+<div class="menu-text"> Helps</div>
+</a>
+</div>
+<div class="menu-divider m-0"></div>
+</div>
+<div class="menu-header">Navigation</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-th-large"></i>
+</div>
+<div class="menu-text">Dashboard</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="index.html" class="menu-link"><div class="menu-text">Dashboard v1</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v2.html" class="menu-link"><div class="menu-text">Dashboard v2</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-hdd"></i>
+</div>
+<div class="menu-text">Email</div>
+<div class="menu-badge">10</div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_inbox.html" class="menu-link">
+<div class="menu-text">Inbox</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_compose.html" class="menu-link">
+<div class="menu-text">Compose</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_detail.html" class="menu-link">
+<div class="menu-text">Detail</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="widget.html" class="menu-link">
+<div class="menu-icon">
+<i class="fab fa-simplybuilt"></i>
+</div>
+<div class="menu-text">Widgets <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub active">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-gem"></i>
+</div>
+<div class="menu-text">UI Elements <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="ui_general.html" class="menu-link">
+<div class="menu-text">General <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_typography.html" class="menu-link">
+<div class="menu-text">Typography</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tabs_accordions.html" class="menu-link">
+<div class="menu-text">Tabs & Accordions</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_unlimited_tabs.html" class="menu-link">
+<div class="menu-text">Unlimited Nav Tabs</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_modal_notification.html" class="menu-link">
+<div class="menu-text">Modal & Notification <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_widget_boxes.html" class="menu-link">
+<div class="menu-text">Widget Boxes</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_media_object.html" class="menu-link">
+<div class="menu-text">Media Object</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_buttons.html" class="menu-link">
+<div class="menu-text">Buttons <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_icons.html" class="menu-link">
+<div class="menu-text">Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_simple_line_icons.html" class="menu-link">
+<div class="menu-text">Simple Line Icons</div>
+</a>
+</div>
+<div class="menu-item active">
+<a href="ui_ionicons.html" class="menu-link">
+<div class="menu-text">Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tree.html" class="menu-link">
+<div class="menu-text">Tree View</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_language_bar_icon.html" class="menu-link">
+<div class="menu-text">Language Bar & Icon</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_social_buttons.html" class="menu-link">
+<div class="menu-text">Social Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tour.html" class="menu-link">
+<div class="menu-text">Intro JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_offcanvas_toasts.html" class="menu-link">
+<div class="menu-text">Offcanvas & Toasts <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item ">
+<a href="bootstrap_5.html" class="menu-link">
+<div class="menu-icon-img">
+<img src="../assets/img/logo/logo-bs5.png" alt="" />
+</div>
+<div class="menu-text">Bootstrap 5 <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-list-ol"></i>
+</div>
+<div class="menu-text">Form Stuff <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="form_elements.html" class="menu-link">
+<div class="menu-text">Form Elements <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_plugins.html" class="menu-link">
+<div class="menu-text">Form Plugins <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_slider_switcher.html" class="menu-link">
+<div class="menu-text">Form Slider + Switcher</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_validation.html" class="menu-link">
+<div class="menu-text">Form Validation</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wizards.html" class="menu-link">
+<div class="menu-text">Wizards <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wysiwyg.html" class="menu-link">
+<div class="menu-text">WYSIWYG</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_editable.html" class="menu-link">
+<div class="menu-text">X-Editable</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_multiple_upload.html" class="menu-link">
+<div class="menu-text">Multiple File Upload</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_summernote.html" class="menu-link">
+<div class="menu-text">Summernote</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_dropzone.html" class="menu-link">
+<div class="menu-text">Dropzone</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-table"></i>
+</div>
+<div class="menu-text">Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_basic.html" class="menu-link">
+<div class="menu-text">Basic Tables</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Managed Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_manage.html" class="menu-link">
+<div class="menu-text">Default</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_buttons.html" class="menu-link">
+<div class="menu-text">Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_colreorder.html" class="menu-link">
+<div class="menu-text">ColReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_columns.html" class="menu-link">
+<div class="menu-text">Fixed Column</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_header.html" class="menu-link">
+<div class="menu-text">Fixed Header</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_keytable.html" class="menu-link">
+<div class="menu-text">KeyTable</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_responsive.html" class="menu-link">
+<div class="menu-text">Responsive</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_rowreorder.html" class="menu-link">
+<div class="menu-text">RowReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_scroller.html" class="menu-link">
+<div class="menu-text">Scroller</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_select.html" class="menu-link">
+<div class="menu-text">Select</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_combine.html" class="menu-link">
+<div class="menu-text">Extension Combination</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-cash-register"></i>
+</div>
+<div class="menu-text">POS System <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="pos_customer_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Customer Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_kitchen_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Kitchen Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_counter_checkout.html" target="_blank" class="menu-link">
+<div class="menu-text">Counter Checkout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_table_booking.html" target="_blank" class="menu-link">
+<div class="menu-text">Table Booking</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_menu_stock.html" target="_blank" class="menu-link">
+<div class="menu-text">Menu Stock</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-star"></i>
+</div>
+<div class="menu-text">Front End <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="menu-link">
+<div class="menu-text">One Page Parallax</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Blog</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Forum</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="menu-link">
+<div class="menu-text">E-Commerce</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Corporate <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-envelope"></i>
+</div>
+<div class="menu-text">Email Template</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_system.html" class="menu-link">
+<div class="menu-text">System Template</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_newsletter.html" class="menu-link">
+<div class="menu-text">Newsletter Template</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-chart-pie"></i>
+</div>
+<div class="menu-text">Chart</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="chart-flot.html" class="menu-link">
+<div class="menu-text">Flot Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-js.html" class="menu-link">
+<div class="menu-text">Chart JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-d3.html" class="menu-link">
+<div class="menu-text">d3 Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-apex.html" class="menu-link">
+<div class="menu-text">Apex Chart</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="calendar.html" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-calendar"></i>
+</div>
+<div class="menu-text">Calendar</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-map"></i>
+</div>
+<div class="menu-text">Map</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="map_vector.html" class="menu-link">
+<div class="menu-text">Vector Map</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="map_google.html" class="menu-link">
+<div class="menu-text">Google Map</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-image"></i>
+</div>
+<div class="menu-text">Gallery</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="gallery.html" class="menu-link">
+<div class="menu-text">Gallery v1</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="gallery_v2.html" class="menu-link">
+<div class="menu-text">Gallery v2</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-cogs"></i>
+</div>
+<div class="menu-text">Page Options <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="page_blank.html" class="menu-link">
+<div class="menu-text">Blank Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_footer.html" class="menu-link">
+<div class="menu-text">Page with Footer</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_fixed_footer.html" class="menu-link">
+<div class="menu-text">Page with Fixed Footer <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_without_sidebar.html" class="menu-link">
+<div class="menu-text">Page without Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_right_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Right Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_minified_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Minified Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_two_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Two Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_line_icons.html" class="menu-link">
+<div class="menu-text">Page with Line Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_ionicons.html" class="menu-link">
+<div class="menu-text">Page with Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_full_height.html" class="menu-link">
+<div class="menu-text">Full Height Content</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_wide_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Wide Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_light_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Light Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mega_menu.html" class="menu-link">
+<div class="menu-text">Page with Mega Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_top_menu.html" class="menu-link">
+<div class="menu-text">Page with Top Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_boxed_layout.html" class="menu-link">
+<div class="menu-text">Page with Boxed Layout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Page with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_boxed_layout_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Boxed Layout with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_transparent_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Transparent Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_search_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Search Sidebar <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-gift"></i>
+</div>
+<div class="menu-text">Extra <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="extra_timeline.html" class="menu-link">
+<div class="menu-text">Timeline</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_coming_soon.html" class="menu-link">
+<div class="menu-text">Coming Soon Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_search_results.html" class="menu-link">
+<div class="menu-text">Search Results</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_invoice.html" class="menu-link">
+<div class="menu-text">Invoice</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_404_error.html" class="menu-link">
+<div class="menu-text">404 Error Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_profile.html" class="menu-link">
+<div class="menu-text">Profile Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_scrum_board.html" class="menu-link">
+<div class="menu-text">Scrum Board <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_cookie_acceptance_banner.html" class="menu-link">
+<div class="menu-text">Cookie Acceptance Banner <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-key"></i>
+</div>
+<div class="menu-text">Login & Register</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="login.html" class="menu-link">
+<div class="menu-text">Login</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v2.html" class="menu-link">
+<div class="menu-text">Login v2</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v3.html" class="menu-link">
+<div class="menu-text">Login v3</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="register_v3.html" class="menu-link">
+<div class="menu-text">Register v3</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-cubes"></i>
+</div>
+<div class="menu-text">Version <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../html/index_v3.html" class="menu-link">
+<div class="menu-text">HTML</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../ajax/" class="menu-link">
+<div class="menu-text">AJAX</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs/" class="menu-link">
+<div class="menu-text">ANGULAR JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs11/" class="menu-link">
+<div class="menu-text">ANGULAR JS 11</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">LARAVEL</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../vuejs/" class="menu-link">
+<div class="menu-text">VUE JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../reactjs/" class="menu-link">
+<div class="menu-text">REACT JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">ASP.NET <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../material/index_v3.html" class="menu-link">
+<div class="menu-text">MATERIAL DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../apple/index_v3.html" class="menu-link">
+<div class="menu-text">APPLE DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../transparent/index_v3.html" class="menu-link">
+<div class="menu-text">TRANSPARENT DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../facebook/index_v3.html" class="menu-link">
+<div class="menu-text">FACEBOOK DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../google/index_v3.html" class="menu-link">
+<div class="menu-text">GOOGLE DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-medkit"></i>
+</div>
+<div class="menu-text">Helper</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="helper_css.html" class="menu-link">
+<div class="menu-text">Predefined CSS Classes</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="fa fa-align-left"></i>
+</div>
+<div class="menu-text">Menu Level</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 1.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 2.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.1</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.2</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.3</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.3</div></a></div>
+</div>
+</div>
+
+<div class="menu-item d-flex">
+<a href="javascript:;" class="app-sidebar-minify-btn ms-auto" data-toggle="app-sidebar-minify"><i class="fa fa-angle-double-left"></i></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="app-sidebar-bg"></div>
+<div class="app-sidebar-mobile-backdrop"><a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"></a></div>
+
+
+<div id="content" class="app-content">
+
+<ol class="breadcrumb float-xl-end">
+<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+<li class="breadcrumb-item"><a href="javascript:;">UI Elements</a></li>
+<li class="breadcrumb-item active">Ionicons</li>
+</ol>
+
+
+<h1 class="page-header">Ionicons V2.0.1 <small>bundle with 696 icons (material & ios style icons)</small></h1>
+
+
+<div class="panel panel-inverse">
+
+<div class="panel-heading">
+<h4 class="panel-title">Installation</h4>
+<div class="panel-heading-btn">
+<a href="javascript:;" class="btn btn-xs btn-icon btn-default" data-toggle="panel-expand"><i class="fa fa-expand"></i></a>
+<a href="javascript:;" class="btn btn-xs btn-icon btn-success" data-toggle="panel-reload"><i class="fa fa-redo"></i></a>
+<a href="javascript:;" class="btn btn-xs btn-icon btn-warning" data-toggle="panel-collapse"><i class="fa fa-minus"></i></a>
+<a href="javascript:;" class="btn btn-xs btn-icon btn-danger" data-toggle="panel-remove"><i class="fa fa-times"></i></a>
+</div>
+</div>
+
+
+<div class="panel-body">
+
+<ul id="ioniconsTab" class="nav nav-pills mb-3">
+<li class="nav-item"><a href="#md" data-bs-toggle="tab" class="nav-link active d-flex align-items-center"><i class="ion-logo-android fa-lg"></i><span class="d-none d-lg-inline ms-2">Material style (317)</span>&nbsp;</a></li>
+<li class="nav-item ms-2"><a href="#ios" data-bs-toggle="tab" class="nav-link d-flex align-items-center"><i class="ion-logo-apple fa-lg"></i><span class="d-none d-lg-inline ms-2">IOS style (317)</span>&nbsp;</a></li>
+<li class="nav-item ms-2"><a href="#logos" data-bs-toggle="tab" class="nav-link d-flex align-items-center"><i class="ion-logo-ionic fa-lg"></i><span class="d-none d-lg-inline ms-2">Logos (62)</span>&nbsp;</a></li>
+</ul>
+
+<hr class="bg-gray-500" />
+
+<div id="ioniconsTabContent" class="tab-content rounded-bottom fs-13px">
+
+<div class="tab-pane fade show active" id="md">
+
+<div class="row" data-id="icon">
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-add-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-add-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-add-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-add-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-add fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-add</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-airplane fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-airplane</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-alarm fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-alarm</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-albums fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-albums</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-alert fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-alert</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-american-football fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-american-football</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-analytics fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-analytics</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-aperture fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-aperture</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-apps fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-apps</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-appstore fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-appstore</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-archive fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-archive</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-back fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-back</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropdown-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropdown-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropdown fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropdown</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropleft-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropleft-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropleft fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropleft</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropright-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropright-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropright fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropright</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropup-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropup-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-dropup fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-dropup</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-forward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-forward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-round-back fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-round-back</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-round-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-round-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-round-forward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-round-forward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-round-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-round-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-arrow-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-arrow-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-at fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-at</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-attach fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-attach</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-backspace fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-backspace</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-barcode fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-barcode</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-baseball fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-baseball</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-basket fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-basket</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-basketball fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-basketball</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-battery-charging fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-battery-charging</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-battery-dead fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-battery-dead</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-battery-full fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-battery-full</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-beaker fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-beaker</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bed fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bed</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-beer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-beer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bicycle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bicycle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bluetooth fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bluetooth</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-boat fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-boat</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-body fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-body</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bonfire fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bonfire</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-book fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-book</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bookmark fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bookmark</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bookmarks fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bookmarks</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bowtie fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bowtie</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-briefcase fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-briefcase</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-browsers fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-browsers</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-brush fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-brush</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bug fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bug</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-build fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-build</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bulb fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bulb</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-bus fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-bus</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-business fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-business</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cafe fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cafe</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-calculator fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-calculator</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-calendar fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-calendar</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-call fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-call</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-camera fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-camera</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-car fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-car</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-card fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-card</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cart fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cart</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cash fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cash</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cellular fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cellular</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-chatboxes fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-chatboxes</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-chatbubbles fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-chatbubbles</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-checkbox-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-checkbox-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-checkbox fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-checkbox</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-checkmark-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-checkmark-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-checkmark-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-checkmark-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-checkmark fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-checkmark</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-clipboard fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-clipboard</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-clock fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-clock</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-close-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-close-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-close-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-close-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-close fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-close</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloud-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloud-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloud-done fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloud-done</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloud-download fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloud-download</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloud-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloud-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloud-upload fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloud-upload</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloud fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloud</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloudy-night fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloudy-night</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cloudy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cloudy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-code-download fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-code-download</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-code-working fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-code-working</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-code fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-code</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cog fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cog</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-color-fill fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-color-fill</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-color-filter fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-color-filter</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-color-palette fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-color-palette</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-color-wand fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-color-wand</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-compass fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-compass</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-construct fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-construct</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-contact fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-contact</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-contacts fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-contacts</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-contract fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-contract</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-contrast fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-contrast</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-copy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-copy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-create fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-create</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-crop fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-crop</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cube fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cube</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-cut fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-cut</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-desktop fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-desktop</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-disc fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-disc</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-document fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-document</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-done-all fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-done-all</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-download fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-download</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-easel fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-easel</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-egg fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-egg</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-exit fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-exit</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-expand fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-expand</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-eye-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-eye-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-eye fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-eye</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-fastforward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-fastforward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-female fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-female</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-filing fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-filing</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-film fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-film</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-finger-print fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-finger-print</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-fitness fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-fitness</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-flag fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-flag</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-flame fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-flame</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-flash-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-flash-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-flash fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-flash</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-flashlight fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-flashlight</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-flask fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-flask</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-flower fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-flower</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-folder-open fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-folder-open</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-folder fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-folder</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-football fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-football</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-funnel fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-funnel</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-gift fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-gift</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-git-branch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-git-branch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-git-commit fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-git-commit</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-git-compare fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-git-compare</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-git-merge fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-git-merge</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-git-network fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-git-network</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-git-pull-request fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-git-pull-request</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-glasses fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-glasses</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-globe fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-globe</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-grid fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-grid</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-hammer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-hammer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-hand fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-hand</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-happy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-happy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-headset fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-headset</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-heart fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-heart</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-heart-dislike fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-heart-dislike</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-heart-empty fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-heart-empty</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-heart-half fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-heart-half</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-help-buoy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-help-buoy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-help-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-help-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-help-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-help-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-help fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-help</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-home fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-home</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-hourglass fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-hourglass</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-ice-cream fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-ice-cream</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-image fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-image</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-images fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-images</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-infinite fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-infinite</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-information-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-information-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-information-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-information-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-information fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-information</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-jet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-jet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-journal fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-journal</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-key fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-key</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-keypad fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-keypad</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-laptop fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-laptop</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-leaf fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-leaf</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-link fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-link</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-list-box fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-list-box</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-list fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-list</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-locate fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-locate</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-lock fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-lock</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-log-in fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-log-in</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-log-out fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-log-out</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-magnet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-magnet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-mail-open fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-mail-open</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-mail-unread fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-mail-unread</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-mail fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-mail</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-male fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-male</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-man fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-man</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-map fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-map</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-medal fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-medal</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-medical fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-medical</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-medkit fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-medkit</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-megaphone fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-megaphone</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-menu fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-menu</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-mic-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-mic-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-mic fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-mic</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-microphone fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-microphone</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-moon fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-moon</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-more fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-more</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-move fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-move</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-musical-note fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-musical-note</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-musical-notes fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-musical-notes</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-navigate fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-navigate</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-notifications-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-notifications-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-notifications-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-notifications-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-notifications fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-notifications</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-nuclear fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-nuclear</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-nutrition fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-nutrition</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-open fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-open</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-options fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-options</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-outlet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-outlet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-paper-plane fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-paper-plane</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-paper fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-paper</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-partly-sunny fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-partly-sunny</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pause fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pause</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-paw fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-paw</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-people fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-people</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-person-add fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-person-add</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-person fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-person</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-phone-landscape fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-phone-landscape</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-phone-portrait fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-phone-portrait</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-photos fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-photos</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pie fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pie</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pin fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pin</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pint fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pint</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pizza fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pizza</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-planet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-planet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-play-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-play-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-play fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-play</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-podium fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-podium</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-power fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-power</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pricetag fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pricetag</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pricetags fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pricetags</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-print fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-print</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-pulse fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-pulse</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-qr-scanner fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-qr-scanner</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-quote fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-quote</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-radio-button-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-radio-button-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-radio-button-on fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-radio-button-on</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-radio fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-radio</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-rainy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-rainy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-recording fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-recording</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-redo fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-redo</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-refresh-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-refresh-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-refresh fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-refresh</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-remove-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-remove-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-remove-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-remove-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-remove fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-remove</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-reorder fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-reorder</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-repeat fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-repeat</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-resize fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-resize</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-restaurant fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-restaurant</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-return-left fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-return-left</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-return-right fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-return-right</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-reverse-camera fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-reverse-camera</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-rewind fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-rewind</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-ribbon fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-ribbon</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-rocket fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-rocket</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-rose fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-rose</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-sad fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-sad</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-save fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-save</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-school fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-school</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-search fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-search</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-send fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-send</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-settings fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-settings</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-share-alt fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-share-alt</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-share fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-share</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-shirt fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-shirt</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-shuffle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-shuffle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-skip-backward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-skip-backward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-skip-forward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-skip-forward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-snow fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-snow</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-speedometer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-speedometer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-square-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-square-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-square fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-square</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-star-half fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-star-half</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-star-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-star-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-star fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-star</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-stats fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-stats</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-stopwatch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-stopwatch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-subway fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-subway</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-sunny fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-sunny</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-swap fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-swap</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-switch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-switch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-sync fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-sync</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-tablet-landscape fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-tablet-landscape</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-tablet-portrait fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-tablet-portrait</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-tennisball fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-tennisball</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-text fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-text</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-thermometer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-thermometer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-thumbs-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-thumbs-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-thumbs-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-thumbs-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-thunderstorm fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-thunderstorm</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-time fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-time</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-timer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-timer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-today fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-today</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-train fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-train</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-transgender fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-transgender</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-trash fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-trash</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-trending-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-trending-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-trending-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-trending-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-trophy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-trophy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-tv fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-tv</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-umbrella fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-umbrella</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-undo fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-undo</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-unlock fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-unlock</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-videocam fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-videocam</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-volume-high fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-volume-high</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-volume-low fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-volume-low</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-volume-mute fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-volume-mute</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-volume-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-volume-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-wallet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-wallet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-walk fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-walk</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-warning fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-warning</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-watch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-watch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-water fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-water</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-wifi fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-wifi</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-wine fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-wine</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-md-woman fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-md-woman</div></div>
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="ios">
+
+<div class="row">
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-add-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-add-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-add-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-add-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-add fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-add</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-airplane fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-airplane</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-alarm fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-alarm</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-albums fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-albums</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-alert fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-alert</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-american-football fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-american-football</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-analytics fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-analytics</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-aperture fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-aperture</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-apps fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-apps</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-appstore fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-appstore</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-archive fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-archive</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-back fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-back</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropdown-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropdown-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropdown fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropdown</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropleft-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropleft-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropleft fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropleft</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropright-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropright-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropright fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropright</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropup-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropup-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-dropup fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-dropup</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-forward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-forward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-round-back fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-round-back</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-round-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-round-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-round-forward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-round-forward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-round-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-round-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-arrow-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-arrow-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-at fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-at</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-attach fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-attach</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-backspace fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-backspace</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-barcode fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-barcode</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-baseball fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-baseball</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-basket fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-basket</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-basketball fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-basketball</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-battery-charging fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-battery-charging</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-battery-dead fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-battery-dead</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-battery-full fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-battery-full</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-beaker fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-beaker</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bed fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bed</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-beer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-beer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bicycle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bicycle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bluetooth fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bluetooth</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-boat fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-boat</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-body fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-body</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bonfire fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bonfire</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-book fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-book</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bookmark fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bookmark</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bookmarks fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bookmarks</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bowtie fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bowtie</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-briefcase fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-briefcase</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-browsers fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-browsers</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-brush fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-brush</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bug fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bug</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-build fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-build</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bulb fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bulb</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-bus fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-bus</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-business fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-business</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cafe fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cafe</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-calculator fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-calculator</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-calendar fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-calendar</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-call fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-call</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-camera fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-camera</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-car fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-car</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-card fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-card</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cart fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cart</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cash fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cash</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cellular fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cellular</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-chatboxes fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-chatboxes</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-chatbubbles fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-chatbubbles</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-checkbox-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-checkbox-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-checkbox fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-checkbox</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-checkmark-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-checkmark-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-checkmark-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-checkmark-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-checkmark fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-checkmark</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-clipboard fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-clipboard</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-clock fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-clock</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-close-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-close-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-close-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-close-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-close fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-close</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloud-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloud-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloud-done fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloud-done</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloud-download fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloud-download</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloud-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloud-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloud-upload fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloud-upload</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloud fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloud</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloudy-night fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloudy-night</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cloudy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cloudy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-code-download fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-code-download</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-code-working fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-code-working</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-code fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-code</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cog fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cog</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-color-fill fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-color-fill</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-color-filter fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-color-filter</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-color-palette fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-color-palette</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-color-wand fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-color-wand</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-compass fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-compass</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-construct fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-construct</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-contact fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-contact</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-contacts fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-contacts</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-contract fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-contract</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-contrast fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-contrast</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-copy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-copy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-create fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-create</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-crop fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-crop</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cube fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cube</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-cut fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-cut</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-desktop fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-desktop</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-disc fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-disc</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-document fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-document</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-done-all fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-done-all</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-download fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-download</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-easel fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-easel</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-egg fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-egg</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-exit fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-exit</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-expand fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-expand</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-eye-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-eye-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-eye fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-eye</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-fastforward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-fastforward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-female fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-female</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-filing fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-filing</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-film fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-film</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-finger-print fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-finger-print</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-fitness fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-fitness</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-flag fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-flag</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-flame fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-flame</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-flash-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-flash-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-flash fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-flash</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-flashlight fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-flashlight</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-flask fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-flask</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-flower fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-flower</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-folder-open fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-folder-open</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-folder fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-folder</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-football fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-football</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-funnel fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-funnel</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-gift fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-gift</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-git-branch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-git-branch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-git-commit fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-git-commit</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-git-compare fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-git-compare</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-git-merge fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-git-merge</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-git-network fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-git-network</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-git-pull-request fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-git-pull-request</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-glasses fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-glasses</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-globe fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-globe</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-grid fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-grid</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-hammer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-hammer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-hand fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-hand</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-happy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-happy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-headset fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-headset</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-heart fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-heart</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-heart-dislike fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-heart-dislike</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-heart-empty fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-heart-empty</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-heart-half fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-heart-half</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-help-buoy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-help-buoy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-help-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-help-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-help-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-help-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-help fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-help</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-home fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-home</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-hourglass fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-hourglass</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-ice-cream fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-ice-cream</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-image fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-image</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-images fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-images</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-infinite fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-infinite</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-information-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-information-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-information-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-information-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-information fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-information</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-jet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-jet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-journal fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-journal</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-key fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-key</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-keypad fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-keypad</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-laptop fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-laptop</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-leaf fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-leaf</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-link fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-link</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-list-box fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-list-box</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-list fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-list</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-locate fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-locate</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-lock fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-lock</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-log-in fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-log-in</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-log-out fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-log-out</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-magnet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-magnet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-mail-open fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-mail-open</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-mail-unread fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-mail-unread</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-mail fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-mail</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-male fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-male</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-man fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-man</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-map fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-map</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-medal fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-medal</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-medical fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-medical</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-medkit fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-medkit</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-megaphone fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-megaphone</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-menu fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-menu</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-mic-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-mic-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-mic fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-mic</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-microphone fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-microphone</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-moon fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-moon</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-more fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-more</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-move fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-move</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-musical-note fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-musical-note</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-musical-notes fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-musical-notes</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-navigate fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-navigate</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-notifications-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-notifications-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-notifications-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-notifications-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-notifications fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-notifications</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-nuclear fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-nuclear</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-nutrition fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-nutrition</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-open fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-open</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-options fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-options</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-outlet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-outlet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-paper-plane fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-paper-plane</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-paper fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-paper</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-partly-sunny fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-partly-sunny</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pause fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pause</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-paw fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-paw</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-people fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-people</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-person-add fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-person-add</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-person fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-person</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-phone-landscape fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-phone-landscape</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-phone-portrait fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-phone-portrait</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-photos fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-photos</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pie fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pie</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pin fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pin</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pint fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pint</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pizza fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pizza</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-planet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-planet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-play-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-play-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-play fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-play</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-podium fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-podium</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-power fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-power</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pricetag fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pricetag</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pricetags fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pricetags</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-print fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-print</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-pulse fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-pulse</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-qr-scanner fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-qr-scanner</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-quote fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-quote</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-radio-button-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-radio-button-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-radio-button-on fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-radio-button-on</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-radio fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-radio</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-rainy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-rainy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-recording fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-recording</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-redo fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-redo</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-refresh-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-refresh-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-refresh fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-refresh</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-remove-circle-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-remove-circle-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-remove-circle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-remove-circle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-remove fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-remove</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-reorder fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-reorder</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-repeat fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-repeat</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-resize fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-resize</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-restaurant fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-restaurant</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-return-left fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-return-left</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-return-right fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-return-right</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-reverse-camera fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-reverse-camera</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-rewind fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-rewind</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-ribbon fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-ribbon</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-rocket fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-rocket</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-rose fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-rose</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-sad fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-sad</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-save fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-save</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-school fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-school</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-search fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-search</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-send fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-send</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-settings fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-settings</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-share-alt fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-share-alt</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-share fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-share</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-shirt fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-shirt</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-shuffle fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-shuffle</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-skip-backward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-skip-backward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-skip-forward fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-skip-forward</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-snow fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-snow</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-speedometer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-speedometer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-square-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-square-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-square fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-square</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-star-half fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-star-half</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-star-outline fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-star-outline</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-star fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-star</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-stats fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-stats</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-stopwatch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-stopwatch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-subway fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-subway</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-sunny fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-sunny</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-swap fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-swap</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-switch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-switch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-sync fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-sync</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-tablet-landscape fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-tablet-landscape</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-tablet-portrait fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-tablet-portrait</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-tennisball fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-tennisball</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-text fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-text</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-thermometer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-thermometer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-thumbs-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-thumbs-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-thumbs-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-thumbs-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-thunderstorm fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-thunderstorm</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-time fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-time</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-timer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-timer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-today fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-today</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-train fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-train</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-transgender fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-transgender</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-trash fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-trash</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-trending-down fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-trending-down</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-trending-up fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-trending-up</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-trophy fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-trophy</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-tv fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-tv</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-umbrella fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-umbrella</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-undo fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-undo</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-unlock fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-unlock</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-videocam fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-videocam</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-volume-high fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-volume-high</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-volume-low fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-volume-low</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-volume-mute fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-volume-mute</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-volume-off fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-volume-off</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-wallet fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-wallet</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-walk fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-walk</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-warning fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-warning</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-watch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-watch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-water fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-water</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-wifi fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-wifi</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-wine fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-wine</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-ios-woman fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-ios-woman</div></div>
+</div>
+
+</div>
+
+
+<div class="tab-pane fade" id="logos">
+
+<div class="row">
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-android fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-android</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-angular fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-angular</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-apple fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-apple</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-bitbucket fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-bitbucket</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-bitcoin fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-bitcoin</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-buffer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-buffer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-chrome fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-chrome</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-closed-captioning fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-closed-captioning</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-codepen fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-codepen</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-css3 fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-css3</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-designernews fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-designernews</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-dribbble fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-dribbble</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-dropbox fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-dropbox</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-euro fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-euro</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-facebook fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-facebook</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-flickr fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-flickr</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-foursquare fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-foursquare</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-freebsd-devil fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-freebsd-devil</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-game-controller-a fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-game-controller-a</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-game-controller-b fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-game-controller-b</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-github fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-github</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-google fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-google</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-googleplus fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-googleplus</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-hackernews fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-hackernews</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-html5 fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-html5</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-instagram fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-instagram</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-ionic fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-ionic</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-ionitron fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-ionitron</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-javascript fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-javascript</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-linkedin fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-linkedin</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-markdown fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-markdown</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-model-s fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-model-s</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-no-smoking fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-no-smoking</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-nodejs fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-nodejs</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-npm fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-npm</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-octocat fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-octocat</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-pinterest fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-pinterest</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-playstation fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-playstation</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-polymer fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-polymer</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-python fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-python</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-reddit fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-reddit</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-rss fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-rss</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-sass fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-sass</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-skype fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-skype</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-slack fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-slack</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-snapchat fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-snapchat</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-steam fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-steam</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-tumblr fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-tumblr</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-tux fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-tux</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-twitch fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-twitch</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-twitter fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-twitter</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-usd fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-usd</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-vimeo fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-vimeo</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-vk fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-vk</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-whatsapp fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-whatsapp</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-windows fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-windows</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-wordpress fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-wordpress</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-xbox fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-xbox</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-xing fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-xing</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-yahoo fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-yahoo</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-yen fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion-logo-yen</div></div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-12 py-5px d-flex align-items-center"><i class="ion ion-logo-youtube fa-2x fa-fw float-start me-10px text-black-lighter"></i><div class="text-ellipsis">ion ion-logo-youtube</div></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hljs-wrapper">
+<pre><code class="html">&lt;!-- required files --&gt;
+&lt;link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" /&gt;
+
+&lt;!-- material --&gt;
+&lt;i class="ion ion-md-add-circle-outline"&gt;&lt;/i&gt;
+
+&lt;!-- ios --&gt;
+&lt;i class="ion ion-ios-add-circle-outline"&gt;&lt;/i&gt;
+
+&lt;!-- logo --&gt;
+&lt;i class="ion ion-logo-android"&gt;&lt;/i&gt;</code></pre>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content" data-scrollbar="true" data-height="100%">
+<h5>App Settings</h5>
+
+<div class="theme-list">
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-red" data-theme="red" data-theme-file="../assets/css/default/theme/red.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-pink" data-theme="pink" data-theme-file="../assets/css/default/theme/pink.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-orange" data-theme="orange" data-theme-file="../assets/css/default/theme/orange.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-yellow" data-theme="yellow" data-theme-file="../assets/css/default/theme/yellow.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-lime" data-theme="lime" data-theme-file="../assets/css/default/theme/lime.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-green" data-theme="green" data-theme-file="../assets/css/default/theme/green.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+<div class="theme-list-item active"><a href="javascript:;" class="theme-list-link bg-teal" data-theme="default" data-theme-file="" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-cyan" data-theme="cyan" data-theme-file="../assets/css/default/theme/cyan.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-blue" data-theme="blue" data-theme-file="../assets/css/default/theme/blue.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-purple" data-theme="purple" data-theme-file="../assets/css/default/theme/purple.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-indigo" data-theme="indigo" data-theme-file="../assets/css/default/theme/indigo.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-black" data-theme="black" data-theme-file="../assets/css/default/theme/black.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Black">&nbsp;</a></div>
+</div>
+
+<div class="theme-panel-divider"></div>
+
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Header Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-fixed" id="appHeaderFixed" value="1" checked />
+<label class="form-check-label" for="appHeaderFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Header Inverse</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-inverse" id="appHeaderInverse" value="1" />
+<label class="form-check-label" for="appHeaderInverse">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Sidebar Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-sidebar-fixed" id="appSidebarFixed" value="1" checked />
+<label class="form-check-label" for="appSidebarFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse fw-bold">Sidebar Grid</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-sidebar-grid" id="appSidebarGrid" value="1" />
+<label class="form-check-label" for="appSidebarGrid">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-md-8 control-label text-inverse fw-bold">Gradient Enabled</div>
+<div class="col-md-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-gradient-enabled" id="appGradientEnabled" value="1" />
+<label class="form-check-label" for="appGradientEnabled">&nbsp;</label>
+</div>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Admin Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index_v2.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/theme/default.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../transparent/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/transparent.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../apple/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/apple.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../material/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/material.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../facebook/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/facebook.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../google/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/google.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Language Version (7)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/version/html.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../ajax/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/ajax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular1x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs11/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular10x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/laravel.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../vuejs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/vuejs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../reactjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/reactjs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/dotnet.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Frontend Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/one-page-parallax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/e-commerce.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/blog.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/forum.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/corporate.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<a href="https://seantheme.com/color-admin/documentation/" class="btn btn-inverse d-block w-100 rounded-pill mb-10px" target="_blank"><b>Documentation</b></a>
+<a href="javascript:;" class="btn btn-default d-block w-100 rounded-pill" data-toggle="reset-local-storage"><b>Reset Local Storage</b></a>
+</div>
+</div>
+
+
+<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+</div>
+
+
+<script src="../assets/js/vendor.min.js" type="6dff8cd979b950c6c533b189-text/javascript"></script>
+<script src="../assets/js/app.min.js" type="6dff8cd979b950c6c533b189-text/javascript"></script>
+<script src="../assets/js/theme/default.min.js" type="6dff8cd979b950c6c533b189-text/javascript"></script>
+
+
+<script src="../assets/plugins/@highlightjs/cdn-assets/highlight.min.js" type="6dff8cd979b950c6c533b189-text/javascript"></script>
+<script src="../assets/js/demo/render.highlight.js" type="6dff8cd979b950c6c533b189-text/javascript"></script>
+
+<script type="6dff8cd979b950c6c533b189-text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53034621-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6dff8cd979b950c6c533b189-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b21f1a898a370a","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

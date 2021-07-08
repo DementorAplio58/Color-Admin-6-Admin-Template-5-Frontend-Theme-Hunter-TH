@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Infinite Admin | Form Wizards</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+<link href="../assets/plugins/bootstrap/bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/plugins/icon/themify-icons/themify-icons.css" rel="stylesheet" />
+<link href="../assets/css/animate.min.css" rel="stylesheet" />
+<link href="../assets/css/style.min.css" rel="stylesheet" />
+<link href="../assets/css/theme/default.css" rel="stylesheet" id="theme" />
+
+
+<script src="../assets/plugins/loader/pace/pace.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+
+</head>
+<body>
+
+<div id="page-container" class="page-header-fixed page-sidebar-fixed fade">
+
+<div id="header" class="header navbar navbar-default navbar-fixed-top">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+<i class="ti-infinite navbar-logo text-gradient bg-gradient-blue-purple"></i>
+<b>Infinite</b> Admin
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-xs-justified">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="javascript:;" data-toggle="search-bar" class="navbar-icon">
+<i class="ti-search"></i>
+</a>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle navbar-icon with-label">
+<i class="ti-bell"></i>
+</a>
+<ul class="dropdown-menu dropdown-lg no-padding">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-primary">
+<i class="ti-apple"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">App Store <span class="notification-time">Just now</span></h4>
+<p class="notification-desc">
+Your iOS application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-success">
+<i class="ti-android"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Google Play <span class="notification-time">5 min ago</span></h4>
+<p class="notification-desc">
+Your android application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-muted">
+<i class="ti-github"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Github <span class="notification-time">12 min ago</span></h4>
+<p class="notification-desc">
+Error with notifications from Private Repos
+</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-purple">
+<i class="ti-email"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Gmail <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+You have 2 unread email
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon">
+<img src="../assets/img/user-2.jpg" alt="" />
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Corey <span class="notification-time">10:20am</span></h4>
+<p class="notification-desc">
+There's so much room for activities!
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-gradient-aqua">
+<i class="ti-twitter"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Twitter <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+@sergiolucas: Most rain in the last two days: 85mm Gabo Island (Mar
+</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="navbar-icon">
+<i class="ti-settings"></i>
+</a>
+<ul class="dropdown-menu dropdown-md no-padding" data-dropdown-close="false">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-email"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+Email
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-desktop"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+Desktop and Mobile
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-mobile"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+Text message
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-user"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+Public friends list
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-search"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+Public profile page
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown">
+<span class="navbar-user-img online pull-left">
+<img src="../assets/img/user.jpg" alt="" />
+</span>
+<span class="hidden-xs ">Sean Ngu <b class="caret"></b></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="javascript:;">Edit Profile</a></li>
+<li><a href="javascript:;">Inbox</a></li>
+<li><a href="javascript:;">Calendar</a></li>
+<li><a href="javascript:;">Setting</a></li>
+<li class="divider"></li>
+<li><a href="javascript:;">Log Out</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="header-search-bar">
+<form action="#" method="POST" name="search_bar_form">
+<div class="form-group">
+<div class="left-icon"><i class="ti-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search infinite admin..." />
+<a href="javascript:;" data-dismiss="search-bar" class="right-icon"><i class="ti-close"></i></a>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="sidebar sidebar-inverse">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="image">
+<img src="../assets/img/user.jpg" />
+</div>
+<div class="info">
+<h4>Sean Ngu</h4>
+<p>UXUI Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li><a href="index.html"><i class="ti-home"></i><span>Home</span></a></li>
+<li><a href="analytics.html"><i class="ti-pie-chart"></i><span>Analytics</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<span class="caret caret-right pull-right"></span>
+<i class="ti-email"></i>
+<span>Email <span class="notification">20+</span></span>
+</a>
+<ul class="sub-menu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li><a href="widgets.html"><i class="ti-shortcode"></i><span>Widgets</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-heart"></i>
+<span>UI Kits</span>
+</a>
+<ul class="sub-menu">
+<li><a href="ui_bootstrap.html">Bootstrap</a></li>
+<li><a href="ui_buttons.html">Buttons</a></li>
+<li><a href="ui_typography.html">Typography</a></li>
+<li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
+<li><a href="ui_modal_notification.html">Modal & Notification</a></li>
+<li><a href="ui_panels.html">Panels</a></li>
+<li><a href="ui_icons.html">Icons</a></li>
+</ul>
+</li>
+<li class="has-sub active">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-notepad"></i>
+<span>Forms</span>
+</a>
+<ul class="sub-menu">
+<li><a href="form_elements.html">Form Elements</a></li>
+<li><a href="form_plugins.html">Form Plugins</a></li>
+<li class="active"><a href="form_wizards.html">Wizards</a></li>
+<li><a href="form_jquery_file_upload.html">File Upload</a></li>
+<li><a href="form_summernote.html">Summernote</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-grid2"></i>
+<span>Tables</span>
+</a>
+<ul class="sub-menu">
+<li><a href="table_basic.html">Basic Tables</a></li>
+<li><a href="table_data.html">DataTables</a></li>
+</ul>
+</li>
+<li><a href="chart.html"><i class="ti-bar-chart"></i><span>Chart</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-map-alt"></i>
+<span>Map</span>
+</a>
+<ul class="sub-menu">
+<li><a href="map_vector.html">Vector Map</a></li>
+<li><a href="map_google.html">Google Map</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-sidebar-left"></i>
+<span>Layout</span>
+</a>
+<ul class="sub-menu">
+<li><a href="layout_starter.html">Starter Page</a></li>
+<li><a href="layout_fixed_footer.html">Fixed Footer</a></li>
+<li><a href="layout_full_width.html">Full Width</a></li>
+<li><a href="layout_boxed_layout.html">Boxed Layout</a></li>
+<li><a href="layout_full_height.html">Full Height</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-gift"></i>
+<span>Pages</span>
+</a>
+<ul class="sub-menu">
+<li><a href="page_gallery.html">Gallery</a></li>
+<li><a href="page_coming_soon.html">Coming Soon Page</a></li>
+<li><a href="page_search_results.html">Search Results</a></li>
+<li><a href="page_404_error.html">404 Error Page</a></li>
+<li><a href="page_login.html">Login</a></li>
+<li><a href="page_register.html">Register</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li><a href="profile.html"><i class="ti-user"></i><span>Profile</span></a></li>
+<li><a href="calendar.html"><i class="ti-calendar"></i> <span>Calendar</span></a></li>
+<li><a href="settings.html"><i class="ti-settings"></i><span>Settings</span></a></li>
+<li><a href="helper.html"><i class="ti-help-alt"></i><span>Helper</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-align-left"></i>
+<span>Menu Level</span>
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 1.1
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 2.1
+</a>
+<ul class="sub-menu">
+<li><a href="javascript:;">Menu 3.1</a></li>
+<li><a href="javascript:;">Menu 3.2</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 2.2</a></li>
+<li><a href="javascript:;">Menu 2.3</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 1.2</a></li>
+<li><a href="javascript:;">Menu 1.3</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-mobile"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">70%</span>
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-headphone"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">40%</span>
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-github"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">50%</span>
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2017 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+
+<a href="#" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="ti-arrow-left"></i></a>
+
+</div>
+
+
+<div id="content" class="content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">FORMS</a></li>
+<li class="breadcrumb-item active">FORM WIZARS</li>
+</ul>
+
+
+<h1 class="page-header">
+Form Wizards <small>page header description goes here...</small>
+</h1>
+
+
+<div id="rootwizard" class="wizard wizard-full-width">
+
+<div class="wizard-header">
+<ul class="nav nav-pills">
+<li><a href="#tab1" data-toggle="tab" class="active">1. ACCOUNT INFORMATION</a></li>
+<li><a href="#tab2" data-toggle="tab">2. SETUP SECURITY QUESTIONS</a></li>
+<li><a href="#tab3" data-toggle="tab">3. NEWSLETTER & POLICY</a></li>
+<li><a href="#tab4" data-toggle="tab">4. COMPLETE REGISTRATION</a></li>
+</ul>
+</div>
+
+
+<form action="#" method="POST" name="wizard_form">
+
+<div class="wizard-content tab-content">
+
+<div class="tab-pane active" id="tab1">
+
+<div class="row">
+
+<div class="col-md-6 offset-md-3">
+<p class="desc m-b-20">Make sure to use a valid email address, you'll need to verify it before you can login to your account.</p>
+<div class="form-group">
+<label class="control-label">Timezone <span class="text-danger">*</span></label>
+<select class="form-control">
+<option value="-12">(GMT-12:00) International Date Line West</option>
+<option value="-11">(GMT-11:00) Midway Island, Samoa</option>
+<option value="-10">(GMT-10:00) Hawaii</option>
+<option value="-9">(GMT-09:00) Alaska</option>
+<option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+<option value="-8">(GMT-08:00) Tijuana, Baja California</option>
+<option value="-7">(GMT-07:00) Arizona</option>
+<option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+<option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+<option value="-6">(GMT-06:00) Central America</option>
+<option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+<option value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+<option value="-6">(GMT-06:00) Saskatchewan</option>
+<option value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+<option value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+<option value="-5">(GMT-05:00) Indiana (East)</option>
+<option value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+<option value="-4">(GMT-04:00) Caracas, La Paz</option>
+<option value="-4">(GMT-04:00) Manaus</option>
+<option value="-4">(GMT-04:00) Santiago</option>
+<option value="-3.5">(GMT-03:30) Newfoundland</option>
+<option value="-3">(GMT-03:00) Brasilia</option>
+<option value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
+<option value="-3">(GMT-03:00) Greenland</option>
+<option value="-3">(GMT-03:00) Montevideo</option>
+<option value="-2">(GMT-02:00) Mid-Atlantic</option>
+<option value="-1">(GMT-01:00) Cape Verde Is.</option>
+<option value="-1">(GMT-01:00) Azores</option>
+<option value="0">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+<option value="0">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+<option value="1">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+<option value="1">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+<option value="1">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+<option value="1">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+<option value="1">(GMT+01:00) West Central Africa</option>
+<option value="2">(GMT+02:00) Amman</option>
+<option value="2">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+<option value="2">(GMT+02:00) Beirut</option>
+<option value="2">(GMT+02:00) Cairo</option>
+<option value="2">(GMT+02:00) Harare, Pretoria</option>
+<option value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+<option value="2">(GMT+02:00) Jerusalem</option>
+<option value="2">(GMT+02:00) Minsk</option>
+<option value="2">(GMT+02:00) Windhoek</option>
+<option value="3">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+<option value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+<option value="3">(GMT+03:00) Nairobi</option>
+<option value="3">(GMT+03:00) Tbilisi</option>
+<option value="3.5">(GMT+03:30) Tehran</option>
+<option value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
+<option value="4">(GMT+04:00) Baku</option>
+<option value="4">(GMT+04:00) Yerevan</option>
+<option value="4.5">(GMT+04:30) Kabul</option>
+<option value="5">(GMT+05:00) Yekaterinburg</option>
+<option value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+<option value="5.5">(GMT+05:30) Sri Jayawardenapura</option>
+<option value="5.5">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+<option value="5.75">(GMT+05:45) Kathmandu</option>
+<option value="6">(GMT+06:00) Almaty, Novosibirsk</option>
+<option value="6">(GMT+06:00) Astana, Dhaka</option>
+<option value="6.5">(GMT+06:30) Yangon (Rangoon)</option>
+<option value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+<option value="7">(GMT+07:00) Krasnoyarsk</option>
+<option value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+<option value="8">(GMT+08:00) Kuala Lumpur, Singapore</option>
+<option value="8">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+<option value="8">(GMT+08:00) Perth</option>
+<option value="8">(GMT+08:00) Taipei</option>
+<option value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+<option value="9">(GMT+09:00) Seoul</option>
+<option value="9">(GMT+09:00) Yakutsk</option>
+<option value="9.5">(GMT+09:30) Adelaide</option>
+<option value="9.5">(GMT+09:30) Darwin</option>
+<option value="10">(GMT+10:00) Brisbane</option>
+<option value="10">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+<option value="10">(GMT+10:00) Hobart</option>
+<option value="10">(GMT+10:00) Guam, Port Moresby</option>
+<option value="10">(GMT+10:00) Vladivostok</option>
+<option value="11">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+<option value="12">(GMT+12:00) Auckland, Wellington</option>
+<option value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+<option value="13">(GMT+13:00) Nuku'alofa</option>
+</select>
+</div>
+<div class="form-group">
+<label class="control-label">Email <span class="text-danger">*</span></label>
+<input type="text" class="form-control" placeholder="name@example.com" />
+</div>
+<div class="form-group">
+<label class="control-label">Password <span class="text-danger">*</span></label>
+<input type="password" class="form-control m-b-5" placeholder="password" />
+<input type="password" class="form-control" placeholder="confirm password" />
+</div>
+<div class="form-group m-b-10">
+<label class="control-label">Name <span class="text-danger">*</span></label>
+<div class="row row-space-6">
+<div class="col-md-6">
+<input type="text" class="form-control m-b-5" placeholder="first name" />
+</div>
+<div class="col-md-6">
+<input type="text" class="form-control m-b-5" placeholder="last name" />
+</div>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Gender <span class="text-danger">*</span></label>
+<div>
+<div class="radio-inline">
+<input type="radio" name="inline_radio" id="inline_radio_1" value="1" checked="">
+<label for="inline_radio_1">
+Male
+</label>
+</div>
+<div class="radio-inline">
+<input type="radio" name="inline_radio" id="inline_radio_2" value="2">
+<label for="inline_radio_2">
+Female
+</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Date of Birth <span class="text-danger">*</span></label>
+<input type="text" class="form-control m-b-5" placeholder="dd/mm/yyyy" />
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="tab2">
+
+<div class="row">
+
+<div class="col-md-6 offset-md-3">
+<p class="desc m-b-20">These questions will be used to verify your identity and recover your password should you ever forget it.</p>
+<div class="form-group">
+<label class="control-label">Question 1. <span class="text-danger">*</span></label>
+<select class="form-control m-b-5">
+<option value="">Security Question 1</option>
+<option value="130">What was the name of your best friend as a teenager?</option>
+<option value="131">What was the name of your first pet?</option>
+<option value="132">What was the first dish you learned to cook?</option>
+<option value="133">What was the first film you saw in the cinema?</option>
+<option value="134">Where did you go the first time you flew on an airplane?</option>
+<option value="135">What is the name of your favourite elementary or primary school teacher?</option>
+</select>
+<input type="text" class="form-control" placeholder="answer" />
+</div>
+<div class="form-group">
+<label class="control-label">Question 2. <span class="text-danger">*</span></label>
+<select class="form-control m-b-5">
+<option value="">Security Question 2</option>
+<option value="130">What was the name of your best friend as a teenager?</option>
+<option value="131">What was the name of your first pet?</option>
+<option value="132">What was the first dish you learned to cook?</option>
+<option value="133">What was the first film you saw in the cinema?</option>
+<option value="134">Where did you go the first time you flew on an airplane?</option>
+<option value="135">What is the name of your favourite elementary or primary school teacher?</option>
+</select>
+<input type="text" class="form-control" placeholder="answer" />
+</div>
+<div class="form-group">
+<label class="control-label">Question 3. <span class="text-danger">*</span></label>
+<select class="form-control m-b-5">
+<option value="">Security Question 3</option>
+<option value="130">What was the name of your best friend as a teenager?</option>
+<option value="131">What was the name of your first pet?</option>
+<option value="132">What was the first dish you learned to cook?</option>
+<option value="133">What was the first film you saw in the cinema?</option>
+<option value="134">Where did you go the first time you flew on an airplane?</option>
+<option value="135">What is the name of your favourite elementary or primary school teacher?</option>
+</select>
+<input type="text" class="form-control" placeholder="answer" />
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane" id="tab3">
+
+<div class="row">
+
+<div class="col-md-6 offset-md-3">
+<div class="form-group">
+<label class="control-label">Terms of use:</label>
+<textarea class="form-control" rows="15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut tincidunt quam. Sed sollicitudin sit amet magna eget viverra. Fusce interdum rhoncus lectus euismod imperdiet. Fusce quis lectus sagittis, dapibus felis sit amet, auctor metus. Pellentesque consectetur, turpis id blandit mattis, elit orci pellentesque nisl, vel gravida elit mi nec dui. Fusce finibus ipsum et lacus elementum venenatis. Quisque mattis mollis justo, nec ultricies magna imperdiet nec.
+
+Maecenas at magna vitae ex congue vehicula. Sed lobortis tincidunt ipsum et feugiat. Duis ullamcorper quam sed justo consequat, sit amet rhoncus elit luctus. Mauris eget ligula sit amet enim efficitur auctor nec quis metus. Sed condimentum nisi eget eros pellentesque, quis vestibulum augue efficitur. Nullam finibus eleifend lorem a semper. Pellentesque ut arcu sit amet mi varius fermentum ultrices non mauris. Aliquam erat volutpat. Sed a viverra augue.
+
+Suspendisse sollicitudin non nunc vel facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vitae cursus dolor. Integer at turpis tincidunt, hendrerit nisl quis, fringilla lectus. Aliquam erat volutpat. Cras sit amet nunc eget augue scelerisque eleifend a a elit. Nunc purus purus, volutpat a porta nec, ultricies non nulla. Donec placerat, dolor ac pellentesque condimentum, neque velit cursus erat, id pulvinar leo tortor in augue. Proin suscipit turpis a ultrices accumsan. Integer quis feugiat nisl.
+
+Suspendisse quis nulla malesuada, consectetur mauris molestie, rutrum justo. Integer sed turpis arcu. Morbi laoreet bibendum justo venenatis dapibus. Integer ut lorem eu velit dictum lacinia. Donec vel venenatis odio, posuere aliquet ex. In et sollicitudin nulla. Cras cursus egestas lobortis. Donec posuere odio nec ante blandit lobortis. Quisque pharetra odio sit amet neque varius, vitae auctor magna sollicitudin.
+										</textarea>
+<div class="checkbox">
+<input type="checkbox" id="checkbox-agree" checked="" value="1">
+<label for="checkbox-agree">
+I agree to the terms of use.
+</label>
+</div>
+</div>
+<hr />
+<div class="checkbox m-b-15">
+<input type="checkbox" id="checkbox-1" checked="" value="1">
+<label for="checkbox-1">
+<b>Announcements</b><br />
+<span class="text-muted">GGet announcements, recommendations and updates about our products, services, software updates and more.</span>
+</label>
+</div>
+<div class="checkbox m-b-15">
+<input type="checkbox" id="checkbox-2" checked="" value="2">
+<label for="checkbox-2">
+<b>New Apps, News and more</b><br />
+<span class="text-muted">GGet recommendations, the latest releases, special offers and exclusive content for latest news, apps and more.</span>
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" id="checkbox-3" checked="" value="2">
+<label for="checkbox-3">
+<b>News Updates</b><br />
+<span class="text-muted">Get the best stories and recommendations from our news delivered directly to your inbox.</span>
+</label>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tab-pane text-center" id="tab4">
+<i class="ti-jsfiddle text-primary" style="font-size: 256px;"></i>
+<h2 class="m-t-0">Congratulations!</h2>
+<p>Your registration has been successfully completed. <br /> Thank you for register with us.</p>
+</div>
+
+
+<div class="wizard-footer">
+<a href="javascript:;" class="btn btn-default wizard-prev-btn btn-rounded">Previous</a>
+<a href="javascript:;" class="btn btn-primary wizard-next-btn btn-rounded">Next</a>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="ti-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="ti-settings"></i></a>
+<div class="theme-panel-content">
+<div class="form-group">
+<label class="control-label">Color Theme</label>
+<ul class="theme-list clearfix">
+<li class="active"><a href="javascript:;" class="bg-gradient-blue-purple" data-theme="default" data-theme-file="../assets/css/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default"></a></li>
+<li><a href="javascript:;" class="bg-gradient-red" data-theme="red" data-theme-file="../assets/css/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></li>
+<li><a href="javascript:;" class="bg-gradient-orange" data-theme="orange" data-theme-file="../assets/css/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></li>
+<li><a href="javascript:;" class="bg-gradient-yellow" data-theme="yellow" data-theme-file="../assets/css/theme/yellow.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></li>
+<li><a href="javascript:;" class="bg-gradient-green" data-theme="green" data-theme-file="../assets/css/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></li>
+<li><a href="javascript:;" class="bg-gradient-aqua" data-theme="aqua" data-theme-file="../assets/css/theme/aqua.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></li>
+<li><a href="javascript:;" class="bg-gradient-blue" data-theme="blue" data-theme-file="../assets/css/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></li>
+<li><a href="javascript:;" class="bg-gradient-purple" data-theme="purple" data-theme-file="../assets/css/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></li>
+<li><a href="javascript:;" class="bg-gradient-black" data-theme="black" data-theme-file="../assets/css/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></li>
+</ul>
+</div>
+<ul class="widget widget-list">
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" class="widget-list-container">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</a>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="row m-t-10">
+<div class="col-md-12">
+<a href="javascript:;" class="btn btn-inverse btn-block btn-rounded btn-sm" data-click="reset-theme-setting"><b>Reset Setting</b></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="../assets/plugins/jquery/jquery-3.2.1.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+<script src="../assets/plugins/cookie/js/js.cookie.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+<script src="../assets/plugins/tooltip/popper/popper.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+<script src="../assets/plugins/bootstrap/bootstrap4/js/bootstrap.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+<script src="../assets/plugins/scrollbar/slimscroll/jquery.slimscroll.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+
+
+<script src="../assets/plugins/form/bootstrap-wizard/js/bootstrap-wizard.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+<script src="../assets/js/page/form-wizards.demo.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+<script src="../assets/js/apps.min.js" type="240b12168cc72726d58c075f-text/javascript"></script>
+
+<script type="240b12168cc72726d58c075f-text/javascript">
+		$(document).ready(function() {
+			App.init();
+			FormWizards.init();
+		});
+	</script>
+<script type="240b12168cc72726d58c075f-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53034621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="240b12168cc72726d58c075f-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b233f03f2d016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

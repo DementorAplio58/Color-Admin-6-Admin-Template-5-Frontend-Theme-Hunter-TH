@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title> Documentation - Color Admin</title>
+
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/bootstrap/css/docs.css" rel="stylesheet">
+<link href="assets/bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="navbar navbar-inverse navbar-page">
+<div class="navbar-inner">
+<div class="container">
+<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="brand" href="#">Admin Template</a>
+<div class="nav-collapse collapse">
+<ul class="nav">
+<li class="">
+<a href="index.html">Design Template</a>
+</li>
+<li class="">
+<a href="index_ajax.html">Ajax Version</a>
+</li>
+<li class="active">
+<a href="index_angular_1x.html">Angular 1.x</a>
+</li>
+<li class="">
+<a href="index_angular_11.html">Angular 11.0</a>
+</li>
+<li class="">
+<a href="index_laravel.html">Laravel Version</a>
+</li>
+<li class="">
+<a href="index_vue.html">Vue Version</a>
+</li>
+<li class="">
+<a href="index_react.html">React Version</a>
+</li>
+<li class="">
+<a href="index_asp.html">ASP.NET</a>
+</li>
+<li>
+<a href="index_change_log.html">Change Log</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<header class="jumbotron subhead" id="overview">
+<div class="container">
+<h1 class="text-center">Color Admin</h1>
+<p class="lead text-center">&ldquo;Angular 1.X Version&rdquo; Documentation by &ldquo;Sean Ngu&rdquo; v5.0</p>
+</div>
+<div class="jumbotron-cover"></div>
+</header>
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="well with-cover">
+<div class="well-cover" style="background-image: url(assets/images/angular.jpg); background-size: auto 80%; background-position: center; background-repeat: no-repeat; background-color: #fff;"><span style="position: absolute; bottom: 25px; right: 70px; font-weight: bold;">1.X</span></div>
+<p>
+<strong>
+Last Updated: 27/June/2021<br>
+By: Sean Ngu
+</strong>
+</p>
+<p>
+If you have any questions that are beyond the scope of this help file,
+please feel free to <a href="https://wrapbootstrap.com/user/seanngu/message" target="_blank"></a>
+inbox me your question or send me an email via support email. Thanks so much!
+</p>
+<p style="margin-bottom: 0;">
+<small>* Support email can be found via downloaded version of Color Admin </small>
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="span3 bs-docs-sidebar">
+<ul class="nav nav-list bs-docs-sidenav affix-top">
+<li><a href="#fileStructure"><i class="icon-chevron-right"></i>File Structure</a></li>
+<li><a href="#pageStructure"><i class="icon-chevron-right"></i>Page Structure</a></li>
+<li><a href="#page-head"><i class="icon-chevron-right"></i>Page Head</a></li>
+<li><a href="#page-top-menu"><i class="icon-chevron-right"></i>Page Top Menu</a></li>
+<li><a href="#page-sidebar"><i class="icon-chevron-right"></i>Page Sidebar</a></li>
+<li><a href="#page-content"><i class="icon-chevron-right"></i>Page Content</a></li>
+<li><a href="#page-end"><i class="icon-chevron-right"></i>End of Page (Javascripts)</a></li>
+<li><a href="#page-options"><i class="icon-chevron-right"></i>Page Options</a></li>
+</ul>
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="fileStructure"><strong>A) File Structure</strong> - <a href="#top">top</a></h3>
+</div>
+<p>File structure overview for Angular JS 1.X Version</p>
+<pre class="prettyprint linenums">template_angularjs/
+├── angular-app.js
+├── angular-controller.js
+├── angular-directive.js
+├── angular-setting.js
+├── index.html
+├── template/
+│   ├── app.html
+│   ├── header.html
+│   ├── sidebar-right.html
+│   ├── sidebar.html
+│   ├── theme-panel.html
+│   └── top-menu.html
+└── views/
+    └── /* List of View Files Here */
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="pageStructure"><strong>B) Page Structure</strong> - <a href="#top">top</a></h3>
+</div>
+<p>Below is the <code>/template/app.html</code> which include the, header, sidebar, right sidebar, top menu, page content and footer. You may remove the component if you are not using it.</p>
+<pre class="prettyprint linenums">&lt;div ng-if="!setting.layout.appHeaderNone"&gt;
+  &lt;!-- begin #header --&gt;
+  &lt;div ng-include src="'template/header.html'"&gt;&lt;/div&gt;
+  &lt;!-- end #header --&gt;
+&lt;/div&gt;
+
+&lt;div ng-if="setting.layout.appTopMenu"&gt;
+  &lt;!-- begin #top-menu --&gt;
+  &lt;div ng-include src="'template/top-menu.html'"&gt;&lt;/div&gt;
+  &lt;!-- end #top-menu --&gt;
+&lt;/div&gt;
+
+&lt;div ng-if="!setting.layout.appSidebarNone"&gt;
+  &lt;!-- begin #sidebar --&gt;
+  &lt;div ng-include src="'template/sidebar.html'"&gt;&lt;/div&gt;
+  &lt;!-- end #sidebar --&gt;
+&lt;/div&gt;
+
+&lt;!-- begin #content --&gt;
+&lt;div id="content" view-content class="app-content" ng-class="setting.layout.appContentClass" ui-view&gt;
+&lt;/div&gt;
+&lt;!-- end #content --&gt;
+
+&lt;div ng-if="setting.layout.appSidebarTwo"&gt;
+  &lt;!-- begin #sidebar-right --&gt;
+  &lt;div ng-include src="'template/sidebar-right.html'"&gt;&lt;/div&gt;
+  &lt;!-- end #sidebar-right --&gt;
+&lt;/div&gt;
+
+&lt;!-- begin #theme-panel --&gt;
+&lt;div ng-include src="'template/theme-panel.html'"&gt;&lt;/div&gt;
+&lt;!-- end #theme-panel --&gt;
+
+&lt;!-- BEGIN scroll-top-btn --&gt;
+&lt;a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"&gt;&lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;!-- END scroll-top-btn --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-head"><strong>C) Page Head</strong> - <a href="#top">top</a></h3>
+</div>
+<p>Page head contains metadata, javascript and css files:</p>
+<pre class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" ng-app="colorAdminApp"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;title data-ng-bind="'AngularJS | ' + $state.current.data.pageTitle"&gt;AngularJS&lt;/title&gt;
+  &lt;meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /&gt;
+  &lt;meta content="" name="description" /&gt;
+  &lt;meta content="" name="author" /&gt;
+  
+  &lt;!-- ================== BEGIN core-css ================== --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" /&gt;
+  &lt;link href="../assets/css/vendor.min.css" rel="stylesheet" /&gt;
+  &lt;link href="../assets/css/default/app.min.css" rel="stylesheet" /&gt;
+  &lt;!-- ================== END core-css ================== --&gt;
+  
+  &lt;!-- ================== BEGIN page-css ================== --&gt;
+  &lt;script src="../assets/plugins/angular/angular.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/angular-ui-router/release/angular-ui-router.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/angular-ui-router/release/stateEvents.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/oclazyload/dist/ocLazyLoad.min.js"&gt;&lt;/script&gt;
+  &lt;!-- ================== END page-css ================== --&gt;
+&lt;/head&gt;
+&lt;body ng-controller="appController" ng-class="{'pace-top': setting.layout.paceTop, 'boxed-layout': setting.layout.appBoxedLayout, 'bg-white': setting.layout.pageBgWhite }"&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-top-menu"><strong>D) Top Menu</strong> - <a href="#top">top</a></h3>
+</div>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #header --&gt;
+&lt;div id="header" class="app-header" ng-controller="headerController" ng-class="{  'app-header-inverse': setting.layout.appSidebarLight }"&gt;
+  &lt;!-- BEGIN navbar-header --&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-end-mobile" 
+      ng-if="setting.layout.appSidebarTwo"&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a ui-sref="app.dashboard.v1" class="navbar-brand"&gt;
+      &lt;span class="navbar-logo"&gt;&lt;/span&gt; 
+      &lt;b&gt;Color&lt;/b&gt; Admin
+    &lt;/a&gt;
+    &lt;button type="button" class="navbar-mobile-toggler" ng-if="setting.layout.appMegaMenu" 
+      data-bs-toggle="collapse" data-bs-target="#top-navbar"&gt;
+      &lt;span class="fa-stack fa-lg"&gt;
+        &lt;i class="far fa-square fa-stack-2x"&gt;&lt;/i&gt;
+        &lt;i class="fa fa-cog fa-stack-1x mt-1px"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button type="button" class="navbar-mobile-toggler" ng-if="setting.layout.appTopMenu" 
+      data-toggle="app-top-menu-mobile"&gt;
+      &lt;span class="fa-stack fa-lg"&gt;
+        &lt;i class="far fa-square fa-stack-2x"&gt;&lt;/i&gt;
+        &lt;i class="fa fa-cog fa-stack-1x mt-1px"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button type="button" class="navbar-mobile-toggler" ng-if="!setting.layout.appSidebarNone" 
+      data-toggle="app-sidebar-mobile"&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;!-- END navbar-header --&gt;
+  
+  &lt;!-- BEGIN header-nav --&gt;
+  &lt;div class="navbar-nav"&gt;
+    &lt;!-- BEGIN navbar-collapse --&gt;
+    &lt;div class="collapse navbar-collapse" id="top-navbar" ng-if="setting.layout.appHeaderMegaMenu"&gt;
+      &lt;div ng-include src="'template/header-mega-menu.html'"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end navbar-collapse --&gt;
+    &lt;div class="navbar-item navbar-form"&gt;
+      &lt;form action="" method="POST" name="search"&gt;
+        &lt;div class="form-group"&gt;
+          &lt;input type="text" class="form-control" placeholder="Enter keyword" /&gt;
+          &lt;button type="submit" class="btn btn-search"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+    ...
+    &lt;div class="navbar-item dropdown" ng-if="setting.layout.appHeaderLanguageBar"&gt;
+      &lt;a href="#" class="navbar-link dropdown-toggle" data-bs-toggle="dropdown"&gt;
+        &lt;span class="flag-icon flag-icon-us" title="us"&gt;&lt;/span&gt;
+        &lt;span class="d-none d-sm-inline ms-1"&gt;EN&lt;/span&gt; &lt;b class="caret"&gt;&lt;/b&gt;
+      &lt;/a&gt;
+      &lt;div class="dropdown-menu dropdown-menu-end"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="navbar-item navbar-user dropdown"&gt;
+      &lt;a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" 
+        data-bs-toggle="dropdown"&gt;
+        &lt;img src="../assets/img/user/user-13.jpg" alt="" /&gt; 
+        &lt;span&gt;
+          &lt;span class="d-none d-md-inline"&gt;Adam Schwartz&lt;/span&gt;
+          &lt;b class="caret"&gt;&lt;/b&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+      &lt;div class="dropdown-menu dropdown-menu-end me-1"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="navbar-divider d-none d-md-block" ng-if="setting.layout.appSidebarTwo"&gt;&lt;/div&gt;
+    &lt;div class="navbar-item d-none d-md-block" ng-if="setting.layout.appSidebarTwo"&gt;
+      &lt;a href="javascript:;" data-toggle="app-sidebar-end" class="navbar-link icon"&gt;
+        &lt;i class="fa fa-th"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- END header-nav --&gt;
+&lt;/div&gt;
+&lt;!-- END #header --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-sidebar"><strong>E) Sidebar</strong> - <a href="#top">top</a></h3>
+</div>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #sidebar --&gt;
+&lt;div id="sidebar" class="app-sidebar" ng-controller="sidebarController" ng-class="{ 'app-sidebar-transparent': setting.layout.appSidebarTransparent }"&gt;
+  &lt;!-- BEGIN scrollbar --&gt;
+  &lt;div class="app-sidebar-content" data-scrollbar="true" data-height="100%"&gt;
+    &lt;!-- BEGIN menu --&gt;
+    &lt;div class="menu"&gt;
+      &lt;div class="menu-header"&gt;Navigation&lt;/div&gt;
+      &lt;div class="menu-item has-sub" ng-class="{active:$state.includes('app.dashboard')}"&gt;
+        &lt;a class="menu-link" href="javascript:;"&gt;
+          &lt;div class="menu-icon"&gt;&lt;i class="fa fa-th-large"&gt;&lt;/i&gt;&lt;/div&gt;
+          &lt;div class="menu-text"&gt;Dashboard&lt;/div&gt;
+          &lt;div class="menu-caret"&gt;&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;div class="menu-submenu"&gt;
+          &lt;div class="menu-item" ui-sref-active="active"&gt;
+            &lt;a class="menu-link" ui-sref="app.dashboard.v1"&gt;&lt;
+              div class="menu-text"&gt;Dashboard v1&lt;/div&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- BEGIN minify-button --&gt;
+      &lt;div class="menu-item d-flex"&gt;
+        &lt;a href="javascript:;" class="app-sidebar-minify-btn ms-auto" data-toggle="app-sidebar-minify"&gt;
+          &lt;i class="fa fa-angle-double-left"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;!-- END minify-button --&gt;
+    &lt;/div&gt;
+    &lt;!-- end sidebar nav --&gt;
+  &lt;/div&gt;
+  &lt;!-- END scrollbar --&gt;
+&lt;/div&gt;
+&lt;div class="app-sidebar-bg"&gt;&lt;/div&gt;
+&lt;div class="app-sidebar-mobile-backdrop"&gt;&lt;a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;!-- END #sidebar --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-content"><strong>F) Page Content</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+Page content consists of page title, breadcrumbs and page's main body. HTML code of Content container as shown below:
+</p>
+<pre class="prettyprint linenums">&lt;!-- begin #content --&gt;
+&lt;div id="content" view-content class="app-content" ng-class="setting.layout.appContentClass" ui-view&gt;
+&lt;/div&gt;
+&lt;!-- end #content --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-end"><strong>G) End of Page (Javascript)</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+Javascript files loaded in the end of page. This will reduce page load time.
+</p>
+<pre class="prettyprint linenums">  &lt;!-- ================== BEGIN core-js ================== --&gt;
+  &lt;script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"&gt;&lt;/script&gt;
+  &lt;script src="../assets/js/vendor.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/js/app.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/js/theme/default.min.js"&gt;&lt;/script&gt;
+  &lt;!-- ================== END core-js ================== --&gt;
+  
+  &lt;!-- ================== BEGIN page-js ================== --&gt;
+  &lt;script src="angular-app.js"&gt;&lt;/script&gt;
+  &lt;script src="angular-setting.js"&gt;&lt;/script&gt;
+  &lt;script src="angular-controller.js"&gt;&lt;/script&gt;
+  &lt;script src="angular-directive.js"&gt;&lt;/script&gt;
+  &lt;!-- ================== END page-js ================== --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-options"><strong>H) Page Options</strong> - <a href="#top">top</a></h3>
+</div>
+<p>Here is the general option for the each case of page options. You may set the option in controller or change it from <code>angular-setting.js</code> to make it affected globally.</p>
+<h4>Option List</h4>
+<pre class="prettyprint linenums">colorAdminApp.controller('dashboardController', function($scope, $rootScope, $state) {
+  $rootScope.setting.layout.paceTop = false;
+  $rootScope.setting.layout.appBoxedLayout = false;
+  $rootScope.setting.layout.appTopMenu = false;
+  $rootScope.setting.layout.appSidebarMinified = false;
+  $rootScope.setting.layout.appSidebarEnd = false;
+  $rootScope.setting.layout.appSidebarTwo = false;
+  $rootScope.setting.layout.appSidebarNone = false;
+  $rootScope.setting.layout.appSidebarTransparent = false;
+  $rootScope.setting.layout.appSidebarLight = false;
+  $rootScope.setting.layout.appSidebarSearch = false;
+  $rootScope.setting.layout.appHeaderMegaMenu = false;
+  $rootScope.setting.layout.appHeaderLanguageBar = false;
+  $rootScope.setting.layout.appHeaderNone = false;
+  $rootScope.setting.layout.appContentFullHeight = false;
+  $rootScope.setting.layout.appContentClass = '';
+  $rootScope.setting.layout.appFooterFixed = false;
+});
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container text-left">
+<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p>
+<br />
+<p class="append-bottom alt large"><strong>Sean Ngu</strong></p>
+<p><a href="#top">Go To Table of Contents</a></p>
+</div>
+</footer>
+<script src="assets/bootstrap/js/jquery.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-transition.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-alert.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-modal.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-dropdown.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-scrollspy.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-tab.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-tooltip.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-popover.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-button.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-collapse.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-carousel.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-typeahead.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-affix.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/holder/holder.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/google-code-prettify/prettify.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script src="assets/bootstrap/js/application.js" type="812268d5abf37b67ee28bb6c-text/javascript"></script>
+<script type="812268d5abf37b67ee28bb6c-text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-53034621-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="812268d5abf37b67ee28bb6c-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b22b9d3f2e21bb","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

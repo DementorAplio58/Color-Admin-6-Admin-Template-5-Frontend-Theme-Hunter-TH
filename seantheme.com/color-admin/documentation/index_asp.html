@@ -1,0 +1,484 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title> Documentation - Color Admin</title>
+
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/bootstrap/css/docs.css" rel="stylesheet">
+<link href="assets/bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="navbar navbar-inverse navbar-page">
+<div class="navbar-inner">
+<div class="container">
+<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="brand" href="#">Admin Template</a>
+<div class="nav-collapse collapse">
+<ul class="nav">
+<li class="">
+<a href="index.html">Design Template</a>
+</li>
+<li class="">
+<a href="index_ajax.html">Ajax Version</a>
+</li>
+<li class="">
+<a href="index_angular_1x.html">Angular 1.x</a>
+</li>
+<li class="">
+<a href="index_angular_11.html">Angular 11.0</a>
+</li>
+<li class="">
+<a href="index_laravel.html">Laravel Version</a>
+</li>
+<li class="">
+<a href="index_vue.html">Vue Version</a>
+</li>
+<li class="">
+<a href="index_react.html">React Version</a>
+</li>
+<li class="active">
+<a href="index_asp.html">ASP.NET</a>
+</li>
+<li>
+<a href="index_change_log.html">Change Log</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<header class="jumbotron subhead" id="overview">
+<div class="container">
+<h1 class="text-center">Color Admin</h1>
+<p class="lead text-center">&ldquo;ASP.NET Core 3.1 MVC Version&rdquo; Documentation by &ldquo;Sean Ngu&rdquo; v5.0</p>
+</div>
+<div class="jumbotron-cover"></div>
+</header>
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="well with-cover">
+<div class="well-cover" style="background-image: url(assets/images/dotnet.png); background-size: auto 80%; background-position: center; background-repeat: no-repeat; background-color: #fff;"></div>
+<p>
+<strong>
+Last Updated: 27/June/2021<br>
+By: Sean Ngu
+</strong>
+</p>
+<p>
+If you have any questions that are beyond the scope of this help file,
+please feel free to <a href="https://wrapbootstrap.com/user/seanngu/message" target="_blank"></a>
+inbox me your question or send me an email via support email. Thanks so much!
+</p>
+<p style="margin-bottom: 0;">
+<small>* Support email can be found via downloaded version of Color Admin </small>
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="span3 bs-docs-sidebar">
+<ul class="nav nav-list bs-docs-sidenav affix-top">
+<li><a href="#installation"><i class="icon-chevron-right"></i>Installation</a></li>
+<li><a href="#fileStructure"><i class="icon-chevron-right"></i>File Structure</a></li>
+<li><a href="#page-structure"><i class="icon-chevron-right"></i>Page Structure</a></li>
+<li><a href="#page-css"><i class="icon-chevron-right"></i>CSS</a></li>
+<li><a href="#page-javascript"><i class="icon-chevron-right"></i>Javascript</a></li>
+<li><a href="#page-options"><i class="icon-chevron-right"></i>Page Options</a></li>
+<li><a href="#page-gulp-compilation"><i class="icon-chevron-right"></i>Gulp Compilation</a></li>
+<li><a href="#npm-package"><i class="icon-chevron-right"></i>NPM Package</a></li>
+</ul>
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="installation"><strong>A) Installation</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+Generate the plugins file from gulp command
+</p>
+<pre class="prettyprint linenums">cd /your-path-url/template_asp/ColorAdmin/
+
+npm install
+gulp plugins
+</pre>
+<hr />
+<p>
+Download the .NET Core SDK from <a href="https://dotnet.microsoft.com/download" target="_blank">official website</a> and install on your machine.
+</p>
+<p>If you are using <b>dotnet cli</b>, run the following command:</p>
+<pre class="prettyprint linenums">cd /your-path-url/template_asp/ColorAdmin/
+
+donet run
+</pre>
+<div style="margin-bottom: 15px;"><b>OR</b></div>
+<p>
+If you are using visual studio, just double click the <code>ColorAdmin.sln</code> inside the template folder. You may download the latest version of Visual studio from <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">here</a>.
+</p>
+<hr />
+<p>Copy over the required image from global <code>assets</code> folder</p>
+<pre class="prettyprint linenums">&lt;!-- copy the following folder--&gt;
+/admin/template/assets/img
+ 
+&lt;!-- paste it into asp folder --&gt;
+/admin/template/template_asp/ColorAdmin/wwwroot/img
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="fileStructure"><strong>B) File Structure</strong> - <a href="#top">top</a></h3>
+</div>
+<p>File structure overview for .NET Core 3.1 MVC Version</p>
+<pre class="prettyprint linenums">template_asp/
+├── ColorAdmin.sln        
+└── ColorAdmin/
+    ├── Areas/                        // ASP Identity Files
+    ├── bin/
+    ├── Controllers/
+    ├── Data/
+    ├── Models/
+    ├── obj/
+    ├── Properties/
+    ├── src/                          // scss / img / js source file
+    ├── Views/
+    ├── wwwroot/                      // generated css / js / img file
+    ├── app.db
+    ├── Program.cs
+    ├── Startup.cs
+    ├── appsettings.development.json
+    ├── appsettings.json
+    ├── package.json
+    ├── sidebar.json                  // sidebar menu structure
+    ├── ScaffoldingReadMe.txt
+    ├── gulpfile.js                   // gulp setting files
+    └── ColorAdmin.csproj
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-structure"><strong>C) Page Structure</strong> - <a href="#top">top</a></h3>
+</div>
+<p>Below is the general page structure for <code>/Views/Shared/Layout.cshtml</code>.</p>
+<pre class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" @ViewData["AppHtmlAttr"]&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;title&gt;Color Admin | @ViewData["Title"]&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;meta name="description" content="@ViewData["MetaDescription"]" /&gt;
+  &lt;meta name="author" content="@ViewData["MetaAuthor"]" /&gt;
+  &lt;meta name="keywords" content="@ViewData["MetaKeywords"]" /&gt;
+
+  @RenderSection("MetaTag", required: false)
+
+  &lt;!-- ================== BEGIN core-css ================== --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" /&gt;
+  &lt;link href="~/css/vendor.min.css" rel="stylesheet" /&gt;
+  &lt;link href="~/css/default/app.min.css" rel="stylesheet" /&gt;
+  &lt;!-- ================== END core-css ================== --&gt;
+
+  @RenderSection("Styles", required: false)
+&lt;/head&gt;
+&lt;body class="@ViewData["AppBodyClass"]"&gt;
+  &lt;!-- BEGIN #app --&gt;
+  &lt;div id="app" class="app @(ViewData["AppSidebarNone"] == null ? "app-sidebar-fixed" : "") @(ViewData["AppHeaderNone"] == null ? "app-header-fixed" : "") @ViewData["AppClass"]"&gt;
+    @if (ViewData["AppHeaderNone"] == null) {
+      &lt;partial name="_Header" /&gt;
+    }
+    
+    @if (ViewData["AppTopMenu"] != null) {
+      &lt;partial name="_TopMenu" /&gt;
+    }
+
+    @if (ViewData["AppSidebarNone"] == null) {
+      &lt;partial name="_Sidebar" /&gt;
+    }
+    
+    @if (ViewData["AppSidebarTwo"] != null) {
+      &lt;partial name="_SidebarRight" /&gt;
+    }
+
+    @if (ViewData["AppEmpty"] == null) {
+      &lt;div id="content" class="app-content @ViewData["AppContentClass"]" @ViewData["AppContentAttr"]&gt;
+        @RenderBody()
+      &lt;/div&gt;
+    } else {
+      @RenderBody()
+    }
+
+    @RenderSection("AppOutterContent", required: false)
+  &lt;/div&gt;
+  &lt;!-- END #app --&gt;
+
+  &lt;!-- ================== BEGIN core-js ================== --&gt;
+  &lt;script src="~/js/vendor.min.js"&gt;&lt;/script&gt;
+  &lt;script src="~/js/app.min.js"&gt;&lt;/script&gt;
+  &lt;script src="~/js/theme/default.min.js"&gt;&lt;/script&gt;
+  &lt;!-- ================== END core-js ================== --&gt;
+  @RenderSection("Scripts", required: false)
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-css"><strong>D) CSS</strong> - <a href="#top">top</a></h3>
+</div>
+<p>All the css plugin files used in ColorAdmin has been compiled into one single files <code>vendor.min.css</code> by using gulp. Below is the list of library included in vendor.min.css. You may change the setting in <code>gulpfile.js</code> if you wish to add / remove library from vendor.min.css.</p>
+<ol>
+<li>FontAwesome</li>
+<li>jQuery UI</li>
+<li>Animate.css</li>
+<li>Pace Loader</li>
+<li>Perfect Scrollbar</li>
+</ol>
+<hr />
+<p>For <code>app.min.css</code>, it will be the core css file for Color Admin which combine bootstrap 5 scss compiled by using gulp as well. You may check the source code from <code>/admin/src/scss/default/</code></p>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-javascript"><strong>E) Javascript</strong> - <a href="#top">top</a></h3>
+</div>
+<p>This theme compiles 6 javascript library into one single file <code>vendor.min.js</code> by using gulp. Below is the list of library included in app.min.js. You may change the setting in <code>gulpfile.js</code> if you wish to add / remove library from vendor.min.js.</p>
+<ol>
+<li>Pace Loader</li>
+<li>jQuery</li>
+<li>jQuery UI</li>
+<li>Bootstrap</li>
+<li>Perfect Scrollbar</li>
+<li>JavaScript Cookie</li>
+</ol>
+<hr />
+<p>For <code>app.min.js</code>, it will be the core js file for Color Admin which compiled by using gulp as well. You may check the source code from <code>/admin/src/js/app.js</code></p>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-options"><strong>F) Page Options</strong> - <a href="#top">top</a></h3>
+</div>
+<p>Below is the list of ViewData you can use to set the application layout</p>
+<pre class="prettyprint linenums">@{
+  @ViewData["Title"]            = "Page Title";
+  @ViewData["AppHeaderNone"]    = "true";
+  @ViewData["AppHeaderInverse"] = "true";
+  @ViewData["AppTopMenu"]       = "true";
+  @ViewData["AppSidebarNone"]   = "true";
+  @ViewData["AppSidebarTwo"]    = "true";
+  @ViewData["AppSidebarTransparent"] = "true";
+  @ViewData["AppEmpty"]         = "true";
+  @ViewData["AppClass"]         = "-- css class --";
+  @ViewData["AppBodyClass"]     = "-- css class --";
+  @ViewData["AppContentClass"]  = "-- css class --";
+  @ViewData["AppContentAttr"]   = "-- data attribute --";
+  @ViewData["AppHtmlAttr"]      = "-- data attribute --";
+}
+</pre>
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-gulp-compilation"><strong>G) Gulp Compilation</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+If you wish to enable the gulp compilation during debug / release process, kindly enable the following option in <code>ColorAdmin.csproj</code>.
+</p>
+<div class="alert alert-info">
+Do not forget to run the <b>npm install</b> command by using command prompt / terminal to generate the <code>node_module</code> folder.
+</div>
+<pre class="prettyprint linenums">// remove the comment syntax
+ 
+&lt;!--
+&lt;Target Name="MyPreCompileTarget" BeforeTargets="Build"&gt;
+  &lt;Exec Command="gulp" /&gt;
+&lt;/Target&gt;
+--&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="npm-package"><strong>H) NPM Package</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+Below is the list of package that has been installed in this project. You may use the following example to find the package from their official website.
+<code>https://www.npmjs.com/package/</code><code>reactstrap</code>
+</p>
+<pre class="prettyprint linenums">{
+  "name": "color-admin-default-theme",
+  "version": "5.0.0",
+  "description": "Color Admin - Default Theme",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SeanTheme",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-download2": "^1.1.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-header": "^2.0.9",
+    "gulp-less": "^5.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^4.1.1",
+    "gulp-sass-variables": "^1.2.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fullcalendar/bootstrap": "^5.8.0",
+    "@fullcalendar/core": "^5.8.0",
+    "@fullcalendar/daygrid": "^5.8.0",
+    "@fullcalendar/interaction": "^5.8.0",
+    "@fullcalendar/list": "^5.8.0",
+    "@fullcalendar/timegrid": "^5.8.0",
+    "@highlightjs/cdn-assets": "^11.0.1",
+    "abpetkov-powerange": "github:npmcomponent/abpetkov-powerange",
+    "angular": "^1.8.2",
+    "angular-ui-bootstrap": "^2.5.6",
+    "angular-ui-router": "^1.0.29",
+    "animate.css": "^4.1.1",
+    "apexcharts": "^3.27.1",
+    "blueimp-file-upload": "^10.31.0",
+    "blueimp-gallery": "^3.3.0",
+    "bootstrap": "^5.0.2",
+    "bootstrap-datepicker": "^1.9.0",
+    "bootstrap-daterangepicker": "^3.1.0",
+    "bootstrap-datetime-picker": "^2.4.4",
+    "bootstrap-icons": "^1.5.0",
+    "bootstrap-social": "^5.1.1",
+    "bootstrap-timepicker": "^0.5.2",
+    "bootstrap3-wysihtml5-bower": "^0.3.3",
+    "chart.js": "^3.3.2",
+    "ckeditor": "^4.12.1",
+    "clipboard": "^2.0.8",
+    "d3": "^3.4.4",
+    "datatables.net": "^1.10.25",
+    "datatables.net-autofill-bs4": "^2.3.9",
+    "datatables.net-bs4": "^1.10.25",
+    "datatables.net-buttons-bs4": "^1.7.1",
+    "datatables.net-colreorder-bs4": "^1.5.4",
+    "datatables.net-fixedcolumns-bs4": "^3.3.3",
+    "datatables.net-fixedheader-bs4": "^3.1.9",
+    "datatables.net-keytable-bs4": "^2.6.2",
+    "datatables.net-responsive-bs4": "^2.2.9",
+    "datatables.net-rowreorder-bs4": "^1.2.8",
+    "datatables.net-scroller-bs4": "^2.0.4",
+    "datatables.net-select-bs4": "^1.3.3",
+    "dropzone": "^5.9.2",
+    "flag-icon-css": "^3.5.0",
+    "flot": "^4.2.2",
+    "gritter": "^1.7.4",
+    "intro.js": "^4.1.0",
+    "ion-rangeslider": "^2.3.1",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.0",
+    "jquery-knob": "^1.2.11",
+    "jquery-migrate": "^3.3.2",
+    "jquery-mockjax": "^2.6.0",
+    "jquery-slimscroll": "^1.3.8",
+    "jquery-sparkline": "^2.4.0",
+    "jquery-ui-dist": "^1.12.1",
+    "jquery.maskedinput": "^1.4.1",
+    "js-cookie": "^2.2.1",
+    "jstree": "^3.3.11",
+    "jszip": "^3.6.0",
+    "jvectormap-next": "^3.1.1",
+    "lightbox2": "^2.11.3",
+    "lity": "^2.4.1",
+    "masonry-layout": "^4.2.2",
+    "merge-stream": "^2.0.0",
+    "moment": "^2.29.1",
+    "nvd3": "^1.8.6",
+    "oclazyload": "^1.1.0",
+    "pace-js": "^1.2.4",
+    "parsleyjs": "^2.9.2",
+    "pdfmake": "^0.1.71",
+    "perfect-scrollbar": "^1.5.1",
+    "popper.js": "^1.16.1",
+    "raphael": "^2.3.0",
+    "select-picker": "^0.3.2",
+    "select2": "^4.0.13",
+    "simple-line-icons": "^2.5.5",
+    "spectrum-colorpicker2": "^2.0.8",
+    "summernote": "^0.8.18",
+    "sweetalert": "^2.1.2",
+    "swiper": "^6.7.1",
+    "switchery": "github:abpetkov/switchery",
+    "tag-it": "^2.0.0",
+    "x-editable-bs4": "^1.5.4"
+  }
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container text-left">
+<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p>
+<br />
+<p class="append-bottom alt large"><strong>Sean Ngu</strong></p>
+<p><a href="#top">Go To Table of Contents</a></p>
+</div>
+</footer>
+<script src="assets/bootstrap/js/jquery.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-transition.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-alert.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-modal.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-dropdown.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-scrollspy.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-tab.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-tooltip.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-popover.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-button.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-collapse.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-carousel.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-typeahead.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-affix.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/holder/holder.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/google-code-prettify/prettify.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script src="assets/bootstrap/js/application.js" type="8b25c221bd04fea46cf4a56d-text/javascript"></script>
+<script type="8b25c221bd04fea46cf4a56d-text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-53034621-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8b25c221bd04fea46cf4a56d-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b22ba6ef3621bb","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

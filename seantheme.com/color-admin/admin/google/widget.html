@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Color Admin | Widgets Page</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+<link href="../assets/css/google/app.min.css" rel="stylesheet" />
+
+
+<link href="../assets/plugins/nvd3/build/nv.d3.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="loader" class="app-loader">
+<span class="spinner"></span>
+</div>
+
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed app-with-wide-sidebar app-with-light-sidebar">
+
+<div id="header" class="app-header">
+
+<div class="navbar-header">
+<button type="button" class="navbar-desktop-toggler" data-toggle="app-sidebar-minify">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="index.html" class="navbar-brand">
+<b class="me-1">Color</b> Admin
+<span class="navbar-logo">
+<span class="text-blue">G</span>
+<span class="text-red">o</span>
+<span class="text-orange">o</span>
+<span class="text-blue">g</span>
+<span class="text-green">l</span>
+<span class="text-red">e</span>
+</span>
+</a>
+<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-nav">
+<div class="navbar-item navbar-form">
+<form action="" method="POST" name="search">
+<div class="form-group">
+<input type="text" class="form-control" placeholder='Try searching "Users Today"' />
+<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+<div class="navbar-item dropdown">
+<a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+<i class="fa fa-bell"></i>
+<span class="badge">5</span>
+</a>
+<div class="dropdown-menu media-list dropdown-menu-end">
+<div class="dropdown-header">Notifications (5)</div>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-bug media-object bg-gray-400"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Server Error Reports <i class="fa fa-exclamation-circle text-danger"></i></h6>
+<div class="text-muted fs-12px">3 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-1.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">John Smith</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-12px">25 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<img src="../assets/img/user/user-2.jpg" class="media-object" alt="" />
+<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading">Olivia</h6>
+<p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="text-muted fs-12px">35 minutes ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-plus media-object bg-gray-400"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New User Registered</h6>
+<div class="text-muted fs-12px">1 hour ago</div>
+</div>
+</a>
+<a href="javascript:;" class="dropdown-item media">
+<div class="media-left">
+<i class="fa fa-envelope media-object bg-gray-400"></i>
+<i class="fab fa-google text-warning media-object-icon fs-14px"></i>
+</div>
+<div class="media-body">
+<h6 class="media-heading"> New Email From John</h6>
+<div class="text-muted fs-12px">2 hour ago</div>
+</div>
+</a>
+<div class="dropdown-footer text-center">
+<a href="javascript:;" class="text-decoration-none">View more</a>
+</div>
+</div>
+</div>
+<div class="navbar-item navbar-user dropdown">
+<a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+<span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret ms-lg-2"></b>
+</a>
+<div class="dropdown-menu dropdown-menu-end me-1">
+<a href="javascript:;" class="dropdown-item">Edit Profile</a>
+<a href="javascript:;" class="dropdown-item"><span class="badge bg-danger float-end rounded-pill">2</span> Inbox</a>
+<a href="javascript:;" class="dropdown-item">Calendar</a>
+<a href="javascript:;" class="dropdown-item">Setting</a>
+<div class="dropdown-divider"></div>
+<a href="javascript:;" class="dropdown-item">Log Out</a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="app-sidebar">
+
+<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+
+<div class="menu">
+<div class="menu-profile">
+<a href="javascript:;" class="menu-profile-link" data-toggle="app-sidebar-profile" data-target="#appSidebarProfileMenu">
+<div class="menu-profile-cover with-shadow"></div>
+<div class="menu-profile-image">
+<img src="../assets/img/user/user-13.jpg" alt="" />
+</div>
+<div class="menu-profile-info">
+<div class="d-flex align-items-center">
+<div class="flex-grow-1">
+Sean Ngu
+</div>
+<div class="menu-caret ms-auto"></div>
+</div>
+<small>Front end developer</small>
+</div>
+</a>
+</div>
+<div id="appSidebarProfileMenu" class="collapse">
+<div class="menu-item pt-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-cog"></i></div>
+<div class="menu-text">Settings</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-pencil-alt"></i></div>
+<div class="menu-text"> Send Feedback</div>
+</a>
+</div>
+<div class="menu-item pb-5px">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon"><i class="fa fa-question-circle"></i></div>
+<div class="menu-text"> Helps</div>
+</a>
+</div>
+<div class="menu-divider m-0"></div>
+</div>
+<div class="menu-header">Navigation</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">home</i>
+</div>
+<div class="menu-text">Dashboard</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="index.html" class="menu-link"><div class="menu-text">Dashboard v1</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v2.html" class="menu-link"><div class="menu-text">Dashboard v2</div></a>
+</div>
+<div class="menu-item">
+<a href="index_v3.html" class="menu-link"><div class="menu-text">Dashboard v3</div></a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">inbox</i>
+</div>
+<div class="menu-text">Email</div>
+<div class="menu-badge">10</div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_inbox.html" class="menu-link">
+<div class="menu-text">Inbox</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_compose.html" class="menu-link">
+<div class="menu-text">Compose</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_detail.html" class="menu-link">
+<div class="menu-text">Detail</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item active">
+<a href="widget.html" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">extension</i>
+</div>
+<div class="menu-text">Widgets <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">toys</i>
+</div>
+<div class="menu-text">UI Elements <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="ui_general.html" class="menu-link">
+<div class="menu-text">General <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_typography.html" class="menu-link">
+<div class="menu-text">Typography</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tabs_accordions.html" class="menu-link">
+<div class="menu-text">Tabs & Accordions</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_unlimited_tabs.html" class="menu-link">
+<div class="menu-text">Unlimited Nav Tabs</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_modal_notification.html" class="menu-link">
+<div class="menu-text">Modal & Notification <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_widget_boxes.html" class="menu-link">
+<div class="menu-text">Widget Boxes</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_media_object.html" class="menu-link">
+<div class="menu-text">Media Object</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_buttons.html" class="menu-link">
+<div class="menu-text">Buttons <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_icons.html" class="menu-link">
+<div class="menu-text">Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_simple_line_icons.html" class="menu-link">
+<div class="menu-text">Simple Line Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_ionicons.html" class="menu-link">
+<div class="menu-text">Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tree.html" class="menu-link">
+<div class="menu-text">Tree View</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_language_bar_icon.html" class="menu-link">
+<div class="menu-text">Language Bar & Icon</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_social_buttons.html" class="menu-link">
+<div class="menu-text">Social Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tour.html" class="menu-link">
+<div class="menu-text">Intro JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_offcanvas_toasts.html" class="menu-link">
+<div class="menu-text">Offcanvas & Toasts <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item ">
+<a href="bootstrap_5.html" class="menu-link">
+<div class="menu-icon-img">
+<img src="../assets/img/logo/logo-bs5.png" alt="" />
+</div>
+<div class="menu-text">Bootstrap 5 <span class="menu-label">NEW</span></div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">insert_drive_file</i>
+</div>
+<div class="menu-text">Form Stuff <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="form_elements.html" class="menu-link">
+<div class="menu-text">Form Elements <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_plugins.html" class="menu-link">
+<div class="menu-text">Form Plugins <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_slider_switcher.html" class="menu-link">
+<div class="menu-text">Form Slider + Switcher</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_validation.html" class="menu-link">
+<div class="menu-text">Form Validation</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wizards.html" class="menu-link">
+<div class="menu-text">Wizards <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wysiwyg.html" class="menu-link">
+<div class="menu-text">WYSIWYG</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_editable.html" class="menu-link">
+<div class="menu-text">X-Editable</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_multiple_upload.html" class="menu-link">
+<div class="menu-text">Multiple File Upload</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_summernote.html" class="menu-link">
+<div class="menu-text">Summernote</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_dropzone.html" class="menu-link">
+<div class="menu-text">Dropzone</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">grid_on</i>
+</div>
+<div class="menu-text">Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_basic.html" class="menu-link">
+<div class="menu-text">Basic Tables</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Managed Tables</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_manage.html" class="menu-link">
+<div class="menu-text">Default</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_buttons.html" class="menu-link">
+<div class="menu-text">Buttons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_colreorder.html" class="menu-link">
+<div class="menu-text">ColReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_columns.html" class="menu-link">
+<div class="menu-text">Fixed Column</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_fixed_header.html" class="menu-link">
+<div class="menu-text">Fixed Header</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_keytable.html" class="menu-link">
+<div class="menu-text">KeyTable</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_responsive.html" class="menu-link">
+<div class="menu-text">Responsive</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_rowreorder.html" class="menu-link">
+<div class="menu-text">RowReorder</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_scroller.html" class="menu-link">
+<div class="menu-text">Scroller</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_select.html" class="menu-link">
+<div class="menu-text">Select</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_manage_combine.html" class="menu-link">
+<div class="menu-text">Extension Combination</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">store</i>
+</div>
+<div class="menu-text">POS System <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="pos_customer_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Customer Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_kitchen_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Kitchen Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_counter_checkout.html" target="_blank" class="menu-link">
+<div class="menu-text">Counter Checkout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_table_booking.html" target="_blank" class="menu-link">
+<div class="menu-text">Table Booking</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_menu_stock.html" target="_blank" class="menu-link">
+<div class="menu-text">Menu Stock</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">polymer</i>
+</div>
+<div class="menu-text">Front End <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="menu-link">
+<div class="menu-text">One Page Parallax</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Blog</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Forum</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="menu-link">
+<div class="menu-text">E-Commerce</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="menu-link">
+<div class="menu-text">Corporate <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">email</i>
+</div>
+<div class="menu-text">Email Template</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_system.html" class="menu-link">
+<div class="menu-text">System Template</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_newsletter.html" class="menu-link">
+<div class="menu-text">Newsletter Template</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">insert_chart</i>
+</div>
+<div class="menu-text">Chart</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="chart-flot.html" class="menu-link">
+<div class="menu-text">Flot Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-js.html" class="menu-link">
+<div class="menu-text">Chart JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-d3.html" class="menu-link">
+<div class="menu-text">d3 Chart</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart-apex.html" class="menu-link">
+<div class="menu-text">Apex Chart</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="calendar.html" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">date_range</i>
+</div>
+<div class="menu-text">Calendar</div>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">place</i>
+</div>
+<div class="menu-text">Map</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="map_vector.html" class="menu-link">
+<div class="menu-text">Vector Map</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="map_google.html" class="menu-link">
+<div class="menu-text">Google Map</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">camera</i>
+</div>
+<div class="menu-text">Gallery</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="gallery.html" class="menu-link">
+<div class="menu-text">Gallery v1</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="gallery_v2.html" class="menu-link">
+<div class="menu-text">Gallery v2</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">settings</i>
+</div>
+<div class="menu-text">Page Options <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="page_blank.html" class="menu-link">
+<div class="menu-text">Blank Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_footer.html" class="menu-link">
+<div class="menu-text">Page with Footer</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_fixed_footer.html" class="menu-link">
+<div class="menu-text">Page with Fixed Footer <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_without_sidebar.html" class="menu-link">
+<div class="menu-text">Page without Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_right_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Right Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_minified_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Minified Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_two_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Two Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_line_icons.html" class="menu-link">
+<div class="menu-text">Page with Line Icons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_ionicons.html" class="menu-link">
+<div class="menu-text">Page with Ionicons</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_full_height.html" class="menu-link">
+<div class="menu-text">Full Height Content</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_small_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Small Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_dark_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Dark Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mega_menu.html" class="menu-link">
+<div class="menu-text">Page with Mega Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_top_menu.html" class="menu-link">
+<div class="menu-text">Page with Top Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_boxed_layout.html" class="menu-link">
+<div class="menu-text">Page with Boxed Layout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Page with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_boxed_layout_with_mixed_menu.html" class="menu-link">
+<div class="menu-text">Boxed Layout with Mixed Menu</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_transparent_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Transparent Sidebar</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_with_search_sidebar.html" class="menu-link">
+<div class="menu-text">Page with Search Sidebar <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">card_giftcard</i>
+</div>
+<div class="menu-text">Extra <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="extra_timeline.html" class="menu-link">
+<div class="menu-text">Timeline</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_coming_soon.html" class="menu-link">
+<div class="menu-text">Coming Soon Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_search_results.html" class="menu-link">
+<div class="menu-text">Search Results</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_invoice.html" class="menu-link">
+<div class="menu-text">Invoice</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_404_error.html" class="menu-link">
+<div class="menu-text">404 Error Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_profile.html" class="menu-link">
+<div class="menu-text">Profile Page</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_scrum_board.html" class="menu-link">
+<div class="menu-text">Scrum Board <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="extra_cookie_acceptance_banner.html" class="menu-link">
+<div class="menu-text">Cookie Acceptance Banner <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">lock</i>
+</div>
+<div class="menu-text">Login & Register</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="login.html" class="menu-link">
+<div class="menu-text">Login</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v2.html" class="menu-link">
+<div class="menu-text">Login v2</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="login_v3.html" class="menu-link">
+<div class="menu-text">Login v3</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="register_v3.html" class="menu-link">
+<div class="menu-text">Register v3</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">apps</i>
+</div>
+<div class="menu-text">Version <span class="menu-label">NEW</span></div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="../html/index_v3.html" class="menu-link">
+<div class="menu-text">HTML</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../ajax/" class="menu-link">
+<div class="menu-text">AJAX</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs/" class="menu-link">
+<div class="menu-text">ANGULAR JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../angularjs11/" class="menu-link">
+<div class="menu-text">ANGULAR JS 11</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">LARAVEL</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../vuejs/" class="menu-link">
+<div class="menu-text">VUE JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../reactjs/" class="menu-link">
+<div class="menu-text">REACT JS</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="menu-link">
+<div class="menu-text">ASP.NET <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../material/index_v3.html" class="menu-link">
+<div class="menu-text">MATERIAL DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../apple/index_v3.html" class="menu-link">
+<div class="menu-text">APPLE DESIGN</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../transparent/index_v3.html" class="menu-link">
+<div class="menu-text">TRANSPARENT DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../facebook/index_v3.html" class="menu-link">
+<div class="menu-text">FACEBOOK DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+<div class="menu-item">
+<a href="../google/index_v3.html" class="menu-link">
+<div class="menu-text">GOOGLE DESIGN <i class="fa fa-paper-plane text-theme"></i></div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">help</i>
+</div>
+<div class="menu-text">Helper</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="helper_css.html" class="menu-link">
+<div class="menu-text">Predefined CSS Classes</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="material-icons">list</i>
+</div>
+<div class="menu-text">Menu Level</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 1.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-text">Menu 2.1</div>
+<div class="menu-caret"></div>
+</a>
+<div class="menu-submenu">
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.1</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 3.2</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 2.3</div></a></div>
+</div>
+</div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.2</div></a></div>
+<div class="menu-item"><a href="javascript:;" class="menu-link"><div class="menu-text">Menu 1.3</div></a></div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="app-sidebar-bg"></div>
+<div class="app-sidebar-mobile-backdrop"><a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"></a></div>
+
+
+<div id="content" class="app-content">
+
+<ol class="breadcrumb float-xl-end">
+<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+<li class="breadcrumb-item active">Widgets</li>
+</ol>
+
+
+<h1 class="page-header">
+Widgets <small>header small text goes here...</small>
+</h1>
+
+<span class="btn-group float-end ms-20px  rounded">
+<a href="#" class="btn btn-sm btn-white" data-change="widget-theme" data-theme="light"><i class="fa fa-sun text-blue"></i> Light</a>
+<a href="#" class="btn btn-sm btn-white" data-change="widget-theme" data-theme="dark"><i class="fa fa-moon"></i> Dark</a>
+</span>
+<p class="mb-20px">
+All the widgets is reusable and responsive. You may use the predefined css to configure the padding, margin or background. Besides that, all the widgets have light and dark version.
+Kindly add the <code>.inverse-mode</code> to the widget will change it to the dark version.
+</p>
+
+<div class="row">
+
+<div class="col-lg-12 col-xl-4">
+
+<div class="row">
+
+<div class="col-xl-12 col-lg-6">
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-list" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET LIST</b>
+</div>
+<div class="widget-list rounded mb-4" data-id="widget">
+
+<div class="widget-list-item">
+<div class="widget-list-media">
+<img src="../assets/img/user/user-12.jpg" width="50" alt="" class="rounded" />
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Christopher Struth</h4>
+<p class="widget-list-desc">Bank Transfer</p>
+</div>
+<div class="widget-list-action">
+<a href="#" data-bs-toggle="dropdown" class="text-gray-500"><i class="fa fa-ellipsis-h fs-14px"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="#" class="dropdown-item">Option 1</a>
+<a href="#" class="dropdown-item">Option 2</a>
+<a href="#" class="dropdown-item">Option 3</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item">Option 4</a>
+</div>
+</div>
+</div>
+
+
+<div class="widget-list-item">
+<div class="widget-list-media">
+<img src="../assets/img/user/user-13.jpg" width="50" alt="" class="rounded" />
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Janie Flowers</h4>
+<p class="widget-list-desc">Bank Transfer</p>
+</div>
+<div class="widget-list-action">
+<a href="#" data-bs-toggle="dropdown" class="text-gray-500"><i class="fa fa-ellipsis-h fs-14px"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="#" class="dropdown-item">Option 1</a>
+<a href="#" class="dropdown-item">Option 2</a>
+<a href="#" class="dropdown-item">Option 3</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item">Option 4</a>
+</div>
+</div>
+</div>
+
+
+<div class="widget-list-item">
+<div class="widget-list-media">
+<img src="../assets/img/user/user-14.jpg" width="50" alt="" class="rounded" />
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Janie Flowers</h4>
+<p class="widget-list-desc">Bank Transfer</p>
+</div>
+<div class="widget-list-action">
+<a href="#" data-bs-toggle="dropdown" class="text-gray-500"><i class="fa fa-ellipsis-h fs-14px"></i></a>
+<div class="dropdown-menu dropdown-menu-end">
+<a href="#" class="dropdown-item">Option 1</a>
+<a href="#" class="dropdown-item">Option 2</a>
+<a href="#" class="dropdown-item">Option 3</a>
+<div class="dropdown-divider"></div>
+<a href="#" class="dropdown-item">Option 4</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-12 col-lg-6">
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-list-with-icon" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET LIST WITH ICON</b>
+</div>
+<div class="widget-list rounded mb-4" data-id="widget">
+<a href="#" class="widget-list-item">
+<div class="widget-list-media icon">
+<i class="fa fa-plane bg-inverse text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Airplane Mode</h4>
+</div>
+<div class="widget-list-action text-end">
+<i class="fa fa-angle-right fa-lg text-gray-500"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media icon">
+<i class="fa fa-wifi bg-inverse text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Wi-Fi</h4>
+</div>
+<div class="widget-list-action text-nowrap text-gray-600 fw-bold text-decoration-none">
+Connected
+<i class="fa fa-angle-right fa-lg ms-3 text-gray-500"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media icon">
+<i class="fab fa-bluetooth bg-indigo text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Bluetooth</h4>
+</div>
+<div class="widget-list-action text-nowrap text-gray-600 fw-bold text-decoration-none">
+On
+<i class="fa fa-angle-right text-gray-500 fa-lg ms-3"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media icon">
+<i class="fa fa-signal bg-pink text-white"></i>
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Cellular</h4>
+</div>
+<div class="widget-list-action text-decoration-none fw-bold">
+<i class="fa fa-angle-right text-gray-500 fa-lg"></i>
+</div>
+</a>
+<a href="#" class="widget-list-item">
+<div class="widget-list-media icon">
+<i class="fa fa-link bg-yellow text-inverse"></i>
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Personal Hotspot</h4>
+</div>
+<div class="widget-list-action text-nowrap text-gray-600 fw-bold text-decoration-none">
+Off
+<i class="fa fa-angle-right text-gray-500 fa-lg ms-3"></i>
+</div>
+</a>
+</div>
+
+</div>
+
+
+<div class="col-xl-12 col-lg-6">
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-chat-input" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET CHAT</b>
+</div>
+<div class="widget-chat rounded mb-4" data-id="widget">
+
+<div class="widget-chat-header">
+<div class="widget-chat-header-icon">
+<i class="fab fa-earlybirds w-30px h-30px fs-20px bg-yellow text-inverse d-flex align-items-center justify-content-center rounded"></i>
+</div>
+<div class="widget-chat-header-content">
+<h4 class="widget-chat-header-title">Company Discussion Group</h4>
+<p class="widget-chat-header-desc">55 members, 4 online</p>
+</div>
+</div>
+
+
+<div class="widget-chat-body" data-scrollbar="true" data-height="235px">
+
+<div class="widget-chat-item with-media start">
+<div class="widget-chat-media">
+<img alt="" src="../assets/img/user/user-1.jpg" />
+</div>
+<div class="widget-chat-info">
+<div class="widget-chat-info-container">
+<div class="widget-chat-name text-indigo">Hudson Mendes</div>
+<div class="widget-chat-message">Should we plan for a company trip this year?</div>
+<div class="widget-chat-time">6:00PM</div>
+</div>
+</div>
+</div>
+
+
+<div class="widget-chat-item with-media start">
+<div class="widget-chat-media">
+<img alt="" src="../assets/img/user/user-2.jpg" />
+</div>
+<div class="widget-chat-info">
+<div class="widget-chat-info-container">
+<div class="widget-chat-name text-primary">Sam Sugerman</div>
+<div class="widget-chat-message">ok let's do it</div>
+<div class="widget-chat-time">6:01PM</div>
+</div>
+</div>
+</div>
+
+
+<div class="widget-chat-item end">
+<div class="widget-chat-info">
+<div class="widget-chat-info-container">
+<div class="widget-chat-message">i'm ok with it</div>
+<div class="widget-chat-time">6:05PM</div>
+</div>
+</div>
+</div>
+
+<div class="text-center text-gray-500 m-2 fw-bold">Today</div>
+
+<div class="widget-chat-item with-media start">
+<div class="widget-chat-media">
+<img alt="" src="../assets/img/user/user-3.jpg" />
+</div>
+<div class="widget-chat-info">
+<div class="widget-chat-info-container">
+<div class="widget-chat-name text-orange">Jaxon Allwood</div>
+<div class="widget-chat-message">
+Here is some images for New Zealand
+<div class="row gx-1 mt-5px">
+<div class="col-md-4">
+<a href="#" class="widget-card widget-card-sm square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-51-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card widget-card-sm square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-52-thumb.jpg)"></div>
+</a>
+</div>
+<div class="col-md-4">
+<a href="#" class="widget-card widget-card-sm square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-53-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card widget-card-sm square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-54-thumb.jpg)"></div>
+</a>
+</div>
+<div class="col-md-4">
+<a href="#" class="widget-card widget-card-sm square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-59-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card widget-card-sm square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-60-thumb.jpg)"></div>
+</a>
+</div>
+</div>
+</div>
+<div class="widget-chat-time">6:20PM</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="widget-input">
+<form action="" method="POST" name="">
+<div class="widget-input-container">
+<div class="widget-input-icon"><a href="#" class="text-gray-500"><i class="fa fa-camera"></i></a></div>
+<div class="widget-input-box">
+<input type="text" class="form-control" placeholder="Write a message..." />
+</div>
+<div class="widget-input-icon"><a href="#" class="text-gray-500"><i class="fa fa-smile"></i></a></div>
+<div class="widget-input-divider"></div>
+<div class="widget-input-icon"><a href="#" class="text-gray-500"><i class="fa fa-microphone"></i></a></div>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-12 col-lg-6">
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-todolist" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET TODOLIST</b>
+</div>
+<div class="widget-todolist rounded mb-4" data-id="widget">
+
+<div class="widget-todolist-header">
+<div class="widget-todolist-header-title">Todolist</div>
+<div class="widget-todolist-header-total"><span>0</span><small>Done</small></div>
+</div>
+
+
+<div class="widget-todolist-body">
+
+<div class="widget-todolist-item">
+<div class="widget-todolist-input">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="widget_todolist_1" />
+</div>
+</div>
+<div class="widget-todolist-content">
+<h6 class="mb-2px">Borrow Tony's travel guide</h6>
+<div class="text-gray-500 fw-bold fs-11px">Vacation in Rome</div>
+</div>
+<div class="widget-todolist-icon">
+<a href="#"><i class="fa fa-question-circle"></i></a>
+</div>
+</div>
+
+
+<div class="widget-todolist-item">
+<div class="widget-todolist-input">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="widget_todolist_2" />
+</div>
+</div>
+<div class="widget-todolist-content">
+<h6 class="mb-2px">Finish expense report</h6>
+<div class="text-gray-500 fw-bold fs-11px">Today, 4:00PM, Daily</div>
+</div>
+<div class="widget-todolist-icon">
+<a href="#"><i class="fa fa-question-circle"></i></a>
+</div>
+</div>
+
+
+<div class="widget-todolist-item">
+<div class="widget-todolist-input">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="widget_todolist_3" />
+</div>
+</div>
+<div class="widget-todolist-content">
+<h6 class="mb-2px">Confirm conference call for Wednesday</h6>
+<div class="text-gray-500 fw-bold fs-11px">Work</div>
+</div>
+<div class="widget-todolist-icon">
+<a href="#"><i class="fa fa-question-circle"></i></a>
+</div>
+</div>
+
+
+<div class="widget-todolist-item">
+<div class="widget-todolist-input">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="widget_todolist_4" />
+</div>
+</div>
+<div class="widget-todolist-content">
+<h6 class="mb-2px"><b class="text-warning">!!</b> Mobile App WIP Presentation</h6>
+<div class="text-gray-500 fw-bold fs-11px">Today, 12:00PM</div>
+</div>
+<div class="widget-todolist-icon">
+<a href="#"><i class="fa fa-question-circle"></i></a>
+</div>
+</div>
+
+
+<div class="widget-todolist-item">
+<div class="widget-todolist-input">
+<i class="fa fa-plus text-gray-500 fa-fw"></i>
+</div>
+<div class="widget-todolist-content">
+<input type="text" class="form-control border-0 shadow-none rounded-0 p-0 h-20px bg-none" placeholder="Write your task here..." />
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-12 col-lg-6">
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-map" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET MAP</b>
+</div>
+<div class="widget-map rounded mb-4" data-id="widget">
+
+<div class="widget-input-container">
+<div class="widget-input-icon"><a href="#" class="text-gray-500" data-id="widget-elm" data-light-class="text-gray-500" data-dark-class="text-white"><i class="fa fa-ellipsis-v"></i></a></div>
+<div class="widget-input-box">
+<input type="text" class="form-control" placeholder="Search here">
+</div>
+<div class="widget-input-icon"><a href="#" class="text-gray-500" data-id="widget-elm" data-light-class="text-gray-500" data-dark-class="text-white"><i class="fa fa-microphone"></i></a></div>
+<div class="widget-input-divider"></div>
+<div class="widget-input-icon"><a href="#" class="text-gray-500" data-id="widget-elm" data-light-class="text-gray-500" data-dark-class="text-white"><i class="fa fa-location-arrow"></i></a></div>
+</div>
+
+
+<div class="widget-map-body">
+<iframe class="d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5650178360584!2d-122.41879278478642!3d37.77679637975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter+HQ!5e0!3m2!1sen!2smy!4v1524046379645" width="100%" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+<div class="widget-map-list" data-id="widget">
+<div class="widget-list bg-none">
+
+<div class="widget-list-item">
+<div class="widget-list-media text-center">
+<a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+</div>
+<div class="widget-list-content">
+<h4 class="widget-list-title">Twitter Headquater</h4>
+<p class="widget-list-desc">Corporate Office</p>
+</div>
+<div class="widget-list-action">
+<a href="#" data-bs-toggle="dropdown" class="text-gray-500"><i class="fa fa-angle-right fa-2x"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-12 col-xl-8">
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-img-icon" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET IMAGE / ICON</b>
+</div>
+
+<div class="row mb-4">
+
+<div class="col-sm-6">
+<div class="d-flex flex-wrap">
+<div class="widget-icon rounded bg-indigo me-5px mb-5px text-white">
+<i class="fab fa-digital-ocean"></i>
+</div>
+<div class="widget-icon rounded bg-blue me-5px mb-5px text-white">
+<i class="fab fa-twitter"></i>
+</div>
+<div class="widget-icon rounded bg-success me-5px mb-5px text-white">
+<i class="fab fa-android"></i>
+</div>
+<div class="widget-icon rounded bg-warning me-5px mb-5px text-white">
+<i class="fab fa-firefox"></i>
+</div>
+<div class="widget-icon rounded bg-danger me-5px mb-5px text-white">
+<i class="fab fa-google-plus-g"></i>
+</div>
+<div class="widget-icon rounded bg-pink me-5px mb-5px text-white">
+<i class="fab fa-pinterest"></i>
+</div>
+</div>
+<div class="clearfix">
+<div class="widget-icon widget-icon-xl user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-id="widget-elm" data-light-class="widget-icon widget-icon-xl user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-dark-class="widget-icon widget-icon-xl user rounded bg-inverse float-start me-5px mb-5px text-white-transparent-5">
+<i class="fa fa-user"></i>
+</div>
+<div class="widget-icon widget-icon-lg user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-id="widget-elm" data-light-class="widget-icon widget-icon-lg user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-dark-class="widget-icon widget-icon-lg user rounded bg-inverse float-start me-5px mb-5px text-white-transparent-5">
+<i class="fa fa-user"></i>
+</div>
+<div class="widget-icon user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-id="widget-elm" data-light-class="widget-icon user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-dark-class="widget-icon user rounded bg-inverse float-start me-5px mb-5px text-white-transparent-5">
+<i class="fa fa-user"></i>
+</div>
+<div class="widget-icon widget-icon-sm user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-id="widget-elm" data-light-class="widget-icon widget-icon-sm user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-dark-class="widget-icon widget-icon-sm user rounded bg-inverse float-start me-5px mb-5px text-white-transparent-5">
+<i class="fa fa-user"></i>
+</div>
+<div class="widget-icon widget-icon-xs user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-id="widget-elm" data-light-class="widget-icon widget-icon-xs user rounded bg-gray-500 float-start me-5px mb-5px text-white" data-dark-class="widget-icon widget-icon-xs user rounded bg-inverse float-start me-5px mb-5px text-white-transparent-5">
+<i class="fa fa-user"></i>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6">
+<div class="float-start">
+<div class="widget-img rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-11-thumb.jpg)"></div>
+<div class="widget-img rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-12-thumb.jpg)"></div>
+<div class="widget-img rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-13-thumb.jpg)"></div>
+<div class="widget-img rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-14-thumb.jpg)"></div>
+<div class="widget-img rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-15-thumb.jpg)"></div>
+<div class="widget-img rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-16-thumb.jpg)"></div>
+<br />
+<div class="widget-img widget-img-xl rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-21-thumb.jpg)"></div>
+<div class="widget-img widget-img-lg rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-22-thumb.jpg)"></div>
+<div class="widget-img widget-img rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-23-thumb.jpg)"></div>
+<div class="widget-img widget-img-sm rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-24-thumb.jpg)"></div>
+<div class="widget-img widget-img-xs rounded bg-inverse float-start me-5px mb-5px" style="background-image: url(../assets/img/gallery/gallery-25-thumb.jpg)"></div>
+</div>
+</div>
+
+</div>
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-card" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET CARD</b>
+</div>
+
+<div class="row">
+
+<div class="col-sm-6">
+
+<a href="#" class="widget-card rounded mb-20px" data-id="widget">
+<div class="widget-card-cover rounded" style="background-image: url(../assets/img/gallery/gallery-portrait-11-thumb.jpg)"></div>
+<div class="widget-card-content">
+<b class="text-white">Download and get free trial.</b>
+</div>
+<div class="widget-card-content bottom">
+<i class="fab fa-pushed fa-5x text-indigo"></i>
+<h4 class="text-white mt-10px"><b>Apple Draw<br /> Photo Booth</b></h4>
+<h5 class="fs-12px text-white-transparent-7 mb-0"><b>EASILY DRAW ON PHOTOS</b></h5>
+</div>
+</a>
+
+</div>
+
+
+<div class="col-sm-6">
+
+<a href="#" class="widget-card rounded mb-20px" data-id="widget">
+<div class="widget-card-cover rounded"></div>
+<div class="widget-card-content">
+<h5 class="fs-12px text-black-transparent-7" data-id="widget-elm" data-light-class="fs-12px text-black-transparent-7" data-dark-class="fs-12px text-white-transparent-7"><b>MAKING A DIFFERENCE</b></h5>
+<h4 class="mb-10px text-pink"><b>Apple Heart<br /> Study App</b></h4>
+<i class="fa fa-heartbeat fa-5x text-pink-transparent-5"></i>
+</div>
+<div class="widget-card-content bottom">
+<b class="text-black-transparent-7" data-id="widget-elm" data-light-class="fs-12px text-black-transparent-7" data-dark-class="fs-12px text-white-transparent-7">Opt in and help heart research.</b>
+</div>
+</a>
+
+</div>
+
+</div>
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-card-square" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET CARD SQUARE</b>
+</div>
+
+<div class="row">
+
+<div class="col-xs-6 col-sm-3">
+
+<div class="row gx-1 mb-1">
+
+<div class="col-6">
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/login-bg/login-bg-1-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/login-bg/login-bg-2-thumb.jpg)"></div>
+</a>
+</div>
+
+
+<div class="col-6">
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/login-bg/login-bg-3-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/login-bg/login-bg-4-thumb.jpg)"></div>
+</a>
+</div>
+
+</div>
+
+<div class="fs-12px fw-bold text-black">Camera Roll</div>
+<div class="fs-10px fw-bold text-black-lighter mb-3">2,711</div>
+</div>
+
+
+<div class="col-xs-6 col-sm-3">
+<a href="#" class="widget-card rounded square mb-5px">
+<div class="widget-card-cover" style="background-image: url(../assets/img/login-bg/login-bg-7-thumb.jpg)">
+<span class="widget-card-cover-icon"><i class="fa fa-play fa-lg"></i></span>
+</div>
+</a>
+<div class="fs-12px fw-bold text-black pt-2px">Videos</div>
+<div class="fs-10px fw-bold text-black-lighter mb-3">31</div>
+</div>
+
+
+<div class="col-xs-6 col-sm-3">
+<a href="#" class="widget-card rounded square mb-5px">
+<div class="widget-card-cover" style="background-image: url(../assets/img/login-bg/login-bg-10-thumb.jpg)">
+<div class="d-flex h-100 align-items-center justify-content-center">
+<div class="text-center">
+<div class="text-white fs-14px"><b>PORTRAITS OF</b></div>
+<div class="text-white-transparent-8 fw-bold">2021</div>
+</div>
+</div>
+</div>
+</a>
+<div class="fs-12px fw-bold text-black pt-2px">Memory 2021</div>
+<div class="fs-10px fw-bold text-black-lighter mb-3">1,239</div>
+</div>
+
+
+<div class="col-xs-6 col-sm-3">
+
+<div class="row gx-1 mb-5px">
+
+<div class="col-3">
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-1-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-2-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-3-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-4-thumb.jpg)"></div>
+</a>
+</div>
+
+
+<div class="col-3">
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-5-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-6-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-7-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-8-thumb.jpg)"></div>
+</a>
+</div>
+
+
+<div class="col-3">
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-9-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-10-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-11-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-12-thumb.jpg)"></div>
+</a>
+</div>
+
+
+<div class="col-3">
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-13-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-14-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-15-thumb.jpg)"></div>
+</a>
+<a href="#" class="widget-card rounded square mb-1">
+<div class="widget-card-cover" style="background-image: url(../assets/img/gallery/gallery-16-thumb.jpg)"></div>
+</a>
+</div>
+
+</div>
+
+<div class="fs-12px fw-bold text-black">Albums</div>
+<div class="fs-10px fw-bold text-black-lighter mb-15px">8</div>
+</div>
+
+</div>
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-stat" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET STAT</b>
+</div>
+
+<div class="row gx-2 mb-20px">
+
+<div class="col-lg-4 col-sm-6">
+<div class="widget widget-stats bg-teal mb-7px">
+<div class="stats-icon stats-icon-lg"><i class="fa fa-globe fa-fw"></i></div>
+<div class="stats-content">
+<div class="stats-title">TODAY'S VISITS</div>
+<div class="stats-number">7,842,900</div>
+<div class="stats-progress progress">
+<div class="progress-bar" style="width: 70.1%;"></div>
+</div>
+<div class="stats-desc">Better than last week (70.1%)</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-6">
+<div class="widget widget-stats bg-blue mb-7px">
+<div class="stats-icon stats-icon-lg"><i class="fa fa-dollar-sign fa-fw"></i></div>
+<div class="stats-content">
+<div class="stats-title">TODAY'S PROFIT</div>
+<div class="stats-number">180,200</div>
+<div class="stats-progress progress">
+<div class="progress-bar" style="width: 40.5%;"></div>
+</div>
+<div class="stats-desc">Better than last week (40.5%)</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-6">
+<div class="widget widget-stats bg-purple mb-7px">
+<div class="stats-icon stats-icon-lg"><i class="fa fa-archive fa-fw"></i></div>
+<div class="stats-content">
+<div class="stats-title">NEW ORDERS</div>
+<div class="stats-number">38,900</div>
+<div class="stats-progress progress">
+<div class="progress-bar" style="width: 76.3%;"></div>
+</div>
+<div class="stats-desc">Better than last week (76.3%)</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-6">
+<div class="widget widget-stats bg-black mb-7px">
+<div class="stats-icon stats-icon-lg"><i class="fa fa-comment-alt fa-fw"></i></div>
+<div class="stats-content">
+<div class="stats-title">NEW COMMENTS</div>
+<div class="stats-number">3,988</div>
+<div class="stats-progress progress">
+<div class="progress-bar" style="width: 54.9%;"></div>
+</div>
+<div class="stats-desc">Better than last week (54.9%)</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-6">
+<div class="widget widget-stats bg-orange mb-7px">
+<div class="stats-icon stats-icon-lg"><i class="fa fa-file-alt fa-fw"></i></div>
+<div class="stats-content">
+<div class="stats-title">PENDING INVOICE</div>
+<div class="stats-number">20</div>
+<div class="stats-progress progress">
+<div class="progress-bar" style="width: 23.5%;"></div>
+</div>
+<div class="stats-desc">More than last week (23.5%)</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-6">
+<div class="widget widget-stats bg-pink mb-7px">
+<div class="stats-icon stats-icon-lg"><i class="fa fa-exclamation-triangle fa-fw"></i></div>
+<div class="stats-content">
+<div class="stats-title">ERROR LOG</div>
+<div class="stats-number">5</div>
+<div class="stats-progress progress">
+<div class="progress-bar" style="width: 10.5%;"></div>
+</div>
+<div class="stats-desc">More than last week (10.5%)</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-chart" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET CHART</b>
+</div>
+
+<div class="widget rounded mb-4" data-id="widget">
+
+<div class="widget-header">
+<h4 class="widget-header-title">Audience Overview</h4>
+<div class="widget-header-icon"><a href="#" class="text-gray-500"><i class="fa fa-fw fa-upload"></i></a></div>
+<div class="widget-header-icon"><a href="#" class="text-gray-500"><i class="fa fa-fw fa-cog"></i></a></div>
+</div>
+
+
+<div class="row m-0">
+<div class="col widget-chart-content">
+<div id="nv-stacked-area-chart" style="height: 108%"></div>
+</div>
+<div class="col-lg-4 p-3">
+<div class="widget-chart-info">
+<h4 class="widget-chart-info-title">Total sales</h4>
+<p class="widget-chart-info-desc">Lorem ipsum dolor sit consectetur adipiscing elit.</p>
+<div class="widget-chart-info-progress">
+<b>Monthly Plan</b>
+<span class="float-end">70%</span>
+</div>
+<div class="progress h-10px">
+<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill" style="width:70%;"></div>
+</div>
+</div>
+<hr />
+<div class="widget-chart-info">
+<h4 class="widget-chart-info-title">Task progress</h4>
+<p class="widget-chart-info-desc">Vestibulum sollicitudin in lectus a cursus.</p>
+<div class="widget-chart-info-progress">
+<b>Marketing Research</b>
+<span class="float-end">74%</span>
+</div>
+<div class="progress h-10px mb-15px">
+<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-indigo" style="width: 74%"></div>
+</div>
+<div class="widget-chart-info-progress">
+<b>Mobile App Development</b>
+<span class="float-end">25%</span>
+</div>
+<div class="progress h-10px mb-15px">
+<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-green" style="width: 25%"></div>
+</div>
+<div class="widget-chart-info-progress">
+<b>Website Redesign</b>
+<span class="float-end">95%</span>
+</div>
+<div class="progress h-10px">
+<div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-orange" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="mb-10px mt-10px fs-12px">
+<a href="#modal-widget-table" class="float-end text-gray-600 text-decoration-none me-3px fw-500" data-bs-toggle="modal">source code</a>
+<b class="text-inverse">WIDGET TABLE</b>
+</div>
+
+<div class="table-responsive">
+
+<table class="table table-bordered widget-table rounded" data-id="widget">
+<thead>
+<tr class="text-nowrap">
+<th width="1%">Image</th>
+<th>Product Info</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<img src="../assets/img/product/product-6.png" width="100" />
+</td>
+<td>
+<h5 class="mb-1 fs-15px">Mavic Pro Combo</h5>
+<p class="fs-12px text-gray-600 mb-3">Portable yet powerful, the Mavic Pro is your personal drone, ready to go with you everywhere.</p>
+<div class="progress h-10px rounded-pill mb-5px">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-orange fs-10px fw-bold" style="width: 30%;">30%</div>
+</div>
+<div class="clearfix fs-10px">
+status:
+<b class="text-inverse" data-id="widget-elm" data-light-class="text-inverse" data-dark-class="text-white">Shipped</b>
+</div>
+</td>
+<td class="text-nowrap">
+<b class="text-inverse" data-id="widget-elm" data-light-class="text-inverse" data-dark-class="text-white">$999</b><br />
+<small class="text-inverse" data-id="widget-elm" data-light-class="text-inverse" data-dark-class="text-white"><del>$1,202</del></small>
+</td>
+<td>1</td>
+<td>999.00</td>
+<td>
+<a href="#" class="btn btn-inverse btn-sm w-80px rounded-pill" data-id="widget-elm" data-light-class="btn btn-inverse btn-sm w-80px rounded-pill" data-dark-class="btn btn-default btn-sm w-80px rounded-pill">Edit</a>
+</td>
+</tr>
+<tr>
+<td>
+<img src="../assets/img/product/product-7.png" width="100" />
+</td>
+<td>
+<h5 class="mb-1 fs-15px">Inspire 2</h5>
+<p class="fs-12px text-gray-600 mb-3">Cinematic aerial performance for filmmakers.</p>
+<div class="progress h-10px rounded-pill mb-5px">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-success fs-10px fw-bold" style="width: 100%;">100%</div>
+</div>
+<div class="clearfix fs-10px">
+status:
+<b class="text-inverse" data-id="widget-elm" data-light-class="text-inverse" data-dark-class="text-white">received</b>
+</div>
+</td>
+<td class="text-nowrap">
+<b class="text-inverse" data-id="widget-elm" data-light-class="text-inverse" data-dark-class="text-white">$999</b><br />
+<small class="text-inverse" data-id="widget-elm" data-light-class="text-inverse" data-dark-class="text-white"><del>$1,202</del></small>
+</td>
+<td>1</td>
+<td>999.00</td>
+<td>
+<a href="#" class="btn btn-inverse btn-sm w-80px rounded-pill" data-id="widget-elm" data-light-class="btn btn-inverse btn-sm w-80px rounded-pill" data-dark-class="btn btn-default btn-sm w-80px rounded-pill">Edit</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="modal fade" id="modal-widget-map">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget Map</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-map">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-map">&lt;!-- begin widget-map --&gt;
+&lt;div class="widget-map rounded<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;!-- begin widget-input-container --&gt;
+  &lt;div class="widget-input-container"&gt;
+    &lt;div class="widget-input-icon"&gt;&lt;a href="#" class="<span class="hljs-string" data-id="widget-doc" data-dark-doc="text-white" data-light-doc="text-inverse">text-inverse</span>"&gt;&lt;i class="fa fa-ellipsis-v"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="widget-input-box"&gt;
+      &lt;input type="text" class="form-control" placeholder="Search here"&gt;
+    &lt;/div&gt;
+    &lt;div class="widget-input-icon"&gt;&lt;a href="#" class="<span class="hljs-string" data-id="widget-doc" data-dark-doc="text-white" data-light-doc="text-inverse"></span>"&gt;&lt;i class="fa fa-microphone"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="widget-input-divider"&gt;&lt;/div&gt;
+    &lt;div class="widget-input-icon"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-location-arrow"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-input-container --&gt;
+  &lt;!-- begin widget-map-body --&gt;
+  &lt;div class="widget-map-body"&gt;
+    &lt;iframe src="-- googlemap embed url here --" width="100%" height="230" frameborder="0" style="border:0" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-map-body --&gt;
+  &lt;!-- begin widget-map-list --&gt;
+  &lt;div class="widget-map-list<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+    &lt;div class="widget-list bg-none mb-4"&gt;
+      &lt;!-- begin widget-list-item --&gt;
+      &lt;div class="widget-list-item"&gt;
+        &lt;div class="widget-list-media text-center"&gt;
+          &lt;a href="#"&gt;&lt;i class="fab fa-twitter fa-3x"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="widget-list-content"&gt;
+          &lt;h4 class="widget-list-title"&gt;Twitter Headquater&lt;/h4&gt;
+          &lt;p class="widget-list-desc"&gt;Corporate Office&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="widget-list-action"&gt;
+          &lt;a href="#" data-bs-toggle="dropdown" class="text-gray-500"&gt;&lt;i class="fa fa-angle-right fa-2x"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- end widget-list-item --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-map-list --&gt;
+&lt;/div&gt;
+&lt;!-- begin widget-map --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-todolist">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget Todolist</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-todolist">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-todolist">&lt;!-- begin widget-todolist --&gt;
+&lt;div class="widget-todolist rounded<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;!-- begin widget-todolist-header --&gt;
+  &lt;div class="widget-todolist-header"&gt;
+    &lt;h4 class="widget-todolist-header-title"&gt;Todolist&lt;/h4&gt;
+    &lt;div class="widget-todolist-header-total"&gt;
+      &lt;span class="text-inverse"&gt;0&lt;/span&gt;
+      &lt;small&gt;Done&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-todolist-header --&gt;
+  
+  &lt;!-- begin widget-todolist-body --&gt;
+  &lt;div class="widget-todolist-body"&gt;
+    &lt;!-- begin widget-todolist-item --&gt;
+    &lt;div class="widget-todolist-item"&gt;
+      &lt;div class="widget-todolist-input"&gt;
+        &lt;div class="form-check"&gt;
+          &lt;input class="form-check-input" type="checkbox" id="widget_todolist_1" /&gt;
+          &lt;label class="form-check-label" for="widget_todolist_1" class="ps-15px"&gt;&nbsp;&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="widget-todolist-content"&gt;
+        &lt;h6 class="mb-0"&gt;Borrow Tony's travel guide&lt;/h4&gt;
+        &lt;div class="text-muted"&gt;Vacation in Rome&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="widget-todolist-icon"&gt;
+        &lt;a href="#"&gt;&lt;i class="fa fa-question-circle"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end widget-todolist-item --&gt;
+    ...
+    &lt;!-- begin widget-todolist-item --&gt;
+    &lt;div class="widget-todolist-item"&gt;
+      &lt;div class="widget-todolist-input"&gt;
+        &lt;i class="fa fa-plus text-gray-500"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class="widget-todolist-content"&gt;
+        &lt;input type="text" class="form-control" placeholder="Write your task here..." /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end widget-todolist-item --&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-todolist-body --&gt;
+&lt;/div&gt;
+&lt;!-- end widget-todolist --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-chat-input">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget Chat & Input</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-chat-input">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-chat-input">&lt;!-- begin widget-chat --&gt;
+&lt;div class="widget-chat rounded<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;!-- begin widget-chat-header --&gt;
+  &lt;div class="widget-chat-header"&gt;
+    &lt;div class="widget-chat-header-icon"&gt;
+      &lt;i class="fab fa-earlybirds w-30px h-30px fs-20px bg-yellow text-inverse text-center rounded-pill" style="line-height: 30px"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="widget-chat-header-content"&gt;
+      &lt;h4 class="widget-chat-header-title"&gt;Company Discussion Group&lt;/h4&gt;
+      &lt;p class="widget-chat-header-desc"&gt;55 members, 4 online&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-chat-header --&gt;
+  
+  &lt;!-- begin widget-chat-body --&gt;
+  &lt;div class="widget-chat-body" data-scrollbar="true" data-height="235px"&gt;
+    &lt;div class="text-center text-gray-500 m-3 fw-bold"&gt;Today&lt;/div&gt;
+    &lt;div class="widget-chat-item with-media start"&gt;
+      &lt;div class="widget-chat-media"&gt;
+        &lt;img alt="" src="../assets/img/user/user-1.jpg" /&gt;
+      &lt;/div&gt;
+      &lt;div class="widget-chat-info"&gt;
+        &lt;div class="widget-chat-info-container"&gt;
+          &lt;div class="widget-chat-name text-indigo"&gt;Hudson Mendes&lt;/div&gt;
+          &lt;div class="widget-chat-message"&gt;Should we plan for a company trip this year?&lt;/div&gt;
+          &lt;div class="widget-chat-time"&gt;6:00PM&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="widget-chat-item end"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-chat-body --&gt;
+  
+  &lt;!-- begin widget-input --&gt;
+  &lt;div class="widget-input"&gt;
+    &lt;form action="" method="POST" name=""&gt;
+      &lt;div class="widget-input-container"&gt;
+        &lt;div class="widget-input-icon"&gt;&lt;a href="#" class="text-gray-500"&gt;&lt;i class="fa fa-camera"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="widget-input-box"&gt;
+          &lt;input type="text" class="form-control" placeholder="Write a message..." /&gt;
+        &lt;/div&gt;
+        &lt;div class="widget-input-icon"&gt;&lt;a href="#" class="text-gray-500"&gt;&lt;i class="fa fa-smile"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="widget-input-divider"&gt;&lt;/div&gt;
+        &lt;div class="widget-input-icon"&gt;&lt;a href="#" class="text-gray-500"&gt;&lt;i class="fa fa-microphone"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-input --&gt;
+&lt;/div&gt;
+&lt;!-- end widget-chat --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-list">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget List</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-list">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-list">&lt;!-- begin widget-list --&gt;
+&lt;div class="widget-list rounded mb-4<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;!-- begin widget-list-item --&gt;
+  &lt;div class="widget-list-item"&gt;
+    &lt;div class="widget-list-media"&gt;
+      &lt;img src="../assets/img/user/user-1.jpg" width="50" class="rounded" /&gt;
+    &lt;/div&gt;
+    &lt;div class="widget-list-content"&gt;
+      &lt;h4 class="widget-list-title"&gt;Christopher Struth&lt;/h4&gt;
+      &lt;p class="widget-list-desc"&gt;Bank Transfer&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="widget-list-action"&gt;
+      &lt;a href="#" data-bs-toggle="dropdown" class="text-gray-500"&gt;
+        &lt;i class="fa fa-ellipsis-h fs-14px"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;ul class="dropdown-menu dropdown-menu-end"&gt;
+        ...
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- end widget-list-item --&gt;
+&lt;/div&gt;
+&lt;!-- end widget-list --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-list-with-icon">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget List with Icon</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-list-with-icon">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-list-with-icon">&lt;!-- begin widget-list --&gt;
+&lt;div class="widget-list rounded<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;!-- begin widget-list-item --&gt;
+  &lt;a href="#" class="widget-list-item"&gt;
+    &lt;div class="widget-list-media icon"&gt;
+      &lt;i class="fa fa-link bg-yellow text-inverse"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="widget-list-content"&gt;
+      &lt;h4 class="widget-list-title"&gt;Personal Hotspot&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="widget-list-action text-nowrap text-gray-600 fw-bold text-decoration-none"&gt;
+      Off
+      &lt;i class="fa fa-angle-right text-gray-500 fa-lg"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;!-- end widget-list-item --&gt;
+  ...
+&lt;/div&gt;
+&lt;!-- end widget-list --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-img-icon">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget Image / Icon</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-img-icon">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-img-icon">&lt;!-- begin widget-icon --&gt;
+&lt;div class="widget-icon rounded bg-success text-white"&gt;
+  &lt;i class="fab fa-android"&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;!-- end widget-icon --&gt;
+
+&lt;!-- begin user widget-icon --&gt;
+&lt;div class="widget-icon rounded <span class="hljs-string" data-id="widget-doc" data-dark-doc="bg-inverse text-white-transparent-5" data-light-doc="bg-gray-500 text-white">bg-gray-500 text-white</span> user"&gt;
+  &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;!-- end user widget-icon --&gt;
+
+&lt;!-- begin widget-icon-sizes --&gt;
+&lt;div class="widget-icon widget-icon-xl"&gt;&lt;/div&gt;
+&lt;div class="widget-icon widget-icon-lg"&gt;&lt;/div&gt;
+&lt;div class="widget-icon"&gt;&lt;/div&gt;
+&lt;div class="widget-icon widget-icon-sm"&gt;&lt;/div&gt;
+&lt;div class="widget-icon widget-icon-xs"&gt;&lt;/div&gt;
+&lt;!-- end widget-icon-sizes --&gt;
+
+&lt;!-- begin widget-img --&gt;
+&lt;div class="widget-img rounded bg-inverse" style="background-image: url(../assets/img/gallery/gallery-11-thumb.jpg)"&gt;
+&lt;/div&gt;
+&lt;!-- end widget-img --&gt;
+
+&lt;!-- begin widget-img-sizes --&gt;
+&lt;div class="widget-img widget-img-xl"&gt;&lt;/div&gt;
+&lt;div class="widget-img widget-img-lg"&gt;&lt;/div&gt;
+&lt;div class="widget-img"&gt;&lt;/div&gt;
+&lt;div class="widget-img widget-img-sm"&gt;&lt;/div&gt;
+&lt;div class="widget-img widget-img-xs"&gt;&lt;/div&gt;
+&lt;!-- end widget-img-sizes --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-card">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget List Card</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-card">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-card">&lt;!-- begin widget-card --&gt;
+&lt;a href="#" class="widget-card rounded<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;div class="widget-card-cover rounded" style="background-image: url(../assets/img/gallery/gallery-portrait-11-thumb.jpg)"&gt;&lt;/div&gt;
+  &lt;div class="widget-card-content"&gt;
+    &lt;b class="text-white"&gt;Download and get free trial.&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div class="widget-card-content bottom"&gt;
+    &lt;i class="fab fa-pushed fa-5x text-indigo"&gt;&lt;/i&gt;
+    &lt;h4 class="text-white mt-10px"&gt;&lt;b&gt;Apple Draw&lt;br /&gt; Photo Booth&lt;/b&gt;&lt;/h4&gt;
+    &lt;h5 class="fs-12px text-white-transparent-7"&gt;&lt;b&gt;EASILY DRAW ON PHOTOS&lt;/b&gt;&lt;/h5&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+&lt;!-- end widget-card --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-card-square">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget List Card Square</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-card-square">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-card-square">&lt;!-- begin widget-card-square --&gt;
+&lt;a href="#" class="widget-card rounded square mb-5px<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;div class="widget-card-cover rounded" style="background-image: url(../assets/img/login-bg/login-bg-10.jpg)"&gt;
+    &lt;div class="d-flex h-100 align-items-center justify-content-center"&gt;
+      &lt;div class="text-center"&gt;
+        &lt;div class="text-white fs-14px"&gt;&lt;b&gt;PORTRAITS OF&lt;/b&gt;&lt;/div&gt;
+        &lt;div class="text-white-transparent-8 fw-bold"&gt;2021&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+&lt;div class="fs-12px fw-bold text-black pt-2px"&gt;Memory 2021&lt;/div&gt;
+&lt;div class="fs-10px fw-bold text-black-lighter mb-15px"&gt;1,239&lt;/div&gt;
+&lt;!-- end widget-card-square --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-stat">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget Stat</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-stat">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-stat">&lt;!-- begin widget-stats --&gt;
+&lt;div class="widget widget-stats bg-teal mb-10px"&gt;
+  &lt;div class="stats-icon stats-icon-lg"&gt;&lt;i class="fa fa-globe fa-fw"&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class="stats-content"&gt;
+    &lt;div class="stats-title"&gt;TODAY'S VISITS&lt;/div&gt;
+    &lt;div class="stats-number"&gt;7,842,900&lt;/div&gt;
+    &lt;div class="stats-progress progress"&gt;
+      &lt;div class="progress-bar" style="width: 70.1%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="stats-desc"&gt;Better than last week (70.1%)&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end widget-stats --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-chart">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget Chart</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-chart">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-chart">&lt;!-- begin widget-chart --&gt;
+&lt;div class="widget rounded<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;div class="widget-header"&gt;
+    &lt;h4 class="widget-header-title"&gt;Audience Overview&lt;/h4&gt;
+    &lt;div class="widget-header-icon"&gt;&lt;a href="#" class="text-gray-500"&gt;&lt;i class="fa fa-fw fa-upload"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="widget-header-icon"&gt;&lt;a href="#" class="text-gray-500"&gt;&lt;i class="fa fa-fw fa-cog"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="d-flex"&gt;
+    &lt;div class="flex-1 widget-chart-content"&gt;
+      &lt;div id="nv-stacked-area-chart" style="height: 108%"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="p-3" style="width: 30%;"&gt;
+      &lt;div class="widget-chart-info"&gt;
+        &lt;h4 class="widget-chart-info-title"&gt;Total sales&lt;/h4&gt;
+        &lt;p class="widget-chart-info-desc"&gt;Lorem ipsum dolor sit consectetur adipiscing elit.&lt;/p&gt;
+        &lt;div class="widget-chart-info-progress"&gt;
+          &lt;b&gt;Monthly Plan&lt;/b&gt;
+          &lt;span class="float-end"&gt;70%&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="progress h-10px"&gt;
+          &lt;div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill" style="width:70%;"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;hr /&gt;
+      &lt;div class="widget-chart-info"&gt;
+        &lt;h4 class="widget-chart-info-title"&gt;Task progress&lt;/h4&gt;
+        &lt;p class="widget-chart-info-desc"&gt;Vestibulum sollicitudin in lectus a cursus.&lt;/p&gt;
+        &lt;div class="widget-chart-info-progress"&gt;
+          &lt;b&gt;Marketing Research&lt;/b&gt;
+          &lt;span class="float-end"&gt;74%&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="progress h-10px mb-15px"&gt;
+          &lt;div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-indigo" style="width: 74%"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="widget-chart-info-progress"&gt;
+          &lt;b&gt;Mobile App Development&lt;/b&gt;
+          &lt;span class="float-end"&gt;25%&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="progress h-10px mb-15px"&gt;
+          &lt;div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-green" style="width: 25%"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="widget-chart-info-progress"&gt;
+          &lt;b&gt;Website Redesign&lt;/b&gt;
+          &lt;span class="float-end"&gt;95%&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="progress h-10px"&gt;
+          &lt;div class="progress-bar progress-bar-striped progress-bar-animated rounded-pill bg-orange" style="width: 95%"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end widget-chart --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="modal-widget-table">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Widget Table</h4>
+<a href="#" data-bs-dismiss="modal" class="btn-close"></a>
+</div>
+
+<div class="hljs-wrapper mb-0">
+<button type="button" class="btn btn-gray-500 btn-sm btn-clipboard w-60px" data-clipboard-target="#source-widget-table">Copy</button>
+<pre class="mb-0"><code class="html" id="source-widget-table">&lt;!-- begin widget-table --&gt;
+&lt;table class="table table-bordered widget-table widget-table-rounded<span class="hljs-string" data-id="widget-doc" data-dark-doc=" inverse-mode" data-light-doc=""></span>"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th width="1%"&gt;Image&lt;/th&gt;
+      &lt;th&gt;Product Info&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th&gt;Qty&lt;/th&gt;
+      &lt;th&gt;Total&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;img src="../assets/img/product/product-6.png" width="100" /&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;h5&gt;Mavic Pro Combo&lt;/h5&gt;
+        &lt;p class="fs-11px text-gray-600 fw-bold mb-3"&gt;Portable yet powerful, the Mavic Pro is your personal drone, ready to go with you everywhere.&lt;/p&gt;
+        &lt;div class="progress h-10px rounded-pill mb-5px"&gt;
+          &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-orange fs-10px fw-bold" style="width: 30%;"&gt;30%&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="clearfix fs-10px"&gt;
+          status: &lt;b class="<span class="hljs-string" data-id="widget-doc" data-dark-doc="text-white" data-light-doc="text-inverse">text-inverse</span>"&gt;Shipped&lt;/b&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td class="text-nowrap"&gt;
+        &lt;b class="<span class="hljs-string" data-id="widget-doc" data-dark-doc="text-white" data-light-doc="text-inverse">text-inverse</span>"&gt;$999&lt;/b&gt;&lt;br /&gt;
+        &lt;small class="<span class="hljs-string" data-id="widget-doc" data-dark-doc="text-white" data-light-doc="text-inverse">text-inverse</span>"&gt;&lt;del&gt;$1,202&lt;/del&gt;&lt;/small&gt;
+      &lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;999.00&lt;/td&gt;
+      &lt;td&gt;&lt;a href="#" class="btn <span class="hljs-string" data-id="widget-doc" data-dark-doc="btn-default" data-light-doc="btn-inverse">btn-inverse</span> btn-sm w-80px rounded-pill"&gt;Edit&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- end widget-table --&gt;</code></pre>
+</div>
+
+<div class="modal-footer">
+<a href="#" data-bs-dismiss="modal" class="btn btn-default">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content" data-scrollbar="true" data-height="100%">
+<h5>App Settings</h5>
+
+<div class="theme-list">
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-red" data-theme="red" data-theme-file="../assets/css/google/theme/red.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-pink" data-theme="pink" data-theme-file="../assets/css/google/theme/pink.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-orange" data-theme="orange" data-theme-file="../assets/css/google/theme/orange.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-yellow" data-theme="yellow" data-theme-file="../assets/css/google/theme/yellow.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-lime" data-theme="lime" data-theme-file="../assets/css/google/theme/lime.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-green" data-theme="green" data-theme-file="../assets/css/google/theme/green.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-teal" data-theme="teal" data-theme-file="../assets/css/google/theme/teal.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Teal">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-cyan" data-theme="cyan" data-theme-file="../assets/css/google/theme/cyan.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-blue" data-theme="blue" data-theme-file="../assets/css/google/theme/blue.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-purple" data-theme="purple" data-theme-file="../assets/css/google/theme/purple.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-indigo" data-theme="indigo" data-theme-file="../assets/css/google/theme/indigo.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+<div class="theme-list-item"><a href="javascript:;" class="theme-list-link bg-black" data-theme="black" data-theme-file="../assets/css/google/theme/black.min.css" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Black">&nbsp;</a></div>
+</div>
+
+<div class="theme-panel-divider"></div>
+
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse">Header Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-fixed" id="appHeaderFixed" value="1" checked />
+<label class="form-check-label" for="appHeaderFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse">Header Inverse</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-header-inverse" id="appHeaderInverse" value="1" />
+<label class="form-check-label" for="appHeaderInverse">&nbsp;</label>
+</div>
+</div>
+</div>
+<div class="row mt-10px align-items-center">
+<div class="col-8 control-label text-inverse">Sidebar Fixed</div>
+<div class="col-4 d-flex">
+<div class="form-check form-switch ms-auto mb-0">
+<input type="checkbox" class="form-check-input" name="app-sidebar-fixed" id="appSidebarFixed" value="1" checked />
+<label class="form-check-label" for="appSidebarFixed">&nbsp;</label>
+</div>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Admin Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/default.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../transparent/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/transparent.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../apple/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/apple.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../material/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/material.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../facebook/index_v2.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/facebook.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../google/index_v2.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/theme/google.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Language Version (7)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../html/index.html" class="theme-version-link active">
+<span style="background-image: url(../assets/img/version/html.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../ajax/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/ajax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular1x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../angularjs11/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/angular10x.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('Laravel Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/laravel.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../vuejs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/vuejs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../reactjs/index.html" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/reactjs.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="javascript:alert('.NET Core 5.0 MVC Version only available in downloaded version.');" class="theme-version-link">
+<span style="background-image: url(../assets/img/version/dotnet.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<h5>Frontend Design (5)</h5>
+
+<div class="theme-version">
+<div class="theme-version-item">
+<a href="../../frontend/one-page-parallax/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/one-page-parallax.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/e-commerce/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/e-commerce.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/blog/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/blog.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/forum/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/forum.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+<div class="theme-version-item">
+<a href="../../frontend/corporate/index.html" target="_blank" class="theme-version-link">
+<span style="background-image: url(../assets/img/theme/corporate.jpg);" class="theme-version-cover"></span>
+</a>
+</div>
+</div>
+
+<div class="theme-panel-divider"></div>
+<a href="https://seantheme.com/color-admin/documentation/" class="btn btn-inverse d-block w-100 rounded-pill mb-10px" target="_blank"><b>Documentation</b></a>
+<a href="javascript:;" class="btn btn-default d-block w-100 rounded-pill" data-toggle="reset-local-storage"><b>Reset Local Storage</b></a>
+</div>
+</div>
+
+
+<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+</div>
+
+
+<script src="../assets/js/vendor.min.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+<script src="../assets/js/app.min.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+<script src="../assets/js/theme/google.min.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+
+
+<script src="../assets/plugins/d3/d3.min.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+<script src="../assets/plugins/nvd3/build/nv.d3.min.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+<script src="../assets/plugins/clipboard/dist/clipboard.min.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+<script src="../assets/plugins/@highlightjs/cdn-assets/highlight.min.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+<script src="../assets/js/demo/widget.demo.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+<script src="../assets/js/demo/render.highlight.js" type="d8116df509d4133e95940cd0-text/javascript"></script>
+
+<script type="d8116df509d4133e95940cd0-text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-53034621-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d8116df509d4133e95940cd0-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b22a999fc121bb","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

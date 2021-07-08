@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Infinite Admin | Form Plugins</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+<link href="../assets/plugins/bootstrap/bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/plugins/icon/themify-icons/themify-icons.css" rel="stylesheet" />
+<link href="../assets/css/animate.min.css" rel="stylesheet" />
+<link href="../assets/css/style.min.css" rel="stylesheet" />
+<link href="../assets/css/theme/default.css" rel="stylesheet" id="theme" />
+
+
+<link href="../assets/plugins/form/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+<link href="../assets/plugins/form/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+<link href="../assets/plugins/form/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+<link href="../assets/plugins/form/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" />
+<link href="../assets/plugins/form/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+<link href="../assets/plugins/form/bootstrap-slider/css/bootstrap-slider.css" rel="stylesheet" />
+
+
+<script src="../assets/plugins/loader/pace/pace.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+
+</head>
+<body>
+
+<div id="page-container" class="page-header-fixed page-sidebar-fixed fade">
+
+<div id="header" class="header navbar navbar-default navbar-fixed-top">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+<i class="ti-infinite navbar-logo text-gradient bg-gradient-blue-purple"></i>
+<b>Infinite</b> Admin
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-xs-justified">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="javascript:;" data-toggle="search-bar" class="navbar-icon">
+<i class="ti-search"></i>
+</a>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle navbar-icon with-label">
+<i class="ti-bell"></i>
+</a>
+<ul class="dropdown-menu dropdown-lg no-padding">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-primary">
+<i class="ti-apple"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">App Store <span class="notification-time">Just now</span></h4>
+<p class="notification-desc">
+Your iOS application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-success">
+<i class="ti-android"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Google Play <span class="notification-time">5 min ago</span></h4>
+<p class="notification-desc">
+Your android application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-muted">
+<i class="ti-github"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Github <span class="notification-time">12 min ago</span></h4>
+<p class="notification-desc">
+Error with notifications from Private Repos
+</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-purple">
+<i class="ti-email"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Gmail <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+You have 2 unread email
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon">
+<img src="../assets/img/user-2.jpg" alt="" />
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Corey <span class="notification-time">10:20am</span></h4>
+<p class="notification-desc">
+There's so much room for activities!
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-gradient-aqua">
+<i class="ti-twitter"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Twitter <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+@sergiolucas: Most rain in the last two days: 85mm Gabo Island (Mar
+</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="navbar-icon">
+<i class="ti-settings"></i>
+</a>
+<ul class="dropdown-menu dropdown-md no-padding" data-dropdown-close="false">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-email"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+Email
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-desktop"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+Desktop and Mobile
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-mobile"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+Text message
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-user"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+Public friends list
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-search"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+Public profile page
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown">
+<span class="navbar-user-img online pull-left">
+<img src="../assets/img/user.jpg" alt="" />
+</span>
+<span class="hidden-xs ">Sean Ngu <b class="caret"></b></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="javascript:;">Edit Profile</a></li>
+<li><a href="javascript:;">Inbox</a></li>
+<li><a href="javascript:;">Calendar</a></li>
+<li><a href="javascript:;">Setting</a></li>
+<li class="divider"></li>
+<li><a href="javascript:;">Log Out</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="header-search-bar">
+<form action="#" method="POST" name="search_bar_form">
+<div class="form-group">
+<div class="left-icon"><i class="ti-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search infinite admin..." />
+<a href="javascript:;" data-dismiss="search-bar" class="right-icon"><i class="ti-close"></i></a>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="sidebar sidebar-inverse">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="image">
+<img src="../assets/img/user.jpg" />
+</div>
+<div class="info">
+<h4>Sean Ngu</h4>
+<p>UXUI Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li><a href="index.html"><i class="ti-home"></i><span>Home</span></a></li>
+<li><a href="analytics.html"><i class="ti-pie-chart"></i><span>Analytics</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<span class="caret caret-right pull-right"></span>
+<i class="ti-email"></i>
+<span>Email <span class="notification">20+</span></span>
+</a>
+<ul class="sub-menu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li><a href="widgets.html"><i class="ti-shortcode"></i><span>Widgets</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-heart"></i>
+<span>UI Kits</span>
+</a>
+<ul class="sub-menu">
+<li><a href="ui_bootstrap.html">Bootstrap</a></li>
+<li><a href="ui_buttons.html">Buttons</a></li>
+<li><a href="ui_typography.html">Typography</a></li>
+<li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
+<li><a href="ui_modal_notification.html">Modal & Notification</a></li>
+<li><a href="ui_panels.html">Panels</a></li>
+<li><a href="ui_icons.html">Icons</a></li>
+</ul>
+</li>
+<li class="has-sub active">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-notepad"></i>
+<span>Forms</span>
+</a>
+<ul class="sub-menu">
+<li><a href="form_elements.html">Form Elements</a></li>
+<li class="active"><a href="form_plugins.html">Form Plugins</a></li>
+<li><a href="form_wizards.html">Wizards</a></li>
+<li><a href="form_jquery_file_upload.html">File Upload</a></li>
+<li><a href="form_summernote.html">Summernote</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-grid2"></i>
+<span>Tables</span>
+</a>
+<ul class="sub-menu">
+<li><a href="table_basic.html">Basic Tables</a></li>
+<li><a href="table_data.html">DataTables</a></li>
+</ul>
+</li>
+<li><a href="chart.html"><i class="ti-bar-chart"></i><span>Chart</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-map-alt"></i>
+<span>Map</span>
+</a>
+<ul class="sub-menu">
+<li><a href="map_vector.html">Vector Map</a></li>
+<li><a href="map_google.html">Google Map</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-sidebar-left"></i>
+<span>Layout</span>
+</a>
+<ul class="sub-menu">
+<li><a href="layout_starter.html">Starter Page</a></li>
+<li><a href="layout_fixed_footer.html">Fixed Footer</a></li>
+<li><a href="layout_full_width.html">Full Width</a></li>
+<li><a href="layout_boxed_layout.html">Boxed Layout</a></li>
+<li><a href="layout_full_height.html">Full Height</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-gift"></i>
+<span>Pages</span>
+</a>
+<ul class="sub-menu">
+<li><a href="page_gallery.html">Gallery</a></li>
+<li><a href="page_coming_soon.html">Coming Soon Page</a></li>
+<li><a href="page_search_results.html">Search Results</a></li>
+<li><a href="page_404_error.html">404 Error Page</a></li>
+<li><a href="page_login.html">Login</a></li>
+<li><a href="page_register.html">Register</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li><a href="profile.html"><i class="ti-user"></i><span>Profile</span></a></li>
+<li><a href="calendar.html"><i class="ti-calendar"></i> <span>Calendar</span></a></li>
+<li><a href="settings.html"><i class="ti-settings"></i><span>Settings</span></a></li>
+<li><a href="helper.html"><i class="ti-help-alt"></i><span>Helper</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-align-left"></i>
+<span>Menu Level</span>
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 1.1
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 2.1
+</a>
+<ul class="sub-menu">
+<li><a href="javascript:;">Menu 3.1</a></li>
+<li><a href="javascript:;">Menu 3.2</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 2.2</a></li>
+<li><a href="javascript:;">Menu 2.3</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 1.2</a></li>
+<li><a href="javascript:;">Menu 1.3</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-mobile"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">70%</span>
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-headphone"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">40%</span>
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-github"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">50%</span>
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2017 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+
+<a href="#" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="ti-arrow-left"></i></a>
+
+</div>
+
+
+<div id="content" class="content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">FORMS</a></li>
+<li class="breadcrumb-item active">FORM PLUGINS</li>
+</ul>
+
+
+<h1 class="page-header">
+Form Plugins <small>page header description goes here...</small>
+</h1>
+
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">DATEPICKER</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">The datepicker is tied to a standard form input field. Focus on the input (click, or use the tab key) to open an interactive calendar in a small overlay.</p>
+<form>
+<div class="form-group">
+<label class="control-label">Default <span class="text-danger">*</span></label>
+<input type="text" class="form-control" id="datepicker-default" placeholder="focus to toggle datepicker" />
+</div>
+<div class="form-group">
+<label class="control-label">Component <span class="text-danger">*</span></label>
+<div class="input-group date" id="datepicker-component">
+<input type="text" class="form-control" />
+<span class="input-group-addon"><i class="ti-layout-grid3-alt"></i></span>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Range <span class="text-danger">*</span></label>
+<div class="input-group input-daterange" id="datepicker-range">
+<input type="text" class="form-control" name="start" />
+<span class="input-group-addon">to</span>
+<input type="text" class="form-control" name="end" />
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">TYPEAHEAD</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">The Typeahead plugin from Twitter's Bootstrap 2 ready to use with Bootstrap 3 and Bootstrap 4</p>
+<form>
+<div class="form-group m-b-0">
+<label class="control-label">Default <span class="text-danger">*</span></label>
+<input type="text" value="" placeholder="Type 'a'" class="form-control" id="typeahead-default" />
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">SELECT</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements. </p>
+<form>
+<div class="form-group">
+<label class="control-label">Default <span class="text-danger">*</span></label>
+<select class="selectpicker form-control">
+<option>Mustard</option>
+<option>Ketchup</option>
+<option>Relish</option>
+</select>
+</div>
+<div class="form-group">
+<label class="control-label">Multiple SelectBox <span class="text-danger">*</span></label>
+<select class="selectpicker form-control" multiple data-max-options="3">
+<optgroup label="Picnic">
+<option>Mustard</option>
+<option>Ketchup</option>
+<option>Relish</option>
+</optgroup>
+<optgroup label="Camping">
+<option>Tent</option>
+<option>Flashlight</option>
+<option>Toilet Paper</option>
+</optgroup>
+</select>
+</div>
+<div class="form-group">
+<label class="control-label">Live Search <span class="text-danger">*</span></label>
+<select class="selectpicker form-control" data-live-search="true">
+<option>Mustard</option>
+<option>Ketchup</option>
+<option>Relish</option>
+<option>Tent</option>
+<option>Flashlight</option>
+<option>Toilet Paper</option>
+</select>
+</div>
+<div class="form-group m-b-0">
+<label class="control-label">With Button Class <span class="text-danger">*</span></label>
+<select class="selectpicker form-control" data-style="btn-purple">
+<option>Mustard</option>
+<option>Ketchup</option>
+<option>Relish</option>
+<option>Tent</option>
+<option>Flashlight</option>
+<option>Toilet Paper</option>
+</select>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">TIMEPICKER</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Easily select a time for a text input using your mouse or keyboards arrow keys. Use the attribute <code>data-provide="timepicker"</code> to initialise the timepicker.</p>
+<form>
+<div class="form-group">
+<label class="control-label">Default <span class="text-danger">*</span></label>
+<div class="input-group bootstrap-timepicker timepicker">
+<input id="timepicker-default" type="text" class="form-control">
+<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">24hr mode and seconds enabled <span class="text-danger">*</span></label>
+<div class="bootstrap-timepicker timepicker">
+<input id="timepicker-seconds" type="text" class="form-control" value="1:00:00" />
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Minute Step 5 <span class="text-danger">*</span></label>
+<div class="bootstrap-timepicker timepicker">
+<input type="text" data-provide="timepicker" data-minute-step="5" data-template="false" class="form-control" value="7:00:00" data-show-meridian="false" data-show-seconds="true" />
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">TAGS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Just add <code>data-role="tagsinput"</code> to your input field to automatically change it to a tags input field.</p>
+<form>
+<div class="form-group">
+<label class="control-label">Default <span class="text-danger">*</span></label>
+<input type="text" class="form-control" id="tagsinput-default" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" />
+</div>
+<div class="form-group">
+<label class="control-label">Categorizing tags <span class="text-danger">*</span></label>
+<input type="text" id="tagsinput-category" class="form-control" />
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">MASKED INPUT</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Masked input allows a user to more easily enter fixed width input where you would like them to enter the data in a certain format.</p>
+<form>
+<div class="form-group">
+<label class="control-label">Date <span class="text-danger">*</span></label>
+<input type="text" id="masked-input-date" class="form-control" placeholder="mm/dd/yyyy" />
+</div>
+<div class="form-group">
+<label class="control-label">Phone <span class="text-danger">*</span></label>
+<input type="text" id="masked-input-phone" class="form-control" placeholder="(999) 999-9999" />
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">COLORPICKER</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Fancy and customizable color picker plugin for Twitter Bootstrap. You can set colorpicker options either as a plugin parameter or <code>data-*</code> attributes</p>
+<form>
+<div class="form-group">
+<label class="control-label">Default <span class="text-danger">*</span></label>
+<input type="text" value="#0088cc" class="form-control" id="colorpicker-default" />
+</div>
+<div class="form-group">
+<label class="control-label">With Component <span class="text-danger">*</span></label>
+<div class="input-group colorpicker-component" id="colorpicker-component">
+<input type="text" value="#007aff" class="form-control" />
+<span class="input-group-addon"><i></i></span>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Aliased color palette <span class="text-danger">*</span></label>
+<div data-format="alias" class="input-group colorpicker-component" id="colorpicker-alias">
+<input type="text" value="black" class="form-control" />
+<span class="input-group-addon"><i></i></span>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">SLIDER</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">The basic slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.</p>
+<form>
+<div class="row">
+<div class="col-md-9">
+<div class="form-group">
+<label class="control-label">Default <span class="text-danger">*</span></label>
+<div>
+<input id="slider-default" class="form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Range <span class="text-danger">*</span></label>
+<div>
+<div class="clearfix">
+<b class="pull-right">€ 1000</b>
+<b>€ 10</b>
+</div>
+<input id="slider-range" class="form-control" type="text" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]" />
+</div>
+</div>
+<div class="form-group">
+<label class="control-label">Tooltip (always show) <span class="text-danger">*</span></label>
+<div>
+<input id="slider-tooltip" class="form-control" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+</div>
+</div>
+<div class="form-group m-b-5">
+<label class="control-label">Disabled <span class="text-danger">*</span></label>
+<div>
+<input id="slider-disabled" class="form-control" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="5" data-slider-enabled="false" />
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="form-group">
+<label class="control-label">Vertical <span class="text-danger">*</span></label>
+<div>
+<input id="slider-vertical" class="form-control" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="-3" data-slider-orientation="vertical" />
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">PASSWORD STRENGTH</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">The jQuery Password Strength Meter is a plugin for Twitter Bootstrap that provides rulesets for visualy displaying the quality of a users typed in password.</p>
+<form>
+<div class="form-group" id="pwdstrength-container">
+<label class="control-label">Password <span class="text-danger">*</span> <span class="pwstrength_viewport_progress inline"></span></label>
+<input type="password" id="pwstrength-default" placeholder="password" class="form-control" />
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="ti-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="ti-settings"></i></a>
+<div class="theme-panel-content">
+<div class="form-group">
+<label class="control-label">Color Theme</label>
+<ul class="theme-list clearfix">
+<li class="active"><a href="javascript:;" class="bg-gradient-blue-purple" data-theme="default" data-theme-file="../assets/css/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default"></a></li>
+<li><a href="javascript:;" class="bg-gradient-red" data-theme="red" data-theme-file="../assets/css/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></li>
+<li><a href="javascript:;" class="bg-gradient-orange" data-theme="orange" data-theme-file="../assets/css/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></li>
+<li><a href="javascript:;" class="bg-gradient-yellow" data-theme="yellow" data-theme-file="../assets/css/theme/yellow.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></li>
+<li><a href="javascript:;" class="bg-gradient-green" data-theme="green" data-theme-file="../assets/css/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></li>
+<li><a href="javascript:;" class="bg-gradient-aqua" data-theme="aqua" data-theme-file="../assets/css/theme/aqua.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></li>
+<li><a href="javascript:;" class="bg-gradient-blue" data-theme="blue" data-theme-file="../assets/css/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></li>
+<li><a href="javascript:;" class="bg-gradient-purple" data-theme="purple" data-theme-file="../assets/css/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></li>
+<li><a href="javascript:;" class="bg-gradient-black" data-theme="black" data-theme-file="../assets/css/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></li>
+</ul>
+</div>
+<ul class="widget widget-list">
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" class="widget-list-container">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</a>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="row m-t-10">
+<div class="col-md-12">
+<a href="javascript:;" class="btn btn-inverse btn-block btn-rounded btn-sm" data-click="reset-theme-setting"><b>Reset Setting</b></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="../assets/plugins/jquery/jquery-3.2.1.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/cookie/js/js.cookie.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/tooltip/popper/popper.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/bootstrap/bootstrap4/js/bootstrap.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/scrollbar/slimscroll/jquery.slimscroll.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+
+
+<script src="../assets/plugins/form/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/bootstrap-typeahead/js/bootstrap-typeahead.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/bootstrap-slider/js/bootstrap-slider.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/bootstrap-select/js/bootstrap-select.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/masked-input/js/masked-input.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/plugins/form/pwstrength/js/pwstrength.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/js/page/form-plugins.demo.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+<script src="../assets/js/apps.min.js" type="d9c7c1f8730e5bd557427584-text/javascript"></script>
+
+<script type="d9c7c1f8730e5bd557427584-text/javascript">
+		$(document).ready(function() {
+			App.init();
+			FormPlugins.init();
+		});
+	</script>
+<script type="d9c7c1f8730e5bd557427584-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53034621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d9c7c1f8730e5bd557427584-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b233eedd6c016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

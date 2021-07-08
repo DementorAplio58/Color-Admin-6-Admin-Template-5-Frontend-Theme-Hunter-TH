@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Source Admin | Ionicons</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" id="fontFamilySrc" />
+<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+<link href="../assets/plugins/bootstrap/bootstrap-4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/plugins/font-awesome/5.1/css/all.css" rel="stylesheet" />
+<link href="../assets/css/animate.min.css" rel="stylesheet" />
+<link href="../assets/css/style.min.css" rel="stylesheet" />
+
+
+<link href="../assets/plugins/bootstrap-calendar/css/bootstrap_calendar.css" rel="stylesheet" />
+<link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" />
+
+
+<script src="../assets/plugins/pace/pace.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+
+<!--[if lt IE 9]>
+	    <script src="../assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div id="page-loader" class="page-loader fade in"><span class="spinner">Loading...</span></div>
+
+
+<div id="page-container" class="fade page-container page-header-fixed page-sidebar-fixed page-with-two-sidebar page-with-footer">
+
+<div id="header" class="header navbar navbar-default navbar-fixed-top">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand"><img src="../assets/img/logo.png" class="logo" alt="" /> Source Admin</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<ul class="nav navbar-nav navbar-right">
+<li>
+<form class="navbar-form form-input-flat">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Enter keyword..." />
+<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle has-notify" data-click="toggle-notify">
+<i class="fa fa-bell"></i>
+</a>
+<ul class="dropdown-menu dropdown-notification pull-right">
+<li class="dropdown-header">Notifications (5)</li>
+<li class="notification-item">
+<a href="javascript:;">
+<div class="media"><i class="fa fa-exclamation-triangle"></i></div>
+<div class="message">
+<h6 class="title">Server Error Reports</h6>
+<div class="time">3 minutes ago</div>
+</div>
+<div class="option" data-toggle="tooltip" data-title="Mark as Read" data-click="set-message-status" data-status="unread" data-container="body">
+<i class="fa fa-circle"></i>
+</div>
+</a>
+</li>
+<li class="notification-item">
+<a href="javascript:;">
+<div class="media"><img src="../assets/img/user_1.jpg" alt="" /></div>
+<div class="message">
+<h6 class="title">Solvia Smith</h6>
+<p class="desc">Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="time">25 minutes ago</div>
+</div>
+<div class="option read" data-toggle="tooltip" data-title="Mark as Unread" data-click="set-message-status" data-status="read" data-container="body">
+<i class="fa fa-circle"></i>
+</div>
+</a>
+</li>
+<li class="notification-item">
+<a href="javascript:;">
+<div class="media"><img src="../assets/img/user_2.jpg" alt="" /></div>
+<div class="message">
+<h6 class="title">Olivia</h6>
+<p class="desc">Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+<div class="time">35 minutes ago</div>
+</div>
+<div class="option read" data-toggle="tooltip" data-title="Mark as Unread" data-click="set-message-status" data-status="read" data-container="body">
+<i class="fa fa-circle"></i>
+</div>
+</a>
+</li>
+<li class="notification-item">
+<a href="javascript:;">
+<div class="media"><i class="fa fa-user-plus media-object"></i></div>
+<div class="message">
+<h6 class="title"> New User Registered</h6>
+<div class="time">1 hour ago</div>
+</div>
+<div class="option read" data-toggle="tooltip" data-title="Mark as Unread" data-click="set-message-status" data-status="read" data-container="body">
+<i class="fa fa-circle"></i>
+</div>
+</a>
+</li>
+<li class="notification-item">
+<a href="javascript:;">
+<div class="media bg-success"><i class="fa fa-credit-card"></i></div>
+<div class="message">
+<h6 class="title"> New Item Sold</h6>
+<div class="time">2 hour ago</div>
+</div>
+<div class="option read" data-toggle="tooltip" data-title="Mark as Read" data-click="set-message-status" data-status="read" data-container="body">
+<i class="fa fa-circle"></i>
+</div>
+</a>
+</li>
+<li class="dropdown-footer text-center">
+<a href="javascript:;">View more</a>
+ </li>
+</ul>
+</li>
+<li class="dropdown navbar-user">
+<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+<span class="image"><img src="../assets/img/user_profile.jpg" alt="" /></span>
+<span class="hidden-xs">John Smith</span> <b class="caret"></b>
+</a>
+<ul class="dropdown-menu pull-right">
+<li><a href="javascript:;">Edit Profile</a></li>
+<li><a href="javascript:;"><span class="badge badge-danger pull-right">2</span> Inbox</a></li>
+<li><a href="javascript:;">Calendar</a></li>
+<li><a href="javascript:;">Setting</a></li>
+<li class="divider"></li>
+<li><a href="javascript:;">Log Out</a></li>
+</ul>
+</li>
+<li>
+<a href="javascript:;" data-click="right-sidebar-toggled">
+<i class="fa fa-align-left"></i>
+</a>
+</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div id="sidebar" class="sidebar">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-user">
+<div class="image">
+<img src="../assets/img/user_profile.jpg" alt="" />
+</div>
+<div class="info">
+<div class="name dropdown">
+<a href="javascript:;" data-toggle="dropdown">Thomas Evans <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="javascript:;">Edit Profile</a></li>
+<li><a href="javascript:;"><span class="badge badge-danger pull-right">2</span> Inbox</a></li>
+<li><a href="javascript:;">Calendar</a></li>
+<li><a href="javascript:;">Setting</a></li>
+<li class="divider"></li>
+<li><a href="javascript:;">Log Out</a></li>
+</ul>
+</div>
+<div class="position">Front End Designer</div>
+</div>
+</li>
+<li class="nav-header">Navigation</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-home"></i>
+<span>Dashboard <span class="label label-theme m-l-3">NEW</span></span>
+</a>
+<ul class="sub-menu">
+<li><a href="index.html">Dashboard v1</a></li>
+<li><a href="index_v2.html">Dashboard v2</a></li>
+<li><a href="index_v3.html">Dashboard v3</a></li>
+<li><a href="index_v4.html">Dashboard v4 <i class="fa fa-paper-plane text-theme m-l-3"></i></a></li>
+</ul>
+</li>
+<li>
+<a href="bootstrap_4.html">
+<div class="icon-img"><img src="../assets/img/bootstrap-4.png" alt="" /></div>
+<span>Bootstrap 4</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<span class="badge pull-right">10</span>
+<i class="fa fa-inbox"></i>
+<span>Email</span>
+</a>
+<ul class="sub-menu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li>
+<a href="widgets.html">
+<i class="fa fa-gem"></i>
+<span>Widgets</span>
+</a>
+</li>
+<li class="has-sub active">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-suitcase"></i>
+<span>UI Elements</span>
+</a>
+<ul class="sub-menu">
+<li><a href="ui_general.html">General</a></li>
+<li><a href="ui_typography.html">Typography</a></li>
+<li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
+<li><a href="ui_modal_notification.html">Modal & Notification</a></li>
+<li><a href="ui_widget_boxes.html">Widget Boxes</a></li>
+<li><a href="ui_media_object.html">Media Object</a></li>
+<li><a href="ui_buttons.html">Buttons</a></li>
+<li><a href="ui_font_awesome.html">Font Awesome</a></li>
+<li><a href="ui_simple_line_icons.html">Simple Line Icons</a></li>
+<li class="active"><a href="ui_ionicons.html">Ionicons</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-file"></i>
+<span>Form Stuff</span>
+</a>
+<ul class="sub-menu">
+<li><a href="form_elements.html">Form Elements</a></li>
+<li><a href="form_plugins.html">Form Plugins</a></li>
+<li><a href="form_slider_switcher.html">Form Slider + Switcher</a></li>
+<li><a href="form_validation.html">Form Validation</a></li>
+<li><a href="form_wizards.html">Wizards</a></li>
+<li><a href="form_wysiwyg.html">WYSIWYG</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-th"></i>
+<span>Tables</span>
+</a>
+<ul class="sub-menu">
+<li><a href="table_basic.html">Basic Tables</a></li>
+<li class="has-sub">
+<a href="javascript:;"><b class="caret pull-right"></b> Managed Tables</a>
+<ul class="sub-menu">
+<li><a href="table_manage.html">Default</a></li>
+<li><a href="table_manage_autofill.html">Autofill</a></li>
+<li><a href="table_manage_buttons.html">Buttons</a></li>
+<li><a href="table_manage_colreorder.html">ColReorder</a></li>
+<li><a href="table_manage_fixed_columns.html">Fixed Column</a></li>
+<li><a href="table_manage_fixed_header.html">Fixed Header</a></li>
+<li><a href="table_manage_keytable.html">KeyTable</a></li>
+<li><a href="table_manage_responsive.html">Responsive</a></li>
+<li><a href="table_manage_rowreorder.html">RowReorder</a></li>
+<li><a href="table_manage_scroller.html">Scroller</a></li>
+<li><a href="table_manage_select.html">Select</a></li>
+<li><a href="table_manage_combine.html">Extension Combination</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-envelope"></i>
+<span>Email Template <span class="label label-theme m-l-3">NEW</span></span>
+</a>
+<ul class="sub-menu">
+<li><a href="email_newsletter.html" target="_blank">Newsletter Template <i class="fa fa-paper-plane text-theme m-l-3"></i></a></li>
+<li><a href="email_system.html" target="_blank">System Template <i class="fa fa-paper-plane text-theme m-l-3"></i></a></li>
+<li><a href="email_billing.html" target="_blank">Billing Template <i class="fa fa-paper-plane text-theme m-l-3"></i></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-map-marker"></i>
+<span>Maps</span>
+</a>
+<ul class="sub-menu">
+<li><a href="map_vector.html">Vector Map</a></li>
+<li><a href="map_google.html">Google Map</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-chart-area"></i>
+<span>Chart</span>
+</a>
+<ul class="sub-menu">
+<li><a href="chart_flot.html">Flot Chart</a></li>
+<li><a href="chart_morris.html">Morris Chart</a></li>
+<li><a href="chart_js.html">Chart JS</a></li>
+</ul>
+</li>
+<li>
+<a href="calendar.html">
+<i class="fa fa-calendar"></i>
+<span>Calendar</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-file"></i>
+<span>Pages</span>
+</a>
+<ul class="sub-menu">
+<li><a href="extra_gallery.html">Gallery</a></li>
+<li><a href="extra_timeline.html">Timeline</a></li>
+<li><a href="extra_search_results.html">Search Results</a></li>
+<li><a href="extra_invoice.html">Invoice</a></li>
+<li><a href="extra_coming_soon.html">Coming Soon Page</a></li>
+<li><a href="extra_404_error.html">404 Error Page</a></li>
+<li><a href="extra_login.html">Login Page</a></li>
+<li><a href="extra_register.html">Register Page</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-cogs"></i>
+<span>Layout Options</span>
+</a>
+<ul class="sub-menu">
+<li><a href="page_blank.html">Blank Page</a></li>
+<li><a href="page_with_fixed_footer.html">Page with Fixed Footer</a></li>
+<li><a href="page_with_right_sidebar.html">Page with Right Sidebar</a></li>
+<li><a href="page_with_minified_sidebar.html">Page with Minified Sidebar</a></li>
+<li><a href="page_with_two_sidebar.html">Page with Two Sidebar</a></li>
+<li><a href="page_with_top_menu.html">Page with Top Menu</a></li>
+<li><a href="page_with_mixed_menu.html">Page with Mixed Menu</a></li>
+<li><a href="page_with_boxed_layout.html">Page with Boxed Layout</a></li>
+<li><a href="page_boxed_mixed_menu.html">Boxed Layout with Mixed Menu</a></li>
+<li><a href="page_without_sidebar.html">Page without Sidebar</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-cubes"></i>
+<span>Version</span>
+</a>
+<ul class="sub-menu">
+<li><a href="javascript:;">HTML</a></li>
+<li><a href="../angular/index.html">Angular JS</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-medkit"></i>
+<span>Helper</span>
+</a>
+<ul class="sub-menu">
+<li><a href="helper_css.html">Predefined CSS Classes</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+<i class="fa fa-align-left"></i>
+<span>Menu Level</span>
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+Menu 1.1
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret pull-right"></b>
+Menu 2.1
+</a>
+<ul class="sub-menu">
+<li><a href="javascript:;">Menu 3.1</a></li>
+<li><a href="javascript:;">Menu 3.2</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 2.2</a></li>
+<li><a href="javascript:;">Menu 2.3</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 1.2</a></li>
+<li><a href="javascript:;">Menu 1.3</a></li>
+</ul>
+</li>
+<li class="divider has-minify-btn">
+
+<a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-left"></i></a>
+
+</li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<ul class="project-list">
+<li>
+<div class="icon"><i class="far fa-circle text-success-light"></i></div>
+<div class="info">
+<div class="title"><a href="javascript:;">iPhone Apps Development</a></div>
+<div class="progress">
+<div class="progress-bar progress-bar-success" style="width: 60%"></div>
+</div>
+<div class="desc">Donec tristique malesuada nibh quis lobortis. Quisque viverra faucibus hendrerit.</div>
+</div>
+</li>
+<li>
+<div class="icon"><i class="far fa-circle text-danger-light"></i></div>
+<div class="info">
+<div class="title"><a href="javascript:;">Website Redesign</a></div>
+<div class="progress">
+<div class="progress-bar progress-bar-danger" style="width: 30%"></div>
+</div>
+<div class="desc">Integer fermentum arcu et dolor sodales, quis laoreet justo aliquam.</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+</div>
+<div class="sidebar-bg"></div>
+
+
+<div id="content" class="content">
+
+<ol class="breadcrumb pull-right">
+<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+<li class="breadcrumb-item"><a href="javascript:;">UI Elements</a></li>
+<li class="breadcrumb-item active">Ionicons</li>
+</ol>
+
+
+<h1 class="page-header">Ionicons <small>header small text goes here...</small></h1>
+
+
+<div class="section-container section-with-top-border p-b-15">
+<h5 class="m-t-0 m-b-15">Default Icons (252)</h5>
+<div class="row row-space-10">
+<div class="col-lg-2 col-6"><i class="ion-ionic pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ionic</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-up-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-up-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-right-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-right-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-down-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-down-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-left-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-left-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-up-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-up-b</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-right-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-right-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-down-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-down-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-left-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-left-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-up-c pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-up-c</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-right-c pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-right-c</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-down-c pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-down-c</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-left-c pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-left-c</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-return-right pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-return-right</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-return-left pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-return-left</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-swap pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-swap</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-shrink pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-shrink</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-expand pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-expand</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-move pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-move</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-resize pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-resize</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chevron-up pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chevron-up</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chevron-right pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chevron-right</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chevron-down pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chevron-down</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chevron-left pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chevron-left</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-navicon-round pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-navicon-round</p></div>
+<div class="col-lg-2 col-6"><i class="ion-navicon pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-navicon</p></div>
+<div class="col-lg-2 col-6"><i class="ion-drag pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-drag</p></div>
+<div class="col-lg-2 col-6"><i class="ion-log-in pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-log-in</p></div>
+<div class="col-lg-2 col-6"><i class="ion-log-out pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-log-out</p></div>
+<div class="col-lg-2 col-6"><i class="ion-checkmark-round pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-checkmark-round</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-checkmark pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-checkmark</p></div>
+<div class="col-lg-2 col-6"><i class="ion-checkmark-circled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-checkmark-circled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-close-round pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-close-round</p></div>
+<div class="col-lg-2 col-6"><i class="ion-close pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-close</p></div>
+<div class="col-lg-2 col-6"><i class="ion-close-circled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-close-circled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-plus-round pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-plus-round</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-plus pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-plus</p></div>
+<div class="col-lg-2 col-6"><i class="ion-plus-circled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-plus-circled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-minus-round pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-minus-round</p></div>
+<div class="col-lg-2 col-6"><i class="ion-minus pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-minus</p></div>
+<div class="col-lg-2 col-6"><i class="ion-minus-circled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-minus-circled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-information pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-information</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-information-circled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-information-circled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-help pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-help</p></div>
+<div class="col-lg-2 col-6"><i class="ion-help-circled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-help-circled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-backspace-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-backspace-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-backspace pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-backspace</p></div>
+<div class="col-lg-2 col-6"><i class="ion-help-buoy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-help-buoy</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-asterisk pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-asterisk</p></div>
+<div class="col-lg-2 col-6"><i class="ion-alert pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-alert</p></div>
+<div class="col-lg-2 col-6"><i class="ion-alert-circled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-alert-circled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-refresh pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-refresh</p></div>
+<div class="col-lg-2 col-6"><i class="ion-loop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-loop</p></div>
+<div class="col-lg-2 col-6"><i class="ion-shuffle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-shuffle</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-home pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-home</p></div>
+<div class="col-lg-2 col-6"><i class="ion-search pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-search</p></div>
+<div class="col-lg-2 col-6"><i class="ion-flag pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-flag</p></div>
+<div class="col-lg-2 col-6"><i class="ion-star pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-star</p></div>
+<div class="col-lg-2 col-6"><i class="ion-heart pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-heart</p></div>
+<div class="col-lg-2 col-6"><i class="ion-heart-broken pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-heart-broken</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-gear-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-gear-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-gear-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-gear-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-toggle-filled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-toggle-filled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-toggle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-toggle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-settings pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-settings</p></div>
+<div class="col-lg-2 col-6"><i class="ion-wrench pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-wrench</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-hammer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-hammer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-edit pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-edit</p></div>
+<div class="col-lg-2 col-6"><i class="ion-trash-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-trash-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-trash-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-trash-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-document pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-document</p></div>
+<div class="col-lg-2 col-6"><i class="ion-document-text pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-document-text</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-clipboard pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-clipboard</p></div>
+<div class="col-lg-2 col-6"><i class="ion-scissors pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-scissors</p></div>
+<div class="col-lg-2 col-6"><i class="ion-funnel pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-funnel</p></div>
+<div class="col-lg-2 col-6"><i class="ion-bookmark pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-bookmark</p></div>
+<div class="col-lg-2 col-6"><i class="ion-email pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-email</p></div>
+<div class="col-lg-2 col-6"><i class="ion-email-unread pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-email-unread</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-folder pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-folder</p></div>
+<div class="col-lg-2 col-6"><i class="ion-filing pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-filing</p></div>
+<div class="col-lg-2 col-6"><i class="ion-archive pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-archive</p></div>
+<div class="col-lg-2 col-6"><i class="ion-reply pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-reply</p></div>
+<div class="col-lg-2 col-6"><i class="ion-reply-all pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-reply-all</p></div>
+<div class="col-lg-2 col-6"><i class="ion-forward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-forward</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-share pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-share</p></div>
+<div class="col-lg-2 col-6"><i class="ion-paper-airplane pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-paper-airplane</p></div>
+<div class="col-lg-2 col-6"><i class="ion-link pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-link</p></div>
+<div class="col-lg-2 col-6"><i class="ion-paperclip pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-paperclip</p></div>
+<div class="col-lg-2 col-6"><i class="ion-compose pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-compose</p></div>
+<div class="col-lg-2 col-6"><i class="ion-briefcase pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-briefcase</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-medkit pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-medkit</p></div>
+<div class="col-lg-2 col-6"><i class="ion-at pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ionatic</p></div>
+<div class="col-lg-2 col-6"><i class="ion-pound pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pound</p></div>
+<div class="col-lg-2 col-6"><i class="ion-quote pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-quote</p></div>
+<div class="col-lg-2 col-6"><i class="ion-cloud pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-cloud</p></div>
+<div class="col-lg-2 col-6"><i class="ion-upload pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-upload</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-more pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-more</p></div>
+<div class="col-lg-2 col-6"><i class="ion-grid pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-grid</p></div>
+<div class="col-lg-2 col-6"><i class="ion-calendar pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-calendar</p></div>
+<div class="col-lg-2 col-6"><i class="ion-clock pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-clock</p></div>
+<div class="col-lg-2 col-6"><i class="ion-compass pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-compass</p></div>
+<div class="col-lg-2 col-6"><i class="ion-pinpoint pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pinpoint</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-pin pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pin</p></div>
+<div class="col-lg-2 col-6"><i class="ion-navigate pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-navigate</p></div>
+<div class="col-lg-2 col-6"><i class="ion-location pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-location</p></div>
+<div class="col-lg-2 col-6"><i class="ion-map pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-map</p></div>
+<div class="col-lg-2 col-6"><i class="ion-lock-combination pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-lock-combination</p></div>
+<div class="col-lg-2 col-6"><i class="ion-locked pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-locked</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-unlocked pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-unlocked</p></div>
+<div class="col-lg-2 col-6"><i class="ion-key pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-key</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-graph-up-right pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-graph-up-right</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-graph-down-right pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-graph-down-right</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-graph-up-left pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-graph-up-left</p></div>
+<div class="col-lg-2 col-6"><i class="ion-arrow-graph-down-left pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-graph-down-left</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-stats-bars pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-stats-bars</p></div>
+<div class="col-lg-2 col-6"><i class="ion-connection-bars pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-connection-bars</p></div>
+<div class="col-lg-2 col-6"><i class="ion-pie-graph pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pie-graph</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chatbubble pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chatbubble</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chatbubble-working pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chatbubble-working</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chatbubbles pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chatbubbles</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-chatbox pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chatbox</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chatbox-working pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chatbox-working</p></div>
+<div class="col-lg-2 col-6"><i class="ion-chatboxes pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-chatboxes</p></div>
+<div class="col-lg-2 col-6"><i class="ion-person pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-person</p></div>
+<div class="col-lg-2 col-6"><i class="ion-person-add pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-person-add</p></div>
+<div class="col-lg-2 col-6"><i class="ion-person-stalker pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-person-stalker</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-woman pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-woman</p></div>
+<div class="col-lg-2 col-6"><i class="ion-man pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-man</p></div>
+<div class="col-lg-2 col-6"><i class="ion-female pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-female</p></div>
+<div class="col-lg-2 col-6"><i class="ion-male pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-male</p></div>
+<div class="col-lg-2 col-6"><i class="ion-transgender pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-transgender</p></div>
+<div class="col-lg-2 col-6"><i class="ion-fork pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-fork</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-knife pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-knife</p></div>
+<div class="col-lg-2 col-6"><i class="ion-spoon pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-spoon</p></div>
+<div class="col-lg-2 col-6"><i class="ion-soup-can-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-soup-can-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-soup-can pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-soup-can</p></div>
+<div class="col-lg-2 col-6"><i class="ion-beer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-beer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-wineglass pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-wineglass</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-coffee pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-coffee</p></div>
+<div class="col-lg-2 col-6"><i class="ion-icecream pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-icecream</p></div>
+<div class="col-lg-2 col-6"><i class="ion-pizza pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pizza</p></div>
+<div class="col-lg-2 col-6"><i class="ion-power pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-power</p></div>
+<div class="col-lg-2 col-6"><i class="ion-mouse pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-mouse</p></div>
+<div class="col-lg-2 col-6"><i class="ion-battery-full pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-battery-full</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-battery-half pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-battery-half</p></div>
+<div class="col-lg-2 col-6"><i class="ion-battery-low pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-battery-low</p></div>
+<div class="col-lg-2 col-6"><i class="ion-battery-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-battery-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-battery-charging pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-battery-charging</p></div>
+<div class="col-lg-2 col-6"><i class="ion-wifi pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-wifi</p></div>
+<div class="col-lg-2 col-6"><i class="ion-bluetooth pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-bluetooth</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-calculator pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-calculator</p></div>
+<div class="col-lg-2 col-6"><i class="ion-camera pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-camera</p></div>
+<div class="col-lg-2 col-6"><i class="ion-eye pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-eye</p></div>
+<div class="col-lg-2 col-6"><i class="ion-eye-disabled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-eye-disabled</p></div>
+<div class="col-lg-2 col-6"><i class="ion-flash pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-flash</p></div>
+<div class="col-lg-2 col-6"><i class="ion-flash-off pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-flash-off</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-qr-scanner pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-qr-scanner</p></div>
+<div class="col-lg-2 col-6"><i class="ion-image pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-image</p></div>
+<div class="col-lg-2 col-6"><i class="ion-images pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-images</p></div>
+<div class="col-lg-2 col-6"><i class="ion-wand pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-wand</p></div>
+<div class="col-lg-2 col-6"><i class="ion-contrast pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-contrast</p></div>
+<div class="col-lg-2 col-6"><i class="ion-aperture pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-aperture</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-crop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-crop</p></div>
+<div class="col-lg-2 col-6"><i class="ion-easel pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-easel</p></div>
+<div class="col-lg-2 col-6"><i class="ion-paintbrush pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-paintbrush</p></div>
+<div class="col-lg-2 col-6"><i class="ion-paintbucket pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-paintbucket</p></div>
+<div class="col-lg-2 col-6"><i class="ion-monitor pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-monitor</p></div>
+<div class="col-lg-2 col-6"><i class="ion-laptop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-laptop</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ipad pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ipad</p></div>
+<div class="col-lg-2 col-6"><i class="ion-iphone pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-iphone</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ipod pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ipod</p></div>
+<div class="col-lg-2 col-6"><i class="ion-printer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-printer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-usb pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-usb</p></div>
+<div class="col-lg-2 col-6"><i class="ion-outlet pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-outlet</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-bug pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-bug</p></div>
+<div class="col-lg-2 col-6"><i class="ion-code pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-code</p></div>
+<div class="col-lg-2 col-6"><i class="ion-code-working pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-code-working</p></div>
+<div class="col-lg-2 col-6"><i class="ion-code-download pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-code-download</p></div>
+<div class="col-lg-2 col-6"><i class="ion-fork-repo pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-fork-repo</p></div>
+<div class="col-lg-2 col-6"><i class="ion-network pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-network</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-pull-request pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pull-request</p></div>
+<div class="col-lg-2 col-6"><i class="ion-merge pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-merge</p></div>
+<div class="col-lg-2 col-6"><i class="ion-xbox pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-xbox</p></div>
+<div class="col-lg-2 col-6"><i class="ion-playstation pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-playstation</p></div>
+<div class="col-lg-2 col-6"><i class="ion-steam pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-steam</p></div>
+<div class="col-lg-2 col-6"><i class="ion-closed-captioning pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-closed-captioning</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-videocamera pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-videocamera</p></div>
+<div class="col-lg-2 col-6"><i class="ion-film-marker pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-film-marker</p></div>
+<div class="col-lg-2 col-6"><i class="ion-disc pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-disc</p></div>
+<div class="col-lg-2 col-6"><i class="ion-headphone pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-headphone</p></div>
+<div class="col-lg-2 col-6"><i class="ion-music-note pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-music-note</p></div>
+<div class="col-lg-2 col-6"><i class="ion-radio-waves pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-radio-waves</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-speakerphone pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-speakerphone</p></div>
+<div class="col-lg-2 col-6"><i class="ion-mic-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-mic-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-mic-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-mic-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-mic-c pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-mic-c</p></div>
+<div class="col-lg-2 col-6"><i class="ion-volume-high pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-volume-high</p></div>
+<div class="col-lg-2 col-6"><i class="ion-volume-medium pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-volume-medium</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-volume-low pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-volume-low</p></div>
+<div class="col-lg-2 col-6"><i class="ion-volume-mute pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-volume-mute</p></div>
+<div class="col-lg-2 col-6"><i class="ion-levels pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-levels</p></div>
+<div class="col-lg-2 col-6"><i class="ion-play pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-play</p></div>
+<div class="col-lg-2 col-6"><i class="ion-pause pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pause</p></div>
+<div class="col-lg-2 col-6"><i class="ion-stop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-stop</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-record pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-record</p></div>
+<div class="col-lg-2 col-6"><i class="ion-skip-forward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-skip-forward</p></div>
+<div class="col-lg-2 col-6"><i class="ion-skip-backward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-skip-backward</p></div>
+<div class="col-lg-2 col-6"><i class="ion-eject pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-eject</p></div>
+<div class="col-lg-2 col-6"><i class="ion-bag pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-bag</p></div>
+<div class="col-lg-2 col-6"><i class="ion-card pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-card</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-cash pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-cash</p></div>
+<div class="col-lg-2 col-6"><i class="ion-pricetag pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pricetag</p></div>
+<div class="col-lg-2 col-6"><i class="ion-pricetags pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-pricetags</p></div>
+<div class="col-lg-2 col-6"><i class="ion-thumbsup pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-thumbsup</p></div>
+<div class="col-lg-2 col-6"><i class="ion-thumbsdown pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-thumbsdown</p></div>
+<div class="col-lg-2 col-6"><i class="ion-happy-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-happy-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-happy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-happy</p></div>
+<div class="col-lg-2 col-6"><i class="ion-sad-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-sad-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-sad pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-sad</p></div>
+<div class="col-lg-2 col-6"><i class="ion-bowtie pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-bowtie</p></div>
+<div class="col-lg-2 col-6"><i class="ion-tshirt-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-tshirt-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-tshirt pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-tshirt</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-trophy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-trophy</p></div>
+<div class="col-lg-2 col-6"><i class="ion-podium pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-podium</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ribbon-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ribbon-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ribbon-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ribbon-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-university pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-university</p></div>
+<div class="col-lg-2 col-6"><i class="ion-magnet pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-magnet</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-beaker pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-beaker</p></div>
+<div class="col-lg-2 col-6"><i class="ion-erlenmeyer-flask pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-erlenmeyer-flask</p></div>
+<div class="col-lg-2 col-6"><i class="ion-egg pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-egg</p></div>
+<div class="col-lg-2 col-6"><i class="ion-earth pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-earth</p></div>
+<div class="col-lg-2 col-6"><i class="ion-planet pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-planet</p></div>
+<div class="col-lg-2 col-6"><i class="ion-lightbulb pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-lightbulb</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-cube pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-cube</p></div>
+<div class="col-lg-2 col-6"><i class="ion-leaf pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-leaf</p></div>
+<div class="col-lg-2 col-6"><i class="ion-waterdrop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-waterdrop</p></div>
+<div class="col-lg-2 col-6"><i class="ion-flame pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-flame</p></div>
+<div class="col-lg-2 col-6"><i class="ion-fireball pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-fireball</p></div>
+<div class="col-lg-2 col-6"><i class="ion-bonfire pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-bonfire</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-umbrella pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-umbrella</p></div>
+<div class="col-lg-2 col-6"><i class="ion-nuclear pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-nuclear</p></div>
+<div class="col-lg-2 col-6"><i class="ion-no-smoking pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-no-smoking</p></div>
+<div class="col-lg-2 col-6"><i class="ion-thermometer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-thermometer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-speedometer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-speedometer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-model-s pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-model-s</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-plane pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-plane</p></div>
+<div class="col-lg-2 col-6"><i class="ion-jet pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-jet</p></div>
+<div class="col-lg-2 col-6"><i class="ion-load-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-load-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-load-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-load-b</p></div>
+<div class="col-lg-2 col-6"><i class="ion-load-c pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-load-c</p></div>
+<div class="col-lg-2 col-6"><i class="ion-load-d pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-load-d</p></div>
+</div>
+</div>
+
+
+<div class="section-container section-with-top-border p-b-15">
+<h5 class="m-t-0 m-b-15">IOS Icons (267)</h5>
+<div class="row row-space-10">
+<div class="col-lg-2 col-6"><i class="ion-ios-ionic-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-ionic-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-back pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-back</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-forward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-forward</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-up pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-up</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-right pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-right</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-down pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-down</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-left pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-left</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-thin-up pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-thin-up</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-thin-right pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-thin-right</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-thin-down pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-arrow-thin-down</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-arrow-thin-left pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-arrow-thin-left</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-circle-filled pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-circle-filled</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-circle-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-circle-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-checkmark-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-checkmark-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-checkmark-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-checkmark-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-checkmark pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-checkmark</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-plus-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-plus-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-plus-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-plus-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-plus pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-plus</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-close-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-close-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-close-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-close-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-close pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-close</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-minus-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-minus-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-minus-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-minus-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-minus pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-minus</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-information-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-information-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-information-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-information-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-information pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-information</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-help-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-help-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-help-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-help-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-help pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-help</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-search pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-search</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-search-strong pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-search-strong</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-star pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-star</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-star-half pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-star-half</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-star-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-star-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-heart pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-heart</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-heart-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-heart-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-more pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-more</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-more-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-more-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-home pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-home</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-home-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-home-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloud pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloud</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloud-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloud-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloud-upload pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloud-upload</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloud-upload-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloud-upload-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloud-download pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloud-download</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloud-download-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloud-download-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-upload pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-upload</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-upload-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-upload-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-download pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-download</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-download-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-download-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-refresh pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-refresh</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-refresh-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-refresh-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-refresh-empty pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-refresh-empty</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-reload pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-reload</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-loop-strong pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-loop-strong</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-loop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-loop</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-bookmarks pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-bookmarks</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-bookmarks-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-bookmarks-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-book pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-book</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-book-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-book-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flag pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flag</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flag-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flag-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-glasses pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-glasses</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-glasses-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-glasses-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-browsers pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-browsers</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-browsers-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-browsers-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-at pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-at</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-at-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-at-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pricetag pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pricetag</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pricetag-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pricetag-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pricetags pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pricetags</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pricetags-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pricetags-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cart pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cart</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cart-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cart-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-chatboxes pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-chatboxes</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-chatboxes-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-chatboxes-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-chatbubble pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-chatbubble</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-chatbubble-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-chatbubble-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cog pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cog</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cog-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cog-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-gear pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-gear</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-gear-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-gear-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-settings pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-settings</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-settings-strong pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-settings-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-toggle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-toggle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-toggle-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-toggle-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-analytics pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-analytics</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-analytics-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-analytics-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pie pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pie</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pie-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pie-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pulse pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pulse</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pulse-strong pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pulse-strong</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-filing pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-filing</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-filing-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-filing-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-box pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-box</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-box-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-box-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-compose pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-compose</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-compose-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-compose-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-trash pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-trash</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-trash-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-trash-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-copy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-copy</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-copy-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-copy-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-email pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-email</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-email-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-email-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-undo pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-undo</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-undo-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-undo-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-redo pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-redo</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-redo-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-redo-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-paperplane pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-paperplane</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-paperplane-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-paperplane-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-folder pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-folder</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-folder-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-folder-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-paper pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-paper</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-paper-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-paper-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-list pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-list</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-list-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-list-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-world pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-world</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-world-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-world-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-alarm pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-alarm</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-alarm-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-alarm-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-speedometer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-speedometer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-speedometer-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-speedometer-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-stopwatch pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-stopwatch</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-stopwatch-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-stopwatch-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-timer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-timer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-timer-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-timer-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-clock pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-clock</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-clock-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-clock-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-time pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-time</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-time-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-time-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-calendar pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-calendar</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-calendar-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-calendar-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-photos pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-photos</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-photos-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-photos-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-albums pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-albums</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-albums-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-albums-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-camera pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-camera</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-camera-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-camera-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-reverse-camera pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-reverse-camera</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-reverse-camera-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-reverse-camera-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-eye pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-eye</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-eye-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-eye-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-bolt pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-bolt</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-bolt-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-bolt-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-color-wand pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-color-wand</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-color-wand-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-color-wand-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-color-filter pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-color-filter</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-color-filter-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-color-filter-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-grid-view pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-grid-view</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-grid-view-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-grid-view-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-crop-strong pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-crop-strong</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-crop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-crop</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-barcode pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-barcode</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-barcode-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-barcode-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-briefcase pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-briefcase</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-briefcase-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-briefcase-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-medkit pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-medkit</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-medkit-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-medkit-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-medical pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-medical</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-medical-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-medical-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-infinite pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-infinite</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-infinite-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-infinite-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-calculator pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-calculator</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-calculator-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-calculator-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-keypad pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-keypad</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-keypad-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-keypad-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-telephone pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-telephone</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-telephone-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-telephone-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-drag pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-drag</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-location pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-location</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-location-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-location-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-navigate pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-navigate</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-navigate-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-navigate-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-locked pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-locked</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-locked-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-locked-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-unlocked pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-unlocked</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-unlocked-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-unlocked-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-monitor pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-monitor</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-monitor-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-monitor-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-printer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-printer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-printer-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-printer-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-game-controller-a pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-game-controller-a</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-game-controller-a-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-game-controller-a-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-game-controller-b pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-game-controller-b</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-game-controller-b-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-game-controller-b-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-americanfootball pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-americanfootball</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-americanfootball-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-americanfootball-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-baseball pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-baseball</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-baseball-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-baseball-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-basketball pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-basketball</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-basketball-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-basketball-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-tennisball pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-tennisball</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-tennisball-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-tennisball-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-football pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-football</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-football-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-football-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-body pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-body</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-body-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-body-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-person pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-person</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-person-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-person-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-personadd pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-personadd</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-personadd-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-personadd-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-people pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-people</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-people-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-people-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-musical-notes pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-musical-notes</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-musical-note pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-musical-note</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-bell pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-bell</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-bell-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-bell-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-mic pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-mic</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-mic-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-mic-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-mic-off pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-mic-off</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-volume-high pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-volume-high</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-volume-low pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-volume-low</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-play pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-play</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-play-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-play-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pause pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pause</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pause-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pause-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-recording pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-recording</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-recording-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-recording-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-fastforward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-fastforward</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-fastforward-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-fastforward-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-rewind pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-rewind</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-rewind-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-rewind-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-skipbackward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-skipbackward</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-skipbackward-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-skipbackward-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-skipforward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-skipforward</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-skipforward-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-skipforward-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-shuffle-strong pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-shuffle-strong</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-shuffle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-shuffle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-videocam pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-videocam</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-videocam-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-videocam-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-film pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-film</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-film-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-film-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flask pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flask</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flask-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flask-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-lightbulb pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-lightbulb</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-lightbulb-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-lightbulb-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-wineglass pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-wineglass</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-wineglass-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-wineglass-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pint pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pint</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-pint-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-pint-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-nutrition pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-nutrition</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-nutrition-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-nutrition-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flower pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flower</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flower-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flower-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-rose pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-rose</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-rose-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-rose-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-paw pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-paw</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-paw-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-paw-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flame pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flame</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-flame-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-flame-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-sunny pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-sunny</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-sunny-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-sunny-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-partlysunny pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-partlysunny</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-partlysunny-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-partlysunny-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloudy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloudy</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloudy-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloudy-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-rainy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-rainy</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-rainy-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-rainy-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-thunderstorm pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-thunderstorm</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-thunderstorm-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-thunderstorm-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-snowy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-snowy</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-moon pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-moon</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-moon-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-moon-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloudy-night pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloudy-night</p></div>
+<div class="col-lg-2 col-6"><i class="ion-ios-cloudy-night-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-ios-cloudy-night-outline</p></div>
+</div>
+</div>
+
+
+<div class="section-container section-with-top-border p-b-15">
+<h5 class="m-t-0 m-b-15">Android Icons (128)</h5>
+<div class="row row-space-10">
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-up pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-up</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-forward pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-forward</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-down pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-down</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-back pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-back</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropup pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropup</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropup-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropup-circle</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropright pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropright</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropright-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropright-circle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropdown pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropdown</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropdown-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropdown-circle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropleft pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropleft</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-arrow-dropleft-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-arrow-dropleft-circle</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-add pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-add</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-add-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-add-circle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-remove pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-remove</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-remove-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-remove-circle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-close pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-close</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-cancel pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-cancel</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-radio-button-off pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-radio-button-off</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-radio-button-on pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-radio-button-on</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-checkmark-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-checkmark-circle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-checkbox-outline-blank pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-checkbox-outline-blank</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-checkbox-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-checkbox-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-checkbox-blank pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-checkbox-blank</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-checkbox pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-checkbox</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-done pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-done</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-done-all pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-done-all</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-menu pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-menu</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-more-horizontal pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-more-horizontal</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-more-vertical pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-more-vertical</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-refresh pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-refresh</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-sync pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-sync</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-wifi pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-wifi</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-call pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-call</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-apps pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-apps</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-settings pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-settings</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-options pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-options</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-funnel pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-funnel</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-search pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-search</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-home pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-home</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-cloud-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-cloud-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-cloud pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-cloud</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-download pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-download</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-upload pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-upload</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-cloud-done pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-cloud-done</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-cloud-circle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-cloud-circle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-favorite-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-favorite-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-favorite pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-favorite</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-star-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-star-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-star-half pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-star-half</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-star pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-star</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-calendar pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-calendar</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-alarm-clock pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-alarm-clock</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-time pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-time</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-stopwatch pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-stopwatch</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-watch pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-watch</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-locate pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-locate</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-navigate pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-navigate</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-pin pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-pin</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-compass pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-compass</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-map pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-map</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-walk pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-walk</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-bicycle pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-bicycle</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-car pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-car</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-bus pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-bus</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-subway pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-subway</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-train pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-train</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-boat pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-boat</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-plane pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-plane</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-restaurant pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-restaurant</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-bar pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-bar</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-cart pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-cart</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-camera pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-camera</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-image pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-image</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-film pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-film</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-color-palette pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-color-palette</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-create pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-create</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-mail pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-mail</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-drafts pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-drafts</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-send pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-send</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-archive pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-archive</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-delete pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-delete</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-attach pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-attach</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-share pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-share</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-share-alt pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-share-alt</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-bookmark pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-bookmark</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-document pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-document</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-clipboard pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-clipboard</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-list pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-list</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-folder-open pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-folder-open</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-folder pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-folder</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-print pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-print</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-open pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-open</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-exit pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-exit</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-contract pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-contract</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-expand pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-expand</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-globe pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-globe</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-chat pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-chat</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-textsms pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-textsms</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-hangout pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-hangout</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-happy pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-happy</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-sad pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-sad</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-person pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-person</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-people pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-people</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-person-add pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-person-add</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-contact pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-contact</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-contacts pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-contacts</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-playstore pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-playstore</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-lock pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-lock</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-unlock pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-unlock</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-microphone pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-microphone</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-microphone-off pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-microphone-off</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-notifications-none pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-notifications-none</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-notifications pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-notifications</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-notifications-off pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-notifications-off</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-volume-mute pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-volume-mute</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-volume-down pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-volume-down</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-volume-up pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-volume-up</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-volume-off pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-volume-off</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-hand pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-hand</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-desktop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-desktop</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-laptop pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-laptop</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-phone-portrait pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-phone-portrait</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-phone-landscape pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-phone-landscape</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-bulb pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-bulb</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-sunny pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-sunny</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-android-alert pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-alert</p></div>
+<div class="col-lg-2 col-6"><i class="ion-android-warning pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-android-warning</p></div>
+</div>
+</div>
+
+
+<div class="section-container section-with-top-border p-b-15">
+<h5 class="m-t-0 m-b-15">Social Icons (83)</h5>
+<div class="row row-space-10">
+<div class="col-lg-2 col-6"><i class="ion-social-twitter pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-twitter</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-twitter-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-twitter-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-facebook pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-facebook</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-facebook-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-facebook-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-googleplus pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-googleplus</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-googleplus-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-googleplus-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-google pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-google</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-google-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-google-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-dribbble pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-dribbble</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-dribbble-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-dribbble-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-octocat pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-octocat</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-github pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-github</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-github-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-github-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-instagram pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-instagram</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-instagram-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-instagram-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-whatsapp pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-whatsapp</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-whatsapp-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-whatsapp-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-snapchat pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-snapchat</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-snapchat-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-snapchat-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-foursquare pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-foursquare</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-foursquare-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-foursquare-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-pinterest pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-pinterest</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-pinterest-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-pinterest-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-rss pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-rss</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-rss-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-rss-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-tumblr pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-tumblr</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-tumblr-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-tumblr-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-wordpress pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-wordpress</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-wordpress-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-wordpress-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-reddit pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-reddit</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-reddit-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-reddit-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-hackernews pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-hackernews</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-hackernews-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-hackernews-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-designernews pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-designernews</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-designernews-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-designernews-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-yahoo pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-yahoo</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-yahoo-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-yahoo-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-buffer pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-buffer</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-buffer-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-buffer-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-skype pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-skype</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-skype-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-skype-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-linkedin pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-linkedin</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-linkedin-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-linkedin-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-vimeo pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-vimeo</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-vimeo-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-vimeo-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-twitch pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-twitch</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-twitch-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-twitch-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-youtube pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-youtube</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-youtube-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-youtube-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-dropbox pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-ionic</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-dropbox-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-dropbox</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-apple pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-apple</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-apple-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-apple-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-android pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-android</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-android-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-android-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-windows pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-windows</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-windows-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-windows-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-html5 pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-html5</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-html5-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-html5-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-css3 pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-css3</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-css3-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-css3-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-javascript pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-javascript</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-javascript-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-javascript-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-angular pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-angular</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-angular-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-angular-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-nodejs pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-nodejs</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-sass pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-sass</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-python pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-python</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-chrome pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-chrome</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-chrome-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-chrome-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-codepen pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-codepen</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-codepen-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-codepen-outline</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-markdown pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-markdown</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-tux pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-tux</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-freebsd-devil pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-freebsd-devil</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-usd pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-usd</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-usd-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-usd-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-bitcoin pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-bitcoin</p></div>
+<div class="clearfix"></div>
+<div class="col-lg-2 col-6"><i class="ion-social-bitcoin-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-bitcoin-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-yen pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-yen</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-yen-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-yen-outline</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-euro pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-euro</p></div>
+<div class="col-lg-2 col-6"><i class="ion-social-euro-outline pull-left m-r-10 fa-fw text-center f-s-18"></i><p class="text-ellipsis p-t-3">ion-social-euro-outline</p></div>
+</div>
+</div>
+
+
+<div id="footer" class="footer">
+<span class="pull-right">
+<a href="javascript:;" class="btn-scroll-to-top" data-click="scroll-top">
+<i class="fa fa-arrow-up"></i> <span class="hidden-xs">Back to Top</span>
+</a>
+</span>
+&copy; 2018 <b>Source Admin</b> All Right Reserved
+</div>
+
+</div>
+
+
+<div id="sidebar-right" class="sidebar sidebar-right">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav nav-tabs" role="tablist">
+<li class="width-half"><a class="active" href="#today" data-toggle="tab">Today</a></li>
+<li class="width-half"><a href="#notifications" data-toggle="tab">Notifications</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="today">
+<ul class="nav">
+<li class="nav-date">
+Sunday, May 31 st
+</li>
+<li class="divider"></li>
+<li class="nav-header">Stocks</li>
+<li>
+<ul class="stock-list">
+<li>
+<div class="name">AAPL</div>
+<div class="value">130.28</div>
+<div class="percentage"><span class="label label-inverse">- 1.14%</span></div>
+</li>
+<li>
+<div class="name">DOWJ</div>
+<div class="value">18010.68</div>
+<div class="percentage"><span class="label label-inverse">- 0.64%</span></div>
+</li>
+<li>
+<div class="name">SBUX</div>
+<div class="value">51.96</div>
+<div class="percentage"><span class="label label-success">+ 0.29%</span></div>
+</li>
+<li>
+<div class="name">NKE</div>
+<div class="value">18010.68</div>
+<div class="percentage"><span class="label label-inverse">- 0.62%</span></div>
+</li>
+<li>
+<div class="name">YHOO</div>
+<div class="value">42.94</div>
+<div class="percentage"><span class="label label-inverse">- 0.31%</span></div>
+</li>
+</ul>
+</li>
+<li class="divider"></li>
+<li class="nav-header">Calendar</li>
+<li>
+<div id="schedule-calendar"></div>
+</li>
+<li class="divider"></li>
+<li class="nav-header">Latest Post</li>
+<li>
+<ul class="nav-post">
+<li>
+<div class="image">
+<img src="../assets/img/latest_post_1.jpg" alt="" />
+</div>
+<div class="info">
+<div class="title">Mauris ac condimentum erat. Curabitur porta pretium ultricies.</div>
+<div class="time">Today, 8.12am</div>
+</div>
+</li>
+<li>
+<div class="image">
+<img src="../assets/img/latest_post_2.jpg" alt="" />
+</div>
+<div class="info">
+<div class="title">Cras pretium ipsum vel nulla laoreet malesuada sed at turpis.</div>
+<div class="time">Yesterday, 11.42pm</div>
+</div>
+</li>
+<li>
+<div class="image">
+<img src="../assets/img/latest_post_3.jpg" alt="" />
+</div>
+<div class="info">
+<div class="title">Ut sit amet vulputate ante. Nunc quis convallis arcu.</div>
+<div class="time">Posted on 3 days ago</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="divider"></li>
+</ul>
+</div>
+<div class="tab-pane" id="notifications">
+<ul class="nav">
+<li class="nav-header">Mailbox</li>
+<li>
+<ul class="notification-list">
+<li>
+<div class="media"><i class="fa fa-check"></i></div>
+<div class="info">
+<div class="title"><a href="javascript:;">PHP version updated</a></div>
+<div class="time">Yesterday, 6.06pm</div>
+<div class="desc">Donec tristique malesuada nibh quis lobortis. Quisque viverra faucibus hendrerit.</div>
+</div>
+</li>
+<li>
+<div class="media"><i class="fa fa-bug text-danger"></i></div>
+<div class="info">
+<div class="title"><a href="javascript:;">10 Unknown mysql query detected</a></div>
+<div class="time">Yesterday, 12.05am</div>
+<div class="desc">Integer fermentum arcu et dolor sodales, quis laoreet justo aliquam.</div>
+</div>
+</li>
+<li>
+<div class="media"><img src="../assets/img/user_2.jpg" alt="" /></div>
+<div class="info">
+<div class="title"><a href="javascript:;">New email from David</a></div>
+<div class="time">Just now</div>
+<div class="desc">Nunc metus orci, lobortis eu luctus quis, dictum mollis ante.</div>
+</div>
+</li>
+<li>
+<div class="media"><img src="../assets/img/user_4.jpg" alt="" /></div>
+<div class="info">
+<div class="title"><a href="javascript:;">New email from Terry</a></div>
+<div class="time">Today, 12.05am</div>
+<div class="desc">Integer fermentum arcu et dolor sodales, quis laoreet justo aliquam.</div>
+</div>
+</li>
+<li>
+<div class="media"><img src="../assets/img/user_3.jpg" alt="" /></div>
+<div class="info">
+<div class="title"><a href="javascript:;">New email from Tom (2)</a></div>
+<div class="time">Yesterday, 5.23pm</div>
+<div class="desc">Integer fermentum arcu et dolor sodales, quis laoreet justo aliquam.</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="divider"></li>
+<li class="nav-header">Activities Log</li>
+<li>
+<ul class="notification-list">
+<li>
+<div class="media"><i class="fa fa-cog"></i></div>
+<div class="info">
+<div class="title"><a href="javascript:;">Your scheduled post has been published</a></div>
+<div class="time">Just now</div>
+<div class="desc">Aenean lobortis libero libero, vitae imperdiet dolor dictum id.</div>
+</div>
+</li>
+<li>
+<div class="media"><i class="fa fa-shield-alt"></i></div>
+<div class="info">
+<div class="title"><a href="javascript:;">Turn on the firewall</a></div>
+<div class="time">Today, 7.08am</div>
+<div class="desc">Donec at augue in mi egestas luctus fermentum et ex.</div>
+</div>
+</li>
+<li>
+<div class="media"><i class="fa fa-user-plus"></i></div>
+<div class="info">
+<div class="title"><a href="javascript:;">Added 2 admin user</a></div>
+<div class="time">Today, 6.40am</div>
+<div class="desc">Quisque elementum urna placerat mi vestibulum lacinia.</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="divider"></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="sidebar-bg sidebar-right"></div>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-tint"></i></a>
+<div class="theme-panel-content">
+<h5 class="m-t-0">Font Family</h5>
+<div class="row row-space-10">
+<div class="col-lg-12">
+<a href="#" class="btn btn-default btn-block btn-sm m-b-10 active" data-value="" data-src="" data-click="body-font-family">
+Default
+</a>
+</div>
+<div class="col-lg-6">
+<a href="#" class="btn btn-default btn-block btn-sm m-b-10" data-value="font-nunito" data-src="https://fonts.googleapis.com/css?family=Nunito:400,300,700" data-click="body-font-family">
+Nunito
+</a>
+</div>
+<div class="col-lg-6">
+<a href="#" class="btn btn-default btn-block btn-sm m-b-10" data-value="font-open-sans" data-src="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" data-click="body-font-family">
+Open Sans
+</a>
+</div>
+<div class="col-lg-6">
+<a href="#" class="btn btn-default btn-block btn-sm m-b-10" data-value="font-roboto" data-src="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" data-click="body-font-family">
+Roboto
+</a>
+</div>
+<div class="col-lg-6">
+<a href="#" class="btn btn-default btn-block btn-sm m-b-10" data-value="font-lato" data-src="https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900" data-click="body-font-family">
+Lato
+</a>
+</div>
+<div class="col-lg-12">
+<a href="#" class="btn btn-default btn-block btn-sm text-ellipsis" data-value="font-helvetica-arial" data-src="" data-click="body-font-family">
+Helvetica Neue, Helvetica , Arial
+</a>
+</div>
+</div>
+<div class="horizontal-divider"></div>
+<h5 class="m-t-0">Header Theme</h5>
+<ul class="theme-list clearfix">
+<li><a href="javascript:;" class="bg-inverse" data-value="navbar-inverse" data-click="header-theme-selector" data-toggle="tooltip" data-title="Default">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-grey" data-value="navbar-grey" data-click="header-theme-selector" data-toggle="tooltip" data-title="Grey">&nbsp;</a></li>
+<li class="active"><a href="javascript:;" class="bg-white" data-value="navbar-default" data-click="header-theme-selector" data-toggle="tooltip" data-title="Light">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-purple" data-value="navbar-purple" data-click="header-theme-selector" data-toggle="tooltip" data-title="Purple">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-primary" data-value="navbar-primary" data-click="header-theme-selector" data-toggle="tooltip" data-title="Primary">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-success" data-value="navbar-success" data-click="header-theme-selector" data-toggle="tooltip" data-title="Success">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-lime" data-value="navbar-lime" data-click="header-theme-selector" data-toggle="tooltip" data-title="Lime">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-warning" data-value="navbar-warning" data-click="header-theme-selector" data-toggle="tooltip" data-title="Warning">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-danger" data-value="navbar-danger" data-click="header-theme-selector" data-toggle="tooltip" data-title="Danger">&nbsp;</a></li>
+</ul>
+<div class="horizontal-divider"></div>
+<h5 class="m-t-0">Sidebar Highlight Color</h5>
+<ul class="theme-list clearfix">
+<li><a href="javascript:;" class="bg-inverse" data-value="sidebar-highlight-inverse" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Inverse">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-grey" data-value="sidebar-highlight-grey" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Grey">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-white" data-value="sidebar-highlight-light" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Light">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-purple" data-value="sidebar-highlight-purple" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Purple">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-primary" data-value="sidebar-highlight-primary" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Primary">&nbsp;</a></li>
+<li class="active"><a href="javascript:;" class="bg-success" data-value="" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Default">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-lime" data-value="sidebar-highlight-lime" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Lime">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-warning" data-value="sidebar-highlight-warning" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Warning">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-danger" data-value="sidebar-highlight-danger" data-click="sidebar-highlight-selector" data-toggle="tooltip" data-title="Danger">&nbsp;</a></li>
+</ul>
+<div class="horizontal-divider"></div>
+<h5 class="m-t-0">Sidebar Theme</h5>
+<ul class="theme-list clearfix">
+<li class="active"><a href="javascript:;" class="bg-inverse" data-value="" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Default">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-grey" data-value="sidebar-grey" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Grey">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-white" data-value="sidebar-light" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Light">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-purple" data-value="sidebar-purple" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Purple">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-primary" data-value="sidebar-primary" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Primary">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-success" data-value="sidebar-success" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Success">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-lime" data-value="sidebar-lime" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Lime">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-warning" data-value="sidebar-warning" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Warning">&nbsp;</a></li>
+<li><a href="javascript:;" class="bg-danger" data-value="sidebar-danger" data-click="sidebar-theme-selector" data-toggle="tooltip" data-title="Danger">&nbsp;</a></li>
+</ul>
+</div>
+</div>
+
+
+<script src="../assets/plugins/jquery/jquery-3.3.1.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+<script src="../assets/plugins/bootstrap/bootstrap-4.1.1/js/bootstrap.bundle.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+<!--[if lt IE 9]>
+		<script src="../assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="../assets/crossbrowserjs/respond.min.js"></script>
+	<![endif]-->
+<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+<script src="../assets/plugins/jquery-cookie/jquery.cookie.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+
+
+<script src="../assets/plugins/bootstrap-calendar/js/bootstrap_calendar.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+<script src="../assets/js/demo.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+<script src="../assets/js/apps.min.js" type="da8803f683ff0338de32094f-text/javascript"></script>
+
+<script type="da8803f683ff0338de32094f-text/javascript">
+		$(document).ready(function() {
+		    App.init();
+		    Demo.init();
+		});
+	</script>
+<script type="da8803f683ff0338de32094f-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53034621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="da8803f683ff0338de32094f-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b232cbaee2016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

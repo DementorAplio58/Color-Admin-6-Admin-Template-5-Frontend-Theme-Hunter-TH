@@ -1,0 +1,1 @@
+var handleRenderSummernote=function(){var totalHeight=$(window).height()-$('.summernote').offset().top-155;$('.summernote').summernote({height:totalHeight});};$(document).ready(function(){handleRenderSummernote();});

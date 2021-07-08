@@ -1,0 +1,677 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title> Documentation - Color Admin</title>
+
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/bootstrap/css/docs.css" rel="stylesheet">
+<link href="assets/bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="navbar navbar-inverse navbar-page">
+<div class="navbar-inner">
+<div class="container">
+<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="brand" href="#">Admin Template</a>
+<div class="nav-collapse collapse">
+<ul class="nav">
+<li class="active">
+<a href="index.html">Design Template</a>
+</li>
+<li class="">
+<a href="index_ajax.html">Ajax Version</a>
+</li>
+<li class="">
+<a href="index_angular_1x.html">Angular 1.x</a>
+</li>
+<li class="">
+<a href="index_angular_11.html">Angular 11.0</a>
+</li>
+<li class="">
+<a href="index_laravel.html">Laravel Version</a>
+</li>
+<li class="">
+<a href="index_vue.html">Vue Version</a>
+</li>
+<li class="">
+<a href="index_react.html">React Version</a>
+</li>
+<li class="">
+<a href="index_asp.html">ASP.NET</a>
+</li>
+<li>
+<a href="index_change_log.html">Change Log</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<header class="jumbotron subhead" id="overview">
+<div class="container">
+<h1 class="text-center">Color Admin</h1>
+<p class="lead text-center">&ldquo;Material Design&rdquo; Documentation by &ldquo;Sean Ngu&rdquo; v5.0</p>
+<ul class="template-list">
+<li><a href="index.html">Default Design</a></li>
+<li class="active"><a href="index_material.html">Material Design</a></li>
+<li><a href="index_apple.html">Apple Design</a></li>
+<li><a href="index_transparent.html">Transparent Design</a></li>
+<li><a href="index_facebook.html">Facebook Design</a></li>
+<li><a href="index_google.html">Google Design</a></li>
+</ul>
+</div>
+<div class="jumbotron-cover"></div>
+</header>
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="well with-cover">
+<div class="well-cover" style="background-image: url(assets/images/material.jpg)"></div>
+<p>
+<strong>
+Last Updated: 27/June/2021<br>
+By: Sean Ngu
+</strong>
+</p>
+<p>
+If you have any questions that are beyond the scope of this help file,
+please feel free to <a href="https://wrapbootstrap.com/user/seanngu/message" target="_blank"></a>
+inbox me your question or send me an email via support email. Thanks so much!
+</p>
+<p style="margin-bottom: 0;">
+<small>* Support email can be found via downloaded version of Color Admin </small>
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="span3 bs-docs-sidebar">
+<ul class="nav nav-list bs-docs-sidenav affix-top">
+<li><a href="#htmlStructure"><i class="icon-chevron-right"></i>HTML Structure</a></li>
+<li><a href="#page-head"><i class="icon-chevron-right"></i>Page Head</a></li>
+<li><a href="#page-top-menu"><i class="icon-chevron-right"></i>Page Top Menu</a></li>
+<li><a href="#page-sidebar"><i class="icon-chevron-right"></i>Page Sidebar</a></li>
+<li><a href="#page-content"><i class="icon-chevron-right"></i>Page Content</a></li>
+<li><a href="#page-end"><i class="icon-chevron-right"></i>End of Page (Javascripts)</a></li>
+<li><a href="#page-theme-options"><i class="icon-chevron-right"></i>Page Theme Options</a></li>
+<li><a href="#page-options"><i class="icon-chevron-right"></i>Page Options</a></li>
+<li><a href="#page-gulp-scss"><i class="icon-chevron-right"></i>Gulp & SCSS</a></li>
+</ul>
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#top">top</a></h3>
+</div>
+<p>This template can be used as an fluid layout with a max of 12 columns next to each other. The general template structure is the same throughout the template. Here is the general structure.</p>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #loader --&gt;
+&lt;div id="loader" class="app-loader"&gt;
+  &lt;div class="material-loader"&gt;
+    &lt;svg class="circular" viewBox="25 25 50 50"&gt;
+      &lt;circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"&gt;
+      &lt;/circle&gt;
+    &lt;/svg&gt;
+    &lt;div class="message"&gt;Loading...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- END #loader --&gt;
+
+&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-header-fixed app-sidebar-fixed app-with-wide-sidebar"&gt;
+  &lt;!-- BEGIN #header --&gt;
+  &lt;div id="header" class="app-header"&gt;&lt;/div&gt;
+  &lt;!-- END #header --&gt;
+
+  &lt;!-- BEGIN #sidebar --&gt;
+  &lt;div id="sidebar" class="app-sidebar" data-disable-slide-animation="true"&gt;
+    &lt;!-- BEGIN scrollbar --&gt;
+    &lt;div class="app-sidebar-content" data-scrollbar="true" data-height="100%"&gt;&lt;/div&gt;
+    &lt;!-- END scrollbar --&gt;
+  &lt;/div&gt;
+  &lt;div class="app-sidebar-bg"&gt;&lt;/div&gt;
+  &lt;div class="app-sidebar-mobile-backdrop"&gt;
+    &lt;a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;!-- END #sidebar --&gt;
+  
+  &lt;!-- BEGIN #content --&gt;
+  &lt;div id="content" class="app-content"&gt;&lt;/div&gt;
+  &lt;!-- END #content --&gt;
+  
+  &lt;!-- BEGIN theme-panel --&gt;
+  &lt;div class="theme-panel"&gt;&lt;/div&gt;
+  &lt;!-- END theme-panel --&gt;
+  
+  &lt;!-- BEGIN scroll-top-btn --&gt;
+  &lt;a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" 
+    data-toggle="scroll-to-top"&gt;
+    &lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;!-- END scroll-top-btn --&gt;
+&lt;/div&gt;
+&lt;!-- END #app --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-head"><strong>B) Page Head</strong> - <a href="#top">top</a></h3>
+</div>
+<p>Page head contains metadata, javascript and css files:</p>
+<pre class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;title&gt;Color Admin | Material Design&lt;/title&gt;
+  &lt;meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /&gt;
+  &lt;meta content="" name="description" /&gt;
+  &lt;meta content="" name="author" /&gt;
+  
+  &lt;!-- ================== BEGIN core-css ================== --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" /&gt;
+  &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /&gt;
+  &lt;link href="../assets/css/vendor.min.css" rel="stylesheet" /&gt;
+  &lt;link href="../assets/css/material/app.min.css" rel="stylesheet" /&gt;
+  &lt;!-- ================== END core-css ================== --&gt;
+  
+  &lt;!-- OR without vendor.min.css --&gt;
+  
+  &lt;!-- ================== BEGIN core-css ================== --&gt;
+  &lt;link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" /&gt;
+  &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /&gt;
+  &lt;link href="../assets/plugins/animate.css/animate.min.css" rel="stylesheet" /&gt;
+  &lt;link href="../assets/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /&gt;
+  &lt;link href="../assets/plugins/jquery-ui-dist/jquery-ui.min.css" rel="stylesheet" /&gt;
+  &lt;link href="../assets/plugins/pace-js/themes/black/pace-theme-flash.css" rel="stylesheet" /&gt;
+  &lt;link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" /&gt;
+  &lt;link href="../assets/css/material/app.min.css" rel="stylesheet" /&gt;
+  &lt;!-- ================== END core-css ================== --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-top-menu"><strong>C) Top Menu</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+Material design is using the floating navbar search input <code>.search-form</code> which is the main difference between the Material Design with other 4 admin header design.
+</p>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #header --&gt;
+&lt;div id="header" class="app-header"&gt;
+  &lt;!-- BEGIN navbar-header --&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-desktop-toggler" data-toggle="app-sidebar-minify"&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile"&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a href="index.html" class="navbar-brand"&gt;
+      Color Admin Material
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;!-- END navbar-header --&gt;
+  &lt;!-- BEGIN header-nav --&gt;
+  &lt;div class="navbar-nav"&gt;
+    &lt;div class="navbar-item"&gt;
+      &lt;a href="#" data-toggle="app-header-floating-form" class="navbar-link icon"&gt;
+        &lt;i class="material-icons"&gt;search&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    ...
+    &lt;div class="navbar-item navbar-user dropdown"&gt;
+      &lt;a href="#" class="navbar-link dropdown-toggle d-flex" data-bs-toggle="dropdown"&gt;
+        &lt;span class="d-none d-md-inline"&gt;Hi, John Smith&lt;/span&gt;
+        &lt;img src="../assets/img/user/user-14.jpg" alt="" /&gt; 
+      &lt;/a&gt;
+      &lt;div class="dropdown-menu dropdown-menu-end me-1"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- END header-nav --&gt;
+  
+  &lt;div class="navbar-floating-form"&gt;
+    &lt;button class="search-btn" type="submit"&gt;&lt;i class="material-icons"&gt;search&lt;/i&gt;&lt;/button&gt;
+    &lt;input type="text" class="form-control" placeholder="Search Something..." /&gt;
+    &lt;a href="#" class="close" data-dismiss="app-header-floating-form"&gt;&lt;i class="material-icons"&gt;close&lt;/i&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- END #header --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-sidebar"><strong>D) Sidebar</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+In Material Design, <code>data-disable-slide-animation="true"</code> has been added to prevent sidebar navigation expand animation.
+</p>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #sidebar --&gt;
+&lt;div id="sidebar" class="app-sidebar" data-disable-slide-animation="true"&gt;
+  &lt;!-- BEGIN scrollbar --&gt;
+  &lt;div class="app-sidebar-content" data-scrollbar="true" data-height="100%"&gt;
+    &lt;!-- BEGIN menu --&gt;
+    &lt;div class="menu"&gt;
+      &lt;div class="menu-header"&gt;Navigation&lt;/div&gt;
+      &lt;div class="menu-item has-sub"&gt;
+        &lt;a href="javascript:;" class="menu-link"&gt;
+          &lt;div class="menu-icon"&gt;
+            &lt;i class="material-icons"&gt;home&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class="menu-text"&gt;Dashboard&lt;/div&gt;
+          &lt;div class="menu-caret"&gt;&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;div class="menu-submenu"&gt;
+          &lt;div class="menu-item"&gt;
+            &lt;a href="index.html" class="menu-link"&gt;&lt;div class="menu-text"&gt;Dashboard v1&lt;/div&gt;&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;!-- BEGIN minify-button --&gt;
+      &lt;div class="menu-item d-flex"&gt;
+        &lt;a href="javascript:;" class="app-sidebar-minify-btn ms-auto" data-toggle="app-sidebar-minify"&gt;
+          &lt;i class="fa fa-angle-double-left"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;!-- END minify-button --&gt;
+    &lt;/div&gt;
+    &lt;!-- END menu --&gt;
+  &lt;/div&gt;
+  &lt;!-- END scrollbar --&gt;
+&lt;/div&gt;
+&lt;div class="app-sidebar-bg"&gt;&lt;/div&gt;
+&lt;div class="app-sidebar-mobile-backdrop"&gt;
+  &lt;a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- END #sidebar --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-content"><strong>E) Page Content</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+Page content consists of page title, breadcrumbs and page's main body. HTML code of Content container as shown below:
+</p>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #content --&gt;
+&lt;div id="content" class="app-content"&gt;
+  &lt;!-- BEGIN breadcrumb --&gt;
+  &lt;ol class="breadcrumb float-xl-end"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="javascript:;"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="javascript:;"&gt;Page Options&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active"&gt;Blank Page&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;!-- END breadcrumb --&gt;
+  &lt;!-- BEGIN page-header --&gt;
+  &lt;h1 class="page-header"&gt;Blank Page &lt;small&gt;header small text goes here...&lt;/small&gt;&lt;/h1&gt;
+  &lt;!-- END page-header --&gt;
+&lt;/div&gt;
+&lt;!-- END #content --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-end"><strong>F) End of Page (Javascript)</strong> - <a href="#top">top</a></h3>
+</div>
+<p>
+Javascript files loaded in the end of page. This will reduce page load time.
+</p>
+<pre class="prettyprint linenums">  &lt;!-- ================== BEGIN core-js ================== --&gt;
+  &lt;script src="../assets/js/vendor.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/js/app.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/js/theme/material.min.js"&gt;&lt;/script&gt;
+  &lt;!-- ================== END core-js ================== --&gt;
+  
+  &lt;!-- OR without vendor.min.js --&gt;
+  
+  &lt;!-- ================== BEGIN core-js ================== --&gt;
+  &lt;script src="../assets/plugins/pace-js/pace.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/jquery-ui-dist/jquery-ui.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/plugins/js-cookie/src/js.cookie.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/js/app.min.js"&gt;&lt;/script&gt;
+  &lt;script src="../assets/js/theme/material.min.js"&gt;&lt;/script&gt;
+  &lt;!-- ================== END core-js ================== --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-theme-options"><strong>G) Page Theme Options</strong> - <a href="#top">top</a></h3>
+</div>
+<p>You may use our pre-generated theme files in <code>../assets/css/material/theme</code> folder to set the theme color <b>OR</b> you may change the primary color by using <b>SCSS</b>. Select one of the following files and include it in your <code>&lt;head&gt;</code>Section.</p>
+<p>Available Theme Options:</p>
+<pre class="prettyprint linenums">&lt;link href="../assets/css/material/theme/aqua.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/black.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/blue.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/cyan.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/green.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/indigo.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/lime.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/orange.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/pink.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/purple.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/red.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/teal.css" rel="stylesheet" /&gt;
+&lt;link href="../assets/css/material/theme/yellow.css" rel="stylesheet" /&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-options"><strong>H) Page Options</strong> - <a href="#top">top</a></h3>
+</div>
+<p>Here is the general structure for the each case of page options.</p>
+<h4>Page Without Sidebar</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-without-sidebar"&gt;
+  &lt;!-- BEGIN #sidebar --&gt;
+  &lt;div id="sidebar" class="app-sidebar"&gt;
+  &lt;!-- END #sidebar --&gt;
+</pre>
+<h4>Page With Two Sidebar</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app  app-sidebar-two"&gt;
+  &lt;!-- BEGIN #sidebar --&gt;
+  &lt;div id="sidebar" class="app-sidebar"&gt;&lt;/div&gt;
+  &lt;div class="app-sidebar-bg"&gt;&lt;/div&gt;
+  &lt;div class="app-sidebar-mobile-backdrop"&gt;
+    &lt;a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"&gt; &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;!-- END #sidebar --&gt;
+  
+  &lt;!-- BEGIN #sidebar-right --&gt;
+  &lt;div id="sidebar-right" class="app-sidebar app-sidebar-end"&gt;&lt;/div&gt;
+  &lt;div class="app-sidebar-bg sidebar-end"&gt;&lt;/div&gt;
+  &lt;div class="app-sidebar-mobile-backdrop app-sidebar-end"&gt;
+    &lt;a href="#" data-dismiss="app-sidebar-end-mobile" class="stretched-link"&gt; &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;!-- END #sidebar-right --&gt;
+</pre>
+<h4>Page Without Header</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-without-header"&gt;
+  ...
+</pre>
+<h4>Top Navigation Default</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app"&gt;
+  &lt;!-- BEGIN #header --&gt;
+  &lt;div id="header" class="app-header"&gt;
+</pre>
+<h4>Top Navigation Fixed</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-header-fixed"&gt;
+  &lt;!-- BEGIN #header --&gt;
+  &lt;div id="header" class="app-header"&gt;
+</pre>
+<h4>Top Navigation Inverse Styling</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app"&gt;
+  &lt;!-- BEGIN #header --&gt;
+  &lt;div id="header" class="app-header app-header-inverse"&gt;
+</pre>
+<h4>Sidebar Default</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app"&gt;
+  &lt;!-- BEGIN #sidebar --&gt;
+  &lt;div id="sidebar" class="app-sidebar"&gt;
+    ...
+  &lt;/div&gt;
+  &lt;div class="sidebar-bg"&gt;&lt;/div&gt;
+  &lt;!-- END #sidebar --&gt;
+</pre>
+<h4>Sidebar Fixed</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app aopp-sidebar-fixed"&gt;
+  &lt;!-- BEGIN #sidebar --&gt;
+  &lt;div id="sidebar" class="app-sidebar"&gt;
+</pre>
+<h4>Sidebar Minified</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-sidebar-minified"&gt;
+  &lt;!-- BEGIN #sidebar --&gt;
+  &lt;div id="sidebar" class="app-sidebar"&gt;
+</pre>
+<h4>Sidebar Position Right</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-with-end-sidebar"&gt;
+  &lt;!-- BEGIN #sidebar --&gt;
+  &lt;div id="sidebar" class="app-sidebar"&gt;
+</pre>
+<h4>Sidebar Grid Styling</h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #sidebar --&gt;
+&lt;div id="sidebar" class="app-sidebar app-sidebar-grid"&gt;
+</pre>
+<h4>Sidebar Gradient Styling <span class="label">NEW</span></h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-gradient-enabled"&gt;
+</pre>
+<h4>Full Height Page / Table Column Page <span class="label label-primary">NEW</span></h4>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app app-content-full-height"&gt;
+  &lt;!-- BEGIN #content --&gt;
+  &lt;div id="content" class="app-content p-0"&gt;
+    &lt;div class="overflow-hidden h-100"&gt;
+      &lt;div data-scrollbar="true" data-height="100%" data-skip-mobile="true" 
+        class="app-content-padding"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- END #content --&gt;
+&lt;/div&gt;
+&lt;!-- END #app --&gt;
+</pre>
+<h4 style="margin: 0 0 10px;">Remove Page Loader</h4>
+<p>If you wish to remove the page loading animation, you just need to remove the <code>#loader</code> from <code>#app</code></p>
+<p><b>from</b></p>
+<pre class="prettyprint linenums">&lt;!-- BEGIN #loader --&gt;
+&lt;div id="loader" class="app-loader"&gt;
+  &lt;span class="spinner"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;!-- END #loader --&gt;
+</pre>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="page-header">
+<h3 id="page-gulp-scss"><strong>I) Using Gulp SCSS</strong> - <a href="#top">top</a></h3>
+</div>
+<h4>Installation</h4>
+<p>Below is the command that required to run / compile the scss with gulpjs. If you are new to the gulpjs, you may refer to their <a href="https://gulpjs.com/" target="_blank">official website</a> for installation guide.</p>
+<pre class="prettyprint linenums">&lt;!-- run the following command --&gt;
+cd /your-path-url/admin/src/
+npm install
+gulp material
+
+&lt;!-- available command --&gt;
+gulp plugins       // generate plugins
+
+&lt;!-- available theme command --&gt;
+gulp               // default theme
+gulp material      // material theme
+gulp apple         // apple theme
+gulp transparent   // transparent theme
+gulp facebook      // facebook theme
+gulp google        // google theme
+</pre>
+<p>Verify that you are running at least node 10.9.x or later and npm 6.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.</p>
+<hr />
+<h4>Enable RTL Support</h4>
+<p>
+To enable the RTL Support, you might need to change the following variable from <code>admin/src/scss/material/_variables.scss</code>.
+</p>
+<pre class="prettyprint linenums">&lt;!-- LINE 222 --&gt;
+$enable-rtl: true;
+
+&lt;!-- run the command to regenerate the /css/material/app.min.css --&gt;
+gulp material
+</pre>
+<hr />
+<h4>Gulp compilation</h4>
+<p>
+We are using gulp to compile & combine few plugins js & css into one single file for js & css. This may help to improve the speed for page load if compare to multiple files loading in one page.
+If you wish to edit the included plugins files, you may refer to the <code>/admin/src/gulpfile.js</code>.
+</p>
+<p>Below is the list of plugins that compile into <code>vendor.min.css</code>.</p>
+<pre class="prettyprint linenums">return gulp.src([
+  'node_modules/animate.css/animate.min.css',
+  'node_modules/@fortawesome/fontawesome-free/css/all.min.css',
+  'node_modules/jquery-ui-dist/jquery-ui.min.css',
+  'node_modules/pace-js/themes/black/pace-theme-flash.css',
+  'node_modules/perfect-scrollbar/css/perfect-scrollbar.css'
+])
+.pipe(sass())
+.pipe(concat('vendor.min.css'))
+.pipe(minifyCSS())
+.pipe(gulp.dest(distPath + '/assets/css/'))
+.pipe(livereload());
+</pre>
+<p>Below is the code that compile Color Admin scss with Bootstrap scss into <code>app.min.css</code>.</p>
+<pre class="prettyprint linenums">return gulp.src([
+  'scss/material/styles.scss'
+])
+.pipe(sass())
+.pipe(concat('app.min.css'))
+.pipe(minifyCSS())
+.pipe(gulp.dest(distPath + '/assets/css/material/'))
+.pipe(livereload());
+</pre>
+<p>Below is the list of plugins that compile into <code>vendor.min.js</code>.</p>
+<pre class="prettyprint linenums">'node_modules/pace-js/pace.min.js',
+  'node_modules/jquery/dist/jquery.min.js',
+  'node_modules/jquery-ui-dist/jquery-ui.min.js',
+  'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+  'node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js',
+  'node_modules/js-cookie/src/js.cookie.js'
+])
+.pipe(sourcemaps.init())
+.pipe(concat('vendor.min.js'))
+.pipe(sourcemaps.write())
+.pipe(uglify())
+.pipe(gulp.dest(distPath + '/assets/js/'))
+.pipe(livereload());
+</pre>
+<p>Below is the code that compile Color Admin js file into <code>app.min.js</code>.</p>
+<pre class="prettyprint linenums">return gulp.src([
+  'js/app.js',
+])
+.pipe(sourcemaps.init())
+.pipe(concat('app.min.js'))
+.pipe(sourcemaps.write())
+.pipe(uglify())
+.pipe(gulp.dest(distPath + '/assets/js/'))
+.pipe(livereload());
+</pre>
+<hr />
+<h4>Gulp & SCSS file structure</h4>
+<p>To change the color theme / primary color, you may refer to the <code>_variables.scss</code> and set the variable. Npm can be used to update the plugins version as well.</p>
+<pre class="prettyprint linenums">admin/src/
+├── gulpfile.js
+├── package.json
+├── js/
+└── scss/
+    ├── material/
+    │   ├── _app.scss
+    │   ├── _functions.scss
+    │   ├── _helper.scss
+    │   ├── _layout.scss
+    │   ├── _mixins.scss
+    │   ├── _pages.scss
+    │   ├── _plugins.scss
+    │   ├── _reboot.scss
+    │   ├── _rtl.scss
+    │   ├── _ui.scss
+    │   ├── _variables.scss
+    │   ├── styles.scss
+    │   ├── theme.scss
+    │   ├── app/
+    │   ├── images/
+    │   ├── layout/
+    │   ├── mixins/
+    │   ├── pages/
+    │   ├── plugins/
+    │   └── ui/
+    ├── apple/
+    ├── facebook/
+    ├── default/
+    ├── transparent/
+    └── google/
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container text-left">
+<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p>
+<br />
+<p class="append-bottom alt large"><strong>Sean Ngu</strong></p>
+<p><a href="#top">Go To Table of Contents</a></p>
+</div>
+</footer>
+<script src="assets/bootstrap/js/jquery.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-transition.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-alert.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-modal.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-dropdown.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-scrollspy.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-tab.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-tooltip.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-popover.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-button.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-collapse.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-carousel.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-typeahead.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/bootstrap-affix.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/holder/holder.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/google-code-prettify/prettify.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script src="assets/bootstrap/js/application.js" type="fe590189c5e12facc480f789-text/javascript"></script>
+<script type="fe590189c5e12facc480f789-text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-53034621-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="fe590189c5e12facc480f789-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b22baabdf421bb","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

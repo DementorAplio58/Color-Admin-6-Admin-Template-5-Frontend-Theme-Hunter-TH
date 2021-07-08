@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Admetro | Helper</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<header id="header" class="app-header">
+
+<button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+admetro
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+<a href="#" data-toggle="search-bar" class="nav-link">
+<i class="fa fa-search nav-icon"></i>
+</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="far fa-bell nav-icon"></i>
+<span class="nav-label">3</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 pb-0">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-apple bg-primary"></i></div>
+<div class="info">
+<h4 class="title">App Store <span class="time">Just now</span></h4>
+<p class="desc">Your iOS application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-android bg-success"></i></div>
+<div class="info">
+<h4 class="title">Google Play <span class="time">5 min ago</span></h4>
+<p class="desc">Your android application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-github bg-muted"></i></div>
+<div class="info">
+<h4 class="title">Github <span class="time">12 min ago</span></h4>
+<p class="desc">Error with notifications from Private Repos</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
+<div class="info">
+<h4 class="title">Gmail <span class="time">12:50pm</span></h4>
+<p class="desc">You have 2 unread email</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
+<div class="info">
+<h4 class="title">Corey <span class="time">10:20am</span></h4>
+<p class="desc">There's so much room for activities!</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
+<div class="info">
+<h4 class="title">Twitter <span class="time">12:50pm</span></h4>
+<p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="fa fa-cog nav-icon"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-md pt-0 pb-0">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-envelope text-muted"></i></div>
+<div class="info">Email</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-desktop text-muted"></i></div>
+<div class="info">Desktop & Mobile</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
+<div class="info">Text message</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
+<div class="info">Public friends list</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
+<div class="info">Public profile page</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<span class="nav-img online">
+<img src="assets/img/user.jpg" alt="" />
+</span>
+<span class="d-none d-md-block">John Smith <b class="caret"></b></span>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#">Edit Profile</a>
+<a class="dropdown-item" href="#">Inbox</a>
+<a class="dropdown-item" href="#">Calendar</a>
+<a class="dropdown-item" href="#">Setting</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Log Out</a>
+</div>
+</li>
+</ul>
+
+
+<div class="navbar-search">
+<form action="#" method="POST" name="navbar_search_form">
+<div class="form-group">
+<div class="icon"><i class="fa fa-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
+<div class="icon">
+<a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
+</div>
+</div>
+</form>
+</div>
+
+</header>
+
+
+<sidebar id="sidebar" class="app-sidebar">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+ <div class="profile-img">
+<img src="assets/img/user.jpg" />
+</div>
+<div class="profile-info">
+<h4>John Smith</h4>
+<p>Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li>
+<a href="index.html">
+<span class="nav-icon"><i class="fa fa-th-large"></i></span>
+<span class="nav-text">Home</span>
+</a>
+</li>
+<li>
+<a href="analytics.html">
+<span class="nav-icon"><i class="fa fa-chart-pie"></i></span>
+<span class="nav-text">Analytics</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-envelope"></i> </span>
+<span class="nav-text">Email <span class="nav-label">20+</span></span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li>
+<a href="widgets.html">
+<span class="nav-icon"><i class="fa fa-qrcode bg-gradient-red text-white"></i></span>
+<span class="nav-text">Widgets</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-heart bg-gradient-orange text-white"></i></span>
+<span class="nav-text">UI Kits</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="ui_bootstrap.html"><span class="nav-text">Bootstrap</span></a></li>
+<li><a href="ui_buttons.html"><span class="nav-text">Buttons</span></a></li>
+<li><a href="ui_typography.html"><span class="nav-text">Typography</span></a></li>
+<li><a href="ui_tabs_accordions.html"><span class="nav-text">Tabs & Accordions</span></a></li>
+<li><a href="ui_modal_notification.html"><span class="nav-text">Modal & Notification</span></a></li>
+<li><a href="ui_card.html"><span class="nav-text">Card</span></a></li>
+<li><a href="ui_icons.html"><span class="nav-text">Icons</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-file-alt bg-gradient-orange text-white"></i></span>
+<span class="nav-text">Forms</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="form_elements.html"><span class="nav-text">Form Elements</span></a></li>
+<li><a href="form_plugins.html"><span class="nav-text">Form Plugins</span></a></li>
+<li><a href="form_wizards.html"><span class="nav-text">Wizards</span></a></li>
+<li><a href="form_jquery_file_upload.html"><span class="nav-text">File Upload</span></a></li>
+<li><a href="form_summernote.html"><span class="nav-text">Summernote</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-table bg-gradient-green text-white"></i></span>
+<span class="nav-text">Tables</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="table_basic.html"><span class="nav-text">Basic Tables</span></a></li>
+<li><a href="table_data.html"><span class="nav-text">DataTables</span></a></li>
+</ul>
+</li>
+<li>
+<a href="chart.html">
+<span class="nav-icon"><i class="fa fa-chart-bar bg-gradient-purple text-white"></i></span>
+<span class="nav-text">Chart</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-map-marker-alt bg-gradient-blue text-white"></i></span>
+<span class="nav-text">Map</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="map_vector.html"><span class="nav-text">Vector Map</span></a></li>
+<li><a href="map_google.html"><span class="nav-text">Google Map</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-code-branch"></i></span>
+<span class="nav-text">Layout</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="layout_starter.html"><span class="nav-text">Starter Page</span></a></li>
+<li><a href="layout_fixed_footer.html"><span class="nav-text">Fixed Footer</span></a></li>
+<li><a href="layout_full_width.html"><span class="nav-text">Full Width</span></a></li>
+<li><a href="layout_boxed_layout.html"><span class="nav-text">Boxed Layout</span></a></li>
+<li><a href="layout_full_height.html"><span class="nav-text">Full Height</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-globe"></i></span>
+<span class="nav-text">Pages</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="page_gallery.html"><span class="nav-text">Gallery</span></a></li>
+<li><a href="page_coming_soon.html"><span class="nav-text">Coming Soon Page</span></a></li>
+<li><a href="page_search_results.html"><span class="nav-text">Search Results</span></a></li>
+<li><a href="page_404_error.html"><span class="nav-text">404 Error Page</span></a></li>
+<li><a href="page_login.html"><span class="nav-text">Login</span></a></li>
+<li><a href="page_register.html"><span class="nav-text">Register</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li>
+<a href="profile.html">
+<span class="nav-icon"><i class="fa fa-user-circle"></i></span>
+<span class="nav-text">Profile</span>
+</a>
+</li>
+<li>
+<a href="calendar.html">
+<span class="nav-icon"><i class="fa fa-calendar"></i></span>
+<span class="nav-text">Calendar</span>
+</a>
+</li>
+<li>
+<a href="settings.html">
+<span class="nav-icon"><i class="fa fa-cog"></i></span>
+<span class="nav-text">Settings</span>
+</a>
+</li>
+<li class="active">
+<a href="helper.html">
+<span class="nav-icon"><i class="fa fa-question-circle"></i></span>
+<span class="nav-text">Helper</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-list-ul"></i> </span>
+<span class="nav-text">Menu Level</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 1.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 2.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="#"><span class="nav-text">Menu 3.1</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 3.2</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 2.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 2.3</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 1.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 1.3</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-mobile-alt"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">70%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-headphones"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">40%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fab fa-github"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">50%</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2019 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+</sidebar>
+
+
+<div id="content" class="app-content">
+
+<h1 class="page-header">
+Helper <small>page header description goes here...</small>
+</h1>
+
+
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a href="#background-tab" class="nav-link active" data-toggle="tab">
+<i class="fa fa-fw fa-palette m-r-2"></i>
+<span class="d-none d-xl-inline m-r-5 f-w-600">Background Colors</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="#width-height-tab" class="nav-link" data-toggle="tab">
+<i class="fa fa-fw fa-cog m-r-2"></i>
+<span class="d-none d-xl-inline m-r-5 f-w-600">Width & Height</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="#table-vbox-tab" class="nav-link" data-toggle="tab">
+<i class="fa fa-fw fa-table m-r-2"></i>
+<span class="d-none d-xl-inline m-r-5 f-w-600">Table & Vbox</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="#text-font-tab" class="nav-link" data-toggle="tab">
+<i class="fa fa-fw fa-font m-r-2"></i>
+<span class="d-none d-xl-inline m-r-5 f-w-600">Text & Font</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="#spacing-tab" class="nav-link" data-toggle="tab">
+<i class="fa fa-fw fa-expand-arrows-alt m-r-2"></i>
+<span class="d-none d-xl-inline m-r-5 f-w-600">Spacing</span>
+</a>
+</li>
+</ul>
+
+
+<div class="tab-content tab-content-bordered">
+
+<div class="tab-pane fade active show" id="background-tab">
+<div class="row">
+<div class="col-lg-8">
+<div class="m-b-10 f-w-700">Available Background Class:</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-blue d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-blue
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-indigo d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-indigo
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-purple d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-purple
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-pink d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-pink
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-red d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-red
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-orange d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-orange
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-yellow d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-yellow
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-green d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-green
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-teal d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-teal
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-cyan d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-cyan
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gray d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gray
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gray-dark d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gray-dark
+</code>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-primary d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-primary
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-secondary d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-secondary
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-success d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-success
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-info d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-info
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-warning d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-warning
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-danger d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-danger
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-dark d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-dark
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-black d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-black
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-muted d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-muted
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-silver d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-silver
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-light d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-light
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-white d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-white
+</code>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Transparent example:</div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-1 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-1</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-2 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-2</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-3 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-3</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-4 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-4</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-5 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-5</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-6 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-6</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-7 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-7</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-8 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-8</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-muted-transparent-9 d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-muted-transparent-9</code></div>
+<div class="m-b-2"><code class="d-flex align-items-center"><span class="bg-gradient-muted d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span> .bg-gradient-muted</code></div>
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col-lg-8">
+<div class="m-b-10 f-w-700">Available Gradient Class:</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-orange-red d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-orange-red
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-yellow-red d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-yellow-red
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-yellow-green d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-yellow-green
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-teal-green d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-teal-green
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-blue d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-blue
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-indigo d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-indigo
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-purple d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-purple
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-blue-purple d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-blue-purple
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-blue-indigo d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-blue-indigo
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-purple-indigo d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-purple-indigo
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-silver-black d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-silver-black
+</code>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Available Gradient Direction:</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-blue d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-blue
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-blue-to-top d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-blue-to-top
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-blue-to-right d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-blue-to-right
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-blue-to-left d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-blue-to-left
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-blue-diagonal-up d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-blue-diagonal-up
+</code>
+</div>
+<div class="m-b-2">
+<code class="d-flex align-items-center">
+<span class="bg-gradient-cyan-blue-diagonal-down d-inline-block m-r-5" style="width: 18px; height: 18px; border-radius: 4px;"></span>
+.bg-gradient-cyan-blue-diagonal-down
+</code>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="tab-pane fade" id="width-height-tab">
+<div class="row">
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Available Width Class:</div>
+<div><code>.width-0</code></div>
+<div><code>.width-50</code></div>
+<div><code>.width-150</code></div>
+<div><code>.width-200</code></div>
+<div><code>.width-250</code></div>
+<div><code>.width-300</code></div>
+<div><code>.width-350</code></div>
+<div><code>.width-400</code></div>
+<div><code>.width-450</code></div>
+<div><code>.width-500</code></div>
+<div><code>.width-550</code></div>
+<div><code>.width-600</code></div>
+<div><code>.width-full</code></div>
+</div>
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Available Height Class:</div>
+<div><code>.height-0</code></div>
+<div><code>.height-50</code></div>
+<div><code>.height-150</code></div>
+<div><code>.height-200</code></div>
+<div><code>.height-250</code></div>
+<div><code>.height-300</code></div>
+<div><code>.height-350</code></div>
+<div><code>.height-400</code></div>
+<div><code>.height-450</code></div>
+<div><code>.height-500</code></div>
+<div><code>.height-550</code></div>
+<div><code>.height-600</code></div>
+<div><code>.height-full</code></div>
+</div>
+</div>
+</div>
+
+
+<div class="tab-pane fade" id="table-vbox-tab">
+<div class="row">
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Available Table Class:</div>
+<div><code>.table-valign-middle</code></div>
+<div><code>.table-th-valign-middle</code></div>
+<div><code>.table-td-valign-middle</code></div>
+<div><code>.table-valign-top</code></div>
+<div><code>.table-th-valign-top</code></div>
+<div><code>.table-td-valign-top</code></div>
+<div><code>.table-valign-bottom</code></div>
+<div><code>.table-th-valign-bottom</code></div>
+<div><code>.table-td-valign-bottom</code></div>
+<div><code>.valign-top</code></div>
+<div><code>.valign-middle</code></div>
+<div><code>.valign-bottom</code></div>
+</div>
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Available Vbox Class:</div>
+<div><code>.vbox</code></div>
+<div><code>.vbox-row</code></div>
+<div><code>.vbox-col</code></div>
+<div><code>.vbox-stretch</code></div>
+</div>
+</div>
+</div>
+
+
+<div class="tab-pane fade" id="text-font-tab">
+<div class="row">
+<div class="col-lg-8">
+<div class="m-b-10 f-w-700">Available Text Class:</div>
+<div class="row">
+<div class="col-lg-6">
+<div><code>.text-blue</code></div>
+<div><code>.text-indigo</code></div>
+<div><code>.text-purple</code></div>
+<div><code>.text-pink</code></div>
+<div><code>.text-red</code></div>
+<div><code>.text-orange</code></div>
+<div><code>.text-yellow</code></div>
+<div><code>.text-green</code></div>
+<div><code>.text-teal</code></div>
+<div><code>.text-cyan</code></div>
+<div><code>.text-gray</code></div>
+<div><code>.text-gray-dark</code></div>
+</div>
+<div class="col-lg-6">
+<div><code>.text-primary</code></div>
+<div><code>.text-secondary</code></div>
+<div><code>.text-success</code></div>
+<div><code>.text-info</code></div>
+<div><code>.text-warning</code></div>
+<div><code>.text-danger</code></div>
+<div><code>.text-light</code></div>
+<div><code>.text-dark</code></div>
+<div><code>.text-black</code></div>
+<div><code>.text-white</code></div>
+<div><code>.text-muted</code></div>
+<div><code>.text-silver</code></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Transparent example:</div>
+<div><code>.text-muted</code></div>
+<div><code>.text-muted-transparent-1</code></div>
+<div><code>.text-muted-transparent-2</code></div>
+<div><code>.text-muted-transparent-3</code></div>
+<div><code>.text-muted-transparent-4</code></div>
+<div><code>.text-muted-transparent-5</code></div>
+<div><code>.text-muted-transparent-6</code></div>
+<div><code>.text-muted-transparent-7</code></div>
+<div><code>.text-muted-transparent-8</code></div>
+<div><code>.text-muted-transparent-9</code></div>
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Available Font Size Class:</div>
+<div><code>.f-s-8</code></div>
+<div><code>.f-s-9</code></div>
+<div><code>.f-s-10</code></div>
+<div><code>.f-s-11</code></div>
+<div><code>.f-s-12</code></div>
+<div><code>.f-s-13</code></div>
+<div><code class="text-muted">...</code></div>
+<div><code>.f-s-80</code></div>
+</div>
+<div class="col-lg-4">
+<div class="m-b-10 f-w-700">Available Font Weight Class:</div>
+<div><code>.f-w-100</code></div>
+<div><code>.f-w-200</code></div>
+<div><code>.f-w-300</code></div>
+<div><code>.f-w-400</code></div>
+<div><code>.f-w-500</code></div>
+<div><code>.f-w-600</code></div>
+<div><code>.f-w-700</code></div>
+<div><code>.f-w-800</code></div>
+</div>
+</div>
+</div>
+
+
+<div class="tab-pane fade" id="spacing-tab">
+<div class="row">
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 m-b-5 text-nowrap">Margin:</div>
+<div><code>.m-0</code></div>
+<div><code>.m-1</code></div>
+<div><code>.m-2</code></div>
+<div><code>.m-3</code></div>
+<div><code>.m-4</code></div>
+<div><code>.m-5</code></div>
+<div><code>.m-10</code></div>
+<div><code>.m-15</code></div>
+<div><code>.m-20</code></div>
+<div><code>.m-25</code></div>
+<div><code>.m-30</code></div>
+<div><code>.m-35</code></div>
+<div><code>.m-40</code></div>
+<div><code>.m-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 m-b-5 text-nowrap">Margin Top:</div>
+<div><code>.m-t-0</code></div>
+<div><code>.m-t-1</code></div>
+<div><code>.m-t-2</code></div>
+<div><code>.m-t-3</code></div>
+<div><code>.m-t-4</code></div>
+<div><code>.m-t-5</code></div>
+<div><code>.m-t-10</code></div>
+<div><code>.m-t-15</code></div>
+<div><code>.m-t-20</code></div>
+<div><code>.m-t-25</code></div>
+<div><code>.m-t-30</code></div>
+<div><code>.m-t-35</code></div>
+<div><code>.m-t-40</code></div>
+<div><code>.m-t-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 m-b-5 text-nowrap">Margin Right:</div>
+<div><code>.m-r-0</code></div>
+<div><code>.m-r-1</code></div>
+<div><code>.m-r-2</code></div>
+<div><code>.m-r-3</code></div>
+<div><code>.m-r-4</code></div>
+<div><code>.m-r-5</code></div>
+<div><code>.m-r-10</code></div>
+<div><code>.m-r-15</code></div>
+<div><code>.m-r-20</code></div>
+<div><code>.m-r-25</code></div>
+<div><code>.m-r-30</code></div>
+<div><code>.m-r-35</code></div>
+<div><code>.m-r-40</code></div>
+<div><code>.m-r-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 m-b-5 text-nowrap">Margin Bottom:</div>
+<div><code>.m-b-0</code></div>
+<div><code>.m-b-1</code></div>
+<div><code>.m-b-2</code></div>
+<div><code>.m-b-3</code></div>
+<div><code>.m-b-4</code></div>
+<div><code>.m-b-5</code></div>
+<div><code>.m-b-10</code></div>
+<div><code>.m-b-15</code></div>
+<div><code>.m-b-20</code></div>
+<div><code>.m-b-25</code></div>
+<div><code>.m-b-30</code></div>
+<div><code>.m-b-35</code></div>
+<div><code>.m-b-40</code></div>
+<div><code>.m-b-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 m-b-5 text-nowrap">Margin Left:</div>
+<div><code>.m-l-0</code></div>
+<div><code>.m-l-1</code></div>
+<div><code>.m-l-2</code></div>
+<div><code>.m-l-3</code></div>
+<div><code>.m-l-4</code></div>
+<div><code>.m-l-5</code></div>
+<div><code>.m-l-10</code></div>
+<div><code>.m-l-15</code></div>
+<div><code>.m-l-20</code></div>
+<div><code>.m-l-25</code></div>
+<div><code>.m-l-30</code></div>
+<div><code>.m-l-35</code></div>
+<div><code>.m-l-40</code></div>
+<div><code>.m-l-auto</code></div>
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 p-b-5 text-nowrap">Padding:</div>
+<div><code>.p-0</code></div>
+<div><code>.p-1</code></div>
+<div><code>.p-2</code></div>
+<div><code>.p-3</code></div>
+<div><code>.p-4</code></div>
+<div><code>.p-5</code></div>
+<div><code>.p-10</code></div>
+<div><code>.p-15</code></div>
+<div><code>.p-20</code></div>
+<div><code>.p-25</code></div>
+<div><code>.p-30</code></div>
+<div><code>.p-35</code></div>
+<div><code>.p-40</code></div>
+<div><code>.p-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 p-b-5 text-nowrap">Padding Top:</div>
+<div><code>.p-t-0</code></div>
+<div><code>.p-t-1</code></div>
+<div><code>.p-t-2</code></div>
+<div><code>.p-t-3</code></div>
+<div><code>.p-t-4</code></div>
+<div><code>.p-t-5</code></div>
+<div><code>.p-t-10</code></div>
+<div><code>.p-t-15</code></div>
+<div><code>.p-t-20</code></div>
+<div><code>.p-t-25</code></div>
+<div><code>.p-t-30</code></div>
+<div><code>.p-t-35</code></div>
+<div><code>.p-t-40</code></div>
+<div><code>.p-t-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 p-b-5 text-nowrap">Padding Right:</div>
+<div><code>.p-r-0</code></div>
+<div><code>.p-r-1</code></div>
+<div><code>.p-r-2</code></div>
+<div><code>.p-r-3</code></div>
+<div><code>.p-r-4</code></div>
+<div><code>.p-r-5</code></div>
+<div><code>.p-r-10</code></div>
+<div><code>.p-r-15</code></div>
+<div><code>.p-r-20</code></div>
+<div><code>.p-r-25</code></div>
+<div><code>.p-r-30</code></div>
+<div><code>.p-r-35</code></div>
+<div><code>.p-r-40</code></div>
+<div><code>.p-r-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 p-b-5 text-nowrap">Padding Bottom:</div>
+<div><code>.p-b-0</code></div>
+<div><code>.p-b-1</code></div>
+<div><code>.p-b-2</code></div>
+<div><code>.p-b-3</code></div>
+<div><code>.p-b-4</code></div>
+<div><code>.p-b-5</code></div>
+<div><code>.p-b-10</code></div>
+<div><code>.p-b-15</code></div>
+<div><code>.p-b-20</code></div>
+<div><code>.p-b-25</code></div>
+<div><code>.p-b-30</code></div>
+<div><code>.p-b-35</code></div>
+<div><code>.p-b-40</code></div>
+<div><code>.p-b-auto</code></div>
+</div>
+<div class="col mb-2 mb-lg-0">
+<div class="f-w-700 p-b-5 text-nowrap">Padding Left:</div>
+<div><code>.p-l-0</code></div>
+<div><code>.p-l-1</code></div>
+<div><code>.p-l-2</code></div>
+<div><code>.p-l-3</code></div>
+<div><code>.p-l-4</code></div>
+<div><code>.p-l-5</code></div>
+<div><code>.p-l-10</code></div>
+<div><code>.p-l-15</code></div>
+<div><code>.p-l-20</code></div>
+<div><code>.p-l-25</code></div>
+<div><code>.p-l-30</code></div>
+<div><code>.p-l-35</code></div>
+<div><code>.p-l-40</code></div>
+<div><code>.p-l-auto</code></div>
+</div>
+</div>
+<hr />
+<div class="m-b-10 f-w-700">Available Row Space Class:</div>
+<div><code>.row.row-space-0</code></div>
+<div><code>.row.row-space-2</code></div>
+<div><code>.row.row-space-4</code></div>
+<div><code>.row.row-space-6</code></div>
+<div><code>.row.row-space-8</code></div>
+<div><code>.row.row-space-10</code></div>
+<div><code>.row.row-space-12</code></div>
+<div><code>.row.row-space-14</code></div>
+<div><code>.row.row-space-16</code></div>
+<div><code>.row.row-space-18</code></div>
+<div><code>.row.row-space-20</code></div>
+<div><code>.row.row-space-22</code></div>
+<div><code>.row.row-space-24</code></div>
+<div><code>.row.row-space-26</code></div>
+<div><code>.row.row-space-28</code></div>
+<div><code>.row.row-space-30</code></div>
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="#" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content">
+<div class="widget-list mb-0">
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Color Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item active"><a href="#" class="bg-silver" data-theme="" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-red" data-theme="app-theme-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-pink" data-theme="app-theme-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-orange" data-theme="app-theme-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-yellow" data-theme="app-theme-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-green" data-theme="app-theme-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-cyan" data-theme="app-theme-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-blue" data-theme="app-theme-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-purple" data-theme="app-theme-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-indigo" data-theme="app-theme-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-black" data-theme="app-theme-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Gradient Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item"><a href="#" class="bg-gradient-silver" data-theme="app-theme-gradient-silver" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Gradient Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-red" data-theme="app-theme-gradient-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-pink" data-theme="app-theme-gradient-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-orange" data-theme="app-theme-gradient-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-yellow" data-theme="app-theme-gradient-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-green" data-theme="app-theme-gradient-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-cyan" data-theme="app-theme-gradient-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-blue" data-theme="app-theme-gradient-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-purple" data-theme="app-theme-gradient-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-indigo" data-theme="app-theme-gradient-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-black" data-theme="app-theme-gradient-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<a href="#" class="btn btn-silver btn-block btn-rounded btn-sm" data-click="reset-theme-setting">Reset Setting</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="assets/js/app.min.js" type="a5a45a60ae5812fcc67164a0-text/javascript"></script>
+
+<script type="a5a45a60ae5812fcc67164a0-text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53034621-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="a5a45a60ae5812fcc67164a0-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b2322e2f0b016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

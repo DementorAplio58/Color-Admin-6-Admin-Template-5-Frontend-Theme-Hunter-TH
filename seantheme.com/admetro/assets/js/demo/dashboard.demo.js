@@ -1,0 +1,1 @@
+var handleNotification=function(){$.notification({title:'New Mail',content:'You have 20+ new mail in your Inbox',icon:'fa fa-envelope',iconClass:'bg-gradient-blue-indigo text-white'});};$(document).ready(function(){handleNotification();});

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Admetro | Full Width</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed app-content-full-width">
+
+<header id="header" class="app-header">
+
+<button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+admetro
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+<a href="#" data-toggle="search-bar" class="nav-link">
+<i class="fa fa-search nav-icon"></i>
+</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="far fa-bell nav-icon"></i>
+<span class="nav-label">3</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 pb-0">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-apple bg-primary"></i></div>
+<div class="info">
+<h4 class="title">App Store <span class="time">Just now</span></h4>
+<p class="desc">Your iOS application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-android bg-success"></i></div>
+<div class="info">
+<h4 class="title">Google Play <span class="time">5 min ago</span></h4>
+<p class="desc">Your android application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-github bg-muted"></i></div>
+<div class="info">
+<h4 class="title">Github <span class="time">12 min ago</span></h4>
+<p class="desc">Error with notifications from Private Repos</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
+<div class="info">
+<h4 class="title">Gmail <span class="time">12:50pm</span></h4>
+<p class="desc">You have 2 unread email</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
+<div class="info">
+<h4 class="title">Corey <span class="time">10:20am</span></h4>
+<p class="desc">There's so much room for activities!</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
+<div class="info">
+<h4 class="title">Twitter <span class="time">12:50pm</span></h4>
+<p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="fa fa-cog nav-icon"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-md pt-0 pb-0">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-envelope text-muted"></i></div>
+<div class="info">Email</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-desktop text-muted"></i></div>
+<div class="info">Desktop & Mobile</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
+<div class="info">Text message</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
+<div class="info">Public friends list</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
+<div class="info">Public profile page</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<span class="nav-img online">
+<img src="assets/img/user.jpg" alt="" />
+</span>
+<span class="d-none d-md-block">John Smith <b class="caret"></b></span>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#">Edit Profile</a>
+<a class="dropdown-item" href="#">Inbox</a>
+<a class="dropdown-item" href="#">Calendar</a>
+<a class="dropdown-item" href="#">Setting</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Log Out</a>
+</div>
+</li>
+</ul>
+
+
+<div class="navbar-search">
+<form action="#" method="POST" name="navbar_search_form">
+<div class="form-group">
+<div class="icon"><i class="fa fa-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
+<div class="icon">
+<a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
+</div>
+</div>
+</form>
+</div>
+
+</header>
+
+
+<div id="content" class="app-content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">LAYOUT</a></li>
+<li class="breadcrumb-item active">FULL WIDTH</li>
+</ul>
+
+
+<h1 class="page-header">
+Full Width <small>page header description goes here...</small>
+</h1>
+
+<p>
+<a href="javascript:history.back(-1);" class="btn btn-primary">Go back to previous Page</a>
+</p>
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="#" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content">
+<div class="widget-list mb-0">
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Color Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item active"><a href="#" class="bg-silver" data-theme="" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-red" data-theme="app-theme-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-pink" data-theme="app-theme-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-orange" data-theme="app-theme-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-yellow" data-theme="app-theme-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-green" data-theme="app-theme-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-cyan" data-theme="app-theme-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-blue" data-theme="app-theme-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-purple" data-theme="app-theme-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-indigo" data-theme="app-theme-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-black" data-theme="app-theme-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Gradient Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item"><a href="#" class="bg-gradient-silver" data-theme="app-theme-gradient-silver" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Gradient Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-red" data-theme="app-theme-gradient-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-pink" data-theme="app-theme-gradient-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-orange" data-theme="app-theme-gradient-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-yellow" data-theme="app-theme-gradient-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-green" data-theme="app-theme-gradient-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-cyan" data-theme="app-theme-gradient-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-blue" data-theme="app-theme-gradient-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-purple" data-theme="app-theme-gradient-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-indigo" data-theme="app-theme-gradient-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-black" data-theme="app-theme-gradient-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<a href="#" class="btn btn-silver btn-block btn-rounded btn-sm" data-click="reset-theme-setting">Reset Setting</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="assets/js/app.min.js" type="03221c04989253c8f85d1e9b-text/javascript"></script>
+
+<script type="03221c04989253c8f85d1e9b-text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53034621-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="03221c04989253c8f85d1e9b-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b2321b1960016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

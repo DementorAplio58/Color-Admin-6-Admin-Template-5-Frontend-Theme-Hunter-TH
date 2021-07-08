@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Admetro | Form Elements</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="app" class="app app-header-fixed app-sidebar-fixed">
+
+<header id="header" class="app-header">
+
+<button type="button" class="navbar-toggle navbar-toggle-minify" data-click="sidebar-minify">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+admetro
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+<a href="#" data-toggle="search-bar" class="nav-link">
+<i class="fa fa-search nav-icon"></i>
+</a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="far fa-bell nav-icon"></i>
+<span class="nav-label">3</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0 pb-0">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-apple bg-primary"></i></div>
+<div class="info">
+<h4 class="title">App Store <span class="time">Just now</span></h4>
+<p class="desc">Your iOS application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-android bg-success"></i></div>
+<div class="info">
+<h4 class="title">Google Play <span class="time">5 min ago</span></h4>
+<p class="desc">Your android application has been approved</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-github bg-muted"></i></div>
+<div class="info">
+<h4 class="title">Github <span class="time">12 min ago</span></h4>
+<p class="desc">Error with notifications from Private Repos</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fa fa-envelope bg-purple"></i></div>
+<div class="info">
+<h4 class="title">Gmail <span class="time">12:50pm</span></h4>
+<p class="desc">You have 2 unread email</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><div class="img" style="background-image: url(assets/img/user-2.jpg)"></div></div>
+<div class="info">
+<h4 class="title">Corey <span class="time">10:20am</span></h4>
+<p class="desc">There's so much room for activities!</p>
+</div>
+</a>
+</li>
+<li class="dropdown-message">
+<a href="#">
+<div class="icon"><i class="fab fa-twitter bg-gradient-aqua"></i></div>
+<div class="info">
+<h4 class="title">Twitter <span class="time">12:50pm</span></h4>
+<p class="desc">@sergiolucas: Most rain in the last two days: 85mm Gabo Island (March)</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<i class="fa fa-cog nav-icon"></i>
+</a>
+<ul class="dropdown-menu dropdown-menu-right dropdown-menu-md pt-0 pb-0">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-envelope text-muted"></i></div>
+<div class="info">Email</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-desktop text-muted"></i></div>
+<div class="info">Desktop & Mobile</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-comment-alt text-muted"></i></div>
+<div class="info">Text message</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-list-ul text-muted"></i></div>
+<div class="info">Public friends list</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+</div>
+</li>
+<li class="dropdown-setting">
+<div class="icon"><i class="fa fa-user-secret text-muted"></i></div>
+<div class="info">Public profile page</div>
+<div class="option">
+<div class="switcher switcher-success">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+</div>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a href="#" data-toggle="dropdown" data-display="static" class="nav-link">
+<span class="nav-img online">
+<img src="assets/img/user.jpg" alt="" />
+</span>
+<span class="d-none d-md-block">John Smith <b class="caret"></b></span>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<a class="dropdown-item" href="#">Edit Profile</a>
+<a class="dropdown-item" href="#">Inbox</a>
+<a class="dropdown-item" href="#">Calendar</a>
+<a class="dropdown-item" href="#">Setting</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Log Out</a>
+</div>
+</li>
+</ul>
+
+
+<div class="navbar-search">
+<form action="#" method="POST" name="navbar_search_form">
+<div class="form-group">
+<div class="icon"><i class="fa fa-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search admetro..." />
+<div class="icon">
+<a href="#" data-dismiss="search-bar" class="right-icon"><i class="fa fa-times"></i></a>
+</div>
+</div>
+</form>
+</div>
+
+</header>
+
+
+<sidebar id="sidebar" class="app-sidebar">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="profile-img">
+<img src="assets/img/user.jpg" />
+</div>
+<div class="profile-info">
+<h4>John Smith</h4>
+<p>Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li>
+<a href="index.html">
+<span class="nav-icon"><i class="fa fa-th-large"></i></span>
+<span class="nav-text">Home</span>
+</a>
+</li>
+<li>
+<a href="analytics.html">
+<span class="nav-icon"><i class="fa fa-chart-pie"></i></span>
+<span class="nav-text">Analytics</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-envelope"></i> </span>
+<span class="nav-text">Email <span class="nav-label">20+</span></span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li>
+<a href="widgets.html">
+<span class="nav-icon"><i class="fa fa-qrcode bg-gradient-red text-white"></i></span>
+<span class="nav-text">Widgets</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-heart bg-gradient-orange text-white"></i></span>
+<span class="nav-text">UI Kits</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="ui_bootstrap.html"><span class="nav-text">Bootstrap</span></a></li>
+<li><a href="ui_buttons.html"><span class="nav-text">Buttons</span></a></li>
+<li><a href="ui_typography.html"><span class="nav-text">Typography</span></a></li>
+<li><a href="ui_tabs_accordions.html"><span class="nav-text">Tabs & Accordions</span></a></li>
+<li><a href="ui_modal_notification.html"><span class="nav-text">Modal & Notification</span></a></li>
+<li><a href="ui_card.html"><span class="nav-text">Card</span></a></li>
+<li><a href="ui_icons.html"><span class="nav-text">Icons</span></a></li>
+</ul>
+</li>
+<li class="has-sub active">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-file-alt bg-gradient-orange text-white"></i></span>
+<span class="nav-text">Forms</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="active"><a href="form_elements.html"><span class="nav-text">Form Elements</span></a></li>
+<li><a href="form_plugins.html"><span class="nav-text">Form Plugins</span></a></li>
+<li><a href="form_wizards.html"><span class="nav-text">Wizards</span></a></li>
+<li><a href="form_jquery_file_upload.html"><span class="nav-text">File Upload</span></a></li>
+<li><a href="form_summernote.html"><span class="nav-text">Summernote</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-table bg-gradient-green text-white"></i></span>
+<span class="nav-text">Tables</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="table_basic.html"><span class="nav-text">Basic Tables</span></a></li>
+<li><a href="table_data.html"><span class="nav-text">DataTables</span></a></li>
+</ul>
+</li>
+<li>
+<a href="chart.html">
+<span class="nav-icon"><i class="fa fa-chart-bar bg-gradient-purple text-white"></i></span>
+<span class="nav-text">Chart</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-map-marker-alt bg-gradient-blue text-white"></i></span>
+<span class="nav-text">Map</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="map_vector.html"><span class="nav-text">Vector Map</span></a></li>
+<li><a href="map_google.html"><span class="nav-text">Google Map</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-code-branch"></i></span>
+<span class="nav-text">Layout</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="layout_starter.html"><span class="nav-text">Starter Page</span></a></li>
+<li><a href="layout_fixed_footer.html"><span class="nav-text">Fixed Footer</span></a></li>
+<li><a href="layout_full_width.html"><span class="nav-text">Full Width</span></a></li>
+<li><a href="layout_boxed_layout.html"><span class="nav-text">Boxed Layout</span></a></li>
+<li><a href="layout_full_height.html"><span class="nav-text">Full Height</span></a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-globe"></i></span>
+<span class="nav-text">Pages</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="page_gallery.html"><span class="nav-text">Gallery</span></a></li>
+<li><a href="page_coming_soon.html"><span class="nav-text">Coming Soon Page</span></a></li>
+<li><a href="page_search_results.html"><span class="nav-text">Search Results</span></a></li>
+<li><a href="page_404_error.html"><span class="nav-text">404 Error Page</span></a></li>
+<li><a href="page_login.html"><span class="nav-text">Login</span></a></li>
+<li><a href="page_register.html"><span class="nav-text">Register</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li>
+<a href="profile.html">
+<span class="nav-icon"><i class="fa fa-user-circle"></i></span>
+<span class="nav-text">Profile</span>
+</a>
+</li>
+<li>
+<a href="calendar.html">
+<span class="nav-icon"><i class="fa fa-calendar"></i></span>
+<span class="nav-text">Calendar</span>
+</a>
+</li>
+<li>
+<a href="settings.html">
+<span class="nav-icon"><i class="fa fa-cog"></i></span>
+<span class="nav-text">Settings</span>
+</a>
+</li>
+<li>
+<a href="helper.html">
+<span class="nav-icon"><i class="fa fa-question-circle"></i></span>
+<span class="nav-text">Helper</span>
+</a>
+</li>
+<li class="has-sub">
+<a href="#">
+<span class="nav-icon"><i class="fa fa-list-ul"></i> </span>
+<span class="nav-text">Menu Level</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 1.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li class="has-sub">
+<a href="#">
+<span class="nav-text">Menu 2.1</span>
+<span class="nav-caret"><b class="caret"></b></span>
+</a>
+<ul class="nav-submenu">
+<li><a href="#"><span class="nav-text">Menu 3.1</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 3.2</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 2.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 2.3</span></a></li>
+</ul>
+</li>
+<li><a href="#"><span class="nav-text">Menu 1.2</span></a></li>
+<li><a href="#"><span class="nav-text">Menu 1.3</span></a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-mobile-alt"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">70%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fa fa-headphones"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">40%</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="fab fa-github"></i>
+</div>
+<div class="project-info">
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress">
+<div class="progress-bar bg-gradient-blue-purple-to-right" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+<div class="project-percentage">50%</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2019 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+</sidebar>
+
+
+<div id="content" class="app-content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">FORMS</a></li>
+<li class="breadcrumb-item active">FORM ELEMENTS</li>
+</ul>
+
+
+<h1 class="page-header">
+Form Elements <small>page header description goes here...</small>
+</h1>
+
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Inputs</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
+<form>
+<div class="form-group">
+<label>Default <span class="text-danger">*</span></label>
+<input type="text" class="form-control" name="default_input" value="" placeholder="placeholder" />
+</div>
+<div class="form-group">
+<label>Password <span class="text-danger">*</span></label>
+<input type="password" class="form-control" required name="default_password" value="" placeholder="" />
+</div>
+<div class="form-group m-b-0">
+<label>Disabled</label>
+<input type="text" class="form-control" name="default_disabled_input" disabled value="" placeholder="" />
+</div>
+</form>
+</div>
+
+</div>
+</div>
+
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Textarea</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+<form>
+<div class="form-group">
+<label>Default <span class="text-danger">*</span></label>
+<textarea class="form-control" name="default_textarea" rows="4" placeholder="Textarea"></textarea>
+</div>
+<div class="form-group m-b-0">
+<label>Disabled</label>
+<textarea class="form-control" disabled name="default_disabled_textarea" rows="4" placeholder="Textarea"></textarea>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Select</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
+<form>
+<div class="form-group">
+<label class="control-label">Default</label>
+<select class="form-control">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+<p class="f-s-12 text-muted">For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
+<div class="form-group m-b-0">
+<label class="control-label">Multiple</label>
+<select multiple class="form-control">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Checkboxes</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Checkboxes are for selecting one or several options in a list and we styled it with CSS and Glyphicon.</p>
+<form>
+<div class="row">
+<div class="col-md-7">
+<div class="form-group">
+<label>Default (Stacked)</label>
+<div class="checkbox">
+<input type="checkbox" value="1" id="normal-checkbox-1" />
+<label for="normal-checkbox-1">
+Option one
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" value="2" id="normal-checkbox-2" checked />
+<label for="normal-checkbox-2">
+Option two is checked
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" value="3" id="normal-checkbox-3" disabled />
+<label for="normal-checkbox-3">
+Option three is disabled
+</label>
+</div>
+</div>
+</div>
+<div class="col-md-5">
+<div class="form-group">
+<label>Switcher</label>
+<div class="input-container">
+<div class="switcher">
+<input type="checkbox" name="switcher_checkbox_1" id="switcher_checkbox_1" checked="" value="1" />
+<label for="switcher_checkbox_1"></label>
+</div>
+<div class="switcher switcher-success">
+<input type="checkbox" name="switcher_checkbox_2" id="switcher_checkbox_2" checked="" value="1" />
+<label for="switcher_checkbox_2"></label>
+</div>
+<div class="switcher switcher-purple">
+<input type="checkbox" name="switcher_checkbox_3" id="switcher_checkbox_3" checked="" value="1" />
+<label for="switcher_checkbox_3"></label>
+</div>
+<div class="switcher switcher-danger">
+<input type="checkbox" name="switcher_checkbox_4" id="switcher_checkbox_4" checked="" value="1" />
+<label for="switcher_checkbox_4"></label>
+</div>
+<div class="switcher switcher-warning">
+<input type="checkbox" name="switcher_checkbox_5" id="switcher_checkbox_5" checked="" value="1" />
+<label for="switcher_checkbox_5"></label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label>Inline Checkbox</label>
+<div>
+<div class="checkbox-inline">
+<input type="checkbox" id="inline-checkbox-1" checked value="1"> <label for="inline-checkbox-1">1</label>
+</div>
+<div class="checkbox-inline">
+<input type="checkbox" id="inline-checkbox-2" value="2"> <label for="inline-checkbox-2">2</label>
+</div>
+<div class="checkbox-inline">
+<input type="checkbox" id="inline-checkbox-3" disabled value="3"> <label for="inline-checkbox-3">3</label>
+</div>
+</div>
+</div>
+<hr />
+<div class="form-group m-b-0">
+<label>Color Options</label>
+<p class="f-s-12 text-muted">Add <code>.checkbox-success</code> or other bootstrap color class to change the checkbox checked color.</p>
+<div>
+<div class="checkbox-inline m-b-3">
+<input type="checkbox" id="checkbox-option-1" checked value="1"> <label for="checkbox-option-1">default</label>
+</div>
+<div class="checkbox-inline m-b-3 checkbox-purple">
+<input type="checkbox" id="checkbox-option-2" checked value="2"> <label for="checkbox-option-2">purple</label>
+</div>
+<div class="checkbox-inline m-b-3 checkbox-success">
+<input type="checkbox" id="checkbox-option-3" checked value="3"> <label for="checkbox-option-3">success</label>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Radios</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Radios use for selecting one option from many. You may add <code>.disabled</code> class to the wrapper of the radios.</p>
+<form>
+<div class="form-group">
+<label class="m-b-0">Default Radio</label>
+<div class="radio">
+<input type="radio" name="default_radio" id="default_radio_1" value="1" checked />
+<label for="default_radio_1">
+Option One
+</label>
+</div>
+<div class="radio">
+<input type="radio" name="default_radio" id="default_radio_2" value="2" checked />
+<label for="default_radio_2">
+Option Two is checked
+</label>
+</div>
+<div class="radio disabled">
+<input type="radio" name="default_radio" id="default_radio_3" value="3" disabled />
+<label for="default_radio_3">
+Option Three is disabled
+</label>
+</div>
+</div>
+<div class="form-group">
+<label>Inline Radio</label>
+<div>
+<div class="radio-inline">
+<input type="radio" name="inline_radio" id="inline_radio_1" value="1" checked />
+<label for="inline_radio_1">
+Male
+</label>
+</div>
+<div class="radio-inline">
+<input type="radio" name="inline_radio" id="inline_radio_2" value="2" />
+<label for="inline_radio_2">
+Female
+</label>
+</div>
+</div>
+</div>
+<hr />
+<div class="form-group">
+<label class="m-b-5">Color Options</label>
+<p class="f-s-12 text-muted">Add <code>.radio-success</code> or other bootstrap color class to change the radio checked color.</p>
+<div>
+<div class="radio-inline m-b-3">
+<input type="radio" id="radio-option-1" checked value="1"> <label for="radio-option-1">default</label>
+</div>
+<div class="radio-inline m-b-3 radio-purple">
+<input type="radio" id="radio-option-2" checked value="2"> <label for="radio-option-2">purple</label>
+</div>
+<div class="radio-inline m-b-3 radio-success">
+<input type="radio" id="radio-option-3" checked value="3"> <label for="radio-option-3">success</label>
+</div>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Validation States</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<div class="form-group m-b-10">
+<label for="validationServer01">First name</label>
+<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+<div class="valid-feedback">
+Looks good!
+</div>
+</div>
+<div class="form-group m-b-10">
+<label for="validationServerUsername">Username</label>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text" id="inputGroupPrepend3">@</span>
+</div>
+<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+<div class="invalid-feedback">
+Please choose a username.
+</div>
+</div>
+</div>
+<div class="form-group m-b-10">
+<label for="validationTextarea">Textarea</label>
+<textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required=""></textarea>
+<div class="invalid-feedback">
+Please enter a message in the textarea.
+</div>
+</div>
+<div class="has-success">
+<div class="checkbox">
+<input type="checkbox" id="checkboxSuccess" value="option1">
+<label for="checkboxSuccess">
+Checkbox with success
+</label>
+</div>
+</div>
+<div class="has-warning">
+<div class="checkbox">
+<input type="checkbox" id="checkboxWarning" value="option1">
+<label for="checkboxWarning">
+Checkbox with warning
+</label>
+</div>
+</div>
+<div class="has-error">
+<div class="checkbox m-b-0">
+<input type="checkbox" id="checkboxError" value="option1">
+<label for="checkboxError">
+Checkbox with error
+</label>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Control Sizing</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Set heights using classes like <code>.form-control-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
+<label>Height Sizing</label>
+<div class="row row-space-10 m-b-10">
+<div class="col-md-6">
+<input class="form-control m-b-10 form-control-lg" type="text" placeholder=".form-control-lg">
+<input class="form-control m-b-10 " type="text" placeholder="Default input">
+<input class="form-control m-b-10 form-control-sm" type="text" placeholder=".form-control-sm">
+</div>
+<div class="col-md-6">
+<select class="form-control m-b-10 form-control-lg">
+<option>.form-control-lg</option>
+</select>
+<select class="form-control m-b-10 ">
+<option>Default input</option>
+</select>
+<select class="form-control m-b-10 form-control-sm">
+<option>.form-control-sm</option>
+</select>
+</div>
+</div>
+<label>Column Sizing</label>
+<div class="row row-space-10">
+<div class="col-2">
+<input type="text" class="form-control" placeholder=".col-2">
+</div>
+<div class="col-4">
+<input type="text" class="form-control" placeholder=".col-4">
+</div>
+<div class="col-6">
+<input type="text" class="form-control" placeholder=".col-6">
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Default Form</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default.</p>
+<form>
+<div class="form-group">
+<label for="exampleInputEmail1">Email address</label>
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Password</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+<div class="form-group">
+<div class="checkbox">
+<input type="checkbox" id="check_me_out">
+<label for="check_me_out">
+Check me out
+</label>
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-4">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Horizontal Form</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">
+Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form.
+</p>
+<form class="form-horizontal m-t-20">
+<div class="form-group row m-b-10">
+<label class="col-sm-3 col-form-label">Email</label>
+<div class="col-sm-9">
+<p class="form-control-plaintext"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e98c84888085a98c91888499858cc78a8684">[email&#160;protected]</a></p>
+</div>
+</div>
+<div class="form-group row m-b-5">
+<label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+<div class="col-sm-9">
+<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+</div>
+</div>
+<div class="form-group row m-b-10">
+<div class="offset-sm-3 col-sm-9">
+<div class="checkbox">
+<input type="checkbox" id="remember_me">
+<label for="remember_me">
+Remember me
+</label>
+</div>
+</div>
+</div>
+<div class="form-group row m-b-0">
+<div class="offset-sm-3 col-sm-9">
+<button type="submit" class="btn btn-purple">Sign in</button>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-12">
+
+<div class="card m-b-15">
+
+<div class="card-header card-header-inverse">
+<h4 class="card-header-title">Inline Form</h4>
+<div class="card-header-btn">
+<a href="#" data-toggle="card-expand" class="btn btn-success"><i class="fa fa-expand"></i></a>
+<a href="#" data-toggle="card-refresh" class="btn btn-warning"><i class="fa fa-redo"></i></a>
+<a href="#" data-toggle="card-remove" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
+</div>
+</div>
+
+
+<div class="card-body">
+<p class="f-s-12 text-muted">Add <code>.form-inline</code> to your form (which doesn't have to be a <code>&lt;form&gt;</code>) for left-aligned and inline-block controls. This only applies to forms within viewports that are at least <b>768px</b> wide.</p>
+<form class="form-inline">
+<label class="m-b-10 m-r-10" for="exampleInputName2">Name:</label>
+<input type="text" class="form-control m-b-10 m-r-20" id="exampleInputName2" placeholder="Jane Doe">
+<label class="m-b-10 m-r-10" for="exampleInputEmail2">Email:</label>
+<input type="email" class="form-control m-b-10 m-r-20" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+<button type="submit" class="btn btn-black mb-2">Send invitation</button>
+</form>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="#" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+<div class="theme-panel-content">
+<div class="widget-list mb-0">
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Color Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item active"><a href="#" class="bg-silver" data-theme="" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-red" data-theme="app-theme-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-pink" data-theme="app-theme-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-orange" data-theme="app-theme-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-yellow" data-theme="app-theme-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-green" data-theme="app-theme-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-cyan" data-theme="app-theme-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-blue" data-theme="app-theme-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-purple" data-theme="app-theme-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-indigo" data-theme="app-theme-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-black" data-theme="app-theme-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<div>Gradient Theme</div>
+<div class="theme-list row">
+<div class="theme-list-item"><a href="#" class="bg-gradient-silver" data-theme="app-theme-gradient-silver" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default (Gradient Silver)"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-red" data-theme="app-theme-gradient-red" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Red"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-pink" data-theme="app-theme-gradient-pink" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Pink"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-orange" data-theme="app-theme-gradient-orange" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Orange"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-yellow" data-theme="app-theme-gradient-yellow" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Yellow"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-green" data-theme="app-theme-gradient-green" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Green"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-cyan" data-theme="app-theme-gradient-cyan" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Aqua"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-blue" data-theme="app-theme-gradient-blue" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Blue"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-purple" data-theme="app-theme-gradient-purple" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Purple"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-indigo" data-theme="app-theme-gradient-indigo" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Indigo"></a></div>
+<div class="theme-list-item"><a href="#" class="bg-gradient-black" data-theme="app-theme-gradient-black" data-toggle="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Gradient Black"></a></div>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+<div class="widget-list-item">
+<div class="widget-list-content">
+<a href="#" class="btn btn-silver btn-block btn-rounded btn-sm" data-click="reset-theme-setting">Reset Setting</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/app.min.js" type="8bc90cc8419ae4adda5b98cf-text/javascript"></script>
+
+<script type="8bc90cc8419ae4adda5b98cf-text/javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53034621-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8bc90cc8419ae4adda5b98cf-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b232030bbe016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>

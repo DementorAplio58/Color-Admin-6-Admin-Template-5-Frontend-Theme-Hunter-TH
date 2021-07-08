@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Infinite Admin | Bootstrap</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+<link href="../assets/plugins/bootstrap/bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/plugins/icon/themify-icons/themify-icons.css" rel="stylesheet" />
+<link href="../assets/css/animate.min.css" rel="stylesheet" />
+<link href="../assets/css/style.min.css" rel="stylesheet" />
+<link href="../assets/css/theme/default.css" rel="stylesheet" id="theme" />
+
+
+<script src="../assets/plugins/loader/pace/pace.min.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+
+</head>
+<body>
+
+<div id="page-container" class="page-header-fixed page-sidebar-fixed fade">
+
+<div id="header" class="header navbar navbar-default navbar-fixed-top">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+<a href="index.html" class="navbar-brand">
+<i class="ti-infinite navbar-logo text-gradient bg-gradient-blue-purple"></i>
+<b>Infinite</b> Admin
+</a>
+<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div class="navbar-xs-justified">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="javascript:;" data-toggle="search-bar" class="navbar-icon">
+<i class="ti-search"></i>
+</a>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle navbar-icon with-label">
+<i class="ti-bell"></i>
+</a>
+<ul class="dropdown-menu dropdown-lg no-padding">
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Today</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-primary">
+<i class="ti-apple"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">App Store <span class="notification-time">Just now</span></h4>
+<p class="notification-desc">
+Your iOS application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-success">
+<i class="ti-android"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Google Play <span class="notification-time">5 min ago</span></h4>
+<p class="notification-desc">
+Your android application has been approved
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-muted">
+<i class="ti-github"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Github <span class="notification-time">12 min ago</span></h4>
+<p class="notification-desc">
+Error with notifications from Private Repos
+</p>
+</div>
+</a>
+</li>
+<li class="dropdown-header"><a href="#" class="dropdown-close">&times;</a>Yesterday</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-purple">
+<i class="ti-email"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Gmail <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+You have 2 unread email
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon">
+<img src="../assets/img/user-2.jpg" alt="" />
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Corey <span class="notification-time">10:20am</span></h4>
+<p class="notification-desc">
+There's so much room for activities!
+</p>
+</div>
+</a>
+</li>
+<li class="notification">
+<a href="#">
+<div class="notification-icon bg-gradient-aqua">
+<i class="ti-twitter"></i>
+</div>
+<div class="notification-info">
+<h4 class="notification-title">Twitter <span class="notification-time">12:50pm</span></h4>
+<p class="notification-desc">
+@sergiolucas: Most rain in the last two days: 85mm Gabo Island (Mar
+</p>
+</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown" class="navbar-icon">
+<i class="ti-settings"></i>
+</a>
+<ul class="dropdown-menu dropdown-md no-padding" data-dropdown-close="false">
+<li class="dropdown-header">Notifications Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-email"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_1" id="setting_1" checked />
+<label for="setting_1"></label>
+</div>
+Email
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-desktop"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_2" id="setting_2" checked />
+<label for="setting_2"></label>
+</div>
+Desktop and Mobile
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-mobile"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_3" id="setting_3" />
+<label for="setting_3"></label>
+</div>
+Text message
+</div>
+</li>
+<li class="dropdown-header">Privacy Settings</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-user"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_4" id="setting_4" />
+<label for="setting_4"></label>
+</div>
+Public friends list
+</div>
+</li>
+<li class="setting">
+<div class="setting-icon bg-grey"><i class="ti-search"></i></div>
+<div class="setting-info">
+<div class="switcher">
+<input type="checkbox" name="setting_5" id="setting_5" checked />
+<label for="setting_5"></label>
+</div>
+Public profile page
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="javascript:;" data-toggle="dropdown">
+<span class="navbar-user-img online pull-left">
+<img src="../assets/img/user.jpg" alt="" />
+</span>
+<span class="hidden-xs ">Sean Ngu <b class="caret"></b></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="javascript:;">Edit Profile</a></li>
+<li><a href="javascript:;">Inbox</a></li>
+<li><a href="javascript:;">Calendar</a></li>
+<li><a href="javascript:;">Setting</a></li>
+<li class="divider"></li>
+<li><a href="javascript:;">Log Out</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="header-search-bar">
+<form action="#" method="POST" name="search_bar_form">
+<div class="form-group">
+<div class="left-icon"><i class="ti-search"></i></div>
+<input type="text" class="form-control" id="header-search" placeholder="Search infinite admin..." />
+<a href="javascript:;" data-dismiss="search-bar" class="right-icon"><i class="ti-close"></i></a>
+</div>
+</form>
+</div>
+
+</div>
+
+
+<div id="sidebar" class="sidebar sidebar-inverse">
+
+<div data-scrollbar="true" data-height="100%">
+
+<ul class="nav">
+<li class="nav-profile">
+<div class="image">
+<img src="../assets/img/user.jpg" />
+</div>
+<div class="info">
+<h4>Sean Ngu</h4>
+<p>UXUI Frontend Developer</p>
+</div>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Navigation</li>
+<li><a href="index.html"><i class="ti-home"></i><span>Home</span></a></li>
+<li><a href="analytics.html"><i class="ti-pie-chart"></i><span>Analytics</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<span class="caret caret-right pull-right"></span>
+<i class="ti-email"></i>
+<span>Email <span class="notification">20+</span></span>
+</a>
+<ul class="sub-menu">
+<li><a href="email_inbox.html">Inbox</a></li>
+<li><a href="email_compose.html">Compose</a></li>
+<li><a href="email_detail.html">Detail</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Components</li>
+<li><a href="widgets.html"><i class="ti-shortcode"></i><span>Widgets</span></a></li>
+<li class="has-sub active">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-heart"></i>
+<span>UI Kits</span>
+</a>
+<ul class="sub-menu">
+<li class="active"><a href="ui_bootstrap.html">Bootstrap</a></li>
+<li><a href="ui_buttons.html">Buttons</a></li>
+<li><a href="ui_typography.html">Typography</a></li>
+<li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
+<li><a href="ui_modal_notification.html">Modal & Notification</a></li>
+<li><a href="ui_panels.html">Panels</a></li>
+<li><a href="ui_icons.html">Icons</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-notepad"></i>
+<span>Forms</span>
+</a>
+<ul class="sub-menu">
+<li><a href="form_elements.html">Form Elements</a></li>
+<li><a href="form_plugins.html">Form Plugins</a></li>
+<li><a href="form_wizards.html">Wizards</a></li>
+<li><a href="form_jquery_file_upload.html">File Upload</a></li>
+<li><a href="form_summernote.html">Summernote</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-grid2"></i>
+<span>Tables</span>
+</a>
+<ul class="sub-menu">
+<li><a href="table_basic.html">Basic Tables</a></li>
+<li><a href="table_data.html">DataTables</a></li>
+</ul>
+</li>
+<li><a href="chart.html"><i class="ti-bar-chart"></i><span>Chart</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-map-alt"></i>
+<span>Map</span>
+</a>
+<ul class="sub-menu">
+<li><a href="map_vector.html">Vector Map</a></li>
+<li><a href="map_google.html">Google Map</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-layout-sidebar-left"></i>
+<span>Layout</span>
+</a>
+<ul class="sub-menu">
+<li><a href="layout_starter.html">Starter Page</a></li>
+<li><a href="layout_fixed_footer.html">Fixed Footer</a></li>
+<li><a href="layout_full_width.html">Full Width</a></li>
+<li><a href="layout_boxed_layout.html">Boxed Layout</a></li>
+<li><a href="layout_full_height.html">Full Height</a></li>
+</ul>
+</li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-gift"></i>
+<span>Pages</span>
+</a>
+<ul class="sub-menu">
+<li><a href="page_gallery.html">Gallery</a></li>
+<li><a href="page_coming_soon.html">Coming Soon Page</a></li>
+<li><a href="page_search_results.html">Search Results</a></li>
+<li><a href="page_404_error.html">404 Error Page</a></li>
+<li><a href="page_login.html">Login</a></li>
+<li><a href="page_register.html">Register</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Users</li>
+<li><a href="profile.html"><i class="ti-user"></i><span>Profile</span></a></li>
+<li><a href="calendar.html"><i class="ti-calendar"></i> <span>Calendar</span></a></li>
+<li><a href="settings.html"><i class="ti-settings"></i><span>Settings</span></a></li>
+<li><a href="helper.html"><i class="ti-help-alt"></i><span>Helper</span></a></li>
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+<i class="ti-align-left"></i>
+<span>Menu Level</span>
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 1.1
+</a>
+<ul class="sub-menu">
+<li class="has-sub">
+<a href="javascript:;">
+<b class="caret caret-right pull-right"></b>
+Menu 2.1
+</a>
+<ul class="sub-menu">
+<li><a href="javascript:;">Menu 3.1</a></li>
+<li><a href="javascript:;">Menu 3.2</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 2.2</a></li>
+<li><a href="javascript:;">Menu 2.3</a></li>
+</ul>
+</li>
+<li><a href="javascript:;">Menu 1.2</a></li>
+<li><a href="javascript:;">Menu 1.3</a></li>
+</ul>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-header">Projects</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-mobile"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">70%</span>
+<h4 class="project-title">Mobile App Dev</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 70%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-headphone"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">40%</span>
+<h4 class="project-title">New Audio Project</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 40%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-project">
+<a href="#">
+<div class="project-icon">
+<i class="ti-github"></i>
+</div>
+<div class="project-info">
+<span class="pull-right project-percentage">50%</span>
+<h4 class="project-title">Repository Settings</h4>
+<div class="progress progress-xs">
+<div class="progress-bar bg-theme" style="width: 50%;" role="progressbar"></div>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-divider"></li>
+<li class="nav-copyright">&copy; 2017 seanTheme All Right Reserved</li>
+</ul>
+
+</div>
+
+
+<a href="#" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="ti-arrow-left"></i></a>
+
+</div>
+
+
+<div id="content" class="content">
+
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">UI KITS</a></li>
+<li class="breadcrumb-item active">BOOTSTRAP</li>
+</ul>
+
+
+<h1 class="page-header">
+Bootstrap <small>page header description goes here...</small>
+</h1>
+
+
+<div class="row">
+
+<div class="col-md-8">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">PAGINATIONS & SIZES</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.
+</p>
+<ul class="pagination pagination-lg m-b-10 m-t-0">
+<li class="page-item disabled">
+<a href="#" class="page-link">
+<span>&laquo;</span>
+</a>
+</li>
+<li class="page-item active"><a href="#" class="page-link">1</a></li>
+<li class="page-item"><a href="#" class="page-link">2</a></li>
+<li class="page-item"><a href="#" class="page-link">3</a></li>
+<li class="page-item"><a href="#" class="page-link">4</a></li>
+<li class="page-item"><a href="#" class="page-link">5</a></li>
+<li class="page-item">
+<a href="#" class="page-link">
+<span>&raquo;</span>
+</a>
+</li>
+</ul>
+<ul class="pagination m-b-10 m-t-0">
+<li class="disabled">
+<a href="#" class="page-link">
+<span>&laquo;</span>
+</a>
+</li>
+<li class="active"><a href="#" class="page-link">1</a></li>
+<li><a href="#" class="page-link">2</a></li>
+<li><a href="#" class="page-link">3</a></li>
+<li><a href="#" class="page-link">4</a></li>
+<li><a href="#" class="page-link">5</a></li>
+<li>
+<a href="#" class="page-link">
+<span>&raquo;</span>
+</a>
+</li>
+</ul>
+<ul class="pagination pagination-sm m-b-0 m-t-0">
+<li class="disabled page-item">
+<a href="#" class="page-link">
+<span>&laquo;</span>
+</a>
+</li>
+<li class="active page-item"><a href="#" class="page-link">1</a></li>
+<li class="page-item"><a href="#" class="page-link">2</a></li>
+<li class="page-item"><a href="#" class="page-link">3</a></li>
+<li class="page-item"><a href="#" class="page-link">4</a></li>
+<li class="page-item"><a href="#" class="page-link">5</a></li>
+<li class="page-item">
+<a href="#" class="page-link">
+<span>&raquo;</span>
+</a>
+</li>
+</ul>
+</div>
+
+
+<div class="panel-heading">
+<h4 class="panel-title">PAGER</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+You can align each link to the sides by adding <code>.previous</code> or <code>.next</code>.
+</p>
+<ul class="pager m-t-0 m-b-10">
+<li class="disabled"><a href="#">Previous</a></li>
+<li><a href="#">Next</a></li>
+</ul>
+<ul class="pager m-t-0 m-b-0">
+<li class="previous disabled"><a href="#">Previous</a></li>
+<li class="next"><a href="#">Next</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">LABELS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Add any of the below mentioned modifier classes to change the appearance of a label.</p>
+<p class="m-b-0">
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+<span class="label label-purple">Purple</span>
+<span class="label label-pink">Pink</span>
+<span class="label label-yellow">Yellow</span>
+<span class="label label-inverse">Inverse</span>
+</p>
+</div>
+
+
+<div class="panel-heading">
+<h4 class="panel-title">BADGES</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Easily highlight new or unread items by adding <code>.badge</code></p>
+<p class="m-b-0">
+<a href="#" class="m-r-sm">Inbox <span class="badge badge-default">42</span></a>
+<button class="btn btn-primary" type="button">
+Messages <span class="badge badge-light">4</span>
+</button>
+</p>
+</div>
+
+
+<div class="panel-heading">
+<h4 class="panel-title">BADGES IN NAV PILLS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Built-in styles are included for placing badges in active states in pill navigations.</p>
+<div class="m-b-0">
+<ul class="nav nav-pills">
+<li class="nav-item"><a href="#" class="nav-link active">Home <span class="badge badge-light">42</span></a></li>
+<li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Messages <span class="badge badge-light">3</span></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-12">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">JUMBOTRON</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+<div class="jumbotron bg-gradient-blue-purple m-b-0">
+<h1>Hello, world!</h1>
+<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<p><a href="#" class="btn btn-outline btn-white btn-lg">Learn more</a></p>
+</div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">CARDS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">Bootstrap's cards provide a flexible and extensible content container with multiple variants and options.</p>
+
+<div class="row">
+
+<div class="col-md-6">
+<div class="card">
+<img class="card-img-top" src="../assets/img/thumbnail-1.jpg" alt="" />
+<div class="card-body">
+<h4 class="card-title">Card Title</h4>
+<p class="card-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<hr />
+<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<p class="m-b-0">
+<a href="#" class="btn btn-primary">Button</a>
+<a href="#" class="btn btn-default">Button</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-6">
+<div class="card m-b-sm">
+<div class="card-header">
+Featured
+</div>
+<div class="card-body">
+<h4 class="card-title">Card title</h4>
+<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<a href="#" class="card-link">Card link</a>
+<a href="#" class="card-link">Another link</a>
+</div>
+<div class="card-footer text-muted">
+2 days ago
+</div>
+</div>
+<div class="card bg-dark text-white">
+<img class="card-img" src="../assets/img/thumbnail-2.jpg" alt="Card image" />
+<div class="card-img-overlay">
+<h4 class="card-title">Card title</h4>
+<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<p class="card-text">Last updated 3 mins ago</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">ALERTS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes for basic alert messages.
+</p>
+<div class="alert alert-success m-b-10">
+<strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info m-b-10">
+<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning m-b-10">
+<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-danger m-b-10">
+<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+<div class="alert alert-inverse m-b-10">
+<strong>Inverse Alert!</strong> This alert is not important, but it's beautiful.
+</div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">ALERTS OUTLINE</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Add <code>.alert-outline</code> to show the alert in outline mode.
+</p>
+<div class="alert alert-outline alert-success m-b-10">
+<strong>Well done!</strong> You successfully read this important alert message.
+</div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">PROGRSS BAR</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Provide up-to-date feedback on the progress of a workflow or action
+</p>
+<div class="progress m-b-10">
+<div class="progress-bar" style="width: 60%;">60%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar progress-bar-success" style="width: 40%">40%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar progress-bar-info" style="width: 20%">20%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar progress-bar-warning" style="width: 60%">60%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar progress-bar-danger" style="width: 48%">48%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar progress-bar-purple" style="width: 35%">35%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar progress-bar-pink" style="width: 25%">25%</div>
+</div>
+<div class="progress m-b-10">
+<div class="progress-bar progress-bar-yellow" style="width: 15%">15%</div>
+</div>
+<div class="progress m-b-0">
+<div class="progress-bar progress-bar-inverse" style="width: 0%; min-width: 2em;">0%</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">PROGRESS BAR SIZING</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Add <code>.progress-sm</code> or <code>.progress-xs</code> to change the progress bar size.
+</p>
+<div class="progress m-b-10">
+<div class="progress-bar" style="width: 20%;"></div>
+</div>
+<div class="progress progress-sm m-b-10">
+<div class="progress-bar progress-bar-striped" style="width: 50%"></div>
+</div>
+<div class="progress progress-xs m-b-10">
+<div class="progress-bar progress-bar-striped" style="width: 70%"></div>
+</div>
+</div>
+
+</div>
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">MEDIA OBJECT</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+The default media displays a media object (images, video, audio) to the left or right of a content block.
+</p>
+<div class="media">
+<div class="media-left">
+<a href="#">
+<img class="media-object" src="../assets/img/media-object-6.jpg" alt="" style="width: 64px;" />
+</a>
+</div>
+<div class="media-body">
+<h5 class="m-b-xs">Media heading</h5>
+<p class="m-b-0">
+Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+</p>
+</div>
+</div>
+<hr />
+<div class="media">
+<div class="media-left">
+<a href="#">
+<img class="media-object" src="../assets/img/media-object-5.jpg" alt="" style="width: 64px;" />
+</a>
+</div>
+<div class="media-body">
+<h5 class="m-b-xs">Media heading</h5>
+<p class="m-b-0">
+Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">LIST GROUP</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.
+</p>
+<div class="list-group m-b-0">
+<a href="#" class="list-group-item active">Active Link Item</a>
+<a href="#" class="list-group-item">Normal Link Item</a>
+<a href="#" class="list-group-item"><span class="badge pull-right">14</span>Item with Badge</a>
+<div class="list-group-item">Without link</div>
+<a href="#" class="list-group-item disabled">Disabled Link Item</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">WELLS</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Use the well as a simple effect on an element to give it an inset effect. Use <code>.well-lg</code> or <code>.well-sm</code> to control the well sizes.
+</p>
+<div class="well m-b-10"> Look, I'm in a well! </div>
+<div class="well well-lg m-b-10"> Look, I'm in a large well! </div>
+<div class="well well-sm m-b-10"> Look, I'm in a small well! </div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+
+<div class="panel-heading">
+<h4 class="panel-title">RESPONSIVE EMBED</h4>
+</div>
+
+
+<div class="panel-body">
+<p class="desc">
+Use <code>.embed-responsive-16by9</code> or <code>.embed-responsive-4by3</code> to adjust the ratio size.
+Rules are directly applied to <code>&lt;iframe&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;video&gt;</code>, and <code>&lt;object&gt;</code> elements.
+</p>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eZMDquAUDDg"></iframe>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-click="scroll-top" class="btn-scroll-top fade"><i class="ti-arrow-up"></i></a>
+
+</div>
+
+
+<div class="theme-panel">
+<a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="ti-settings"></i></a>
+<div class="theme-panel-content">
+<div class="form-group">
+<label class="control-label">Color Theme</label>
+<ul class="theme-list clearfix">
+<li class="active"><a href="javascript:;" class="bg-gradient-blue-purple" data-theme="default" data-theme-file="../assets/css/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default"></a></li>
+<li><a href="javascript:;" class="bg-gradient-red" data-theme="red" data-theme-file="../assets/css/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red"></a></li>
+<li><a href="javascript:;" class="bg-gradient-orange" data-theme="orange" data-theme-file="../assets/css/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange"></a></li>
+<li><a href="javascript:;" class="bg-gradient-yellow" data-theme="yellow" data-theme-file="../assets/css/theme/yellow.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Yellow"></a></li>
+<li><a href="javascript:;" class="bg-gradient-green" data-theme="green" data-theme-file="../assets/css/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green"></a></li>
+<li><a href="javascript:;" class="bg-gradient-aqua" data-theme="aqua" data-theme-file="../assets/css/theme/aqua.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Aqua"></a></li>
+<li><a href="javascript:;" class="bg-gradient-blue" data-theme="blue" data-theme-file="../assets/css/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue"></a></li>
+<li><a href="javascript:;" class="bg-gradient-purple" data-theme="purple" data-theme-file="../assets/css/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple"></a></li>
+<li><a href="javascript:;" class="bg-gradient-black" data-theme="black" data-theme-file="../assets/css/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black"></a></li>
+</ul>
+</div>
+<ul class="widget widget-list">
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Fixed Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_fixed" id="sidebar_fixed" value="1" checked />
+<label for="sidebar_fixed"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Light Sidebar
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="sidebar_light" id="sidebar_light" value="1" />
+<label for="sidebar_light"></label>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="#" class="widget-list-container">
+<div class="widget-list-content">
+Fixed Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_fixed" id="header_fixed" value="1" checked />
+<label for="header_fixed"></label>
+</div>
+</div>
+</a>
+</li>
+<li>
+<div class="widget-list-container">
+<div class="widget-list-content">
+Dark Header
+</div>
+<div class="widget-list-action">
+<div class="switcher switcher-success pull-left">
+<input type="checkbox" name="header_dark" id="header_dark" value="1" />
+<label for="header_dark"></label>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="row m-t-10">
+<div class="col-md-12">
+<a href="javascript:;" class="btn btn-inverse btn-block btn-rounded btn-sm" data-click="reset-theme-setting"><b>Reset Setting</b></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="../assets/plugins/jquery/jquery-3.2.1.min.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+<script src="../assets/plugins/jquery-ui/jquery-ui.min.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+<script src="../assets/plugins/cookie/js/js.cookie.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+<script src="../assets/plugins/tooltip/popper/popper.min.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+<script src="../assets/plugins/bootstrap/bootstrap4/js/bootstrap.min.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+<script src="../assets/plugins/scrollbar/slimscroll/jquery.slimscroll.min.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+
+
+<script src="../assets/js/apps.min.js" type="8b52971b965412c4fa17fb77-text/javascript"></script>
+
+<script type="8b52971b965412c4fa17fb77-text/javascript">
+		$(document).ready(function() {
+			App.init();
+		});
+	</script>
+<script type="8b52971b965412c4fa17fb77-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53034621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8b52971b965412c4fa17fb77-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66b233e03dc4016c","version":"2021.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":10}'></script>
+</body>
+</html>
